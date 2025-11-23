@@ -146,7 +146,7 @@
                 "value": "Distance"
               },
               "parameters": [
-                "Player",
+                "Joueur",
                 "Dialoguables",
                 "20",
                 ""
@@ -181,24 +181,24 @@
             },
             {
               "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "Player",
+                "Joueur",
                 "Animation",
                 "=",
-                "0"
+                "\"talking\""
               ]
             },
             {
               "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
                 "Dialoguables",
                 "Animation",
                 "=",
-                "1"
+                "\"talking\""
               ]
             }
           ]
@@ -225,7 +225,7 @@
                 "value": "ActivateBehavior"
               },
               "parameters": [
-                "Player",
+                "Joueur",
                 "TopDownMovement",
                 "no"
               ]
@@ -236,6 +236,18 @@
               },
               "parameters": [
                 "BoiteDeDialogue",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "Talk.wav",
+                "",
+                "Volumes.Sons",
                 ""
               ]
             },
@@ -293,7 +305,7 @@
                 "value": "ActivateBehavior"
               },
               "parameters": [
-                "Player",
+                "Joueur",
                 "TopDownMovement",
                 "yes"
               ]
