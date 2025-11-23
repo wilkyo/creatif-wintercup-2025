@@ -471,7 +471,7 @@
                   "parameters": [
                     "MultiplicateurVitesseDialogues",
                     "=",
-                    "2"
+                    "5"
                   ]
                 }
               ]
@@ -498,7 +498,7 @@
                   "parameters": [
                     "MultiplicateurVitesseDialogues",
                     "=",
-                    "10"
+                    "20"
                   ]
                 }
               ]

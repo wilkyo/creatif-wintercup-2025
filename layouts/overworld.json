@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.5325273356637512,
+    "zoomFactor": 0.8195616997321868,
     "windowMask": false,
     "selectedLayer": "Dialogue"
   },
@@ -42,7 +42,7 @@
           "name": "House2"
         },
         {
-          "name": "NPC"
+          "name": "Lanceur_d_intro"
         },
         {
           "name": "Tilemap_Ground"
@@ -688,7 +688,7 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "name": "NPC",
+      "name": "Lanceur_d_intro",
       "persistentUuid": "196cafb9-af98-435d-8107-4675c15d4990",
       "width": 0,
       "x": 681,
@@ -1419,7 +1419,7 @@
     {
       "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
-      "name": "NPC",
+      "name": "Lanceur_d_intro",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
@@ -1431,7 +1431,7 @@
         {
           "name": "dialogBranch",
           "type": "string",
-          "value": ""
+          "value": "Intro"
         }
       ],
       "effects": [],
@@ -2244,7 +2244,7 @@
         ]
       },
       {
-        "objectName": "NPC"
+        "objectName": "Lanceur_d_intro"
       },
       {
         "objectName": "Bobby"
@@ -2361,84 +2361,10 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Dialogue",
+      "name": "Reprise",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "KeyFromTextPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "\"e\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SpriteMultitouchJoystick::IsButtonPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "\"A\"",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            },
-            {
-              "type": {
-                "value": "Distance"
-              },
-              "parameters": [
-                "Joueur",
-                "NPC",
-                "20",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "Joueur",
-                "TopDownMovement",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "Talk.wav",
-                "",
-                "50",
-                "1"
-              ]
-            }
-          ]
-        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2480,7 +2406,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Touch control",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2609,92 +2534,147 @@
       "name": "Dialogues scène",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DialogueTree::LoadDialogueFromJsonFile"
+              },
+              "parameters": [
+                "",
+                "DialoguesMap1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::WasBranchVisited"
+              },
+              "parameters": [
+                "\"Bobby\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Lanceur_d_intro",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "DialogueTree::WasBranchVisited"
+              },
+              "parameters": [
+                "\"Bobby\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Lanceur_d_intro"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"Statue.Jeu\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DialogueTree::StopRunningDialogue"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "PushScene"
+              },
+              "parameters": [
+                "",
+                "\"Battle\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"Intro.show\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PushScene"
+              },
+              "parameters": [
+                "",
+                "\"Intro\""
+              ]
+            }
+          ]
+        }
+      ],
       "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "DialogueTree::LoadDialogueFromJsonFile"
-          },
-          "parameters": [
-            "",
-            "DialoguesMap1"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DialogueTree::WasBranchVisited"
-          },
-          "parameters": [
-            "\"Bobby.Yes\""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "NPC",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": true,
-            "value": "DialogueTree::WasBranchVisited"
-          },
-          "parameters": [
-            "\"Bobby.Yes\""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "NPC"
-          ]
-        }
-      ]
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -2709,36 +2689,6 @@
             "Text",
             "=",
             "DialogueTree::BranchTitle()"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DialogueTree::CurrentBranchTitle"
-          },
-          "parameters": [
-            "\"Statue.Jeu\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "DialogueTree::StopRunningDialogue"
-          },
-          "parameters": []
-        },
-        {
-          "type": {
-            "value": "PushScene"
-          },
-          "parameters": [
-            "",
-            "\"Battle\""
           ]
         }
       ]

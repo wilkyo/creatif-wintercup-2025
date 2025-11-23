@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Intro",
+		"tags": "",
+		"body": "Au sein de la Gaule, les guerres de clans faisaient rage depuis des décennies. Le nombre de victimes se comptait par milliers, l’économie étant principalement tournée vers l’effort de guerre et combinée au manque de main d'œuvre, la pauvreté et la famine finirent par faire autant de victimes que les guerres perpétuelles.\r\n[[ Suivant |Intro.2]]",
+		"position": {
+			"x": 317,
+			"y": 250
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro.2",
+		"tags": "",
+		"body": "Un jour, deux jeunes guerriers nommés Firedream et Regnatar qui tentaient de noyer leurs malheurs dans la cervoise aussi acide que … de la dernière taverne de leur village, décidère sous l’effet de l’alcool d’abandonner les armes au profit d’une énième tentative de réinstauration de la paix.\r\nLeur idée semblaient complètement farfelue : une fois par an, chaque clan enverrait des équipes de 2 à 5 volontaires à Winterbriga (La colline de L’hiver), un village jusque là neutre dans le conflit et qui servirait de terrain neutre où les différentes équipes s’affronteraient sur différentes épreuves. \r\n[[ Suivant |Intro.3]]",
+		"position": {
+			"x": 317,
+			"y": -1
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro.3",
+		"tags": "",
+		"body": "Le bon déroulement de la compétition serait garanti par les Winterbrigates.\r\nAprès de nombreuses années pour tenter de faire valoir leur idée auprès des différents clans, la première compétition eut lieu et fut nommée “Winter Cwpan”, renommée plus tard par “Winter Cup”.\r\nSi les premières éditions furent tendues et ponctuées par plusieurs incidents, la paix installée permis peu à peu d'apaiser les esprits et au fil du temps la compétition devient l’occasion de se réunir, de s’affronter dans la bonne ambiance sur différents jeux mais surtout, l’occasion de partager de nombreux repas confectionnés avec les spécialités de chaque clan, le plus apprécié était la fameuse raclette. La charcuterie était apportée par les Arvennes, le fromage venait des Allobroges, les Eduens et les Bituriges Vivisques s’occupaient quant à eux des vins aux milles arômes.",
+		"position": {
+			"x": 316,
+			"y": -285
+		},
+		"colorID": 0
+	}
+]

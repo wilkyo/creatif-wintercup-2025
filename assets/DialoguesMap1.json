@@ -58,5 +58,35 @@
 			"y": 298
 		},
 		"colorID": 0
+	},
+	{
+		"title": "Intro",
+		"tags": "",
+		"body": "Tu veux voir l'intro ?\n[[ Bien sûr |Intro.show]]\n[[ Non merci |Intro.hide]]",
+		"position": {
+			"x": 1001,
+			"y": 624
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro.show",
+		"tags": "",
+		"body": "Ok, écoute moi bien<<wait 200>>.<<wait 200>>.<<wait 200>>.",
+		"position": {
+			"x": 1060,
+			"y": 302
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro.hide",
+		"tags": "",
+		"body": "Tant pis pour toi",
+		"position": {
+			"x": 1379,
+			"y": 363
+		},
+		"colorID": 0
 	}
 ]

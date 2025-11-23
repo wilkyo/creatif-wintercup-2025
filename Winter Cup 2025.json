@@ -1,5 +1,5 @@
 {
-  "firstLayout": "Overworld",
+  "firstLayout": "Intro",
   "gdVersion": {
     "build": 245,
     "major": 5,
@@ -481,6 +481,14 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Tilemaps/Pixel Art/f521b34c9bc3530f68e642eff768b852adad0728dd02cd51c31130f3277b0caf_tilemap_packed3.png",
           "name": "tilemap_packed3.png"
         }
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/DialoguesIntro.json",
+        "kind": "json",
+        "metadata": "{\"extension\":\".json\"}",
+        "name": "DialoguesIntro",
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1352,13 +1360,13 @@
       "name": "Dialoguables",
       "objects": [
         {
-          "name": "NPC"
-        },
-        {
           "name": "Statue"
         },
         {
           "name": "Bobby"
+        },
+        {
+          "name": "Lanceur_d_intro"
         }
       ]
     },
@@ -1384,7 +1392,7 @@
     {
       "name": "VitesseDialogues",
       "type": "number",
-      "value": 100
+      "value": 1000
     },
     {
       "name": "MultiplicateurVitesseDialogues",
@@ -1427,6 +1435,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/battle"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/intro"
     }
   ],
   "externalEvents": [
