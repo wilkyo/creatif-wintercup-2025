@@ -1,0 +1,820 @@
+{
+  "firstLayout": "Overworld",
+  "gdVersion": {
+    "build": 245,
+    "major": 5,
+    "minor": 5,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": false,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.wintercup.creatif",
+    "pixelsRounding": false,
+    "projectUuid": "935706e1-a41a-4878-a67f-58a7db910640",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "",
+    "templateSlug": "top-down-rpg",
+    "version": "0.0.1",
+    "name": "Winter Cup 2025",
+    "description": "Le jeu fil rouge de la Winter Cup 2025.",
+    "author": "",
+    "windowWidth": 1280,
+    "windowHeight": 720,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": "",
+      "liluo-thumbnail": "thumbnail.png"
+    },
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [
+      "21SMAaN2TeU7wdgeP5VgPUDNIQ72"
+    ],
+    "authorUsernames": [
+      "Yourself (no username)"
+    ],
+    "categories": [
+      "rpg"
+    ],
+    "playableDevices": [
+      "keyboard",
+      "mobile"
+    ],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "assets/ACharDown1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharDown1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharDown2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharDown2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharDown3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharDown3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharDown4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharDown4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACgarRight1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACgarRight1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACgarRight2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACgarRight2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACgarRight3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACgarRight3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACgarRight4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACgarRight4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharLeft1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharLeft1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharLeft2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharLeft2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharLeft3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharLeft3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharLeft4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharLeft4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharUp1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharUp1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharUp2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharUp2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharUp3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharUp3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharUp4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharUp4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Tree1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Tree1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Tree2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Tree2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Bush1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bush1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/House1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "House1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/House2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "House2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Grass1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Grass1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/8BitOperatorPlus8Regular_Edited.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "8BitOperatorPlus8Regular_Edited.fnt",
+        "userAdded": false
+      },
+      {
+        "file": "assets/8BitOperatorPlus8Regular_Edited.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "8BitOperatorPlus8Regular_Edited.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Border.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Border2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Border2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack.wav",
+        "kind": "audio",
+        "metadata": "{\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Jump 1\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.1,\\\"sustainPunch\\\":50,\\\"decay\\\":0.35000000000000003,\\\"tremoloDepth\\\":19,\\\"tremoloFrequency\\\":27,\\\"frequency\\\":10000,\\\"frequencySweep\\\":-4800,\\\"frequencyDeltaSweep\\\":-4100,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"brownnoise\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"Attack\"}}",
+        "name": "Attack.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Talk.wav",
+        "kind": "audio",
+        "metadata": "{\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Jump 1\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0.03461516912647311,\\\"sustain\\\":0.06,\\\"sustainPunch\\\":0,\\\"decay\\\":0.2,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":399.07212207604067,\\\"frequencySweep\\\":9999.999999999698,\\\"frequencyDeltaSweep\\\":0.8611028349862437,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"square\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":370,\\\"vibratoFrequency\\\":572,\\\"squareDuty\\\":10,\\\"squareDutySweep\\\":-30,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"Talk\"}}",
+        "name": "Talk.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/HoverSound.wav",
+        "kind": "audio",
+        "metadata": "{\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Jump 1\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0.011876134915122183,\\\"sustain\\\":0.01,\\\"sustainPunch\\\":0,\\\"decay\\\":0.02,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":1012.4426242250636,\\\"frequencySweep\\\":9999.999999999698,\\\"frequencyDeltaSweep\\\":995.5111583241919,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.71,\\\"waveform\\\":\\\"triangle\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":70,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"HoverSound\"}}",
+        "name": "HoverSound.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Creature_Player.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Creature_Player.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Creature_Enemy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Creature_Enemy.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/thumbnail.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "thumbnail.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Target round button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Target round button.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/On-Screen Controls/Sprites/Shaded Dark/abb64f9b109c792191a2f50aee5fb4703bdf2392d821e771303ee07dfeb85166_Target round button.png",
+          "name": "Target round button.png"
+        }
+      },
+      {
+        "file": "assets/TilesetFloor.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TilesetFloor.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/TilesetWater.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TilesetWater.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Line dark joystick border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Line dark joystick border.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Line dark joystick thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Line dark joystick thumb.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Flat Bar Red Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar Red Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/212e9679eaae4753beaa5d595d7c80ea66df3235485c6a3963e88b0d936a1798_Flat Bar Red Fill Bar.png",
+          "name": "Flat Bar Red Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/Flat Bar White Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar White Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/c090d31cafed0c8ef7bb4d5af75a7dbf7149bcc03a7d5d63ae997d59100e362e_Flat Bar White Border.png",
+          "name": "Flat Bar White Border.png"
+        }
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/DialoguesMap1.json",
+        "kind": "json",
+        "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialoguesMap1.json\"}",
+        "name": "DialoguesMap1",
+        "userAdded": false
+      },
+      {
+        "file": "assets/ACharDown1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ACharDown1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ACharDown2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ACharDown2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ACharDown3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ACharDown3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ACharDown4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ACharDown4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tilemap_packed3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tilemap_packed3.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Tilemaps/Pixel Art/f521b34c9bc3530f68e642eff768b852adad0728dd02cd51c31130f3277b0caf_tilemap_packed3.png",
+          "name": "tilemap_packed3.png"
+        }
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [
+    {
+      "assetStoreId": "",
+      "name": "Transition",
+      "type": "PrimitiveDrawing::Drawer",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlashTransitionPainter",
+          "type": "FlashTransitionPainter::FlashTransitionPainter",
+          "Timer": 1,
+          "Color": "255;255;255",
+          "Type": "",
+          "Direction": "",
+          "MaxOpacity": 255
+        }
+      ],
+      "fillOpacity": 255,
+      "outlineSize": 1,
+      "outlineOpacity": 255,
+      "absoluteCoordinates": false,
+      "clearBetweenFrames": true,
+      "antialiasing": "none",
+      "fillColor": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "outlineColor": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 0,
+      "height": 32,
+      "leftMargin": 0,
+      "name": "DialogPanel",
+      "rightMargin": 0,
+      "texture": "Border.png",
+      "tiled": false,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 720,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "name": "DialogueBBText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]bold[/b] [i]italic[/i] [size=15]smaller[/size] [font=times]times[/font] font\n[spacing=12]spaced out[/spacing]\n[outline=yellow]outlined[/outline] [shadow=red]DropShadow[/shadow] ",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "207;207;207",
+        "fontFamily": "Arial",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "DialogueChoix",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Choix 1\nChoix 2",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "150;150;150",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "255;255;255",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Choix 1\nChoix 2",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "DialogueNom",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "folderName": "UI",
+        "children": [
+          {
+            "objectName": "DialogueNom"
+          },
+          {
+            "objectName": "DialogueBBText"
+          },
+          {
+            "objectName": "DialogueChoix"
+          },
+          {
+            "objectName": "DialogPanel"
+          }
+        ]
+      },
+      {
+        "objectName": "Transition"
+      }
+    ]
+  },
+  "objectsGroups": [
+    {
+      "name": "Dialoguables",
+      "objects": [
+        {
+          "name": "NPC"
+        },
+        {
+          "name": "Statue"
+        },
+        {
+          "name": "NPC2"
+        }
+      ]
+    },
+    {
+      "name": "BoiteDeDialogue",
+      "objects": [
+        {
+          "name": "DialogPanel"
+        },
+        {
+          "name": "DialogueBBText"
+        },
+        {
+          "name": "DialogueChoix"
+        },
+        {
+          "name": "DialogueNom"
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "name": "VitesseDialogues",
+      "type": "number",
+      "value": 100
+    },
+    {
+      "name": "MultiplicateurVitesseDialogues",
+      "type": "number",
+      "value": 20
+    },
+    {
+      "name": "Touches",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Valider",
+          "type": "string",
+          "value": "e"
+        }
+      ]
+    },
+    {
+      "name": "Volumes",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Musique",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "name": "Sons",
+          "type": "number",
+          "value": 10
+        }
+      ]
+    }
+  ],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/overworld"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/battle"
+    }
+  ],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/dialogues"
+    }
+  ],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/boitededialogue"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/topdownmovementanimator"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/twochoicesdialogboxes"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/spritemultitouchjoystick"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flash"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/health"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flashtransitionpainter"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/shakeobject"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/smoothcamera"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/autotyping"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/gamepads"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/ysort"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/dialogbox"
+    }
+  ],
+  "externalLayouts": []
+}
