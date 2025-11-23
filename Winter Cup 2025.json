@@ -429,6 +429,46 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/c090d31cafed0c8ef7bb4d5af75a7dbf7149bcc03a7d5d63ae997d59100e362e_Flat Bar White Border.png",
           "name": "Flat Bar White Border.png"
         }
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/DialoguesMap1.json",
+        "kind": "json",
+        "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialoguesMap1.json\"}",
+        "name": "DialoguesMap1",
+        "userAdded": false
+      },
+      {
+        "file": "assets/ACharDown1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ACharDown1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ACharDown2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ACharDown2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ACharDown3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ACharDown3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ACharDown4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ACharDown4.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -467,18 +507,209 @@
         "g": 0,
         "b": 0
       }
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 0,
+      "height": 32,
+      "leftMargin": 0,
+      "name": "DialogPanel",
+      "rightMargin": 0,
+      "texture": "Border.png",
+      "tiled": false,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 720,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "name": "DialogueBBText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]bold[/b] [i]italic[/i] [size=15]smaller[/size] [font=times]times[/font] font\n[spacing=12]spaced out[/spacing]\n[outline=yellow]outlined[/outline] [shadow=red]DropShadow[/shadow] ",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Arial",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "DialogueChoix",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "DialogueNom",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
+        "folderName": "UI",
+        "children": [
+          {
+            "objectName": "DialogueNom"
+          },
+          {
+            "objectName": "DialogueBBText"
+          },
+          {
+            "objectName": "DialogueChoix"
+          },
+          {
+            "objectName": "DialogPanel"
+          }
+        ]
+      },
+      {
         "objectName": "Transition"
       }
     ]
   },
-  "objectsGroups": [],
-  "variables": [],
+  "objectsGroups": [
+    {
+      "name": "Dialoguables",
+      "objects": [
+        {
+          "name": "NPC"
+        },
+        {
+          "name": "Statue"
+        },
+        {
+          "name": "NPC2"
+        }
+      ]
+    },
+    {
+      "name": "BoiteDeDialogue",
+      "objects": [
+        {
+          "name": "DialogPanel"
+        },
+        {
+          "name": "DialogueBBText"
+        },
+        {
+          "name": "DialogueChoix"
+        },
+        {
+          "name": "DialogueNom"
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "name": "VitesseDialogues",
+      "type": "number",
+      "value": 100
+    },
+    {
+      "name": "MultiplicateurVitesseDialogues",
+      "type": "number",
+      "value": 20
+    },
+    {
+      "name": "Touches",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Valider",
+          "type": "string",
+          "value": "e"
+        }
+      ]
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -489,8 +720,17 @@
       "referenceTo": "/layouts/battle"
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/dialogues"
+    }
+  ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/boitededialogue"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/topdownmovementanimator"
@@ -542,6 +782,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/ysort"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/dialogbox"
     }
   ],
   "externalLayouts": []
