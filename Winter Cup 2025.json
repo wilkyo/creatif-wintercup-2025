@@ -469,6 +469,18 @@
         "name": "assets\\ACharDown4.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/tilemap_packed3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tilemap_packed3.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Tilemaps/Pixel Art/f521b34c9bc3530f68e642eff768b852adad0728dd02cd51c31130f3277b0caf_tilemap_packed3.png",
+          "name": "tilemap_packed3.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -536,7 +548,7 @@
         "opacity": 255,
         "fontSize": 20,
         "visible": true,
-        "color": "0;0;0",
+        "color": "207;207;207",
         "fontFamily": "Arial",
         "align": "left",
         "verticalTextAlignment": "top"
@@ -553,7 +565,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Text",
+      "string": "Choix 1\nChoix 2",
       "font": "",
       "textAlignment": "left",
       "characterSize": 20,
@@ -567,16 +579,16 @@
         "isOutlineEnabled": false,
         "isShadowEnabled": false,
         "italic": false,
-        "outlineColor": "255;255;255",
+        "outlineColor": "150;150;150",
         "outlineThickness": 2,
         "shadowAngle": 90,
         "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
+        "shadowColor": "255;255;255",
         "shadowDistance": 4,
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Text",
+        "text": "Choix 1\nChoix 2",
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
@@ -706,6 +718,22 @@
           "name": "Valider",
           "type": "string",
           "value": "e"
+        }
+      ]
+    },
+    {
+      "name": "Volumes",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Musique",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "name": "Sons",
+          "type": "number",
+          "value": 10
         }
       ]
     }

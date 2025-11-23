@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.8195616997321862,
+    "zoomFactor": 1.2201643882660627,
     "windowMask": false,
     "selectedLayer": "Dialogue"
   },
@@ -55,6 +55,9 @@
         },
         {
           "name": "NPC2"
+        },
+        {
+          "name": "Pico8_City_8x8"
         }
       ]
     },
@@ -72,9 +75,6 @@
     {
       "name": "UI",
       "objects": [
-        {
-          "name": "DialogBox"
-        },
         {
           "name": "TargetRoundButton"
         }
@@ -700,21 +700,6 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "height": 16,
-      "layer": "",
-      "name": "E",
-      "persistentUuid": "f3745d28-ecfe-4aa1-ad5d-c3d0ed30886e",
-      "width": 16,
-      "x": 678,
-      "y": 185,
-      "zOrder": 600,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "layer": "Transition",
@@ -1317,22 +1302,6 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "Dialogue",
-      "name": "DialogBox",
-      "persistentUuid": "66681190-2811-4858-b43e-388b31583159",
-      "width": 0,
-      "x": 376,
-      "y": 40,
-      "zOrder": 510,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
       "layer": "",
       "name": "NPC2",
       "persistentUuid": "5e33f5b4-4daf-41dc-9802-ab87a339b6f7",
@@ -1446,19 +1415,6 @@
     }
   ],
   "objects": [
-    {
-      "assetStoreId": "",
-      "name": "DialogBox",
-      "type": "TwoChoicesDialogBoxes::TwoChoicesDialogBox",
-      "variant": "Black and white dialog",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "TextMessage": "Do you want to battle? I have the best creatures in town!",
-        "LabelButtonID1": "Non"
-      }
-    },
     {
       "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
@@ -2488,82 +2444,6 @@
       ]
     },
     {
-      "assetStoreId": "",
-      "name": "E",
-      "type": "BitmapText::BitmapTextObject",
-      "variables": [],
-      "effects": [
-        {
-          "effectType": "Outline",
-          "name": "Effect",
-          "doubleParameters": {
-            "padding": 2,
-            "thickness": 2
-          },
-          "stringParameters": {
-            "color": "0;0;0"
-          },
-          "booleanParameters": {}
-        }
-      ],
-      "behaviors": [
-        {
-          "name": "ShakeObject_PositionAngle",
-          "type": "ShakeObject::ShakeObject_PositionAngle"
-        }
-      ],
-      "content": {
-        "text": "E",
-        "opacity": 255,
-        "scale": 0.5,
-        "fontSize": 20,
-        "tint": "255;255;255",
-        "bitmapFontResourceName": "8BitOperatorPlus8Regular_Edited.fnt",
-        "textureAtlasResourceName": "8BitOperatorPlus8Regular_Edited.png",
-        "align": "left",
-        "wordWrap": true,
-        "verticalTextAlignment": "top"
-      }
-    },
-    {
-      "assetStoreId": "",
-      "name": "E2",
-      "type": "BitmapText::BitmapTextObject",
-      "variables": [],
-      "effects": [
-        {
-          "effectType": "Outline",
-          "name": "Effect",
-          "doubleParameters": {
-            "padding": 2,
-            "thickness": 2
-          },
-          "stringParameters": {
-            "color": "0;0;0"
-          },
-          "booleanParameters": {}
-        }
-      ],
-      "behaviors": [
-        {
-          "name": "ShakeObject_PositionAngle",
-          "type": "ShakeObject::ShakeObject_PositionAngle"
-        }
-      ],
-      "content": {
-        "text": "E",
-        "opacity": 255,
-        "scale": 0.5,
-        "fontSize": 20,
-        "tint": "255;255;255",
-        "bitmapFontResourceName": "8BitOperatorPlus8Regular_Edited.fnt",
-        "textureAtlasResourceName": "8BitOperatorPlus8Regular_Edited.png",
-        "align": "left",
-        "wordWrap": true,
-        "verticalTextAlignment": "top"
-      }
-    },
-    {
       "assetStoreId": "9be1b0d0d5a1afad4537db989ea5e3a4a4564dfd123630a9bf61330a73803c63",
       "name": "ShadedDarkJoystick",
       "type": "SpriteMultitouchJoystick::SpriteMultitouchJoystick",
@@ -2973,6 +2853,21 @@
         "lineHeight": 0,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "69f6952b8e969a9bc459502419f742d116b89f9452d62fa72a27295101d0281d",
+      "name": "Pico8_City_8x8",
+      "type": "TileMap::SimpleTileMap",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "atlasImage": "tilemap_packed3.png",
+        "rowCount": 15,
+        "columnCount": 24,
+        "tileSize": 8,
+        "tilesWithHitBox": ""
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2986,6 +2881,9 @@
           },
           {
             "objectName": "Tilemap_Ground"
+          },
+          {
+            "objectName": "Pico8_City_8x8"
           }
         ]
       },
@@ -3013,12 +2911,6 @@
         "folderName": "UI",
         "children": [
           {
-            "objectName": "E"
-          },
-          {
-            "objectName": "E2"
-          },
-          {
             "objectName": "ShadedDarkJoystick"
           },
           {
@@ -3034,9 +2926,6 @@
       },
       {
         "objectName": "NPC2"
-      },
-      {
-        "objectName": "DialogBox"
       },
       {
         "objectName": "Statue"
@@ -3086,30 +2975,6 @@
             "PhysicalObject",
             "=",
             "PhysicalObject.Y()"
-          ]
-        },
-        {
-          "type": {
-            "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
-          },
-          "parameters": [
-            "E",
-            "ShakeObject_PositionAngle",
-            "0.5",
-            "0",
-            "1",
-            "10",
-            "1",
-            "yes",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "DialogBox"
           ]
         }
       ]
@@ -3174,7 +3039,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Dialogue",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3231,23 +3095,6 @@
           "actions": [
             {
               "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "DialogBox",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "E"
-              ]
-            },
-            {
-              "type": {
                 "value": "ActivateBehavior"
               },
               "parameters": [
@@ -3275,122 +3122,6 @@
           "conditions": [
             {
               "type": {
-                "value": "Visible"
-              },
-              "parameters": [
-                "DialogBox"
-              ]
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "TwoChoicesDialogBoxes::TwoChoicesDialogBox::IsYesClicked"
-                  },
-                  "parameters": [
-                    "DialogBox",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "Transition",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
-                  },
-                  "parameters": [
-                    "Transition",
-                    "FlashTransitionPainter",
-                    "\"0;0;0\"",
-                    "1",
-                    "\"Circular\"",
-                    "\"Forward\"",
-                    "255",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "1.25"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PushScene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Battle\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "TwoChoicesDialogBoxes::TwoChoicesDialogBox::IsNoClicked"
-                  },
-                  "parameters": [
-                    "DialogBox",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "DialogBox"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "E",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ActivateBehavior"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "yes"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
                 "value": "SceneJustResumed"
               },
               "parameters": [
@@ -3405,23 +3136,6 @@
               },
               "parameters": [
                 "Transition"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "DialogBox"
-              ]
-            },
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "E",
-                ""
               ]
             },
             {
@@ -3661,17 +3375,6 @@
       ]
     },
     {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Dialogues gestion globale",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [],
-      "parameters": []
-    },
-    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
@@ -3683,7 +3386,37 @@
             "DEBUG",
             "Text",
             "=",
-            "GlobalVariableString(Touches)"
+            "DialogueTree::BranchTitle()"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DialogueTree::CurrentBranchTitle"
+          },
+          "parameters": [
+            "\"Statue.Jeu\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "DialogueTree::StopRunningDialogue"
+          },
+          "parameters": []
+        },
+        {
+          "type": {
+            "value": "PushScene"
+          },
+          "parameters": [
+            "",
+            "\"Battle\""
           ]
         }
       ]
@@ -3816,10 +3549,6 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "ShakeObject_PositionAngle",
-      "type": "ShakeObject::ShakeObject_PositionAngle"
     },
     {
       "name": "Text",

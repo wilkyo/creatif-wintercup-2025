@@ -2,7 +2,7 @@
 	{
 		"title": "Bobby",
 		"tags": "",
-		"body": "<< NameTag Bobby >>\nSalut, je m'appelle Bobby ! Comment ça va de ton côté ? Tu vas [b]bien[/b] ?\n\n[[ Bien sûr, mar gueule ! |Bobby.Yes]]\n[[ Pas vraiment |Bobby.No]]",
+		"body": "<< NameTag Bobby >>\nSalut, je m'appelle Bobby ! Comment ça va de ton côté ? Tu vas [b]bien[/b] ?\n\n[[ Bien sûr, ma gueule ! |Bobby.Yes]]\n[[ Pas vraiment |Bobby.No]]",
 		"position": {
 			"x": 557,
 			"y": 316
@@ -12,7 +12,7 @@
 	{
 		"title": "Bobby.Yes",
 		"tags": "",
-		"body": "Empty Text for yes",
+		"body": "<<set $accepteMissionBobby to true >> Empty Text for yes",
 		"position": {
 			"x": 556,
 			"y": 31
@@ -32,9 +32,29 @@
 	{
 		"title": "Statue",
 		"tags": "",
-		"body": "Hum, cette statue est étrange",
+		"body": "<<if $accepteMissionBobby == true>>\nAh, c'est donc cette statue !\nOn lance le jeu ?\n[[ Oui |Statue.Jeu]]\n[[ Non |Statut.PasJeu]]\n<<else>> \nHum, cette statue est étrange<<wait 1000>>.<<wait 200>>.<<wait 200>> .<<wait 200>>\n<<endif>>",
 		"position": {
-			"x": 170,
+			"x": -19,
+			"y": 584
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Statue.Jeu",
+		"tags": "",
+		"body": "Ok, c'est parti !",
+		"position": {
+			"x": -70,
+			"y": 269
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Statut.PasJeu",
+		"tags": "",
+		"body": "Tant pis pour toi",
+		"position": {
+			"x": 222,
 			"y": 298
 		},
 		"colorID": 0

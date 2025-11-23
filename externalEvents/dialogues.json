@@ -28,10 +28,26 @@
           "conditions": [
             {
               "type": {
-                "value": "DepartScene"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                ""
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneJustResumed"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
               ]
             }
           ],
@@ -54,6 +70,11 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -171,18 +192,6 @@
             },
             {
               "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "HoverSound.wav",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
               },
               "parameters": [
@@ -237,14 +246,6 @@
               "parameters": [
                 "",
                 "\"textScroll\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "E"
               ]
             }
           ]
@@ -307,18 +308,6 @@
             },
             {
               "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "Talk.wav",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "ResetTimer"
               },
               "parameters": [
@@ -334,15 +323,6 @@
                 "Dialoguables",
                 "talking",
                 "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "E",
                 ""
               ]
             }
@@ -446,7 +426,7 @@
                     "",
                     "Talk.wav",
                     "",
-                    "",
+                    "Volumes.Sons",
                     ""
                   ]
                 },
@@ -479,7 +459,7 @@
                   "parameters": [
                     "MultiplicateurVitesseDialogues",
                     "=",
-                    "5"
+                    "2"
                   ]
                 }
               ]
@@ -506,7 +486,7 @@
                   "parameters": [
                     "MultiplicateurVitesseDialogues",
                     "=",
-                    "2"
+                    "10"
                   ]
                 }
               ]
@@ -545,18 +525,6 @@
               },
               "parameters": [
                 "DialogueChoix"
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "Talk.wav",
-                "",
-                "",
-                ""
               ]
             }
           ]
@@ -599,18 +567,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "Talk.wav",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
                 {
                   "type": {
                     "value": "DialogueTree::SelectNextOption"
@@ -657,18 +613,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "Talk.wav",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "DialogueTree::ConfirmSelectOption"
                   },
                   "parameters": []
@@ -694,7 +638,7 @@
                     "",
                     "Talk.wav",
                     "",
-                    "",
+                    "Volumes.Sons",
                     ""
                   ]
                 },
