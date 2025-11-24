@@ -63,6 +63,49 @@
             },
             {
               "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Boite de dialogue\"",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneJustResumed"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
                 "value": "Cache"
               },
               "parameters": [
@@ -70,11 +113,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -146,7 +184,7 @@
                 "value": "Distance"
               },
               "parameters": [
-                "Player",
+                "Joueur",
                 "Dialoguables",
                 "20",
                 ""
@@ -181,24 +219,13 @@
             },
             {
               "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "Player",
+                "Joueur",
                 "Animation",
                 "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
-              },
-              "parameters": [
-                "Dialoguables",
-                "Animation",
-                "=",
-                "1"
+                "\"Talking\""
               ]
             }
           ]
@@ -225,7 +252,7 @@
                 "value": "ActivateBehavior"
               },
               "parameters": [
-                "Player",
+                "Joueur",
                 "TopDownMovement",
                 "no"
               ]
@@ -236,6 +263,18 @@
               },
               "parameters": [
                 "BoiteDeDialogue",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "Talk.wav",
+                "",
+                "Volumes.Sons",
                 ""
               ]
             },
@@ -293,7 +332,7 @@
                 "value": "ActivateBehavior"
               },
               "parameters": [
-                "Player",
+                "Joueur",
                 "TopDownMovement",
                 "yes"
               ]
@@ -459,7 +498,7 @@
                   "parameters": [
                     "MultiplicateurVitesseDialogues",
                     "=",
-                    "2"
+                    "5"
                   ]
                 }
               ]
@@ -486,7 +525,7 @@
                   "parameters": [
                     "MultiplicateurVitesseDialogues",
                     "=",
-                    "10"
+                    "20"
                   ]
                 }
               ]
@@ -651,6 +690,127 @@
                     "Text",
                     "=",
                     "DialogueTree::VerticalOptionsList(\"> \")"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::IsCommandCalled"
+              },
+              "parameters": [
+                "\"nom\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "Attack.wav",
+                "",
+                "Volumes.Sons",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "DialogueTree::CommandParameter(0)",
+                    "=",
+                    "\"\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "DialoguePanelNom"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "DialogueNom"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "DialogueTree::CommandParameter(0)",
+                    "=",
+                    "\"\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "DialogueNom",
+                    "Text",
+                    "=",
+                    "DialogueTree::CommandParameter(0)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "DialoguePanelNom",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "DialogueNom",
+                    ""
                   ]
                 }
               ]
