@@ -1447,6 +1447,17 @@
           "value": 10
         }
       ]
+    },
+    {
+      "name": "Histoire",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Intro",
+          "type": "number",
+          "value": 0
+        }
+      ]
     }
   ],
   "layouts": [
