@@ -2,17 +2,17 @@
 	{
 		"title": "Bobby",
 		"tags": "",
-		"body": "<< NameTag Bobby >>\nSalut, je m'appelle Bobby ! Comment ça va de ton côté ? Tu vas [b]bien[/b] ?\n\n[[ Bien sûr, ma gueule ! |Bobby.Yes]]\n[[ Pas vraiment |Bobby.No]]",
+		"body": "<< nom Bobby >>\nSalut, je m'appelle Bobby ! Comment ça va de ton côté ? Tu vas [b]bien[/b] ?\nTu veux voir un secret ?\n<<  nom >>\nCela demande reflexion...\n\n[[ Bien sûr, ma gueule ! |Bobby.Yes]]\n[[ Pas vraiment |Bobby.No]]",
 		"position": {
 			"x": 557,
-			"y": 316
+			"y": 315
 		},
 		"colorID": 0
 	},
 	{
 		"title": "Bobby.Yes",
 		"tags": "",
-		"body": "<<set $accepteMissionBobby to true >> Empty Text for yes",
+		"body": "<<set $accepteMissionBobby to true >>\n<< nom Bobby >>\nOk, va voir la statue",
 		"position": {
 			"x": 556,
 			"y": 31
@@ -22,17 +22,17 @@
 	{
 		"title": "Bobby.No",
 		"tags": "",
-		"body": "Empty Text for no",
+		"body": "<< nom Bobby >>\nOk, comme tu veux",
 		"position": {
 			"x": 777,
-			"y": 32
+			"y": 31
 		},
 		"colorID": 0
 	},
 	{
 		"title": "Statue",
 		"tags": "",
-		"body": "<<if $accepteMissionBobby == true>>\nAh, c'est donc cette statue !\nOn lance le jeu ?\n[[ Oui |Statue.Jeu]]\n[[ Non |Statut.PasJeu]]\n<<else>> \nHum, cette statue est étrange<<wait 1000>>.<<wait 200>>.<<wait 200>> .<<wait 200>>\n<<endif>>",
+		"body": "<< nom >>\n<<if $accepteMissionBobby == true>>\nAh, c'est donc cette statue !\nOn lance le jeu ?\n[[ Oui |Statue.Jeu]]\n[[ Non |Statut.PasJeu]]\n<<else>>\nHum, cette statue est étrange<<wait 1000>>.<<wait 200>>.<<wait 200>> .<<wait 200>>\n<<endif>>",
 		"position": {
 			"x": -19,
 			"y": 584
@@ -62,7 +62,7 @@
 	{
 		"title": "Intro",
 		"tags": "",
-		"body": "Tu veux voir l'intro ?\n[[ Bien sûr |Intro.show]]\n[[ Non merci |Intro.hide]]",
+		"body": "<< nom Inconnu >>\nTu veux voir l'intro ?\n[[ Bien sûr |Intro.show]]\n[[ Non merci |Intro.hide]]",
 		"position": {
 			"x": 1001,
 			"y": 624
@@ -72,17 +72,17 @@
 	{
 		"title": "Intro.show",
 		"tags": "",
-		"body": "Ok, écoute moi bien<<wait 200>>.<<wait 200>>.<<wait 200>>.",
+		"body": "<< nom Inconnu >>\nOk, écoute moi bien<<wait 200>>.<<wait 200>>.<<wait 200>>.",
 		"position": {
-			"x": 1060,
-			"y": 302
+			"x": 1059,
+			"y": 301
 		},
 		"colorID": 0
 	},
 	{
 		"title": "Intro.hide",
 		"tags": "",
-		"body": "Tant pis pour toi",
+		"body": "<< nom Inconnu >>\nTant pis pour toi",
 		"position": {
 			"x": 1379,
 			"y": 363

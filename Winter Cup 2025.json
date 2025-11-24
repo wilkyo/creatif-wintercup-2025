@@ -486,7 +486,7 @@
         "disablePreload": false,
         "file": "assets/DialoguesIntro.json",
         "kind": "json",
-        "metadata": "{\"extension\":\".json\"}",
+        "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialoguesIntro.json\"}",
         "name": "DialoguesIntro",
         "userAdded": false
       }
@@ -607,7 +607,7 @@
     },
     {
       "assetStoreId": "",
-      "bold": false,
+      "bold": true,
       "italic": false,
       "name": "DialogueNom",
       "smoothed": true,
@@ -616,17 +616,17 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "",
+      "string": "Nom",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 20,
+      "characterSize": 26,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 73,
+        "g": 206,
+        "r": 230
       },
       "content": {
-        "bold": false,
+        "bold": true,
         "isOutlineEnabled": false,
         "isShadowEnabled": false,
         "italic": false,
@@ -639,13 +639,13 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "",
+        "text": "Nom",
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 20,
+        "characterSize": 26,
         "lineHeight": 0,
-        "color": "0;0;0"
+        "color": "230;206;73"
       }
     },
     {
@@ -1325,6 +1325,22 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 0,
+      "height": 32,
+      "leftMargin": 0,
+      "name": "DialoguePanelNom",
+      "rightMargin": 0,
+      "texture": "Border.png",
+      "tiled": false,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -1341,6 +1357,9 @@
           },
           {
             "objectName": "DialogueChoix"
+          },
+          {
+            "objectName": "DialoguePanelNom"
           },
           {
             "objectName": "DialogPanel"
@@ -1384,6 +1403,9 @@
         },
         {
           "name": "DialogueNom"
+        },
+        {
+          "name": "DialoguePanelNom"
         }
       ]
     }
@@ -1509,5 +1531,10 @@
       "referenceTo": "/eventsFunctionsExtensions/dialogbox"
     }
   ],
-  "externalLayouts": []
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/boite-de-dialogue"
+    }
+  ]
 }
