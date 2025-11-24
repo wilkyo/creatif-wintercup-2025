@@ -727,7 +727,7 @@
               },
               "parameters": [
                 "",
-                "HoverSound.wav",
+                "Attack.wav",
                 "",
                 "Volumes.Sons",
                 ""
@@ -740,12 +740,12 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                    "value": "BuiltinCommonInstructions::CompareStrings"
                   },
                   "parameters": [
-                    "DialogueTree::CommandParametersCount()",
+                    "DialogueTree::CommandParameter(0)",
                     "=",
-                    "0"
+                    "\"\""
                   ]
                 }
               ],
@@ -774,12 +774,12 @@
                 {
                   "type": {
                     "inverted": true,
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                    "value": "BuiltinCommonInstructions::CompareStrings"
                   },
                   "parameters": [
-                    "DialogueTree::CommandParametersCount()",
+                    "DialogueTree::CommandParameter(0)",
                     "=",
-                    "0"
+                    "\"\""
                   ]
                 }
               ],

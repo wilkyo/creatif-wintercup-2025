@@ -1329,7 +1329,7 @@
     {
       "assetStoreId": "",
       "bottomMargin": 0,
-      "height": 32,
+      "height": 80,
       "leftMargin": 0,
       "name": "DialoguePanelNom",
       "rightMargin": 0,
@@ -1337,7 +1337,7 @@
       "tiled": false,
       "topMargin": 0,
       "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
+      "width": 400,
       "variables": [],
       "effects": [],
       "behaviors": []
