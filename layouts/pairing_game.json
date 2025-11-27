@@ -13,14 +13,12 @@
     "gridType": "rectangular",
     "gridWidth": 16,
     "gridHeight": 16,
-    "gridDepth": 32,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
-    "gridOffsetZ": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.8392311805257522,
+    "zoomFactor": 0.4775618568621431,
     "windowMask": false,
     "selectedLayer": ""
   },
@@ -3207,7 +3205,6 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
-      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 0.1,
@@ -3236,7 +3233,6 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
-      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 0.1,
@@ -3254,7 +3250,6 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
-      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 0.1,
@@ -3287,6 +3282,10 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
+      "name": "FlashTransitionPainter",
+      "type": "FlashTransitionPainter::FlashTransitionPainter"
+    },
+    {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
     },
@@ -3315,8 +3314,26 @@
       "type": "ThreeDFlip::ThreeDFlip"
     },
     {
+      "name": "TopDownMovement",
+      "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
+      "name": "TopDownMovementAnimator",
+      "type": "TopDownMovementAnimator::TopDownMovementAnimator",
+      "NewAnimationDirection": 0,
+      "AnimationFrame": 0
+    },
+    {
+      "name": "TopDownMultitouchMapper",
+      "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper"
+    },
+    {
       "name": "Tween",
       "type": "Tween::TweenBehavior"
+    },
+    {
+      "name": "YSort",
+      "type": "YSort::YSort"
     }
   ]
 }
