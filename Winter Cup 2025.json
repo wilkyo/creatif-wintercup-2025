@@ -489,6 +489,328 @@
         "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialoguesIntro.json\"}",
         "name": "DialoguesIntro",
         "userAdded": false
+      },
+      {
+        "file": "assets/position_placeholder-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images/position_placeholder-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/card_back.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images/card_back.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/board.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images/board.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/LuckiestGuy.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "fonts/LuckiestGuy.ttf",
+        "userAdded": true
+      },
+      {
+        "file": "assets/star.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images/star.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/screen_fade-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images/screen_fade-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/cockatrice_playcard.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "sounds/cockatrice_playcard.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/cuckoo.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "sounds/cuckoo.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Rise.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "sounds/Rise.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/pop.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "sounds/pop.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/card_back2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\card_back.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\Button_Idle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Winter Background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Winter Background.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Worlds/Winter/Background/7f5947651f3460ece61f069c3bbde41e393a3cd509e1651d585f879a251488b2_Winter Background.png",
+          "name": "Winter Background.png"
+        }
+      },
+      {
+        "file": "assets/Campfire_No Shadow.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Campfire_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Non Combat Actions/e732df12dd7fbff850de517b7dfe4992008c68d9f6fa44812cb94a546381631f_Campfire_No Shadow.png",
+          "name": "Campfire_No Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Chip Lightblue_Flat.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Chip Lightblue_Flat.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/mehrasaur/Chip/Large/e484997e806fc57049fa96227b33c29d2fa5559e80505e8b9092263fa975b2d8_Chip Lightblue_Flat.png",
+          "name": "Chip Lightblue_Flat.png"
+        }
+      },
+      {
+        "file": "assets/Chip Lightblue_Top.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Chip Lightblue_Top.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/mehrasaur/Chip/Large/83f27db546101695612bbbead1af1ede37ee5d538712f524edec1cd30a766743_Chip Lightblue_Top.png",
+          "name": "Chip Lightblue_Top.png"
+        }
+      },
+      {
+        "file": "assets/Front2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Front2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Front3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Front3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Carrot_No Shadow.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Carrot_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Food/99550bf8c86090f43f93fa039816457cfdfe92ab9e54c842aefa4104277d370f_Carrot_No Shadow.png",
+          "name": "Carrot_No Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Herb1_No Shadow.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Herb1_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/General Items/8612e8cabc0c3313e8b4234d36357a66b35a5d92c00b99f9826793948ab1982e_Herb1_No Shadow.png",
+          "name": "Herb1_No Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Herb2_No Shadow.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Herb2_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/General Items/0b51764cdca5df8ebb6e557fb239e2f2bbb83d8b2682fe36ac27a8dd0e617ef2_Herb2_No Shadow.png",
+          "name": "Herb2_No Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Front9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Front9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Moon_No Shadow.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Moon_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/New Icons/401599df173dd7aa7806479e28b0b326f13c8e62c6cbcd197dcb0ae13ce8e344_Moon_No Shadow.png",
+          "name": "Moon_No Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Green Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/bff6adc488c7379b21ceba34e9104e861791b2fbb54b4aae167fe90115b92fa3_Green Button_Hovered.png",
+          "name": "Green Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Green Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Button_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/f46d20e99495562ee66ee2f26defdb0788588184bd30b1f7b951ae728ce63d2a_Green Button_Idle.png",
+          "name": "Green Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Green Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/ecb33703984d3107196efce7335025d7ec104351fe8cdeb581c73fe0b8038c34_Green Button_Pressed.png",
+          "name": "Green Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/Red Button With Shadow_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Red Button With Shadow_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/71ee2c8d8b72808c7f084252cd36c80c44bc07655a3729e5fe7459c634007e8a_Red Button With Shadow_Hovered.png",
+          "name": "Red Button With Shadow_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Red Button With Shadow_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Red Button With Shadow_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/6c6bf020fb86d99a9ecc993f8b90064d73d757bc2408050cf353c84bc36f6be2_Red Button With Shadow_Idle.png",
+          "name": "Red Button With Shadow_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Red Button With Shadow_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Red Button With Shadow_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/b9ce526450d48adedb6875043465ae168fff1f6b01dd1ff7f43b7e7c1568cc21_Red Button With Shadow_Pressed.png",
+          "name": "Red Button With Shadow_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/CantoraOne-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "CantoraOne-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+          "name": "CantoraOne-Regular.ttf"
+        }
       }
     ],
     "resourceFolders": []
@@ -1461,6 +1783,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/intro"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/pairing_game"
     }
   ],
   "externalEvents": [
@@ -1529,6 +1855,22 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/dialogbox"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/card"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/objectstack"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/buttonstates"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/threedflip"
     }
   ],
   "externalLayouts": [

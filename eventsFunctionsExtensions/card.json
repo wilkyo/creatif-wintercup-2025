@@ -1,0 +1,121 @@
+{
+  "author": "",
+  "category": "",
+  "extensionNamespace": "",
+  "fullName": "",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "",
+  "name": "Card",
+  "previewIconUrl": "",
+  "shortDescription": "",
+  "version": "",
+  "description": "",
+  "tags": [],
+  "authorIds": [],
+  "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [],
+  "eventsFunctions": [
+    {
+      "fullName": "Explode card",
+      "functionType": "Action",
+      "name": "ExplodeCard",
+      "sentence": "Explode _PARAM1_ into _PARAM3_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Card",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "StarParticle",
+                "Card.X()",
+                "Card.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "StarParticle",
+                "=",
+                "100"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "sounds/cuckoo.wav",
+                "no",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+              },
+              "parameters": [
+                "Card",
+                "Tween",
+                "\"VanishWidth\"",
+                "0",
+                "\"easeOutExpo\"",
+                "1",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectHeightTween2"
+              },
+              "parameters": [
+                "Card",
+                "Tween",
+                "\"VanishHeight\"",
+                "0",
+                "\"easeOutExpo\"",
+                "1",
+                "yes"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "Card",
+          "name": "Card",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "Tween",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "Star particle",
+          "name": "StarParticle",
+          "supplementaryInformation": "ParticleSystem::ParticleEmitter",
+          "type": "objectList"
+        }
+      ],
+      "objectGroups": []
+    }
+  ],
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
+}
