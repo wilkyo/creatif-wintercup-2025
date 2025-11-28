@@ -13,8 +13,10 @@
     "gridType": "rectangular",
     "gridWidth": 16,
     "gridHeight": 16,
+    "gridDepth": 32,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
+    "gridOffsetZ": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
@@ -2827,7 +2829,7 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "1.5"
+                    "1.0"
                   ]
                 },
                 {
@@ -3138,6 +3140,16 @@
                 "",
                 "\"UI\""
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "MiniJeux.Memory",
+                "+",
+                "1"
+              ]
             }
           ]
         },
@@ -3195,6 +3207,59 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "LeaveButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "sounds/pop.ogg",
+                "no",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PopScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
@@ -3205,6 +3270,7 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 0.1,
@@ -3233,6 +3299,7 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 0.1,
@@ -3250,6 +3317,7 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 0.1,

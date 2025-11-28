@@ -1,7 +1,7 @@
 {
   "firstLayout": "Intro",
   "gdVersion": {
-    "build": 245,
+    "build": 247,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -89,6 +89,7 @@
     ],
     "playableDevices": [
       "keyboard",
+      "mobile",
       "mobile"
     ],
     "extensionProperties": [],
@@ -363,18 +364,6 @@
         "userAdded": true
       },
       {
-        "file": "assets/Target round button.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Target round button.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/On-Screen Controls/Sprites/Shaded Dark/abb64f9b109c792191a2f50aee5fb4703bdf2392d821e771303ee07dfeb85166_Target round button.png",
-          "name": "Target round button.png"
-        }
-      },
-      {
         "file": "assets/TilesetFloor.png",
         "kind": "image",
         "metadata": "",
@@ -389,46 +378,6 @@
         "name": "TilesetWater.png",
         "smoothed": false,
         "userAdded": false
-      },
-      {
-        "file": "assets/Line dark joystick border.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Line dark joystick border.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Line dark joystick thumb.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Line dark joystick thumb.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Flat Bar Red Fill Bar.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Flat Bar Red Fill Bar.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/212e9679eaae4753beaa5d595d7c80ea66df3235485c6a3963e88b0d936a1798_Flat Bar Red Fill Bar.png",
-          "name": "Flat Bar Red Fill Bar.png"
-        }
-      },
-      {
-        "file": "assets/Flat Bar White Border.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Flat Bar White Border.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/c090d31cafed0c8ef7bb4d5af75a7dbf7149bcc03a7d5d63ae997d59100e362e_Flat Bar White Border.png",
-          "name": "Flat Bar White Border.png"
-        }
       },
       {
         "disablePreload": false,
@@ -812,8 +761,7 @@
           "name": "CantoraOne-Regular.ttf"
         }
       }
-    ],
-    "resourceFolders": []
+    ]
   },
   "objects": [
     {
@@ -1708,6 +1656,9 @@
         },
         {
           "name": "Lanceur_d_intro"
+        },
+        {
+          "name": "HommePortail"
         }
       ]
     },
@@ -1778,18 +1729,35 @@
           "name": "Intro",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "Portail",
+          "type": "number",
+          "value": 0
         }
       ]
+    },
+    {
+      "name": "MiniJeux",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Memory",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "name": "JeuEnCours",
+      "type": "string",
+      "value": ""
     }
   ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/overworld"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/battle"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -1809,31 +1777,11 @@
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/boitededialogue"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/topdownmovementanimator"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/twochoicesdialogboxes"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/spritemultitouchjoystick"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/flash"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/health"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -1857,15 +1805,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/gamepads"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/ysort"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/dialogbox"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
