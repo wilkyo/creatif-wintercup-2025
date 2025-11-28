@@ -88,5 +88,55 @@
 			"y": 363
 		},
 		"colorID": 0
+	},
+	{
+		"title": "HommePortail",
+		"tags": "",
+		"body": "<< name >>\nEtrange, il ne répond pas\n[[ Le toucher |HommePortail.Toucher]]\n[[ Le laisser |HommePortail.Laisser]]",
+		"position": {
+			"x": 55,
+			"y": 1006
+		},
+		"colorID": 0
+	},
+	{
+		"title": "HommePortail.Toucher",
+		"tags": "",
+		"body": "Que se passe-t-il ?",
+		"position": {
+			"x": 445,
+			"y": 773
+		},
+		"colorID": 0
+	},
+	{
+		"title": "HommePortail.Laisser",
+		"tags": "",
+		"body": "Mieux vaut le laisser tranquille...",
+		"position": {
+			"x": 429,
+			"y": 1090
+		},
+		"colorID": 0
+	},
+	{
+		"title": "HommePortail.ApresJeu",
+		"tags": "",
+		"body": "Tu m'as sauvé !\nMais genre vraiment !\n\n[[ Suite |HommePortail.ApresJeu2]] ]]",
+		"position": {
+			"x": -27,
+			"y": 1290
+		},
+		"colorID": 0
+	},
+	{
+		"title": "HommePortail.ApresJeu2",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 303,
+			"y": 1422
+		},
+		"colorID": 0
 	}
 ]

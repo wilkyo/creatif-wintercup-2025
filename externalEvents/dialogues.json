@@ -153,30 +153,11 @@
             },
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Or"
+                "value": "KeyFromTextReleased"
               },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "KeyFromTextReleased"
-                  },
-                  "parameters": [
-                    "Keyboard::KeyFromTextReleased(GlobalVariableString(TouchesValider))",
-                    "GlobalVariableString(Touches.Valider)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SpriteMultitouchJoystick::IsButtonPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "\"A\"",
-                    ""
-                  ]
-                }
+              "parameters": [
+                "Keyboard::KeyFromTextReleased(GlobalVariableString(TouchesValider))",
+                "GlobalVariableString(Touches.Valider)"
               ]
             },
             {
