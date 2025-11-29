@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.819561699732191,
+    "zoomFactor": 1.1046105142836944,
     "windowMask": false,
     "selectedLayer": "Dialogue"
   },
@@ -1617,7 +1617,7 @@
       "width": 0,
       "x": 656,
       "y": 415,
-      "zOrder": 44,
+      "zOrder": 29,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1645,7 +1645,7 @@
       "name": "Tree2",
       "persistentUuid": "6dd657e8-84a0-4030-9269-4c8260ee58ac",
       "width": 0,
-      "x": 672,
+      "x": 680,
       "y": 415,
       "zOrder": 30,
       "numberProperties": [],
@@ -2540,6 +2540,35 @@
             "Collisionables.Y()"
           ]
         }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "JeuEnCours",
+                "=",
+                "\"0\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "JeuEnCours",
+                "=",
+                "\"\""
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -2681,6 +2710,17 @@
                   "parameters": [
                     "\"HommePortail.ApresJeu\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "HommePortail",
+                    "dialogBranch",
+                    "=",
+                    "\"HommePortail.ApresJeu\""
+                  ]
                 }
               ]
             }
@@ -2723,11 +2763,23 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Portail (Memory)"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "DialogueTree::WasBranchVisited"
+                "value": "DialogueTree::CurrentBranchTitle"
               },
               "parameters": [
                 "\"HommePortail.Toucher\""
@@ -2735,19 +2787,17 @@
             },
             {
               "type": {
-                "inverted": true,
                 "value": "BooleanObjectVariable"
               },
               "parameters": [
                 "HommePortail",
                 "talking",
-                "=",
+                "True",
                 ""
               ]
             },
             {
               "type": {
-                "inverted": true,
                 "value": "StringVariable"
               },
               "parameters": [
@@ -2764,6 +2814,24 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "JeuEnCours",
+                "=",
+                "\"Memory\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
             {
               "type": {
                 "value": "Montre"
@@ -2794,16 +2862,6 @@
               },
               "parameters": [
                 "1.25"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "JeuEnCours",
-                "=",
-                "\"Memory\""
               ]
             },
             {
@@ -2842,7 +2900,7 @@
               },
               "parameters": [
                 "HommePortail",
-                "300",
+                "250",
                 "6",
                 "1"
               ]
@@ -2852,7 +2910,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "3"
+                "4"
               ]
             },
             {
@@ -2874,6 +2932,18 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Suite"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -3004,7 +3074,7 @@
             "DEBUG",
             "Text",
             "=",
-            "ToString(HommePortail.talking)"
+            "JeuEnCours"
           ]
         }
       ]

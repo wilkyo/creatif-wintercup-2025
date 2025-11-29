@@ -122,7 +122,7 @@
 	{
 		"title": "HommePortail.ApresJeu",
 		"tags": "",
-		"body": "Tu m'as sauvé !\nMais genre vraiment !\n\n[[ Suite |HommePortail.ApresJeu2]] ]]",
+		"body": "Tu m'as sauvé !\nMais genre vraiment !\n\n[[ Suite |HommePortail.ApresJeu2]]",
 		"position": {
 			"x": -27,
 			"y": 1290
@@ -132,7 +132,7 @@
 	{
 		"title": "HommePortail.ApresJeu2",
 		"tags": "",
-		"body": "Empty Text",
+		"body": "Au revoir",
 		"position": {
 			"x": 303,
 			"y": 1422

@@ -2770,7 +2770,7 @@
                 "",
                 "sounds/cockatrice_playcard.mp3",
                 "no",
-                "",
+                "Options.Volumes.Sons",
                 ""
               ]
             }
@@ -3103,7 +3103,7 @@
                 "",
                 "sounds/Rise.ogg",
                 "no",
-                "",
+                "Options.Volumes.Sons",
                 ""
               ]
             },
@@ -3184,7 +3184,7 @@
                 "",
                 "sounds/pop.ogg",
                 "no",
-                "",
+                "Options.Volumes.Sons",
                 ""
               ]
             },
@@ -3239,7 +3239,7 @@
                 "",
                 "sounds/pop.ogg",
                 "no",
-                "",
+                "Options.Volumes.Sons",
                 ""
               ]
             },
