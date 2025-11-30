@@ -173,6 +173,16 @@
             },
             {
               "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "EtatJeu",
+                "!=",
+                "\"LancerJeu\""
+              ]
+            },
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -435,16 +445,6 @@
                     "value": "DialogueTree::HasClippedTextScrollingCompleted"
                   },
                   "parameters": []
-                },
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "EtatJeu",
-                    "!=",
-                    "\"LancerJeu\""
-                  ]
                 }
               ],
               "actions": [
