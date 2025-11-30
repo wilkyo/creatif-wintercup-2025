@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 1.1046105142836944,
+    "zoomFactor": 1.0000000000000147,
     "windowMask": false,
     "selectedLayer": "Dialogue"
   },
@@ -1313,7 +1313,7 @@
       "name": "Tree2",
       "persistentUuid": "84d1bdaf-868f-4c16-b6c5-c1a99fb0a4cc",
       "width": 0,
-      "x": 632,
+      "x": 680,
       "y": 415,
       "zOrder": 30,
       "numberProperties": [],
@@ -1617,7 +1617,7 @@
       "width": 0,
       "x": 656,
       "y": 415,
-      "zOrder": 29,
+      "zOrder": 500,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1645,7 +1645,7 @@
       "name": "Tree2",
       "persistentUuid": "6dd657e8-84a0-4030-9269-4c8260ee58ac",
       "width": 0,
-      "x": 680,
+      "x": 632,
       "y": 415,
       "zOrder": 30,
       "numberProperties": [],
@@ -2835,6 +2835,17 @@
                     },
                     {
                       "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "HommePortail",
+                        "talking",
+                        "True",
+                        "\"HommePortail.ApresJeu\""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "SetStringObjectVariable"
                       },
                       "parameters": [
@@ -2915,8 +2926,8 @@
               },
               "parameters": [
                 "Histoire.Portail",
-                "=",
-                "0"
+                "<",
+                "2"
               ]
             }
           ],
@@ -2927,7 +2938,17 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "DialogueTree::CurrentBranchTitle"
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Histoire.Portail",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "DialogueTree::WasBranchVisited"
                   },
                   "parameters": [
                     "\"HommePortail.Toucher\""
@@ -2940,7 +2961,7 @@
                   "parameters": [
                     "HommePortail",
                     "talking",
-                    "True",
+                    "False",
                     ""
                   ]
                 },
@@ -2949,9 +2970,9 @@
                     "value": "StringVariable"
                   },
                   "parameters": [
-                    "JeuEnCours",
+                    "EtatJeu",
                     "=",
-                    "\"\""
+                    "\"NA\""
                   ]
                 },
                 {
@@ -2980,6 +3001,16 @@
                     "EtatJeu",
                     "=",
                     "\"LancerJeu\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Histoire.Portail",
+                    "=",
+                    "1"
                   ]
                 }
               ]
@@ -3037,7 +3068,7 @@
                   "parameters": [
                     "Histoire.Portail",
                     "=",
-                    "1"
+                    "2"
                   ]
                 }
               ]

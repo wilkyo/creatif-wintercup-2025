@@ -441,9 +441,9 @@
                     "value": "StringVariable"
                   },
                   "parameters": [
-                    "JeuEnCours",
-                    "=",
-                    "\"\""
+                    "EtatJeu",
+                    "!=",
+                    "\"LancerJeu\""
                   ]
                 }
               ],

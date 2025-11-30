@@ -3150,16 +3150,6 @@
                 "+",
                 "1"
               ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "EtatJeu",
-                "=",
-                "\"JeuTermine\""
-              ]
             }
           ]
         },
@@ -3243,6 +3233,16 @@
           "actions": [
             {
               "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "EtatJeu",
+                "=",
+                "\"JeuTermine\""
+              ]
+            },
+            {
+              "type": {
                 "value": "PlaySound"
               },
               "parameters": [
@@ -3305,16 +3305,6 @@
             "MiniJeux.Memory",
             "+",
             "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetStringVariable"
-          },
-          "parameters": [
-            "EtatJeu",
-            "=",
-            "\"JeuTermine\""
           ]
         }
       ]
