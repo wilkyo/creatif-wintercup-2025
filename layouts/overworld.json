@@ -2631,10 +2631,113 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Reprise",
+      "name": "Gestion minijeux",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "JeuEnCours",
+                "!=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "EtatJeu",
+                "=",
+                "\"LancerJeu\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "DialogueTree::IsDialogueRunning"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Joueur",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "EtatJeu",
+                "=",
+                "\"JeuEnCours\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Transition",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+              },
+              "parameters": [
+                "Transition",
+                "FlashTransitionPainter",
+                "\"0;0;0\"",
+                "1",
+                "\"Circular\"",
+                "\"Forward\"",
+                "255",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "PushScene"
+              },
+              "parameters": [
+                "",
+                "JeuEnCours"
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2676,19 +2779,9 @@
                     "value": "StringVariable"
                   },
                   "parameters": [
-                    "JeuEnCours",
+                    "EtatJeu",
                     "=",
-                    "\"Memory\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "MiniJeux.Memory",
-                    ">",
-                    "0"
+                    "\"JeuTermine\""
                   ]
                 }
               ],
@@ -2698,28 +2791,67 @@
                     "value": "SetStringVariable"
                   },
                   "parameters": [
-                    "JeuEnCours",
+                    "EtatJeu",
                     "=",
-                    "\"\""
+                    "\"NA\""
                   ]
-                },
+                }
+              ],
+              "events": [
                 {
-                  "type": {
-                    "value": "DialogueTree::StartDialogueFromBranch"
-                  },
-                  "parameters": [
-                    "\"HommePortail.ApresJeu\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringObjectVariable"
-                  },
-                  "parameters": [
-                    "HommePortail",
-                    "dialogBranch",
-                    "=",
-                    "\"HommePortail.ApresJeu\""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "JeuEnCours",
+                        "=",
+                        "\"Pairing_Game\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "MiniJeux.Memory",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "JeuEnCours",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringObjectVariable"
+                      },
+                      "parameters": [
+                        "HommePortail",
+                        "dialogBranch",
+                        "=",
+                        "\"HommePortail.ApresJeu\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::StartDialogueFromBranch"
+                      },
+                      "parameters": [
+                        "\"HommePortail.ApresJeu\""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -2779,156 +2911,135 @@
           "conditions": [
             {
               "type": {
-                "value": "DialogueTree::CurrentBranchTitle"
-              },
-              "parameters": [
-                "\"HommePortail.Toucher\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "HommePortail",
-                "talking",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "StringVariable"
-              },
-              "parameters": [
-                "JeuEnCours",
-                "=",
-                "\"\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "JeuEnCours",
-                "=",
-                "\"Memory\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "Transition",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
-              },
-              "parameters": [
-                "Transition",
-                "FlashTransitionPainter",
-                "\"0;0;0\"",
-                "1",
-                "\"Circular\"",
-                "\"Forward\"",
-                "255",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1.25"
-              ]
-            },
-            {
-              "type": {
-                "value": "PushScene"
-              },
-              "parameters": [
-                "",
-                "\"Pairing_Game\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DialogueTree::WasBranchVisited"
-              },
-              "parameters": [
-                "\"HommePortail.ApresJeu2\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "HommePortail",
-                "250",
-                "6",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "4"
-              ]
-            },
-            {
-              "type": {
-                "value": "Arreter"
-              },
-              "parameters": [
-                "HommePortail"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
+                "value": "NumberVariable"
               },
               "parameters": [
                 "Histoire.Portail",
                 "=",
-                "1"
+                "0"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DialogueTree::CurrentBranchTitle"
+                  },
+                  "parameters": [
+                    "\"HommePortail.Toucher\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "HommePortail",
+                    "talking",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "JeuEnCours",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "JeuEnCours",
+                    "=",
+                    "\"Pairing_Game\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "EtatJeu",
+                    "=",
+                    "\"LancerJeu\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DialogueTree::WasBranchVisited"
+                  },
+                  "parameters": [
+                    "\"HommePortail.ApresJeu2\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "HommePortail",
+                    "250",
+                    "6",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Arreter"
+                  },
+                  "parameters": [
+                    "HommePortail"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Histoire.Portail",
+                    "=",
+                    "1"
+                  ]
+                }
               ]
             }
           ]
@@ -3074,7 +3185,7 @@
             "DEBUG",
             "Text",
             "=",
-            "JeuEnCours"
+            "EtatJeu"
           ]
         }
       ]

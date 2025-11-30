@@ -1695,6 +1695,11 @@
       "value": ""
     },
     {
+      "name": "EtatJeu",
+      "type": "string",
+      "value": "NA"
+    },
+    {
       "name": "Options",
       "type": "structure",
       "children": [

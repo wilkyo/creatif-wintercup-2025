@@ -3150,6 +3150,16 @@
                 "+",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "EtatJeu",
+                "=",
+                "\"JeuTermine\""
+              ]
             }
           ]
         },
@@ -3263,6 +3273,51 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyFromTextReleased"
+          },
+          "parameters": [
+            "",
+            "\"LControl\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"UI\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "MiniJeux.Memory",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "EtatJeu",
+            "=",
+            "\"JeuTermine\""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
