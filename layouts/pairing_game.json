@@ -2324,7 +2324,7 @@
       "assetStoreId": "",
       "name": "NewGameButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Light Green Glossy Button",
+      "variant": "Green Button",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -2487,7 +2487,7 @@
       "assetStoreId": "5faf2b0415c271fa6e747283ed36297a95f04d2b6c477a7b011775fa6fb444ee",
       "name": "LeaveButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Light Green Glossy Button",
+      "variant": "Green Button",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -3284,6 +3284,16 @@
           "parameters": [
             "",
             "\"LControl\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "DEBUG",
+            "True",
+            ""
           ]
         }
       ],
