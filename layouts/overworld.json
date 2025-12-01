@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.819561699732191,
+    "zoomFactor": 1.0000000000000147,
     "windowMask": false,
     "selectedLayer": "Dialogue"
   },
@@ -1313,7 +1313,7 @@
       "name": "Tree2",
       "persistentUuid": "84d1bdaf-868f-4c16-b6c5-c1a99fb0a4cc",
       "width": 0,
-      "x": 632,
+      "x": 680,
       "y": 415,
       "zOrder": 30,
       "numberProperties": [],
@@ -1617,7 +1617,7 @@
       "width": 0,
       "x": 656,
       "y": 415,
-      "zOrder": 44,
+      "zOrder": 500,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1645,7 +1645,7 @@
       "name": "Tree2",
       "persistentUuid": "6dd657e8-84a0-4030-9269-4c8260ee58ac",
       "width": 0,
-      "x": 672,
+      "x": 632,
       "y": 415,
       "zOrder": 30,
       "numberProperties": [],
@@ -2540,6 +2540,35 @@
             "Collisionables.Y()"
           ]
         }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "JeuEnCours",
+                "=",
+                "\"0\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "JeuEnCours",
+                "=",
+                "\"\""
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -2602,10 +2631,113 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Reprise",
+      "name": "Gestion minijeux",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "JeuEnCours",
+                "!=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "EtatJeu",
+                "=",
+                "\"LancerJeu\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "DialogueTree::IsDialogueRunning"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Joueur",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "EtatJeu",
+                "=",
+                "\"JeuEnCours\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Transition",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+              },
+              "parameters": [
+                "Transition",
+                "FlashTransitionPainter",
+                "\"0;0;0\"",
+                "1",
+                "\"Circular\"",
+                "\"Forward\"",
+                "255",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "PushScene"
+              },
+              "parameters": [
+                "",
+                "JeuEnCours"
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2647,19 +2779,9 @@
                     "value": "StringVariable"
                   },
                   "parameters": [
-                    "JeuEnCours",
+                    "EtatJeu",
                     "=",
-                    "\"Memory\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "MiniJeux.Memory",
-                    ">",
-                    "0"
+                    "\"JeuTermine\""
                   ]
                 }
               ],
@@ -2669,17 +2791,78 @@
                     "value": "SetStringVariable"
                   },
                   "parameters": [
-                    "JeuEnCours",
+                    "EtatJeu",
                     "=",
-                    "\"\""
+                    "\"NA\""
                   ]
-                },
+                }
+              ],
+              "events": [
                 {
-                  "type": {
-                    "value": "DialogueTree::StartDialogueFromBranch"
-                  },
-                  "parameters": [
-                    "\"HommePortail.ApresJeu\""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "JeuEnCours",
+                        "=",
+                        "\"Pairing_Game\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "MiniJeux.Memory",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "JeuEnCours",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "HommePortail",
+                        "talking",
+                        "True",
+                        "\"HommePortail.ApresJeu\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringObjectVariable"
+                      },
+                      "parameters": [
+                        "HommePortail",
+                        "dialogBranch",
+                        "=",
+                        "\"HommePortail.ApresJeu\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::StartDialogueFromBranch"
+                      },
+                      "parameters": [
+                        "\"HommePortail.ApresJeu\""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -2723,157 +2906,186 @@
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DialogueTree::WasBranchVisited"
-              },
-              "parameters": [
-                "\"HommePortail.Toucher\""
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "HommePortail",
-                "talking",
-                "=",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "StringVariable"
-              },
-              "parameters": [
-                "JeuEnCours",
-                "=",
-                "\"\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "Transition",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
-              },
-              "parameters": [
-                "Transition",
-                "FlashTransitionPainter",
-                "\"0;0;0\"",
-                "1",
-                "\"Circular\"",
-                "\"Forward\"",
-                "255",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1.25"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "JeuEnCours",
-                "=",
-                "\"Memory\""
-              ]
-            },
-            {
-              "type": {
-                "value": "PushScene"
-              },
-              "parameters": [
-                "",
-                "\"Pairing_Game\""
-              ]
-            }
-          ]
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Portail (Memory)"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "DialogueTree::WasBranchVisited"
-              },
-              "parameters": [
-                "\"HommePortail.ApresJeu2\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "HommePortail",
-                "300",
-                "6",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "3"
-              ]
-            },
-            {
-              "type": {
-                "value": "Arreter"
-              },
-              "parameters": [
-                "HommePortail"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
+                "value": "NumberVariable"
               },
               "parameters": [
                 "Histoire.Portail",
-                "=",
-                "1"
+                "<",
+                "2"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Histoire.Portail",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "DialogueTree::WasBranchVisited"
+                  },
+                  "parameters": [
+                    "\"HommePortail.Toucher\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "HommePortail",
+                    "talking",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "EtatJeu",
+                    "=",
+                    "\"NA\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "JeuEnCours",
+                    "=",
+                    "\"Pairing_Game\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "EtatJeu",
+                    "=",
+                    "\"LancerJeu\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Histoire.Portail",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DialogueTree::WasBranchVisited"
+                  },
+                  "parameters": [
+                    "\"HommePortail.ApresJeu2\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "HommePortail",
+                    "250",
+                    "6",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Arreter"
+                  },
+                  "parameters": [
+                    "HommePortail"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Histoire.Portail",
+                    "=",
+                    "2"
+                  ]
+                }
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Suite"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -3004,7 +3216,7 @@
             "DEBUG",
             "Text",
             "=",
-            "ToString(HommePortail.talking)"
+            "EtatJeu"
           ]
         }
       ]

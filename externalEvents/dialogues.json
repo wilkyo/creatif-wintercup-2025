@@ -157,7 +157,7 @@
               },
               "parameters": [
                 "Keyboard::KeyFromTextReleased(GlobalVariableString(TouchesValider))",
-                "GlobalVariableString(Touches.Valider)"
+                "GlobalVariableString(Options.Touches.Valider)"
               ]
             },
             {
@@ -169,6 +169,16 @@
                 "Dialoguables",
                 "20",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "EtatJeu",
+                "!=",
+                "\"LancerJeu\""
               ]
             },
             {
@@ -255,7 +265,7 @@
                 "",
                 "Talk.wav",
                 "",
-                "Volumes.Sons",
+                "Options.Volumes.Sons",
                 ""
               ]
             },
@@ -297,7 +307,7 @@
               },
               "parameters": [
                 "",
-                "GlobalVariableString(Touches.Valider)"
+                "GlobalVariableString(Options.Touches.Valider)"
               ]
             },
             {
@@ -396,7 +406,7 @@
                     "",
                     "\"textScroll\"",
                     ">",
-                    "GlobalVariable(MultiplicateurVitesseDialogues) / GlobalVariable(VitesseDialogues)"
+                    "GlobalVariable(MultiplicateurVitesseDialogues) / (GlobalVariable(Options.VitesseDialogues) + 10)"
                   ]
                 }
               ],
@@ -427,7 +437,7 @@
                   },
                   "parameters": [
                     "",
-                    "GlobalVariableString(Touches.Valider)"
+                    "GlobalVariableString(Options.Touches.Valider)"
                   ]
                 },
                 {
@@ -446,7 +456,7 @@
                     "",
                     "Talk.wav",
                     "",
-                    "Volumes.Sons",
+                    "Options.Volumes.Sons",
                     ""
                   ]
                 },
@@ -467,7 +477,7 @@
                   },
                   "parameters": [
                     "",
-                    "GlobalVariableString(Touches.Valider)"
+                    "GlobalVariableString(Options.Touches.Valider)"
                   ]
                 }
               ],
@@ -479,7 +489,7 @@
                   "parameters": [
                     "MultiplicateurVitesseDialogues",
                     "=",
-                    "5"
+                    "0.1"
                   ]
                 }
               ]
@@ -494,7 +504,7 @@
                   },
                   "parameters": [
                     "",
-                    "GlobalVariableString(Touches.Valider)"
+                    "GlobalVariableString(Options.Touches.Valider)"
                   ]
                 }
               ],
@@ -506,7 +516,7 @@
                   "parameters": [
                     "MultiplicateurVitesseDialogues",
                     "=",
-                    "20"
+                    "5"
                   ]
                 }
               ]
@@ -626,7 +636,7 @@
                   },
                   "parameters": [
                     "",
-                    "GlobalVariableString(Touches.Valider)"
+                    "GlobalVariableString(Options.Touches.Valider)"
                   ]
                 }
               ],
@@ -658,7 +668,7 @@
                     "",
                     "Talk.wav",
                     "",
-                    "Volumes.Sons",
+                    "Options.Volumes.Sons",
                     ""
                   ]
                 },
@@ -710,7 +720,7 @@
                 "",
                 "Attack.wav",
                 "",
-                "Volumes.Sons",
+                "Options.Volumes.Sons",
                 ""
               ]
             }

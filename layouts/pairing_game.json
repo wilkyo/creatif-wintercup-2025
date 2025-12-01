@@ -2770,7 +2770,7 @@
                 "",
                 "sounds/cockatrice_playcard.mp3",
                 "no",
-                "",
+                "Options.Volumes.Sons",
                 ""
               ]
             }
@@ -3103,7 +3103,7 @@
                 "",
                 "sounds/Rise.ogg",
                 "no",
-                "",
+                "Options.Volumes.Sons",
                 ""
               ]
             },
@@ -3184,7 +3184,7 @@
                 "",
                 "sounds/pop.ogg",
                 "no",
-                "",
+                "Options.Volumes.Sons",
                 ""
               ]
             },
@@ -3233,13 +3233,23 @@
           "actions": [
             {
               "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "EtatJeu",
+                "=",
+                "\"JeuTermine\""
+              ]
+            },
+            {
+              "type": {
                 "value": "PlaySound"
               },
               "parameters": [
                 "",
                 "sounds/pop.ogg",
                 "no",
-                "",
+                "Options.Volumes.Sons",
                 ""
               ]
             },
@@ -3263,6 +3273,41 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyFromTextReleased"
+          },
+          "parameters": [
+            "",
+            "\"LControl\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"UI\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "MiniJeux.Memory",
+            "+",
+            "1"
+          ]
+        }
+      ]
     }
   ],
   "layers": [

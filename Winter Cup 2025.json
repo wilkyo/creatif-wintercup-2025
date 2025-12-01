@@ -1685,39 +1685,55 @@
   ],
   "variables": [
     {
-      "name": "VitesseDialogues",
-      "type": "number",
-      "value": 1000
-    },
-    {
       "name": "MultiplicateurVitesseDialogues",
       "type": "number",
-      "value": 20
+      "value": 0
     },
     {
-      "name": "Touches",
+      "name": "JeuEnCours",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "EtatJeu",
+      "type": "string",
+      "value": "NA"
+    },
+    {
+      "name": "Options",
       "type": "structure",
       "children": [
         {
-          "name": "Valider",
-          "type": "string",
-          "value": "e"
-        }
-      ]
-    },
-    {
-      "name": "Volumes",
-      "type": "structure",
-      "children": [
+          "name": "Touches",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Valider",
+              "type": "string",
+              "value": "e"
+            }
+          ]
+        },
         {
-          "name": "Musique",
+          "name": "VitesseDialogues",
           "type": "number",
           "value": 100
         },
         {
-          "name": "Sons",
-          "type": "number",
-          "value": 10
+          "name": "Volumes",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Musiques",
+              "type": "number",
+              "value": 100
+            },
+            {
+              "name": "Sons",
+              "type": "number",
+              "value": 50
+            }
+          ]
         }
       ]
     },
@@ -1747,11 +1763,6 @@
           "value": 0
         }
       ]
-    },
-    {
-      "name": "JeuEnCours",
-      "type": "string",
-      "value": ""
     }
   ],
   "layouts": [

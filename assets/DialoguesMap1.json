@@ -92,7 +92,7 @@
 	{
 		"title": "HommePortail",
 		"tags": "",
-		"body": "<< name >>\nEtrange, il ne répond pas\n[[ Le toucher |HommePortail.Toucher]]\n[[ Le laisser |HommePortail.Laisser]]",
+		"body": "<< nom >>\nEtrange, il ne répond pas\n[[ Le toucher |HommePortail.Toucher]]\n[[ Le laisser |HommePortail.Laisser]]",
 		"position": {
 			"x": 55,
 			"y": 1006
@@ -122,7 +122,7 @@
 	{
 		"title": "HommePortail.ApresJeu",
 		"tags": "",
-		"body": "Tu m'as sauvé !\nMais genre vraiment !\n\n[[ Suite |HommePortail.ApresJeu2]] ]]",
+		"body": "<<nom>> Tu m'as sauvé !\nMais genre vraiment !\n\n[[ Suite |HommePortail.ApresJeu2]]",
 		"position": {
 			"x": -27,
 			"y": 1290
@@ -132,7 +132,7 @@
 	{
 		"title": "HommePortail.ApresJeu2",
 		"tags": "",
-		"body": "Empty Text",
+		"body": "Au revoir",
 		"position": {
 			"x": 303,
 			"y": 1422
