@@ -2726,6 +2726,16 @@
                 "",
                 "\"WinGame\""
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "MiniJeux.Sokoban",
+                "+",
+                "1"
+              ]
             }
           ]
         }
@@ -2775,6 +2785,51 @@
           "parameters": [
             "",
             "\"WinGame\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyFromTextReleased"
+          },
+          "parameters": [
+            "",
+            "\"LControl\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "DEBUG",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"UI\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "MiniJeux.Sokoban",
+            "+",
+            "1"
           ]
         }
       ]

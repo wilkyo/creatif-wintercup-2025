@@ -1,7 +1,7 @@
 {
   "firstLayout": "Intro",
   "gdVersion": {
-    "build": 247,
+    "build": 248,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -2090,6 +2090,11 @@
   ],
   "variables": [
     {
+      "name": "DEBUG",
+      "type": "boolean",
+      "value": true
+    },
+    {
       "name": "MultiplicateurVitesseDialogues",
       "type": "number",
       "value": 0
@@ -2164,6 +2169,11 @@
       "children": [
         {
           "name": "Memory",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Sokoban",
           "type": "number",
           "value": 0
         }

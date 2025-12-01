@@ -3285,6 +3285,16 @@
             "",
             "\"LControl\""
           ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "DEBUG",
+            "True",
+            ""
+          ]
         }
       ],
       "actions": [
