@@ -5,7 +5,7 @@
 wilkyo – Coordinateur(s)
 wilkyo, Izigame – Développeur(s)
 Opalarya - Scénariste
-[Nom] – Graphiste(s)
+wilkyo – Graphiste(s)
 [Nom] - Sound designer(s)
 [Nom] - Game designer(s)
 
@@ -21,22 +21,29 @@ Durée : [environ X minutes]
 
 # DÉFIS CRÉATIFS INTÉGRÉS
 
-[Défi 1 : où le trouver dans le jeu]
-[Défi 2 : où le trouver dans le jeu]
-[...]
+- [Défi 1 : où le trouver dans le jeu]
+- [Défi 2 : où le trouver dans le jeu]
+- [...]
 
 # OUTILS UTILISÉS
 
-Moteur : GDevelop
-Graphismes : Gimp
-Sons : [Sources / logiciels]
+- Moteur : GDevelop
+- Graphismes : GIMP
+- Sons : [Sources / logiciels]
 
 # CRÉDITS
 
 [Remerciements, assets utilisés, sources libres de droits...]
-Assets:
-Classic Winter tiles
-https://forums.rpgmakerweb.com/index.php?threads/whtdragons-tilesets-addons-fixes-and-more.60504/page-3
+
+## Assets
+
+- RPG Maker VX Ace RTP - Enterbrain : https://www.rpgmakerweb.com/run-time-package
+- Classic Winter tiles - whtdragons : https://forums.rpgmakerweb.com/index.php?threads/whtdragons-tilesets-addons-fixes-and-more.60504/page-3
+
+## Mini-jeux
+
+- Pairs - GDevelop : https://gdevelop.io/game-example/free/pairs
+- Sokoban - GDevelop : https://gdevelop.io/game-example/free/sokoban
 
 # PROBLÈMES CONNUS
 
