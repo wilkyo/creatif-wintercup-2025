@@ -2,12 +2,13 @@
 
 # ÉQUIPE
 
-[Nom] – Coordinateur(s)
-[Nom] – Développeur(s)
+wilkyo – Coordinateur(s)
+wilkyo, Izigame – Développeur(s)
+Opalarya - Scénariste
 [Nom] – Graphiste(s)
 [Nom] - Sound designer(s)
 [Nom] - Game designer(s)
-…
+
 # COMMENT JOUER
 
 Contrôles : [décrire les touches/clics]
@@ -26,16 +27,17 @@ Durée : [environ X minutes]
 
 # OUTILS UTILISÉS
 
-Moteur : [GDevelop / Unity / etc.]
-Graphismes : [Logiciel utilisé]
+Moteur : GDevelop
+Graphismes : Gimp
 Sons : [Sources / logiciels]
 
 # CRÉDITS
 
 [Remerciements, assets utilisés, sources libres de droits...]
+Assets:
+Classic Winter tiles
+https://forums.rpgmakerweb.com/index.php?threads/whtdragons-tilesets-addons-fixes-and-more.60504/page-3
 
 # PROBLÈMES CONNUS
 
 [Si des bugs mineurs subsistent, les mentionner]
-
-
