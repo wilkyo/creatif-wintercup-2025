@@ -1,9 +1,9 @@
 {
   "firstLayout": "Intro",
   "gdVersion": {
-    "build": 248,
+    "build": 249,
     "major": 5,
-    "minor": 5,
+    "minor": 6,
     "revision": 0
   },
   "properties": {
@@ -420,18 +420,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/tilemap_packed3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tilemap_packed3.png",
-        "smoothed": false,
-        "userAdded": true,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Tilemaps/Pixel Art/f521b34c9bc3530f68e642eff768b852adad0728dd02cd51c31130f3277b0caf_tilemap_packed3.png",
-          "name": "tilemap_packed3.png"
-        }
-      },
-      {
         "disablePreload": false,
         "file": "assets/DialoguesIntro.json",
         "kind": "json",
@@ -760,6 +748,54 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
           "name": "CantoraOne-Regular.ttf"
         }
+      },
+      {
+        "file": "assets/Outside_AX.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Outside_AX.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Outside_AX2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Outside_AX2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Outside_BX.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Outside_BX.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Inside_B.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Inside_B.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Inside_C.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Inside_C.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ClassicWinterTiles.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ClassicWinterTiles.png",
+        "smoothed": true,
+        "userAdded": false
       },
       {
         "file": "assets/Marker.png",
@@ -1336,6 +1372,7 @@
           "isFolded": true,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "maxSpeed": 100,
           "useLegacyTurnBack": false,
           "acceleration": 900000,
           "allowDiagonals": false,
@@ -1344,7 +1381,6 @@
           "customIsometryAngle": 30,
           "deceleration": 900000,
           "ignoreDefaultControls": false,
-          "maxSpeed": 50,
           "movementAngleOffset": 0,
           "rotateObject": false,
           "viewpoint": "TopDown"
@@ -2232,10 +2268,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/autotyping"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/ysort"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
