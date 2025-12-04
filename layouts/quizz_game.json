@@ -1,0 +1,2067 @@
+{
+  "b": 255,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Quizz_95Game",
+  "name": "Quizz_Game",
+  "r": 255,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 255,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.7370816317994086,
+    "windowMask": false,
+    "selectedLayer": "Game over"
+  },
+  "objectsGroups": [
+    {
+      "name": "AnswerButton",
+      "objects": [
+        {
+          "name": "Answer1_Button"
+        },
+        {
+          "name": "Answer2_Button"
+        },
+        {
+          "name": "Answer3_Button"
+        },
+        {
+          "name": "Answer4_Button"
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "name": "NextQuestion",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "name": "Score",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "RandomNb",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "QuizFinished",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "QuestionNumber",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "QuestionNumberDisplay",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "QuestionList",
+      "type": "array",
+      "children": [
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Answer1",
+              "type": "string",
+              "value": "Non"
+            },
+            {
+              "name": "Answer2",
+              "type": "string",
+              "value": "Oui"
+            },
+            {
+              "name": "Answer3",
+              "type": "string",
+              "value": "Non"
+            },
+            {
+              "name": "Answer4",
+              "type": "string",
+              "value": "Non"
+            },
+            {
+              "name": "CorrectAnswer",
+              "type": "string",
+              "value": "Answer2_Button"
+            },
+            {
+              "name": "Question",
+              "type": "string",
+              "value": "Bonne réponse ?"
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Answer1",
+              "type": "string",
+              "value": "Oui"
+            },
+            {
+              "name": "Answer2",
+              "type": "string",
+              "value": "Non"
+            },
+            {
+              "name": "Answer3",
+              "type": "string",
+              "value": "Non"
+            },
+            {
+              "name": "Answer4",
+              "type": "string",
+              "value": "Non"
+            },
+            {
+              "name": "CorrectAnswer",
+              "type": "string",
+              "value": "Answer1_Button"
+            },
+            {
+              "name": "Question",
+              "type": "string",
+              "value": "Bonne réponse 2 ?"
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Answer1",
+              "type": "string",
+              "value": "a"
+            },
+            {
+              "name": "Answer2",
+              "type": "string",
+              "value": "z"
+            },
+            {
+              "name": "Answer3",
+              "type": "string",
+              "value": "e"
+            },
+            {
+              "name": "Answer4",
+              "type": "string",
+              "value": "oui"
+            },
+            {
+              "name": "CorrectAnswer",
+              "type": "string",
+              "value": "Answer4_Button"
+            },
+            {
+              "name": "Question",
+              "type": "string",
+              "value": "Laquelle ?"
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Answer1",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "Answer2",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "Answer3",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "Answer4",
+              "type": "string",
+              "value": "oui"
+            },
+            {
+              "name": "CorrectAnswer",
+              "type": "string",
+              "value": "Answer4_Button"
+            },
+            {
+              "name": "Question",
+              "type": "string",
+              "value": "mm ?"
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Answer1",
+              "type": "string",
+              "value": "oui"
+            },
+            {
+              "name": "Answer2",
+              "type": "string",
+              "value": "p"
+            },
+            {
+              "name": "Answer3",
+              "type": "string",
+              "value": "p"
+            },
+            {
+              "name": "Answer4",
+              "type": "string",
+              "value": "p"
+            },
+            {
+              "name": "CorrectAnswer",
+              "type": "string",
+              "value": "Answer1_Button"
+            },
+            {
+              "name": "Question",
+              "type": "string",
+              "value": "b ?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "QuestionSelectionList",
+      "type": "array",
+      "children": []
+    }
+  ],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 720,
+      "layer": "Background",
+      "locked": true,
+      "name": "Background",
+      "persistentUuid": "9d4a2623-239c-44d1-95a4-076307aa3170",
+      "width": 1280,
+      "x": 0,
+      "y": 0,
+      "zOrder": -10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "QuestionBackdrop",
+      "persistentUuid": "32109251-d208-4420-90fb-eff0a7b1af15",
+      "width": 512,
+      "x": 96,
+      "y": 416,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "QuestionBackdrop",
+      "persistentUuid": "29d91fc5-4898-4c9a-a056-9b901559acb5",
+      "width": 512,
+      "x": 96,
+      "y": 544,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "QuestionBackdrop",
+      "persistentUuid": "8667e8ea-bd1b-4214-932a-37a6f4136598",
+      "width": 512,
+      "x": 672,
+      "y": 544,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "QuestionBackdrop",
+      "persistentUuid": "7221cea3-3794-4d07-a7db-3e5e3beb4435",
+      "width": 512,
+      "x": 672,
+      "y": 416,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 320,
+      "keepRatio": true,
+      "layer": "",
+      "name": "QuestionBackdrop",
+      "persistentUuid": "d572e784-f5d2-418d-ad02-373038fa9a8a",
+      "width": 1024,
+      "x": 128,
+      "y": 64,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Answer1_Button",
+      "persistentUuid": "2c2e280b-8495-4319-bfef-6f5ace365bb3",
+      "width": 512,
+      "x": 96,
+      "y": 464,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 320,
+      "keepRatio": true,
+      "layer": "",
+      "name": "QuestionText",
+      "persistentUuid": "8ce065cf-9d4e-4ba0-b694-1ca29d2d9775",
+      "width": 1024,
+      "x": 128,
+      "y": 224,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Answer2_Button",
+      "persistentUuid": "43b666bc-64d2-4ccf-bf4a-b7ef88b7176e",
+      "width": 512,
+      "x": 672,
+      "y": 464,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Answer3_Button",
+      "persistentUuid": "5e273bb1-6d22-4e97-9fcc-0aa536d3e93e",
+      "width": 512,
+      "x": 96,
+      "y": 592,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Answer4_Button",
+      "persistentUuid": "0f34b3e9-d13b-4498-aeb7-d0267ffd98a8",
+      "width": 512,
+      "x": 672,
+      "y": 592,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Background",
+      "name": "CorrectAnswer",
+      "persistentUuid": "0d4ba826-c6cb-4f92-b728-2ba12a662b32",
+      "width": 0,
+      "x": 604,
+      "y": -38,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Background",
+      "name": "ScoreText",
+      "persistentUuid": "c1b7436c-3c06-446a-81fc-8fb1c5dceaf3",
+      "width": 0,
+      "x": 132,
+      "y": 10,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "QuestionNumberText",
+      "persistentUuid": "7bec984a-7334-469a-a767-dd0b0390e161",
+      "width": 0,
+      "x": 861,
+      "y": 29,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 99,
+      "keepRatio": true,
+      "layer": "Game over",
+      "name": "NewGameButton",
+      "persistentUuid": "307924c4-c1d1-42ba-a339-845026c1bdb9",
+      "width": 229,
+      "x": 232,
+      "y": 413,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 60.56198347107437,
+      "height": 99,
+      "layer": "Game over",
+      "name": "LeaveButton",
+      "persistentUuid": "4dce9359-27c7-4cdd-943e-40ca679d3c00",
+      "width": 229,
+      "x": 824,
+      "y": 416,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Game over",
+      "name": "YouWon",
+      "persistentUuid": "1a8efa12-5d2f-4906-bcfb-0b24e49b96b3",
+      "width": 0,
+      "x": 448,
+      "y": 85,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 88,
+      "keepRatio": true,
+      "layer": "Game over",
+      "name": "Chip_Black",
+      "persistentUuid": "ad64fe9c-404e-42c3-9377-a4072525e2b0",
+      "width": 169,
+      "x": 576,
+      "y": 197,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Game over",
+      "name": "ChipBlackText",
+      "persistentUuid": "68ac77a6-201c-49d9-b15d-71be8b3d6e3d",
+      "width": 0,
+      "x": 561,
+      "y": 302,
+      "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "height": 64,
+      "name": "Background",
+      "texture": "assets\\Background.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 64,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Answer1_Button",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween",
+          "Scale": "Scale",
+          "ButtonFSM": "ButtonFSM",
+          "Tween": "Tween",
+          "IdleScale": 1,
+          "FocusedScale": 1.2,
+          "FadeInDuration": 0.05,
+          "FadeOutDuration": 0.2,
+          "PressedScale": 0.95,
+          "FadeInEasing": "easeInOutQuad",
+          "FadeOutEasing": "bouncePast",
+          "PreviousState": "Idle"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "Answer1",
+      "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+      "textAlignment": "center",
+      "characterSize": 40,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Answer1",
+        "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 40,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 20,
+      "height": 160,
+      "leftMargin": 20,
+      "name": "QuestionBackdrop",
+      "rightMargin": 20,
+      "texture": "assets\\QuestionBackdrop.png",
+      "tiled": false,
+      "topMargin": 20,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 160,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "QuestionText",
+      "persistentUuid": "427866b2-d758-4cf3-82ce-8f8bd9689492",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Question",
+      "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+      "textAlignment": "center",
+      "characterSize": 60,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Question",
+        "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 60,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Answer2_Button",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween",
+          "Scale": "Scale",
+          "ButtonFSM": "ButtonFSM",
+          "Tween": "Tween",
+          "IdleScale": 1,
+          "FocusedScale": 1.2,
+          "FadeInDuration": 0.05,
+          "FadeOutDuration": 0.2,
+          "PressedScale": 0.95,
+          "FadeInEasing": "easeInOutQuad",
+          "FadeOutEasing": "bouncePast",
+          "PreviousState": "Idle"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "Answer2",
+      "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+      "textAlignment": "center",
+      "characterSize": 40,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Answer2",
+        "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 40,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Answer3_Button",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween",
+          "Scale": "Scale",
+          "ButtonFSM": "ButtonFSM",
+          "Tween": "Tween",
+          "IdleScale": 1,
+          "FocusedScale": 1.2,
+          "FadeInDuration": 0.05,
+          "FadeOutDuration": 0.2,
+          "PressedScale": 0.95,
+          "FadeInEasing": "easeInOutQuad",
+          "FadeOutEasing": "bouncePast",
+          "PreviousState": "Idle"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "Answer3",
+      "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+      "textAlignment": "center",
+      "characterSize": 40,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Answer3",
+        "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 40,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Answer4_Button",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween",
+          "Scale": "Scale",
+          "ButtonFSM": "ButtonFSM",
+          "Tween": "Tween",
+          "IdleScale": 1,
+          "FocusedScale": 1.2,
+          "FadeInDuration": 0.05,
+          "FadeOutDuration": 0.2,
+          "PressedScale": 0.95,
+          "FadeInEasing": "easeInOutQuad",
+          "FadeOutEasing": "bouncePast",
+          "PreviousState": "Idle"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "Answer4",
+      "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+      "textAlignment": "center",
+      "characterSize": 40,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Answer4",
+        "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 40,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "CorrectAnswer",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "init",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "init",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "ScoreText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "SCORE :",
+      "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+      "textAlignment": "left",
+      "characterSize": 35,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "SCORE :",
+        "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 35,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "QuestionNumberText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "QUESTION :",
+      "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+      "textAlignment": "center",
+      "characterSize": 35,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "QUESTION :",
+        "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 35,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+      "name": "NewGameButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Grey Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Rejouer"
+      }
+    },
+    {
+      "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+      "name": "LeaveButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Grey Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Partir"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "YouWon",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Vous obtenez",
+      "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+      "textAlignment": "left",
+      "characterSize": 60,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Vous obtenez",
+        "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 60,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "037e8f469353fbf81368628f5e9867d69da9f9146d73afd95c2556f0bcca5cee",
+      "name": "Chip_Black",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Flat",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Chip Black_Flat.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 129,
+                        "y": 0
+                      },
+                      {
+                        "x": 129,
+                        "y": 58
+                      },
+                      {
+                        "x": 0,
+                        "y": 58
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Top",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Chip Black_Top.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 129,
+                        "y": 0
+                      },
+                      {
+                        "x": 129,
+                        "y": 58
+                      },
+                      {
+                        "x": 0,
+                        "y": 58
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "ChipBlackText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Jeton noir",
+      "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Jeton noir",
+        "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "QuestionBackdrop"
+      },
+      {
+        "objectName": "Background"
+      },
+      {
+        "objectName": "QuestionText"
+      },
+      {
+        "objectName": "Answer1_Button"
+      },
+      {
+        "objectName": "Answer2_Button"
+      },
+      {
+        "objectName": "Answer3_Button"
+      },
+      {
+        "objectName": "Answer4_Button"
+      },
+      {
+        "objectName": "CorrectAnswer"
+      },
+      {
+        "objectName": "ScoreText"
+      },
+      {
+        "objectName": "QuestionNumberText"
+      },
+      {
+        "objectName": "NewGameButton"
+      },
+      {
+        "objectName": "LeaveButton"
+      },
+      {
+        "objectName": "YouWon"
+      },
+      {
+        "objectName": "Chip_Black"
+      },
+      {
+        "objectName": "ChipBlackText"
+      }
+    ]
+  },
+  "events": [
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Init",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "QuizFinished",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "QuestionNumber",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "NextQuestion",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Score",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "infiniteLoopWarning": true,
+          "type": "BuiltinCommonInstructions::While",
+          "whileConditions": [
+            {
+              "type": {
+                "value": "VariableChildCount"
+              },
+              "parameters": [
+                "QuestionSelectionList",
+                "<",
+                "10"
+              ]
+            }
+          ],
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "RandomNb",
+                "=",
+                "Random(30)"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "VariableChildExists2"
+                  },
+                  "parameters": [
+                    "QuestionSelectionList",
+                    "RandomNb"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PushNumber"
+                  },
+                  "parameters": [
+                    "QuestionSelectionList",
+                    "RandomNb"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Option picked",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "AnswerButton",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "AnswerButton.ObjectName()",
+                    "!=",
+                    "CorrectAnswer.Text::Value()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "Wrong",
+                    "",
+                    "80",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "QuestionNumber",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "NextQuestion",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "AnswerButton.ObjectName()",
+                    "=",
+                    "CorrectAnswer.Text::Value()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "Right",
+                    "",
+                    "80",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "QuestionNumber",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Score",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "NextQuestion",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Next question",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "NextQuestion",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "ScoreText",
+                "Text",
+                "=",
+                "\"SCORE : \" + Score"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "QuestionNumberDisplay",
+                "=",
+                "QuestionNumber + 1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "QuestionNumberText",
+                "Text",
+                "=",
+                "\"QUESTION : \" + QuestionNumberDisplay"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "NextQuestion",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VariableChildCount"
+                  },
+                  "parameters": [
+                    "QuestionSelectionList",
+                    "<=",
+                    "QuestionNumber"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "QuizFinished",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "QuestionText",
+                    "Text",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "AnswerButton",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "QuestionNumberText"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Game over\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Score",
+                        "<",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "YouWon"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "Chip_Black"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "ChipBlackText"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "QuizFinished",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "QuestionText",
+                    "Text",
+                    "=",
+                    "QuestionList[QuestionSelectionList[QuestionNumber]].Question"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Answer1_Button",
+                    "Text",
+                    "=",
+                    "QuestionList[QuestionSelectionList[QuestionNumber]].Answer1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Answer2_Button",
+                    "Text",
+                    "=",
+                    "QuestionList[QuestionSelectionList[QuestionNumber]].Answer2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Answer3_Button",
+                    "Text",
+                    "=",
+                    "QuestionList[QuestionSelectionList[QuestionNumber]].Answer3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Answer4_Button",
+                    "Text",
+                    "=",
+                    "QuestionList[QuestionSelectionList[QuestionNumber]].Answer4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "CorrectAnswer",
+                    "Text",
+                    "=",
+                    "QuestionList[QuestionSelectionList[QuestionNumber]].CorrectAnswer"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Restart game",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "NewGameButton",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Quizz_Game\"",
+            ""
+          ]
+        }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Background",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Game over",
+      "renderingType": "",
+      "visibility": false,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "ButtonFSM",
+      "type": "ButtonStates::ButtonFSM"
+    },
+    {
+      "name": "ButtonScaleTween",
+      "type": "ButtonStates::ButtonScaleTween"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
+    }
+  ]
+}
