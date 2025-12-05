@@ -2316,6 +2316,11 @@
           "value": 0
         },
         {
+          "name": "Quiz",
+          "type": "number",
+          "value": 0
+        },
+        {
           "name": "Sokoban",
           "type": "number",
           "value": 0
