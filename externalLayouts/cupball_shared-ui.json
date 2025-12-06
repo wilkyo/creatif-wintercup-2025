@@ -1,0 +1,82 @@
+{
+  "associatedLayout": "CupBall_Game",
+  "name": "CupBall_Shared UI",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 50,
+      "layer": "Debugging",
+      "name": "GameState_Text",
+      "persistentUuid": "1b6d4f83-b789-4ae9-a5ab-a20d41ce6e4b",
+      "width": 304,
+      "x": 322,
+      "y": 531,
+      "zOrder": 44,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "CurrentLevel_Text",
+      "persistentUuid": "e6714323-f471-4a62-87bb-5ca4d8fe198a",
+      "width": 0,
+      "x": 562,
+      "y": 21,
+      "zOrder": 45,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "MovesMade_Text",
+      "persistentUuid": "b039b070-8c4c-4493-b18b-7c7d8518fdf4",
+      "width": 0,
+      "x": 578,
+      "y": 613,
+      "zOrder": 46,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "TimeSpent_Text",
+      "persistentUuid": "a0814683-1f7b-4829-8458-ae9ae0f83c90",
+      "width": 0,
+      "x": 578,
+      "y": 659,
+      "zOrder": 47,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": true,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": true,
+    "zoomFactor": 0.35613423083026896,
+    "windowMask": false,
+    "selectedLayer": ""
+  }
+}

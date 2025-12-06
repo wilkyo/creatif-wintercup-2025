@@ -1,0 +1,82 @@
+{
+  "associatedLayout": "CupBall_Game",
+  "name": "CupBall_Clouds",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 248,
+      "layer": "Clouds",
+      "name": "Cloud2",
+      "persistentUuid": "4ce07246-aecc-44c7-a4d2-4e0cdcdc8045",
+      "width": 392,
+      "x": 122,
+      "y": 32,
+      "zOrder": 39,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Clouds",
+      "name": "Cloud1",
+      "persistentUuid": "053b2530-5e8d-4141-9e90-dcae02b16771",
+      "width": 0,
+      "x": 955,
+      "y": -138,
+      "zOrder": 40,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Clouds",
+      "name": "Cloud3",
+      "persistentUuid": "f6d2a7c7-9e2b-4b2d-8904-40090c79f04b",
+      "width": 0,
+      "x": 800,
+      "y": 346,
+      "zOrder": 38,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Clouds",
+      "name": "Cloud4",
+      "persistentUuid": "3807924e-f765-4d15-8429-8f6ad4bb1772",
+      "width": 0,
+      "x": -46,
+      "y": 530,
+      "zOrder": 37,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.39999999999999947,
+    "windowMask": false,
+    "selectedLayer": ""
+  }
+}

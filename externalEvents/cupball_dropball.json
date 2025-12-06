@@ -1,0 +1,78 @@
+{
+  "associatedLayout": "CupBall_Game",
+  "name": "CupBall_DropBall",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::AddObjectPositionTween"
+          },
+          "parameters": [
+            "Balls",
+            "Tween",
+            "\"MoveBall\"",
+            "Cup.CenterX()",
+            "Cup.Y() - (1.5 * Balls.Height())",
+            "\"linear\"",
+            "MoveBall_Duration",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "DeviceVibration::StartVibration"
+          },
+          "parameters": [
+            "25"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "MoveBall_Duration / 1000"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeLayer"
+          },
+          "parameters": [
+            "Balls",
+            "\"Balls\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::AddObjectPositionTween"
+          },
+          "parameters": [
+            "Balls",
+            "Tween",
+            "\"DropBall\"",
+            "Cup.CenterX()",
+            "Cup.Y() + (MaxBallsPerCup - Cup.Balls - 1) * Balls.Height()",
+            "\"linear\"",
+            "DropBall_Duration",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "Cup",
+            "Balls",
+            "+",
+            "1"
+          ]
+        }
+      ]
+    }
+  ]
+}
