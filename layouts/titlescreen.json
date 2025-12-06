@@ -770,7 +770,7 @@
                   },
                   "parameters": [
                     "",
-                    "keyboardUp"
+                    "Options.Touches.Haut"
                   ]
                 },
                 {
@@ -780,7 +780,7 @@
                   },
                   "parameters": [
                     "",
-                    "keyboardDown"
+                    "Options.Touches.Bas"
                   ]
                 },
                 {
@@ -868,7 +868,7 @@
                           },
                           "parameters": [
                             "",
-                            "keyboardUp"
+                            "Options.Touches.Haut"
                           ]
                         }
                       ]
@@ -942,7 +942,7 @@
                           },
                           "parameters": [
                             "",
-                            "keyboardDown"
+                            "Options.Touches.Bas"
                           ]
                         }
                       ]
@@ -1139,7 +1139,7 @@
                       },
                       "parameters": [
                         "",
-                        "keyboardAttack"
+                        "Options.Touches.Valider"
                       ]
                     }
                   ]
@@ -1411,16 +1411,8 @@
       "AnimationFrame": 0
     },
     {
-      "name": "TopDownMultitouchMapper",
-      "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper"
-    },
-    {
       "name": "Tween",
       "type": "Tween::TweenBehavior"
-    },
-    {
-      "name": "YSort",
-      "type": "YSort::YSort"
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
   "firstLayout": "TitleScreen",
   "gdVersion": {
-    "build": 247,
+    "build": 249,
     "major": 5,
-    "minor": 5,
+    "minor": 6,
     "revision": 0
   },
   "properties": {
@@ -1580,7 +1580,7 @@
       "effects": [],
       "behaviors": [
         {
-          "isFolded": true,
+          "ignoreDefaultControls": true,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "maxSpeed": 100,
@@ -1591,12 +1591,12 @@
           "angularMaxSpeed": 180,
           "customIsometryAngle": 30,
           "deceleration": 900000,
-          "ignoreDefaultControls": false,
           "movementAngleOffset": 0,
           "rotateObject": false,
           "viewpoint": "TopDown"
         },
         {
+          "isFolded": true,
           "name": "TopDownMovementAnimator",
           "type": "TopDownMovementAnimator::TopDownMovementAnimator",
           "Animation": "Animation",
@@ -1606,19 +1606,6 @@
           "DirectionCount": 0,
           "AngleOffset": 0,
           "AnimationDirection": 0
-        },
-        {
-          "isFolded": true,
-          "name": "TopDownMultitouchMapper",
-          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper",
-          "TopDownMovement": "TopDownMovement",
-          "ControllerIdentifier": 1,
-          "JoystickIdentifier": "Primary",
-          "StickMode": "8 Directions"
-        },
-        {
-          "name": "YSort",
-          "type": "YSort::YSort"
         }
       ],
       "animations": [
@@ -2365,6 +2352,26 @@
           "type": "structure",
           "children": [
             {
+              "name": "Bas",
+              "type": "string",
+              "value": "s"
+            },
+            {
+              "name": "Droite",
+              "type": "string",
+              "value": "d"
+            },
+            {
+              "name": "Gauche",
+              "type": "string",
+              "value": "q"
+            },
+            {
+              "name": "Haut",
+              "type": "string",
+              "value": "z"
+            },
+            {
               "name": "Valider",
               "type": "string",
               "value": "e"
@@ -2430,31 +2437,6 @@
           "value": 0
         }
       ]
-    },
-    {
-      "name": "keyboardLeft",
-      "type": "string",
-      "value": "q"
-    },
-    {
-      "name": "keyboardRight",
-      "type": "string",
-      "value": "d"
-    },
-    {
-      "name": "keyboardUp",
-      "type": "string",
-      "value": "z"
-    },
-    {
-      "name": "keyboardDown",
-      "type": "string",
-      "value": "s"
-    },
-    {
-      "name": "keyboardAttack",
-      "type": "string",
-      "value": "e"
     }
   ],
   "layouts": [
@@ -2491,6 +2473,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/dialogues"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/dplacementstopdown"
     }
   ],
   "eventsFunctionsExtensions": [
