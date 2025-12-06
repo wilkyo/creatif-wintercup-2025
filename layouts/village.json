@@ -1,8 +1,8 @@
 {
   "b": 146,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Overworld",
-  "name": "Overworld",
+  "mangledName": "Village",
+  "name": "Village",
   "r": 156,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
