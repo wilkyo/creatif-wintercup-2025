@@ -2207,16 +2207,8 @@
       "AnimationFrame": 0
     },
     {
-      "name": "TopDownMultitouchMapper",
-      "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper"
-    },
-    {
       "name": "Tween",
       "type": "Tween::TweenBehavior"
-    },
-    {
-      "name": "YSort",
-      "type": "YSort::YSort"
     }
   ]
 }

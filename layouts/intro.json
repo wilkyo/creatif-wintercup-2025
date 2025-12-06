@@ -471,14 +471,6 @@
       "type": "TopDownMovementAnimator::TopDownMovementAnimator",
       "NewAnimationDirection": 0,
       "AnimationFrame": 0
-    },
-    {
-      "name": "TopDownMultitouchMapper",
-      "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper"
-    },
-    {
-      "name": "YSort",
-      "type": "YSort::YSort"
     }
   ]
 }

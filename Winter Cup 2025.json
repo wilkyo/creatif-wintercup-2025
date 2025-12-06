@@ -1,5 +1,5 @@
 {
-  "firstLayout": "Intro",
+  "firstLayout": "TitleScreen",
   "gdVersion": {
     "build": 249,
     "major": 5,
@@ -1308,6 +1308,110 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/mehrasaur/Chip/9710c23d37a8a78ad8dd66b056dee202c78008bfccb8797705a6425a5da0ca90_Chip Black_Top.png",
           "name": "Chip Black_Top.png"
         }
+      },
+      {
+        "file": "assets/Fade-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Fade-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sanguis80.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "sanguis80.fnt",
+        "userAdded": false
+      },
+      {
+        "file": "assets/sanguis80_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sanguis80_0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewFile-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewFile-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Selector-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Selector-1-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/DogicaTake4.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "DogicaTake4.fnt",
+        "userAdded": false
+      },
+      {
+        "file": "assets/DogicaTake4_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DogicaTake4_0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jonathan_So-ForMe-truncade.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Jonathan_So-ForMe-truncade.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/MenuMove.wav",
+        "kind": "audio",
+        "metadata": "{\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Blip/select 31\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.04,\\\"sustainPunch\\\":0,\\\"decay\\\":0.01,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":300,\\\"frequencySweep\\\":0,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.3,\\\"waveform\\\":\\\"whistle\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":65,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":30}\",\"name\":\"MenuMove\"}}",
+        "name": "MenuMove.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Select.wav",
+        "kind": "audio",
+        "metadata": "{\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Blip/select 49\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.04092945208729559,\\\"sustainPunch\\\":0,\\\"decay\\\":0.5340063743631778,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":198.49096204322166,\\\"frequencySweep\\\":0,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"whistle\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0.10861971659449754,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":60,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":50}\",\"name\":\"Select\"}}",
+        "name": "Select.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Winter Background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Winter Background.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Worlds/Winter/Background/7f5947651f3460ece61f069c3bbde41e393a3cd509e1651d585f879a251488b2_Winter Background.png",
+          "name": "Winter Background.png"
+        }
+      },
+      {
+        "file": "assets/Winter Background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Winter Background.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -1476,7 +1580,7 @@
       "effects": [],
       "behaviors": [
         {
-          "isFolded": true,
+          "ignoreDefaultControls": true,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "maxSpeed": 100,
@@ -1487,12 +1591,12 @@
           "angularMaxSpeed": 180,
           "customIsometryAngle": 30,
           "deceleration": 900000,
-          "ignoreDefaultControls": false,
           "movementAngleOffset": 0,
           "rotateObject": false,
           "viewpoint": "TopDown"
         },
         {
+          "isFolded": true,
           "name": "TopDownMovementAnimator",
           "type": "TopDownMovementAnimator::TopDownMovementAnimator",
           "Animation": "Animation",
@@ -1502,19 +1606,6 @@
           "DirectionCount": 0,
           "AngleOffset": 0,
           "AnimationDirection": 0
-        },
-        {
-          "isFolded": true,
-          "name": "TopDownMultitouchMapper",
-          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper",
-          "TopDownMovement": "TopDownMovement",
-          "ControllerIdentifier": 1,
-          "JoystickIdentifier": "Primary",
-          "StickMode": "8 Directions"
-        },
-        {
-          "name": "YSort",
-          "type": "YSort::YSort"
         }
       ],
       "animations": [
@@ -2261,6 +2352,26 @@
           "type": "structure",
           "children": [
             {
+              "name": "Bas",
+              "type": "string",
+              "value": "s"
+            },
+            {
+              "name": "Droite",
+              "type": "string",
+              "value": "d"
+            },
+            {
+              "name": "Gauche",
+              "type": "string",
+              "value": "q"
+            },
+            {
+              "name": "Haut",
+              "type": "string",
+              "value": "z"
+            },
+            {
               "name": "Valider",
               "type": "string",
               "value": "e"
@@ -2348,12 +2459,24 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/quizz_game"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/titlescreen"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/credits"
     }
   ],
   "externalEvents": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/dialogues"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/dplacementstopdown"
     }
   ],
   "eventsFunctionsExtensions": [
