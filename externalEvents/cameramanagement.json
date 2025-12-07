@@ -1,0 +1,307 @@
+{
+  "associatedLayout": "Vania_Game",
+  "name": "CameraManagement",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "At the beginning of the scene, hide the Camera Room objects."
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "CameraRoom"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "BossRoom"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "As long as the player is in collision with the CameraRoom object and not the BossRoom, center the camera on the player WITHIN the CameraRoom object's boundaries.\nThis selects the current CameraRoom the player is in, and ensures the cameras stay within that range. In the future if the game was to be expanded with different rooms, this would mean it would flip the camera to the new CameraRoom boundaries once you enter it.\nWe duplicate this event for the Dash and Death effect layers, since they should both always mirror the main layer."
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Camera Movement",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "HeroHitbox",
+                "CameraRoom",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Parallax",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [],
+              "parameters": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "The parralax layer cameras should not move unless the main camera is moving, so their position is related specifically to the position of the base layer's camera position."
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCameraX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "round(CameraX(\"\",0)*0.06)",
+                    "\"BG1\"",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "round(CameraX(\"\",0)*0.02)",
+                    "\"BG2\"",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "floor(CameraY(\"\",0)*0.025)",
+                    "\"BG1\"",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "When not in collision with the BossRoom, the main, dash effect, and death effect layer cameras should follow the HeroHitbox object.\nThe CutsceneCamera object should stay centered on the HeroHitbox so its starting point feels \"normal\" when the game switches to following it."
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "HeroHitbox",
+                    "BossRoom",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FixCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "HeroHitbox",
+                    "CameraRoom.X()",
+                    "CameraRoom.Y()",
+                    "CameraRoom.X() + CameraRoom.Width()",
+                    "CameraRoom.Y() + CameraRoom.Height()",
+                    "yes",
+                    "\"\"",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FixCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "HeroHitbox",
+                    "CameraRoom.X()",
+                    "CameraRoom.Y()",
+                    "CameraRoom.X() + CameraRoom.Width()",
+                    "CameraRoom.Y() + CameraRoom.Height()",
+                    "yes",
+                    "\"DashEffect\"",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FixCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "HeroHitbox",
+                    "CameraRoom.X()",
+                    "CameraRoom.Y()",
+                    "CameraRoom.X() + CameraRoom.Width()",
+                    "CameraRoom.Y() + CameraRoom.Height()",
+                    "yes",
+                    "\"DeathEffect\"",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "CutsceneCamera",
+                    "=",
+                    "HeroHitbox.CenterX()-(CutsceneCamera.Width()/2)",
+                    "=",
+                    "HeroHitbox.CenterY()-(CutsceneCamera.Height()/2)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Once in collision with the BossRoom, update the BossStart variable. This is used to trigger the Boss Start Cutscene."
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "BossStart",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "HeroHitbox",
+                    "BossRoom",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "BossStart",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    }
+  ]
+}

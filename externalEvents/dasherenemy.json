@@ -1,0 +1,302 @@
+{
+  "associatedLayout": "Vania_Game",
+  "name": "DasherEnemy",
+  "events": [
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Dasher Enemy",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Initialization",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+                  },
+                  "parameters": [
+                    "DasherEnemy",
+                    "Animation"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "DasherEnemy",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Dasher Movement",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "DasherEnemy",
+              "conditions": [],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "The Dasher enemy should only start moving if the player is on the ground, and roughly on the same platform as the dasher.\nThis is being checked by comparing the Y position of the player against the Y position of the dasher.\nThe Dasher enemy should only move if they are on screen or about to be on screen. This is checked based off the Dasher's X position vs the center of the camera, and that the value is less than 1/2 the screen width (640).\nThis also only moves if the dasher is facing the direction of the player, by checking if the player's X position is less than the dasher enemy's if it is facing left (unflipped), or if the player's X position is greater than the dasher's if it is facing right (flipped).\nThis should only occur if the dasher hasn't already started to dash."
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "HeroHitbox",
+                        "<=",
+                        "DasherEnemy.Y()+20"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "abs(DasherEnemy.X()-CameraX(\"\",0))",
+                        "<=",
+                        "640"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::IsOnFloor"
+                      },
+                      "parameters": [
+                        "HeroHitbox",
+                        "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "FlippableCapability::FlippableBehavior::FlippedX"
+                              },
+                              "parameters": [
+                                "DasherEnemy",
+                                "Flippable"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PosX"
+                              },
+                              "parameters": [
+                                "HeroHitbox",
+                                "<",
+                                "DasherEnemy.X()"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "FlippableCapability::FlippableBehavior::FlippedX"
+                              },
+                              "parameters": [
+                                "DasherEnemy",
+                                "Flippable"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PosX"
+                              },
+                              "parameters": [
+                                "HeroHitbox",
+                                ">",
+                                "DasherEnemy.X()"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "DasherEnemy",
+                        "StartDash",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlayAnimation"
+                      },
+                      "parameters": [
+                        "DasherEnemy"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "DasherEnemy",
+                        "StartDash",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": []
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "DasherEnemy",
+                        "StartDash",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "FlippableCapability::FlippableBehavior::FlippedX"
+                          },
+                          "parameters": [
+                            "DasherEnemy",
+                            "Flippable"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::SimulateRightKey"
+                          },
+                          "parameters": [
+                            "Wolf",
+                            "PlatformerObject"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "FlippableCapability::FlippableBehavior::FlippedX"
+                          },
+                          "parameters": [
+                            "DasherEnemy",
+                            "Flippable"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::SimulateLeftKey"
+                          },
+                          "parameters": [
+                            "Wolf",
+                            "PlatformerObject"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "parameters": []
+    }
+  ]
+}
