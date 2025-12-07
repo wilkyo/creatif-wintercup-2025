@@ -2904,6 +2904,10 @@
   ],
   "behaviorsSharedData": [
     {
+      "name": "Anchor",
+      "type": "AnchorBehavior::AnchorBehavior"
+    },
+    {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
     },
@@ -2936,6 +2940,14 @@
       "type": "ScalableCapability::ScalableBehavior"
     },
     {
+      "name": "ScreenWrap",
+      "type": "ScreenWrap::ScreenWrap"
+    },
+    {
+      "name": "Sticker",
+      "type": "Sticker::Sticker"
+    },
+    {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
     },
@@ -2948,6 +2960,10 @@
       "type": "TopDownMovementAnimator::TopDownMovementAnimator",
       "NewAnimationDirection": 0,
       "AnimationFrame": 0
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }

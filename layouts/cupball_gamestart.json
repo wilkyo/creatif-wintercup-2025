@@ -1,13 +1,13 @@
 {
-  "b": 0,
+  "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Credits",
-  "name": "Credits",
-  "r": 0,
+  "mangledName": "CupBall_95GameStart",
+  "name": "CupBall_GameStart",
+  "r": 209,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": false,
+  "stopSoundsOnStartup": true,
   "title": "",
-  "v": 0,
+  "v": 209,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -19,73 +19,35 @@
     "gridOffsetZ": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": true,
-    "zoomFactor": 0.6199999999999997,
+    "snap": false,
+    "zoomFactor": 0.546875,
     "windowMask": false,
     "selectedLayer": ""
   },
   "objectsGroups": [],
-  "variables": [],
-  "instances": [
+  "variables": [
     {
-      "angle": 0,
-      "customSize": true,
-      "height": 621,
-      "layer": "",
-      "name": "Credits",
-      "persistentUuid": "da9f66dc-be72-4444-989e-4e4abffc43d8",
-      "width": 1202,
-      "x": 47,
-      "y": 51,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
+      "name": "CurrentLevel",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "MovesMade",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "PlayTimer",
+      "type": "number",
+      "value": 0
     }
   ],
-  "objects": [
-    {
-      "assetStoreId": "",
-      "name": "Credits",
-      "type": "BitmapText::BitmapTextObject",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "text": "Huge thanks to 4ian, Bouh, Arthuro555, and all of the GDevelop \ncommunity over the years.\n\n- GUI Assets -\nHUD:  Adwitr on Itch.io / Mounir Tohami \nTitle Font: Sanguis - Jupiter Hadley\nGUI Font: Dogica Pixel - rmocci\n\n- World Art Assets -\nMap Tileset: Ansimuz\nPlayer Character: Ansimuz\nMonsters: Ansimuz\n\n- Sound Assets -\nMusic: Jonathan So\nSword Sound Effect: Iwan Gabovich\nOther Sounds: Created in GDevelop using JFXR\n\n- Game Design and Development - \nSilver-Streak\n\n\nPress the r key on the keyboard to return to the main menu.",
-        "opacity": 255,
-        "scale": 1,
-        "fontSize": 20,
-        "tint": "#ffffff",
-        "bitmapFontResourceName": "DogicaTake4.fnt",
-        "textureAtlasResourceName": "DogicaTake4_0.png",
-        "align": "center",
-        "wordWrap": true,
-        "verticalTextAlignment": "top"
-      }
-    }
-  ],
+  "instances": [],
+  "objects": [],
   "objectsFolderStructure": {
-    "folderName": "__ROOT",
-    "children": [
-      {
-        "objectName": "Credits"
-      }
-    ]
+    "folderName": "__ROOT"
   },
   "events": [
-    {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Center the credits text."
-    },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -101,65 +63,71 @@
       "actions": [
         {
           "type": {
-            "value": "SetCenter"
+            "value": "SetNumberVariable"
           },
           "parameters": [
-            "Credits",
+            "CurrentLevel",
             "=",
-            "CameraX(\"\",0)",
-            "=",
-            "CameraY(\"\",0)"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Events to return to the title screen."
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Or"
-          },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "r"
-              ]
-            }
+            "1"
           ]
         },
         {
           "type": {
-            "value": "BuiltinCommonInstructions::Once"
+            "value": "SetNumberVariable"
           },
-          "parameters": []
-        }
-      ],
-      "actions": [
+          "parameters": [
+            "MovesMade",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "PlayTimer",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "EcrireFichierExp"
+          },
+          "parameters": [
+            "\"BallCupBoom\"",
+            "\"CurrentLevel\"",
+            "CurrentLevel"
+          ]
+        },
+        {
+          "type": {
+            "value": "EcrireFichierExp"
+          },
+          "parameters": [
+            "\"BallCupBoom\"",
+            "\"MovesMade\"",
+            "MovesMade"
+          ]
+        },
+        {
+          "type": {
+            "value": "EcrireFichierExp"
+          },
+          "parameters": [
+            "\"BallCupBoom\"",
+            "\"PlayTimer\"",
+            "PlayTimer"
+          ]
+        },
         {
           "type": {
             "value": "Scene"
           },
           "parameters": [
             "",
-            "\"TitleScreen\"",
+            "\"CupBall_Game\"",
             ""
           ]
         }
@@ -168,14 +136,14 @@
   ],
   "layers": [
     {
-      "ambientLightColorB": 0,
-      "ambientLightColorG": 7346456,
-      "ambientLightColorR": 0,
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
       "camera2DPlaneMaxDrawingDistance": 5000,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
-      "camera3DNearPlaneDistance": 0.1,
-      "cameraType": "perspective",
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
@@ -194,7 +162,43 @@
           "width": 0
         }
       ],
-      "effects": []
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
