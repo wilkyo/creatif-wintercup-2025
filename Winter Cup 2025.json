@@ -559,7 +559,7 @@
         }
       },
       {
-        "file": "assets/Campfire_No Shadow.png.png",
+        "file": "assets/Campfire_No Shadow.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Campfire_No Shadow.png",
@@ -611,7 +611,7 @@
         "userAdded": false
       },
       {
-        "file": "assets/Carrot_No Shadow.png.png",
+        "file": "assets/Carrot_No Shadow.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Carrot_No Shadow.png",
@@ -623,7 +623,7 @@
         }
       },
       {
-        "file": "assets/Herb1_No Shadow.png.png",
+        "file": "assets/Herb1_No Shadow.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Herb1_No Shadow.png",
@@ -635,7 +635,7 @@
         }
       },
       {
-        "file": "assets/Herb2_No Shadow.png.png",
+        "file": "assets/Herb2_No Shadow.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Herb2_No Shadow.png",
@@ -655,7 +655,7 @@
         "userAdded": false
       },
       {
-        "file": "assets/Moon_No Shadow.png.png",
+        "file": "assets/Moon_No Shadow.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Moon_No Shadow.png",
@@ -1653,7 +1653,7 @@
         "userAdded": true
       },
       {
-        "file": "assets/Snowflake_No Shadow.png.png",
+        "file": "assets/Snowflake_No Shadow.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Snowflake_No Shadow.png",
@@ -1752,6 +1752,579 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\ACharLeft1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/monogram-extended.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Assets\\Fonts\\monogram-extended.ttf",
+        "userAdded": true
+      },
+      {
+        "file": "assets/DeleteArrows-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Arrows\\DeleteArrows-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Penguin_Idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Idle_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/53250f0308844c899e49f5c73f8e4591003b47cfc76938f1b9c2f7eee4983355_Penguin_Idle_1.png",
+          "name": "Penguin_Idle_1.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Idle_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Idle_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/115a018b51dc97213938aa13f36ae27fb23a287c41416c3c8c8ba5a520054bec_Penguin_Idle_2.png",
+          "name": "Penguin_Idle_2.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Idle_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/be4020d3cc9d950dbf03fe0a29b45f0daff864aba81a6349f40af9f441cc2695_Penguin_Idle_3.png",
+          "name": "Penguin_Idle_3.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Idle_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Idle_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/13c8138a39ca74a53ffb02f7e2fa756434250779c6a9bb6304c4f864da438d87_Penguin_Idle_4.png",
+          "name": "Penguin_Idle_4.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Idle_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Idle_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/1c25d16d16cf2a10388e10847015012188c3cf5e1775d22768a90554376ccacf_Penguin_Idle_5.png",
+          "name": "Penguin_Idle_5.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Lying On Ground.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Lying On Ground.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/20af5095c463619e956b87b96637fd91a8372cf85c94fc8804ffb4be9b4de3e4_Penguin_Lying On Ground.png",
+          "name": "Penguin_Lying On Ground.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Sitting_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Sitting_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/93c07040c58f2323e4d1871a38871628872d2ad0ae56e650abda33405c10e5de_Penguin_Sitting_1.png",
+          "name": "Penguin_Sitting_1.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Sitting_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Sitting_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/d670836b6188bb0dc7e712f6896febbd320d3019eb3d11cf73a468256f873872_Penguin_Sitting_2.png",
+          "name": "Penguin_Sitting_2.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Swimming_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Swimming_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/78b00be7eda115888a496c68e9671598ac408d994e992bf744e58504983fe7ae_Penguin_Swimming_1.png",
+          "name": "Penguin_Swimming_1.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Swimming_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Swimming_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/772983168887d23724f69969a01e38dd95d319ed9ded94c30068bd81f1805389_Penguin_Swimming_2.png",
+          "name": "Penguin_Swimming_2.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Swimming_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Swimming_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/02b8246a03034e07103ef4ee166036c59170e6d7710c5921994a8e48225de4fb_Penguin_Swimming_3.png",
+          "name": "Penguin_Swimming_3.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Swimming_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Swimming_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/a68f8304e71e066843926f96f2bb1296b0d7541bec6399fb50f73d82862a9bc9_Penguin_Swimming_4.png",
+          "name": "Penguin_Swimming_4.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Victory Dance_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Victory Dance_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/53250f0308844c899e49f5c73f8e4591003b47cfc76938f1b9c2f7eee4983355_Penguin_Victory Dance_1.png",
+          "name": "Penguin_Victory Dance_1.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Victory Dance_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Victory Dance_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/14dd875b6d37c5b3cd09c7f6eaa7fc68bef7ef815d5b9d228f152e51f8369586_Penguin_Victory Dance_2.png",
+          "name": "Penguin_Victory Dance_2.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Victory Dance_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Victory Dance_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/7d77e7a419d2e2c4d3f36eed630b90fa7d1869ccc7e8ea5ce8ce805687a98952_Penguin_Victory Dance_3.png",
+          "name": "Penguin_Victory Dance_3.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Victory Dance_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Victory Dance_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/14dd875b6d37c5b3cd09c7f6eaa7fc68bef7ef815d5b9d228f152e51f8369586_Penguin_Victory Dance_4.png",
+          "name": "Penguin_Victory Dance_4.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Victory Dance_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Victory Dance_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/f65918ff75fe249ce4ace0529ea256df6e821235a1e85bf638b5ccdb1369a7b3_Penguin_Victory Dance_5.png",
+          "name": "Penguin_Victory Dance_5.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Waddling_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Waddling_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/2c968147db1c3d79e0a21ebb94df53cb88ee0bdaf1c2600d485ed16b7ec33b08_Penguin_Waddling_1.png",
+          "name": "Penguin_Waddling_1.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Waddling_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Waddling_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/f595e6e22399bbb84033e34539af57e1f0347c72a0ea0f09cc0fe6faed99399a_Penguin_Waddling_2.png",
+          "name": "Penguin_Waddling_2.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Waddling_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Waddling_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/94dd611186297f706abb8c0203a13f83f804501db50fa74bfd11cbcab0a4d9fc_Penguin_Waddling_3.png",
+          "name": "Penguin_Waddling_3.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Waddling_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Waddling_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/a52222edbfef42ddc9414f217d492c4e99a4af8fd1aa2c5296cf298f29d462cd_Penguin_Waddling_4.png",
+          "name": "Penguin_Waddling_4.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Waddling_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Waddling_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/4046d3068cbb73563cef1188d21513c2e11b0220983766650377918a427dd771_Penguin_Waddling_5.png",
+          "name": "Penguin_Waddling_5.png"
+        }
+      },
+      {
+        "file": "assets/Penguin_Waddling_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Penguin_Waddling_6.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Character/Penguin/2427d46b7d9d8eb7c59428c8074c2d2bfc0fa667787642ac54c6680a01b8020c_Penguin_Waddling_6.png",
+          "name": "Penguin_Waddling_6.png"
+        }
+      },
+      {
+        "file": "assets/Up2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Up",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Down2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Down",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Left2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Left",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Up3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Up3.png\"}",
+        "name": "Up2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Down3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Down3.png\"}",
+        "name": "Down2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Left3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Left3.png\"}",
+        "name": "Left2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Up4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Up3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Down4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Down3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Left4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Left3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Right4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Right3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tiled_Castles Background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiled_Castles Background.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Generic Backgrounds/95a29ad64dac1d147725f9a7e6e28396b918fa3b06113400dac1abd5c14dde47_tiled_Castles Background.png",
+          "name": "tiled_Castles Background.png"
+        }
+      },
+      {
+        "file": "assets/Snowflake_No Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Snowflake_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/New Icons/3502f03553fa538328c80f7f719146ada904f0a0236dccfc3d323c4531c00408_Snowflake_No Shadow.png",
+          "name": "Snowflake_No Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Snowflake_Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Snowflake_Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/New Icons/79fc8acf5f7c074667fca263ab293dc406cc3415fc3b94649ae35ee068d18e19_Snowflake_Shadow.png",
+          "name": "Snowflake_Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Crystal_Idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Crystal_Idle_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Objects/20bf74dfd1703026b06e2f74cc333f94af731064ff93e5b7afd1b768ad6c7111_Crystal_Idle_1.png",
+          "name": "Crystal_Idle_1.png"
+        }
+      },
+      {
+        "file": "assets/Crystal_Idle_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Crystal_Idle_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Objects/d314c3206cecc6d03246c6fcad4c811fddf6cdb7eb485d8c6329b7c740fbd81d_Crystal_Idle_2.png",
+          "name": "Crystal_Idle_2.png"
+        }
+      },
+      {
+        "file": "assets/Crystal_Idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Crystal_Idle_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Objects/594fbc65bfe8e1730d7ce5941707dc6eaecc7ed55c1dff5ba96dd5ea56c6d623_Crystal_Idle_3.png",
+          "name": "Crystal_Idle_3.png"
+        }
+      },
+      {
+        "file": "assets/Crystal_Idle_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Crystal_Idle_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Objects/49f4ddcc158db12d4b5825174ae7a86c20f374011eb87c05862161a74af07dbd_Crystal_Idle_4.png",
+          "name": "Crystal_Idle_4.png"
+        }
+      },
+      {
+        "file": "assets/Crystal_Idle_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Crystal_Idle_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Objects/ab7548f9caeb4311d3135d0bff33f3536c25a192c605ac57e26d8fe2952aabb8_Crystal_Idle_5.png",
+          "name": "Crystal_Idle_5.png"
+        }
+      },
+      {
+        "file": "assets/Right5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Right4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/EnferGele.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\EnferGele.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Blue Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blue Button_Hovered.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/1ffd07cb739df2a909155dd3057f6def46b833ced6ef1a09527b6ea59e88e464_Blue Button_Hovered.png",
+          "name": "Blue Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Blue Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blue Button_Idle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/eeac55458b66fb84f756b38085fbf7d1e079c39363c942abd35ea9d0939465ce_Blue Button_Idle.png",
+          "name": "Blue Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Blue Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blue Button_Pressed.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/f0ede8843d544f6e84bc09299a8aabffbce558966f25af98f7b47ab1648217ce_Blue Button_Pressed.png",
+          "name": "Blue Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/torch_off.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "torch_off.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney New Platformer Pack 1.0/Props/Decoration/b94bec91ee72ca600e6dab6a3a1e5f65d8f8581c243a68f85fd292b9ee80cad9_torch_off.png",
+          "name": "torch_off.png"
+        }
+      },
+      {
+        "file": "assets/torch_on_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "torch_on_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney New Platformer Pack 1.0/Props/Decoration/5eacee657cb3c87b6df7e57f0ba10f2e7255d82988c9dff3a189695319e7e36f_torch_on_1.png",
+          "name": "torch_on_1.png"
+        }
+      },
+      {
+        "file": "assets/torch_on_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "torch_on_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney New Platformer Pack 1.0/Props/Decoration/e6865fa089591b528dc87e49cc3ae9841204625d08a860116771e4faa497f2e2_torch_on_2.png",
+          "name": "torch_on_2.png"
+        }
+      },
+      {
+        "file": "assets/Right0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Right0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Snowflake_No Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Snowflake_No Shadow.png",
         "smoothed": true,
         "userAdded": false
       }
@@ -4553,6 +5126,11 @@
           "value": 0
         },
         {
+          "name": "Rythm",
+          "type": "number",
+          "value": 0
+        },
+        {
           "name": "Sokoban",
           "type": "number",
           "value": 0
@@ -4606,6 +5184,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/cupball_gamestart"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/rhythm_game"
     }
   ],
   "externalEvents": [
@@ -4702,6 +5284,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/camerashake"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/choose"
     }
   ],
   "externalLayouts": [
