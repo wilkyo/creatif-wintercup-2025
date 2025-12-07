@@ -1,9 +1,9 @@
 {
   "firstLayout": "TitleScreen",
   "gdVersion": {
-    "build": 247,
+    "build": 249,
     "major": 5,
-    "minor": 5,
+    "minor": 6,
     "revision": 0
   },
   "properties": {
@@ -4529,6 +4529,11 @@
       "name": "MiniJeux",
       "type": "structure",
       "children": [
+        {
+          "name": "CupBall",
+          "type": "number",
+          "value": 0
+        },
         {
           "name": "Memory",
           "type": "number",

@@ -2351,7 +2351,7 @@
                           "parameters": [
                             "CurrentLevel",
                             "<=",
-                            "10"
+                            "3"
                           ]
                         }
                       ],
@@ -2378,7 +2378,7 @@
                           "parameters": [
                             "CurrentLevel",
                             ">",
-                            "10"
+                            "3"
                           ]
                         }
                       ],
@@ -2729,6 +2729,42 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyFromTextReleased"
+          },
+          "parameters": [
+            "",
+            "\"LControl\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "DEBUG",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"CupBall_GameOver\"",
+            ""
+          ]
+        }
+      ]
     }
   ]
 }

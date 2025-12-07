@@ -440,6 +440,16 @@
                     "50",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "MiniJeux.CupBall",
+                    "+",
+                    "1"
+                  ]
                 }
               ]
             }
@@ -630,24 +640,25 @@
                         "",
                         "Left"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "SourisSurObjet"
-                      },
-                      "parameters": [
-                        "NewGameButton",
-                        "",
-                        "",
-                        ""
-                      ]
                     }
                   ],
                   "actions": [],
                   "events": [
                     {
                       "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "NewGameButton",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ],
                       "actions": [
                         {
                           "type": {
@@ -694,6 +705,50 @@
                           "parameters": [
                             "",
                             "\"CupBall_GameStart\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "LeaveButton",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetStringVariable"
+                          },
+                          "parameters": [
+                            "EtatJeu",
+                            "=",
+                            "\"JeuTermine\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "0.1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PopScene"
+                          },
+                          "parameters": [
                             ""
                           ]
                         }
