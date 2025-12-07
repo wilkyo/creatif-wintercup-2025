@@ -592,7 +592,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"Down\""
+                    "Options.Touches.Bas"
                   ]
                 }
               ],
@@ -614,7 +614,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"Up\""
+                    "Options.Touches.Haut"
                   ]
                 }
               ],
