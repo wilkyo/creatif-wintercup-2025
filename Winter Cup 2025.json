@@ -1746,6 +1746,14 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/ecb33703984d3107196efce7335025d7ec104351fe8cdeb581c73fe0b8038c34_Green Button_Pressed.png",
           "name": "Green Button_Pressed.png"
         }
+      },
+      {
+        "file": "assets/ACharLeft1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ACharLeft1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
