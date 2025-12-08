@@ -2047,6 +2047,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Player controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4415,28 +4416,80 @@
                       "parameters": []
                     }
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "RestartButton",
-                    "",
-                    "",
-                    ""
-                  ]
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"UpRunner_Game\"",
-                    ""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "RestartButton",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"UpRunner_Game\"",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "LeaveButton",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "EtatJeu",
+                        "=",
+                        "\"JeuTermine\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PopScene"
+                      },
+                      "parameters": [
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -4480,7 +4533,90 @@
       "name": "End game",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "score",
+                "=",
+                "100"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "gameRunning",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "YouWon",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "MiniJeux.UpRunner",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Chip_Orange",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "ChipOrangeText",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"GUI\""
+              ]
+            }
+          ]
+        }
+      ],
       "parameters": []
     },
     {
@@ -4488,12 +4624,21 @@
       "conditions": [
         {
           "type": {
-            "value": "NumberVariable"
+            "value": "KeyFromTextReleased"
           },
           "parameters": [
-            "score",
-            "=",
-            "100"
+            "",
+            "\"LControl\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "DEBUG",
+            "True",
+            ""
           ]
         }
       ],
@@ -4503,54 +4648,9 @@
             "value": "ModVarScene"
           },
           "parameters": [
-            "gameRunning",
+            "score",
             "=",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "YouWon",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "Chip_Orange",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "ChipOrangeText",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "HideLayer"
-          },
-          "parameters": [
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "HideLayer"
-          },
-          "parameters": [
-            "",
-            "\"GUI\""
+            "100"
           ]
         }
       ]
@@ -4661,12 +4761,20 @@
   ],
   "behaviorsSharedData": [
     {
+      "name": "Anchor",
+      "type": "AnchorBehavior::AnchorBehavior"
+    },
+    {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
     },
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FlashTransitionPainter",
+      "type": "FlashTransitionPainter::FlashTransitionPainter"
     },
     {
       "name": "Flippable",
@@ -4693,8 +4801,30 @@
       "type": "ScalableCapability::ScalableBehavior"
     },
     {
+      "name": "ScreenWrap",
+      "type": "ScreenWrap::ScreenWrap"
+    },
+    {
+      "name": "Sticker",
+      "type": "Sticker::Sticker"
+    },
+    {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "TopDownMovement",
+      "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
+      "name": "TopDownMovementAnimator",
+      "type": "TopDownMovementAnimator::TopDownMovementAnimator",
+      "NewAnimationDirection": 0,
+      "AnimationFrame": 0
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }
