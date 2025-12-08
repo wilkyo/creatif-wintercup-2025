@@ -1171,6 +1171,16 @@
           ]
         }
       ]
+    },
+    {
+      "name": "QuestionFound",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "Child",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -2370,20 +2380,60 @@
                 "=",
                 "RandomInRange(0,30)"
               ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "QuestionFound",
+                "False",
+                "RandomInRange(0,30)"
+              ]
             }
           ],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::ForEachChildVariable",
+              "iterableVariableName": "QuestionSelectionList",
+              "valueIteratorVariableName": "Child",
+              "keyIteratorVariableName": "",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "RandomNb",
+                    "=",
+                    "Child"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "QuestionFound",
+                    "True",
+                    "RandomInRange(0,30)"
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "VariableChildExists2"
+                    "value": "BooleanVariable"
                   },
                   "parameters": [
-                    "QuestionSelectionList",
-                    "RandomNb"
+                    "QuestionFound",
+                    "=",
+                    "Child"
                   ]
                 }
               ],
