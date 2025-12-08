@@ -1,0 +1,190 @@
+{
+  "associatedLayout": "Vania_Game",
+  "name": "GUIManagement",
+  "events": [
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Health Bar",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "The health bar is created as a 9-patch/panel sprite object. This is so we can modify the width without modifying the appearance of the sprite.\nAt the beginning of the scene, get the default width of the Health Bar. This is stored as a variable so we can use this for calculations later."
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "GUIHealthBar",
+                "DefaultWidth",
+                "=",
+                "GUIHealthBar.Width()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "As the hero takes damage, we want to reduce the size of the health bar proportionally to the total percentage of HP vs Max HP. \nTo make it look more \"Pixel perfect\" and less smooth, we want it to only move in increments of what one pixel would be. \nAs the assets have been resized for 720p, one pixel is now 4 pixels. To get it to round to the nearest multiple of 4, we divide the updated width by 4, round the result down, then multiply by 4."
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteObject::Width"
+              },
+              "parameters": [
+                "GUIHealthBar",
+                "=",
+                "floor(GUIHealthBar.DefaultWidth * Hero.heroHP / Hero.heroMaxHP / 4) * 4"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Stamina Bar",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "The stamina bar is handled identical to the health bar, but focuses on the current stamina vs max stamina of the hero."
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "GUIStaminaBar",
+                "DefaultWidth",
+                "=",
+                "GUIStaminaBar.Width()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteObject::Width"
+              },
+              "parameters": [
+                "GUIStaminaBar",
+                "=",
+                "floor(GUIStaminaBar.DefaultWidth * Hero.heroStam / Hero.heroMaxStam / 4) * 4"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Lives",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "The Lives are displayed via a text object that, GUILivesLabel.\nThis text object is updated to the current amount of lives stored as a global variable."
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "BitmapText::BitmapTextObject::SetText"
+              },
+              "parameters": [
+                "GUIBitmapLives",
+                "=",
+                "\"VIES: \" + Vania.GameState.Lives"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    }
+  ]
+}

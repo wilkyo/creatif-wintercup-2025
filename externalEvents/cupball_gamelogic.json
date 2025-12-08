@@ -399,7 +399,7 @@
                                 "CameraCenterX(\"\",0) + CameraWidth(\"\",0)",
                                 "CameraCenterY(\"\",0)",
                                 "\"\"",
-                                "GlobalVariable(CameraMoveDuration) * 1000",
+                                "GlobalVariable(CupBall.CameraMoveDuration) * 1000",
                                 "\"easeOutBack\""
                               ]
                             }
@@ -417,7 +417,7 @@
                             "value": "Wait"
                           },
                           "parameters": [
-                            "CameraMoveDuration"
+                            "CupBall.CameraMoveDuration"
                           ]
                         },
                         {
@@ -2318,7 +2318,7 @@
                             "CameraCenterX(\"\",0) + CameraWidth(\"\",0) + Clouds.Width()",
                             "CameraCenterY(\"\",0)",
                             "\"\"",
-                            "CameraMoveDuration * 1000",
+                            "CupBall.CameraMoveDuration * 1000",
                             "\"easeInBack\""
                           ]
                         }
@@ -2336,7 +2336,7 @@
                         "value": "Wait"
                       },
                       "parameters": [
-                        "CameraMoveDuration"
+                        "CupBall.CameraMoveDuration"
                       ]
                     }
                   ],
