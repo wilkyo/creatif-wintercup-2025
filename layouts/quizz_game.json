@@ -2965,11 +2965,20 @@
       "actions": [
         {
           "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "AnswerButton",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "ShowLayer"
           },
           "parameters": [
             "",
-            "\"UI\""
+            "\"Game over\""
           ]
         },
         {
