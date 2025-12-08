@@ -52,7 +52,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "Huge thanks to 4ian, Bouh, Arthuro555, and all of the GDevelop \ncommunity over the years.\n\n- GUI Assets -\nHUD:  Adwitr on Itch.io / Mounir Tohami \nTitle Font: Sanguis - Jupiter Hadley\nGUI Font: Dogica Pixel - rmocci\n\n- World Art Assets -\nMap Tileset: Ansimuz\nPlayer Character: Ansimuz\nMonsters: Ansimuz\n\n- Sound Assets -\nMusic: Jonathan So\nSword Sound Effect: Iwan Gabovich\nOther Sounds: Created in GDevelop using JFXR\n\n- Game Design and Development - \nSilver-Streak\n\n\nPress the r key on the keyboard to return to the main menu.",
+        "text": "Un grand merci à Izigame, Opalarya, LaGrosseCarow et wilkyo pour le travail accompli et à la communauté GDevelop pour les nombreux exemples.\n\n- Logiciels utilisés -\nDéveloppement:  GDevelop\nRetouche d'images: GIMP/Figma/Paint\n\n- Images -\nTileset de maps: RPG Maker VX Ace\nPersonnages: GDevelop\n\n- Sons -\nMusiques: Nario Versus Zonik, AlexBouncyMaster, Enfer Gelé - Nourzinc\n\n- Game Design et Développement - \nGDevelop pour les inspirations\n\n\nAppuyer sur R pour revenir à l'écran titre",
         "opacity": 255,
         "scale": 1,
         "fontSize": 20,
@@ -93,9 +93,7 @@
           "type": {
             "value": "DepartScene"
           },
-          "parameters": [
-            ""
-          ]
+          "parameters": [""]
         }
       ],
       "actions": [
@@ -138,10 +136,7 @@
               "type": {
                 "value": "KeyPressed"
               },
-              "parameters": [
-                "",
-                "r"
-              ]
+              "parameters": ["", "r"]
             }
           ]
         },
@@ -157,11 +152,7 @@
           "type": {
             "value": "Scene"
           },
-          "parameters": [
-            "",
-            "\"TitleScreen\"",
-            ""
-          ]
+          "parameters": ["", "\"TitleScreen\"", ""]
         }
       ]
     }

@@ -40,7 +40,7 @@ Il faudra sauver tout le monde pour pouvoir affronter le dernier tryharder.
 
 - Moteur : GDevelop
 - Graphismes : GIMP
-- Sons : Nario Versus Zonik, Nikolay Overchenko - Whoosh cartoon whirring, AlexBouncyMaster, Generdyn, bruitages divers...
+- Sons : Nario Versus Zonik, AlexBouncyMaster, Enfer Gelé, bruitages divers...
 
 # CRÉDITS
 
