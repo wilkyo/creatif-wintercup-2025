@@ -1,9 +1,9 @@
 {
   "firstLayout": "TitleScreen",
   "gdVersion": {
-    "build": 249,
+    "build": 247,
     "major": 5,
-    "minor": 6,
+    "minor": 5,
     "revision": 0
   },
   "properties": {
@@ -2327,6 +2327,20 @@
         "name": "assets\\Snowflake_No Shadow.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/door.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "a0504f03501150f453bf2d3b3877abbcb96efd6296e366cc1cbf00c75220eb3b_door.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GDevelop examples/Platformer/Audio/a0504f03501150f453bf2d3b3877abbcb96efd6296e366cc1cbf00c75220eb3b_door.aac",
+          "name": "gdevelop-asset-store"
+        }
       }
     ]
   },
