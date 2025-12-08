@@ -1,9 +1,9 @@
 {
   "firstLayout": "TitleScreen",
   "gdVersion": {
-    "build": 247,
+    "build": 249,
     "major": 5,
-    "minor": 5,
+    "minor": 6,
     "revision": 0
   },
   "properties": {
@@ -78,10 +78,20 @@
       "placement": "bottom-left",
       "showWatermark": true
     },
-    "authorIds": ["21SMAaN2TeU7wdgeP5VgPUDNIQ72"],
-    "authorUsernames": ["Yourself (no username)"],
-    "categories": ["rpg"],
-    "playableDevices": ["keyboard", "mobile", "mobile"],
+    "authorIds": [
+      "21SMAaN2TeU7wdgeP5VgPUDNIQ72"
+    ],
+    "authorUsernames": [
+      "Yourself (no username)"
+    ],
+    "categories": [
+      "rpg"
+    ],
+    "playableDevices": [
+      "keyboard",
+      "mobile",
+      "mobile"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
@@ -6554,50 +6564,66 @@
           "name": "UpRunner",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "Vania",
+          "type": "number",
+          "value": 0
         }
       ]
     },
     {
-      "folded": true,
-      "name": "CameraMoveDuration",
-      "type": "number",
-      "value": 1.5
-    },
-    {
-      "name": "DashCost",
-      "type": "string",
-      "value": "25"
-    },
-    {
-      "name": "Cutscene",
-      "type": "string",
-      "value": "0"
-    },
-    {
-      "name": "GameState",
+      "name": "CupBall",
       "type": "structure",
       "children": [
         {
-          "name": "Checkpoint",
-          "type": "string",
-          "value": "0"
-        },
-        {
-          "name": "GameOver",
-          "type": "string",
-          "value": "0"
-        },
-        {
-          "name": "Lives",
-          "type": "string",
-          "value": "3"
+          "name": "CameraMoveDuration",
+          "type": "number",
+          "value": 1.5
         }
       ]
     },
     {
-      "name": "CoyoteTime",
-      "type": "string",
-      "value": "0.0833"
+      "name": "Vania",
+      "type": "structure",
+      "children": [
+        {
+          "name": "CoyoteTime",
+          "type": "string",
+          "value": "0.0833"
+        },
+        {
+          "name": "Cutscene",
+          "type": "string",
+          "value": "0"
+        },
+        {
+          "name": "DashCost",
+          "type": "string",
+          "value": "25"
+        },
+        {
+          "name": "GameState",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Checkpoint",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "GameOver",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "Lives",
+              "type": "string",
+              "value": "3"
+            }
+          ]
+        }
+      ]
     }
   ],
   "layouts": [

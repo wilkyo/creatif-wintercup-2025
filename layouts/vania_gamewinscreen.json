@@ -287,7 +287,18 @@
           ]
         }
       ],
-      "actions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "MiniJeux.Vania",
+            "+",
+            "1"
+          ]
+        }
+      ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -474,6 +485,48 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "LeaveButton",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "EtatJeu",
+            "=",
+            "\"JeuTermine\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.1"
+          ]
+        },
+        {
+          "type": {
+            "value": "PopScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -509,6 +562,10 @@
   ],
   "behaviorsSharedData": [
     {
+      "name": "Anchor",
+      "type": "AnchorBehavior::AnchorBehavior"
+    },
+    {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
     },
@@ -535,6 +592,14 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "ScreenWrap",
+      "type": "ScreenWrap::ScreenWrap"
+    },
+    {
+      "name": "Sticker",
+      "type": "Sticker::Sticker"
     },
     {
       "name": "Text",

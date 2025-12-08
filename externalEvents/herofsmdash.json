@@ -252,7 +252,7 @@
                         "Hero",
                         "heroStam",
                         "-",
-                        "DashCost"
+                        "Vania.DashCost"
                       ]
                     }
                   ]

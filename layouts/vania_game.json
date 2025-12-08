@@ -5434,7 +5434,7 @@
                 "value": "NumberVariable"
               },
               "parameters": [
-                "GameState.Checkpoint",
+                "Vania.GameState.Checkpoint",
                 "=",
                 "1"
               ]
@@ -5891,7 +5891,7 @@
                                 "value": "SetNumberVariable"
                               },
                               "parameters": [
-                                "Cutscene",
+                                "Vania.Cutscene",
                                 "=",
                                 "0"
                               ]
@@ -6820,7 +6820,7 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Cutscene",
+                    "Vania.Cutscene",
                     "=",
                     "1"
                   ]
@@ -6879,7 +6879,7 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Cutscene",
+                    "Vania.Cutscene",
                     "=",
                     "0"
                   ]
@@ -7013,7 +7013,7 @@
                         "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "Cutscene",
+                        "Vania.Cutscene",
                         "=",
                         "1"
                       ]
@@ -7023,7 +7023,7 @@
                         "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "GameState.Checkpoint",
+                        "Vania.GameState.Checkpoint",
                         "=",
                         "1"
                       ]
@@ -7518,6 +7518,47 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyFromTextReleased"
+          },
+          "parameters": [
+            "",
+            "\"LControl\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "DEBUG",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Vania_GameWinScreen\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [
@@ -7683,6 +7724,10 @@
   ],
   "behaviorsSharedData": [
     {
+      "name": "Anchor",
+      "type": "AnchorBehavior::AnchorBehavior"
+    },
+    {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
     },
@@ -7717,6 +7762,14 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "ScreenWrap",
+      "type": "ScreenWrap::ScreenWrap"
+    },
+    {
+      "name": "Sticker",
+      "type": "Sticker::Sticker"
     },
     {
       "name": "Text",

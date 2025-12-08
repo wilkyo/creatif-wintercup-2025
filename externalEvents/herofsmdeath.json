@@ -54,7 +54,7 @@
                 "value": "NumberVariable"
               },
               "parameters": [
-                "GameState.Lives",
+                "Vania.GameState.Lives",
                 ">",
                 "0"
               ]
@@ -291,7 +291,7 @@
                 "value": "NumberVariable"
               },
               "parameters": [
-                "GameState.Lives",
+                "Vania.GameState.Lives",
                 "=",
                 "0"
               ]
@@ -367,7 +367,7 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "GameState.GameOver",
+                    "Vania.GameState.GameOver",
                     "=",
                     "1"
                   ]
@@ -491,7 +491,7 @@
                     "value": "NumberVariable"
                   },
                   "parameters": [
-                    "GameState.GameOver",
+                    "Vania.GameState.GameOver",
                     "=",
                     "0"
                   ]
@@ -528,7 +528,7 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "GameState.Lives",
+                    "Vania.GameState.Lives",
                     "-",
                     "1"
                   ]
@@ -598,7 +598,7 @@
                     "value": "NumberVariable"
                   },
                   "parameters": [
-                    "GameState.GameOver",
+                    "Vania.GameState.GameOver",
                     "=",
                     "1"
                   ]

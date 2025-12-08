@@ -788,7 +788,7 @@
                     "Hero",
                     "heroStam",
                     ">=",
-                    "DashCost"
+                    "Vania.DashCost"
                   ]
                 },
                 {
@@ -1030,7 +1030,7 @@
                   "parameters": [
                     "HeroHitbox",
                     "\"CoyoteTimer\"",
-                    "CoyoteTime"
+                    "Vania.CoyoteTime"
                   ]
                 },
                 {
@@ -1120,7 +1120,7 @@
                   "parameters": [
                     "HeroHitbox",
                     "\"CoyoteTimer\"",
-                    "CoyoteTime"
+                    "Vania.CoyoteTime"
                   ]
                 },
                 {
