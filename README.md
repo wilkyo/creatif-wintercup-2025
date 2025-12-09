@@ -2,10 +2,10 @@
 
 # ÉQUIPE
 
-- Izigame – Développeur/Game designer/Sound designer
-- Opalarya - Scénariste
-- LaGrosseCarrow – Graphiste
-- wilkyo – Coordinateur/Développeur/Graphiste
+- Izigame (1100100 Pression) – Développeur/Game designer/Sound designer
+- Opalarya (1100100 Pression) - Scénariste
+- LaGrosseCarrow (2Hoth4U) – Graphiste
+- wilkyo (1100100 Pression) – Coordinateur/Développeur/Graphiste
 
 # COMMENT JOUER
 
@@ -31,7 +31,7 @@ Il faudra sauver tout le monde pour pouvoir affronter le dernier tryharder.
 # DÉFIS CRÉATIFS INTÉGRÉS
 
 - Coupe de l’hiver : Flocon présent dans certains mini-jeux
-- Les oubliés : Le héros appartient aux 2Hot4U
+- Les oubliés : Le héros appartient aux 2Hoth4U
 - TODO
 - TODO
 - TODO
@@ -39,7 +39,7 @@ Il faudra sauver tout le monde pour pouvoir affronter le dernier tryharder.
 # OUTILS UTILISÉS
 
 - Moteur : GDevelop
-- Graphismes : GIMP
+- Graphismes : GIMP, Figma, Paint
 - Sons : Nario Versus Zonik, AlexBouncyMaster, Enfer Gelé, bruitages divers...
 
 # CRÉDITS
