@@ -1,9 +1,9 @@
 {
   "firstLayout": "TitleScreen",
   "gdVersion": {
-    "build": 247,
+    "build": 249,
     "major": 5,
-    "minor": 5,
+    "minor": 6,
     "revision": 0
   },
   "properties": {
@@ -6367,6 +6367,9 @@
         },
         {
           "name": "CupBall"
+        },
+        {
+          "name": "VieilHomme"
         }
       ]
     },
