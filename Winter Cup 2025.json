@@ -78,20 +78,10 @@
       "placement": "bottom-left",
       "showWatermark": true
     },
-    "authorIds": [
-      "21SMAaN2TeU7wdgeP5VgPUDNIQ72"
-    ],
-    "authorUsernames": [
-      "Yourself (no username)"
-    ],
-    "categories": [
-      "rpg"
-    ],
-    "playableDevices": [
-      "keyboard",
-      "mobile",
-      "mobile"
-    ],
+    "authorIds": ["21SMAaN2TeU7wdgeP5VgPUDNIQ72"],
+    "authorUsernames": ["Yourself (no username)"],
+    "categories": ["rpg"],
+    "playableDevices": ["keyboard", "mobile", "mobile"],
     "extensionProperties": [],
     "platforms": [
       {
@@ -381,10 +371,10 @@
       },
       {
         "disablePreload": false,
-        "file": "assets/DialoguesMap1.json",
+        "file": "assets/DialoguesVillage.json",
         "kind": "json",
-        "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialoguesMap1.json\"}",
-        "name": "DialoguesMap1",
+        "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialoguesVillage.json\"}",
+        "name": "DialoguesVillage",
         "userAdded": false
       },
       {
@@ -6518,6 +6508,11 @@
               "value": "s"
             },
             {
+              "name": "Courir",
+              "type": "string",
+              "value": "LShift"
+            },
+            {
               "name": "Dash",
               "type": "string",
               "value": "o"
@@ -6576,6 +6571,11 @@
       "name": "Histoire",
       "type": "structure",
       "children": [
+        {
+          "name": "Courir",
+          "type": "boolean",
+          "value": false
+        },
         {
           "name": "Intro",
           "type": "number",
