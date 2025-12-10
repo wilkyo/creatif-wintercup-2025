@@ -790,14 +790,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/ClassicWinterTiles.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ClassicWinterTiles.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/Marker.png",
         "kind": "image",
         "metadata": "",
@@ -6367,6 +6359,9 @@
         },
         {
           "name": "CupBall"
+        },
+        {
+          "name": "VieilHomme"
         }
       ]
     },

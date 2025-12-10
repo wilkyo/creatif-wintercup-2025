@@ -93,7 +93,9 @@
           "type": {
             "value": "DepartScene"
           },
-          "parameters": [""]
+          "parameters": [
+            ""
+          ]
         }
       ],
       "actions": [
@@ -136,7 +138,10 @@
               "type": {
                 "value": "KeyPressed"
               },
-              "parameters": ["", "r"]
+              "parameters": [
+                "",
+                "r"
+              ]
             }
           ]
         },
@@ -152,7 +157,11 @@
           "type": {
             "value": "Scene"
           },
-          "parameters": ["", "\"TitleScreen\"", ""]
+          "parameters": [
+            "",
+            "\"TitleScreen\"",
+            ""
+          ]
         }
       ]
     }
