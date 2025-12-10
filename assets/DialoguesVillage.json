@@ -142,7 +142,7 @@
 	{
 		"title": "Sokoban.Jouer",
 		"tags": "",
-		"body": "Empty Text",
+		"body": "C'est parti !",
 		"position": {
 			"x": 1230,
 			"y": 270
@@ -176,6 +176,56 @@
 		"position": {
 			"x": 1674,
 			"y": 818
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Rhythm.Start",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nIl a l'air figé<<wait 200>>.<<wait 200>>.<<wait 200>>.µSa canne à pêche semble bouger en rythme.µPeut-être faut-il l'aider à pêcher ?\n[[ Pêcher |Rhythm.Jouer]]\n[[ Laisser tomber |Rhythm.Ignorer]]",
+		"position": {
+			"x": 2250,
+			"y": 437
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Rhythm.Jouer",
+		"tags": "",
+		"body": "C'est parti !",
+		"position": {
+			"x": 2120,
+			"y": 45
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Rhythm.Ignorer",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nMieux vaut les laisser comme ça.",
+		"position": {
+			"x": 2471,
+			"y": 58
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Rhythm.Sauf",
+		"tags": "",
+		"body": "<< nom ??? >>\nEncore merci !",
+		"position": {
+			"x": 2493,
+			"y": 763
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Rhythm.ApresJeu",
+		"tags": "",
+		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom ??? >>\nOh, tu m'as sauvé. Merci.",
+		"position": {
+			"x": 2183,
+			"y": 766
 		},
 		"colorID": 0
 	}

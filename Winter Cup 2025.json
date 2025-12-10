@@ -6505,6 +6505,7 @@
       "value": "NA"
     },
     {
+      "folded": true,
       "name": "Options",
       "type": "structure",
       "children": [
@@ -6587,7 +6588,17 @@
           "value": false
         },
         {
+          "name": "CupBall",
+          "type": "number",
+          "value": 0
+        },
+        {
           "name": "Intro",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Memory",
           "type": "number",
           "value": 0
         },
@@ -6597,7 +6608,22 @@
           "value": 0
         },
         {
+          "name": "Quizz",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Rhythm",
+          "type": "number",
+          "value": 0
+        },
+        {
           "name": "Sokoban",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Vania",
           "type": "number",
           "value": 0
         }

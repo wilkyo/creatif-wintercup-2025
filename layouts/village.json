@@ -510,7 +510,14 @@
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "dialogBranch",
+          "persistentUuid": "8a2cff06-047c-485b-9a10-935322012071",
+          "type": "string",
+          "value": "Rhythm.Start"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -2187,73 +2194,6 @@
                       "parameters": [
                         "JeuEnCours",
                         "=",
-                        "\"Pairing_Game\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "NumberVariable"
-                      },
-                      "parameters": [
-                        "MiniJeux.Memory",
-                        ">",
-                        "0"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetStringVariable"
-                      },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "HommePortail",
-                        "talking",
-                        "True",
-                        "\"HommePortail.ApresJeu\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetStringObjectVariable"
-                      },
-                      "parameters": [
-                        "HommePortail",
-                        "dialogBranch",
-                        "=",
-                        "\"HommePortail.ApresJeu\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "DialogueTree::StartDialogueFromBranch"
-                      },
-                      "parameters": [
-                        "\"HommePortail.ApresJeu\""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "StringVariable"
-                      },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
                         "\"Sokoban_Game\""
                       ]
                     },
@@ -2296,6 +2236,62 @@
                       },
                       "parameters": [
                         "\"Sokoban.ApresJeu\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "JeuEnCours",
+                        "=",
+                        "\"Rhythm_Game\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "MiniJeux.Sokoban",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "JeuEnCours",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "Pecheur",
+                        "talking",
+                        "True",
+                        "\"HommePortail.ApresJeu\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::StartDialogueFromBranch"
+                      },
+                      "parameters": [
+                        "\"Rhythm.ApresJeu\""
                       ]
                     }
                   ]
@@ -2350,7 +2346,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Portail (Memory)"
+          "comment": "Rhythm (Pecheur)"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2360,7 +2356,7 @@
                 "value": "NumberVariable"
               },
               "parameters": [
-                "Histoire.Portail",
+                "Histoire.Rhythm",
                 "<",
                 "2"
               ]
@@ -2376,7 +2372,7 @@
                     "value": "NumberVariable"
                   },
                   "parameters": [
-                    "Histoire.Portail",
+                    "Histoire.Rhythm",
                     "=",
                     "0"
                   ]
@@ -2386,19 +2382,15 @@
                     "value": "DialogueTree::WasBranchVisited"
                   },
                   "parameters": [
-                    "\"HommePortail.Toucher\""
+                    "\"Rhythm.Jouer\""
                   ]
                 },
                 {
                   "type": {
-                    "value": "BooleanObjectVariable"
+                    "inverted": true,
+                    "value": "DialogueTree::IsDialogueRunning"
                   },
-                  "parameters": [
-                    "HommePortail",
-                    "talking",
-                    "False",
-                    ""
-                  ]
+                  "parameters": []
                 },
                 {
                   "type": {
@@ -2409,12 +2401,6 @@
                     "=",
                     "\"NA\""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
                 }
               ],
               "actions": [
@@ -2425,7 +2411,7 @@
                   "parameters": [
                     "JeuEnCours",
                     "=",
-                    "\"Pairing_Game\""
+                    "\"Rhythm_Game\""
                   ]
                 },
                 {
@@ -2443,7 +2429,7 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Histoire.Portail",
+                    "Histoire.Rhythm",
                     "=",
                     "1"
                   ]
@@ -2455,15 +2441,26 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "DialogueTree::WasBranchVisited"
+                    "value": "NumberVariable"
                   },
                   "parameters": [
-                    "\"HommePortail.ApresJeu2\""
+                    "Histoire.Rhythm",
+                    "=",
+                    "1"
                   ]
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Once"
+                    "value": "DialogueTree::WasBranchVisited"
+                  },
+                  "parameters": [
+                    "\"Rhythm.ApresJeu\""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "DialogueTree::IsDialogueRunning"
                   },
                   "parameters": []
                 }
@@ -2471,48 +2468,13 @@
               "actions": [
                 {
                   "type": {
-                    "value": "AddForceAL"
+                    "value": "SetStringObjectVariable"
                   },
                   "parameters": [
-                    "HommePortail",
-                    "250",
-                    "8",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AddForceAL"
-                  },
-                  "parameters": [
-                    "HommePortail",
-                    "200",
-                    "8",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Arreter"
-                  },
-                  "parameters": [
-                    "HommePortail"
+                    "Pecheur",
+                    "dialogBranch",
+                    "=",
+                    "\"Rhythm.Sauf\""
                   ]
                 },
                 {
@@ -2520,7 +2482,7 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Histoire.Portail",
+                    "Histoire.Rhythm",
                     "=",
                     "2"
                   ]
