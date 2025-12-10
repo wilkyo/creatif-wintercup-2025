@@ -4,8 +4,8 @@
 		"tags": "",
 		"body": "<< nom Bobby >>\nSalut, je m'appelle Bobby ! Comment ça va de ton côté ? Tu vas [b]bien[/b] ?\nTu veux voir un secret ?\n<<  nom >>\nCela demande reflexion...\n\n[[ Bien sûr, ma gueule ! |Bobby.Yes]]\n[[ Pas vraiment |Bobby.No]]",
 		"position": {
-			"x": 557,
-			"y": 315
+			"x": 680,
+			"y": -261
 		},
 		"colorID": 0
 	},
@@ -162,7 +162,7 @@
 	{
 		"title": "Rhythm.Ignorer",
 		"tags": "",
-		"body": "<< nom LaGrosseCarow >>\nMieux vaut les laisser comme ça.",
+		"body": "<< nom LaGrosseCarow >>\nMieux vaut la laisser comme ça.",
 		"position": {
 			"x": 2471,
 			"y": 58
@@ -236,6 +236,56 @@
 		"position": {
 			"x": 3209,
 			"y": 702
+		},
+		"colorID": 0
+	},
+	{
+		"title": "CupBall.Start",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nIl a l'air figé<<wait 200>>.<<wait 200>>.<<wait 200>>.µDes gobelets sont remplis de billes de différentes couleurs devant lui.µPeut-être faut-il les trier ?\n[[ Trier les billes |CupBall.Jouer]]\n[[ Laisser tomber |CupBall.Ignorer]]",
+		"position": {
+			"x": 819,
+			"y": 767
+		},
+		"colorID": 0
+	},
+	{
+		"title": "CupBall.Jouer",
+		"tags": "",
+		"body": "C'est parti !",
+		"position": {
+			"x": 695,
+			"y": 484
+		},
+		"colorID": 0
+	},
+	{
+		"title": "CupBall.Ignorer",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nMieux vaut les laisser comme ça.",
+		"position": {
+			"x": 1032,
+			"y": 486
+		},
+		"colorID": 0
+	},
+	{
+		"title": "CupBall.Sauf",
+		"tags": "",
+		"body": "<< nom ??? >>\nEncore merci !",
+		"position": {
+			"x": 905,
+			"y": 1053
+		},
+		"colorID": 0
+	},
+	{
+		"title": "CupBall.ApresJeu",
+		"tags": "",
+		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom ??? >>\nOh, tu m'as sauvé. Merci.",
+		"position": {
+			"x": 595,
+			"y": 1056
 		},
 		"colorID": 0
 	}
