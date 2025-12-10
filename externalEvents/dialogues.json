@@ -390,7 +390,7 @@
               "parameters": [
                 "DialogueBBText",
                 "=",
-                "DialogueTree::ClippedLineText()"
+                "StrReplaceAll(DialogueTree::ClippedLineText(), \"µ\", NewLine())"
               ]
             }
           ],

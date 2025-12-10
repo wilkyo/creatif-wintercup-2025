@@ -6571,7 +6571,7 @@
             {
               "name": "Sons",
               "type": "number",
-              "value": 50
+              "value": 17
             }
           ]
         }
@@ -6593,6 +6593,11 @@
         },
         {
           "name": "Portail",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Sokoban",
           "type": "number",
           "value": 0
         }

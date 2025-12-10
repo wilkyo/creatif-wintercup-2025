@@ -60,32 +60,12 @@
 		"colorID": 0
 	},
 	{
-		"title": "Intro",
+		"title": "Sokoban.Start",
 		"tags": "",
-		"body": "<< nom Inconnu >>\nTu veux voir l'intro ?\n[[ Bien sûr |Intro.show]]\n[[ Non merci |Intro.hide]]",
+		"body": "<< nom LaGrosseCarow >>\nIl a l'air figé<<wait 200>>.<<wait 200>>.<<wait 200>>.µDes caisses semblent mal agencées.µPeut-être faut-il les ranger ?\n[[ Ranger les caisses |Sokoban.Jouer]]\n[[ Laisser tomber |Sokoban.Ignorer]]",
 		"position": {
-			"x": 1001,
-			"y": 624
-		},
-		"colorID": 0
-	},
-	{
-		"title": "Intro.show",
-		"tags": "",
-		"body": "<< nom Inconnu >>\nOk, écoute moi bien<<wait 200>>.<<wait 200>>.<<wait 200>>.",
-		"position": {
-			"x": 1059,
-			"y": 301
-		},
-		"colorID": 0
-	},
-	{
-		"title": "Intro.hide",
-		"tags": "",
-		"body": "<< nom Inconnu >>\nTant pis pour toi",
-		"position": {
-			"x": 1379,
-			"y": 363
+			"x": 1394,
+			"y": 563
 		},
 		"colorID": 0
 	},
@@ -156,6 +136,46 @@
 		"position": {
 			"x": -536,
 			"y": 179
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Sokoban.Jouer",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 1230,
+			"y": 270
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Sokoban.Ignorer",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nMieux vaut les laisser comme ça.",
+		"position": {
+			"x": 1632,
+			"y": 284
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Sokoban.ApresJeu",
+		"tags": "",
+		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom ??? >>\nOh, tu m'as sauvé. Merci.",
+		"position": {
+			"x": 1364,
+			"y": 821
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Sokoban.Sauf",
+		"tags": "",
+		"body": "<< nom ??? >>\nEncore merci !",
+		"position": {
+			"x": 1674,
+			"y": 818
 		},
 		"colorID": 0
 	}

@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.4222022104727148,
+    "zoomFactor": 0.482095117489554,
     "windowMask": false,
     "selectedLayer": ""
   },
@@ -109,7 +109,7 @@
       "height": 79,
       "keepRatio": true,
       "layer": "Dialogue",
-      "name": "DEBUG",
+      "name": "DEBUG_Text",
       "persistentUuid": "382e8837-81e8-444f-926c-dc8ac7354a2c",
       "width": 608,
       "x": 352,
@@ -1312,7 +1312,7 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "DEBUG",
+      "name": "DEBUG_Text",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -1568,7 +1568,7 @@
           "name": "dialogBranch",
           "persistentUuid": "8a2cff06-047c-485b-9a10-935322012071",
           "type": "string",
-          "value": "HommePortail"
+          "value": "Sokoban.Start"
         }
       ],
       "effects": [],
@@ -1891,7 +1891,7 @@
         ]
       },
       {
-        "objectName": "DEBUG"
+        "objectName": "DEBUG_Text"
       }
     ]
   },
@@ -1998,106 +1998,6 @@
                 "",
                 "",
                 ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "TopDownMovementBehavior::IsMoving"
-              },
-              "parameters": [
-                "Joueur",
-                "TopDownMovement"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "Joueur",
-                "=",
-                "0"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "Histoire.Courir",
-                "True",
-                "\"0\""
-              ]
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyFromTextPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "Options.Touches.Courir"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::MaxSpeed"
-                  },
-                  "parameters": [
-                    "Joueur",
-                    "TopDownMovement",
-                    "=",
-                    "200"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "KeyFromTextPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "Options.Touches.Courir"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::MaxSpeed"
-                  },
-                  "parameters": [
-                    "Joueur",
-                    "TopDownMovement",
-                    "=",
-                    "100"
-                  ]
-                }
               ]
             }
           ]
@@ -2343,6 +2243,62 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "JeuEnCours",
+                        "=",
+                        "\"Sokoban_Game\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "MiniJeux.Sokoban",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "JeuEnCours",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "Sokoban",
+                        "talking",
+                        "True",
+                        "\"HommePortail.ApresJeu\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::StartDialogueFromBranch"
+                      },
+                      "parameters": [
+                        "\"Sokoban.ApresJeu\""
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -2583,7 +2539,162 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Suite"
+          "comment": "Sokoban"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Histoire.Sokoban",
+                "<",
+                "2"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Histoire.Sokoban",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "DialogueTree::WasBranchVisited"
+                  },
+                  "parameters": [
+                    "\"Sokoban.Jouer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "DialogueTree::IsDialogueRunning"
+                  },
+                  "parameters": []
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "EtatJeu",
+                    "=",
+                    "\"NA\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "JeuEnCours",
+                    "=",
+                    "\"Sokoban_Game\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "EtatJeu",
+                    "=",
+                    "\"LancerJeu\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Histoire.Sokoban",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Histoire.Sokoban",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "DialogueTree::WasBranchVisited"
+                  },
+                  "parameters": [
+                    "\"Sokoban.ApresJeu\""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "DialogueTree::IsDialogueRunning"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "Sokoban",
+                    "dialogBranch",
+                    "=",
+                    "\"Sokoban.Sauf\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Histoire.Sokoban",
+                    "=",
+                    "2"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Vieil Homme"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2646,7 +2757,7 @@
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
-            "DEBUG",
+            "DEBUG_Text",
             "Text",
             "=",
             "Histoire.Courir"
