@@ -6518,6 +6518,11 @@
               "value": "s"
             },
             {
+              "name": "Courir",
+              "type": "string",
+              "value": "LShift"
+            },
+            {
               "name": "Dash",
               "type": "string",
               "value": "o"
@@ -6576,6 +6581,11 @@
       "name": "Histoire",
       "type": "structure",
       "children": [
+        {
+          "name": "Courir",
+          "type": "boolean",
+          "value": false
+        },
         {
           "name": "Intro",
           "type": "number",

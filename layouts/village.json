@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.7177437578036129,
+    "zoomFactor": 0.6285751298948687,
     "windowMask": false,
     "selectedLayer": ""
   },
@@ -1149,7 +1149,14 @@
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "dialogBranch",
+          "persistentUuid": "7c04afec-f62b-468f-945f-3d6934487e7f",
+          "type": "string",
+          "value": "VieilHomme.Start"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -1904,114 +1911,199 @@
       "target": "DéplacementsTopDown"
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "ZoomCamera"
-          },
-          "parameters": [
-            "",
-            "2",
-            "",
-            ""
-          ]
-        }
-      ],
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Global / Fourre-tout",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "StringVariable"
+                "value": "DepartScene"
               },
               "parameters": [
-                "JeuEnCours",
-                "=",
-                "\"0\""
+                ""
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "SetStringVariable"
+                "value": "ZoomCamera"
               },
               "parameters": [
-                "JeuEnCours",
+                "",
+                "2",
+                "",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "JeuEnCours",
+                    "=",
+                    "\"0\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "JeuEnCours",
+                    "=",
+                    "\"\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "Joueur",
+                "Collisionables",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CentreCamera"
+              },
+              "parameters": [
+                "",
+                "Joueur",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "TopDownMovementBehavior::IsMoving"
+              },
+              "parameters": [
+                "Joueur",
+                "TopDownMovement"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeSprite"
+              },
+              "parameters": [
+                "Joueur",
                 "=",
-                "\"\""
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Histoire.Courir",
+                "True",
+                "\"0\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Options.Touches.Courir"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Joueur",
+                    "TopDownMovement",
+                    "=",
+                    "200"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Options.Touches.Courir"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Joueur",
+                    "TopDownMovement",
+                    "=",
+                    "100"
+                  ]
+                }
               ]
             }
           ]
         }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "SeparateFromObjects"
-          },
-          "parameters": [
-            "Joueur",
-            "Collisionables",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "CentreCamera"
-          },
-          "parameters": [
-            "",
-            "Joueur",
-            "",
-            "",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": true,
-            "value": "TopDownMovementBehavior::IsMoving"
-          },
-          "parameters": [
-            "Joueur",
-            "TopDownMovement"
-          ]
-        }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "ChangeSprite"
-          },
-          "parameters": [
-            "Joueur",
-            "=",
-            "0"
-          ]
-        }
-      ]
+      "parameters": []
     },
     {
       "colorB": 228,
@@ -2498,51 +2590,46 @@
           "conditions": [
             {
               "type": {
-                "value": "DialogueTree::CurrentBranchTitle"
+                "value": "DialogueTree::WasBranchVisited"
               },
               "parameters": [
-                "\"Statue.Jeu\""
+                "\"VieilHomme.Stop\""
               ]
-            }
-          ],
-          "actions": [
+            },
             {
               "type": {
-                "value": "DialogueTree::StopRunningDialogue"
+                "inverted": true,
+                "value": "DialogueTree::IsDialogueRunning"
               },
               "parameters": []
             },
             {
               "type": {
-                "value": "PushScene"
+                "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [
-                "",
-                "\"Pairing_Game\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DialogueTree::CurrentBranchTitle"
-              },
-              "parameters": [
-                "\"Intro.show\""
-              ]
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "PushScene"
+                "value": "SetStringObjectVariable"
               },
               "parameters": [
-                "",
-                "\"Intro\""
+                "VieilHomme",
+                "dialogBranch",
+                "=",
+                "\"VieilHomme.Stop\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Histoire.Courir",
+                "True",
+                ""
               ]
             }
           ]
@@ -2562,7 +2649,7 @@
             "DEBUG",
             "Text",
             "=",
-            "EtatJeu"
+            "Histoire.Courir"
           ]
         }
       ]

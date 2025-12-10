@@ -12,6 +12,7 @@
 ## Contrôles
 
 - ZQSD - Directions
+- Shift gauche - Courir (nécessite un objet)
 - E - Valider
 - Clic gauche - Actions sur certains jeux
 
@@ -30,9 +31,9 @@ Il faudra sauver tout le monde pour pouvoir affronter le dernier tryharder.
 
 # DÉFIS CRÉATIFS INTÉGRÉS
 
-- Coupe de l’hiver : Flocon présent dans certains mini-jeux
 - Les oubliés : Le héros appartient aux 2Hoth4U
-- TODO
+- Il est dangereux d’y aller seul, prends ça : Un vieil homme donne des chaussures pour courir en dehors du village.
+- Coupe de l’hiver : Flocon présent dans certains mini-jeux
 - TODO
 - TODO
 
@@ -51,7 +52,6 @@ Merci aux tutoriels GDevelop et aux nombreux exemples de jeux que nous avons pu 
 ## Assets
 
 - RPG Maker VX Ace RTP - Enterbrain : https://www.rpgmakerweb.com/run-time-package
-- Classic Winter tiles - whtdragons : https://forums.rpgmakerweb.com/index.php?threads/whtdragons-tilesets-addons-fixes-and-more.60504/page-3
 
 ## Mini-jeux
 
@@ -65,6 +65,4 @@ Merci aux tutoriels GDevelop et aux nombreux exemples de jeux que nous avons pu 
 
 # PROBLÈMES CONNUS
 
-- Problèmes de collisions/couches
 - Boutons cassés
-- Sortie de map
