@@ -72,50 +72,10 @@
 	{
 		"title": "HommePortail",
 		"tags": "",
-		"body": "<< nom >>\nEtrange, il ne répond pas\n[[ Le toucher |HommePortail.Toucher]]\n[[ Le laisser |HommePortail.Laisser]]",
+		"body": "<< nom >>\n<< wait 200 >>.<< wait 200>>.<< wait 500>>.",
 		"position": {
 			"x": 55,
 			"y": 1006
-		},
-		"colorID": 0
-	},
-	{
-		"title": "HommePortail.Toucher",
-		"tags": "",
-		"body": "Que se passe-t-il ?",
-		"position": {
-			"x": 445,
-			"y": 773
-		},
-		"colorID": 0
-	},
-	{
-		"title": "HommePortail.Laisser",
-		"tags": "",
-		"body": "Mieux vaut le laisser tranquille...",
-		"position": {
-			"x": 429,
-			"y": 1090
-		},
-		"colorID": 0
-	},
-	{
-		"title": "HommePortail.ApresJeu",
-		"tags": "",
-		"body": "<<nom>> Tu m'as sauvé !\nMais genre vraiment !\n\n[[ Suite |HommePortail.ApresJeu2]]",
-		"position": {
-			"x": -27,
-			"y": 1290
-		},
-		"colorID": 0
-	},
-	{
-		"title": "HommePortail.ApresJeu2",
-		"tags": "",
-		"body": "Au revoir",
-		"position": {
-			"x": 303,
-			"y": 1422
 		},
 		"colorID": 0
 	},
@@ -194,8 +154,8 @@
 		"tags": "",
 		"body": "C'est parti !",
 		"position": {
-			"x": 2120,
-			"y": 45
+			"x": 2121,
+			"y": 41
 		},
 		"colorID": 0
 	},
@@ -214,8 +174,8 @@
 		"tags": "",
 		"body": "<< nom ??? >>\nEncore merci !",
 		"position": {
-			"x": 2493,
-			"y": 763
+			"x": 2491,
+			"y": 761
 		},
 		"colorID": 0
 	},
@@ -226,6 +186,56 @@
 		"position": {
 			"x": 2183,
 			"y": 766
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Quizz.Start",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nIl a l'air figé<<wait 200>>.<<wait 200>>.<<wait 200>>.µIl a l'air de tenir une liste de questions à choix multiple.µPeut-être faut-il l'aider à trouver les réponses ?\n[[ Répondre aux questions |Quizz.Jouer]]\n[[ Laisser tomber |Quizz.Ignorer]]",
+		"position": {
+			"x": 3033,
+			"y": 430
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Quizz.Jouer",
+		"tags": "",
+		"body": "C'est parti !",
+		"position": {
+			"x": 2945,
+			"y": 75
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Quizz.Ignorer",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nMieux vaut les laisser comme ça.",
+		"position": {
+			"x": 3281,
+			"y": 104
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Quizz.ApresJeu",
+		"tags": "",
+		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom ??? >>\nOh, tu m'as sauvé. Merci.",
+		"position": {
+			"x": 2901,
+			"y": 707
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Quizz.Sauf",
+		"tags": "",
+		"body": "<< nom ??? >>\nEncore merci !",
+		"position": {
+			"x": 3209,
+			"y": 702
 		},
 		"colorID": 0
 	}

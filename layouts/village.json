@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.482095117489554,
+    "zoomFactor": 0.35768869552952215,
     "windowMask": false,
     "selectedLayer": ""
   },
@@ -636,7 +636,14 @@
       "zOrder": 2040,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "dialogBranch",
+          "persistentUuid": "8a2cff06-047c-485b-9a10-935322012071",
+          "type": "string",
+          "value": "Quizz.Start"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -2295,6 +2302,62 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "JeuEnCours",
+                        "=",
+                        "\"Quizz_Game\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "MiniJeux.Quiz",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "JeuEnCours",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "QuizzMan",
+                        "talking",
+                        "True",
+                        "\"HommePortail.ApresJeu\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::StartDialogueFromBranch"
+                      },
+                      "parameters": [
+                        "\"Quizz.ApresJeu\""
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -2337,32 +2400,14 @@
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Rhythm (Pecheur)"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "Histoire.Rhythm",
-                "<",
-                "2"
-              ]
-            }
-          ],
-          "actions": [],
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Rhythm (Pecheur)",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -2373,151 +2418,152 @@
                   },
                   "parameters": [
                     "Histoire.Rhythm",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "DialogueTree::WasBranchVisited"
-                  },
-                  "parameters": [
-                    "\"Rhythm.Jouer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "DialogueTree::IsDialogueRunning"
-                  },
-                  "parameters": []
-                },
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "EtatJeu",
-                    "=",
-                    "\"NA\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "JeuEnCours",
-                    "=",
-                    "\"Rhythm_Game\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "EtatJeu",
-                    "=",
-                    "\"LancerJeu\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Histoire.Rhythm",
-                    "=",
-                    "1"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "Histoire.Rhythm",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "DialogueTree::WasBranchVisited"
-                  },
-                  "parameters": [
-                    "\"Rhythm.ApresJeu\""
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "DialogueTree::IsDialogueRunning"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetStringObjectVariable"
-                  },
-                  "parameters": [
-                    "Pecheur",
-                    "dialogBranch",
-                    "=",
-                    "\"Rhythm.Sauf\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Histoire.Rhythm",
-                    "=",
+                    "<",
                     "2"
                   ]
                 }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Sokoban"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "Histoire.Sokoban",
-                "<",
-                "2"
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Rhythm",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::WasBranchVisited"
+                      },
+                      "parameters": [
+                        "\"Rhythm.Jouer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "DialogueTree::IsDialogueRunning"
+                      },
+                      "parameters": []
+                    },
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "EtatJeu",
+                        "=",
+                        "\"NA\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "JeuEnCours",
+                        "=",
+                        "\"Rhythm_Game\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "EtatJeu",
+                        "=",
+                        "\"LancerJeu\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Rhythm",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Rhythm",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::WasBranchVisited"
+                      },
+                      "parameters": [
+                        "\"Rhythm.ApresJeu\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "DialogueTree::IsDialogueRunning"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringObjectVariable"
+                      },
+                      "parameters": [
+                        "Pecheur",
+                        "dialogBranch",
+                        "=",
+                        "\"Rhythm.Sauf\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Rhythm",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ],
-          "actions": [],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Sokoban",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -2528,69 +2574,152 @@
                   },
                   "parameters": [
                     "Histoire.Sokoban",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "DialogueTree::WasBranchVisited"
-                  },
-                  "parameters": [
-                    "\"Sokoban.Jouer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "DialogueTree::IsDialogueRunning"
-                  },
-                  "parameters": []
-                },
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "EtatJeu",
-                    "=",
-                    "\"NA\""
+                    "<",
+                    "2"
                   ]
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "JeuEnCours",
-                    "=",
-                    "\"Sokoban_Game\""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Sokoban",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::WasBranchVisited"
+                      },
+                      "parameters": [
+                        "\"Sokoban.Jouer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "DialogueTree::IsDialogueRunning"
+                      },
+                      "parameters": []
+                    },
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "EtatJeu",
+                        "=",
+                        "\"NA\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "JeuEnCours",
+                        "=",
+                        "\"Sokoban_Game\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "EtatJeu",
+                        "=",
+                        "\"LancerJeu\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Sokoban",
+                        "=",
+                        "1"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "EtatJeu",
-                    "=",
-                    "\"LancerJeu\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Histoire.Sokoban",
-                    "=",
-                    "1"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Sokoban",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::WasBranchVisited"
+                      },
+                      "parameters": [
+                        "\"Sokoban.ApresJeu\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "DialogueTree::IsDialogueRunning"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringObjectVariable"
+                      },
+                      "parameters": [
+                        "Sokoban",
+                        "dialogBranch",
+                        "=",
+                        "\"Sokoban.Sauf\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Sokoban",
+                        "=",
+                        "2"
+                      ]
+                    }
                   ]
                 }
               ]
-            },
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Quizz",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -2599,52 +2728,143 @@
                     "value": "NumberVariable"
                   },
                   "parameters": [
-                    "Histoire.Sokoban",
-                    "=",
-                    "1"
+                    "Histoire.Quizz",
+                    "<",
+                    "2"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "DialogueTree::WasBranchVisited"
-                  },
-                  "parameters": [
-                    "\"Sokoban.ApresJeu\""
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "DialogueTree::IsDialogueRunning"
-                  },
-                  "parameters": []
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "SetStringObjectVariable"
-                  },
-                  "parameters": [
-                    "Sokoban",
-                    "dialogBranch",
-                    "=",
-                    "\"Sokoban.Sauf\""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Quizz",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::WasBranchVisited"
+                      },
+                      "parameters": [
+                        "\"Quizz.Jouer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "DialogueTree::IsDialogueRunning"
+                      },
+                      "parameters": []
+                    },
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "EtatJeu",
+                        "=",
+                        "\"NA\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "JeuEnCours",
+                        "=",
+                        "\"Quizz_Game\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "EtatJeu",
+                        "=",
+                        "\"LancerJeu\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Quizz",
+                        "=",
+                        "1"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Histoire.Sokoban",
-                    "=",
-                    "2"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Quizz",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::WasBranchVisited"
+                      },
+                      "parameters": [
+                        "\"Quizz.ApresJeu\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "DialogueTree::IsDialogueRunning"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringObjectVariable"
+                      },
+                      "parameters": [
+                        "QuizzMan",
+                        "dialogBranch",
+                        "=",
+                        "\"Quizz.Sauf\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Quizz",
+                        "=",
+                        "2"
+                      ]
+                    }
                   ]
                 }
               ]
             }
-          ]
+          ],
+          "parameters": []
         },
         {
           "type": "BuiltinCommonInstructions::Comment",
