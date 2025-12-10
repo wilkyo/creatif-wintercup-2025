@@ -1926,7 +1926,9 @@
               "type": {
                 "value": "DepartScene"
               },
-              "parameters": [""]
+              "parameters": [
+                ""
+              ]
             }
           ],
           "actions": [
@@ -1934,7 +1936,12 @@
               "type": {
                 "value": "ZoomCamera"
               },
-              "parameters": ["", "2", "", ""]
+              "parameters": [
+                "",
+                "2",
+                "",
+                ""
+              ]
             }
           ],
           "events": [
@@ -1945,7 +1952,11 @@
                   "type": {
                     "value": "StringVariable"
                   },
-                  "parameters": ["JeuEnCours", "=", "\"0\""]
+                  "parameters": [
+                    "JeuEnCours",
+                    "=",
+                    "\"0\""
+                  ]
                 }
               ],
               "actions": [
@@ -1953,7 +1964,11 @@
                   "type": {
                     "value": "SetStringVariable"
                   },
-                  "parameters": ["JeuEnCours", "=", "\"\""]
+                  "parameters": [
+                    "JeuEnCours",
+                    "=",
+                    "\"\""
+                  ]
                 }
               ]
             }
@@ -1967,13 +1982,23 @@
               "type": {
                 "value": "SeparateFromObjects"
               },
-              "parameters": ["Joueur", "Collisionables", ""]
+              "parameters": [
+                "Joueur",
+                "Collisionables",
+                ""
+              ]
             },
             {
               "type": {
                 "value": "CentreCamera"
               },
-              "parameters": ["", "Joueur", "", "", ""]
+              "parameters": [
+                "",
+                "Joueur",
+                "",
+                "",
+                ""
+              ]
             }
           ]
         },
@@ -1985,7 +2010,10 @@
                 "inverted": true,
                 "value": "TopDownMovementBehavior::IsMoving"
               },
-              "parameters": ["Joueur", "TopDownMovement"]
+              "parameters": [
+                "Joueur",
+                "TopDownMovement"
+              ]
             }
           ],
           "actions": [
@@ -1993,7 +2021,11 @@
               "type": {
                 "value": "ChangeSprite"
               },
-              "parameters": ["Joueur", "=", "0"]
+              "parameters": [
+                "Joueur",
+                "=",
+                "0"
+              ]
             }
           ]
         },
@@ -2004,7 +2036,11 @@
               "type": {
                 "value": "BooleanVariable"
               },
-              "parameters": ["Histoire.Courir", "True", "\"0\""]
+              "parameters": [
+                "Histoire.Courir",
+                "True",
+                "\"0\""
+              ]
             }
           ],
           "actions": [],
@@ -2016,7 +2052,10 @@
                   "type": {
                     "value": "KeyFromTextPressed"
                   },
-                  "parameters": ["", "Options.Touches.Courir"]
+                  "parameters": [
+                    "",
+                    "Options.Touches.Courir"
+                  ]
                 }
               ],
               "actions": [
@@ -2024,7 +2063,12 @@
                   "type": {
                     "value": "TopDownMovementBehavior::MaxSpeed"
                   },
-                  "parameters": ["Joueur", "TopDownMovement", "=", "200"]
+                  "parameters": [
+                    "Joueur",
+                    "TopDownMovement",
+                    "=",
+                    "200"
+                  ]
                 }
               ]
             },
@@ -2036,7 +2080,10 @@
                     "inverted": true,
                     "value": "KeyFromTextPressed"
                   },
-                  "parameters": ["", "Options.Touches.Courir"]
+                  "parameters": [
+                    "",
+                    "Options.Touches.Courir"
+                  ]
                 }
               ],
               "actions": [
@@ -2044,7 +2091,12 @@
                   "type": {
                     "value": "TopDownMovementBehavior::MaxSpeed"
                   },
-                  "parameters": ["Joueur", "TopDownMovement", "=", "100"]
+                  "parameters": [
+                    "Joueur",
+                    "TopDownMovement",
+                    "=",
+                    "100"
+                  ]
                 }
               ]
             }
@@ -2069,13 +2121,21 @@
               "type": {
                 "value": "StringVariable"
               },
-              "parameters": ["JeuEnCours", "!=", "\"\""]
+              "parameters": [
+                "JeuEnCours",
+                "!=",
+                "\"\""
+              ]
             },
             {
               "type": {
                 "value": "StringVariable"
               },
-              "parameters": ["EtatJeu", "=", "\"LancerJeu\""]
+              "parameters": [
+                "EtatJeu",
+                "=",
+                "\"LancerJeu\""
+              ]
             },
             {
               "type": {
@@ -2090,25 +2150,38 @@
               "type": {
                 "value": "ActivateBehavior"
               },
-              "parameters": ["Joueur", "TopDownMovement", "no"]
+              "parameters": [
+                "Joueur",
+                "TopDownMovement",
+                "no"
+              ]
             },
             {
               "type": {
                 "value": "SetStringVariable"
               },
-              "parameters": ["EtatJeu", "=", "\"JeuEnCours\""]
+              "parameters": [
+                "EtatJeu",
+                "=",
+                "\"JeuEnCours\""
+              ]
             },
             {
               "type": {
                 "value": "Wait"
               },
-              "parameters": ["0.5"]
+              "parameters": [
+                "0.5"
+              ]
             },
             {
               "type": {
                 "value": "Montre"
               },
-              "parameters": ["Transition", ""]
+              "parameters": [
+                "Transition",
+                ""
+              ]
             },
             {
               "type": {
@@ -2129,13 +2202,18 @@
               "type": {
                 "value": "Wait"
               },
-              "parameters": ["1.25"]
+              "parameters": [
+                "1.25"
+              ]
             },
             {
               "type": {
                 "value": "PushScene"
               },
-              "parameters": ["", "JeuEnCours"]
+              "parameters": [
+                "",
+                "JeuEnCours"
+              ]
             }
           ]
         },
@@ -2146,7 +2224,9 @@
               "type": {
                 "value": "SceneJustResumed"
               },
-              "parameters": [""]
+              "parameters": [
+                ""
+              ]
             }
           ],
           "actions": [
@@ -2154,13 +2234,19 @@
               "type": {
                 "value": "Cache"
               },
-              "parameters": ["Transition"]
+              "parameters": [
+                "Transition"
+              ]
             },
             {
               "type": {
                 "value": "ActivateBehavior"
               },
-              "parameters": ["Joueur", "TopDownMovement", "yes"]
+              "parameters": [
+                "Joueur",
+                "TopDownMovement",
+                "yes"
+              ]
             }
           ],
           "events": [
@@ -2171,7 +2257,11 @@
                   "type": {
                     "value": "StringVariable"
                   },
-                  "parameters": ["EtatJeu", "=", "\"JeuTermine\""]
+                  "parameters": [
+                    "EtatJeu",
+                    "=",
+                    "\"JeuTermine\""
+                  ]
                 }
               ],
               "actions": [
@@ -2179,7 +2269,11 @@
                   "type": {
                     "value": "SetStringVariable"
                   },
-                  "parameters": ["EtatJeu", "=", "\"NA\""]
+                  "parameters": [
+                    "EtatJeu",
+                    "=",
+                    "\"NA\""
+                  ]
                 }
               ],
               "events": [
@@ -2190,13 +2284,21 @@
                       "type": {
                         "value": "StringVariable"
                       },
-                      "parameters": ["JeuEnCours", "=", "\"Pairing_Game\""]
+                      "parameters": [
+                        "JeuEnCours",
+                        "=",
+                        "\"Pairing_Game\""
+                      ]
                     },
                     {
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": ["MiniJeux.Memory", ">", "0"]
+                      "parameters": [
+                        "MiniJeux.Memory",
+                        ">",
+                        "0"
+                      ]
                     }
                   ],
                   "actions": [
@@ -2204,7 +2306,11 @@
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": ["JeuEnCours", "=", "\"\""]
+                      "parameters": [
+                        "JeuEnCours",
+                        "=",
+                        "\"\""
+                      ]
                     },
                     {
                       "type": {
@@ -2232,7 +2338,9 @@
                       "type": {
                         "value": "DialogueTree::StartDialogueFromBranch"
                       },
-                      "parameters": ["\"HommePortail.ApresJeu\""]
+                      "parameters": [
+                        "\"HommePortail.ApresJeu\""
+                      ]
                     }
                   ]
                 }
@@ -2259,7 +2367,9 @@
               "type": {
                 "value": "DepartScene"
               },
-              "parameters": [""]
+              "parameters": [
+                ""
+              ]
             }
           ],
           "actions": [
@@ -2267,7 +2377,10 @@
               "type": {
                 "value": "DialogueTree::LoadDialogueFromJsonFile"
               },
-              "parameters": ["", "DialoguesVillage"]
+              "parameters": [
+                "",
+                "DialoguesVillage"
+              ]
             }
           ]
         },
@@ -2290,7 +2403,11 @@
               "type": {
                 "value": "NumberVariable"
               },
-              "parameters": ["Histoire.Portail", "<", "2"]
+              "parameters": [
+                "Histoire.Portail",
+                "<",
+                "2"
+              ]
             }
           ],
           "actions": [],
@@ -2302,25 +2419,40 @@
                   "type": {
                     "value": "NumberVariable"
                   },
-                  "parameters": ["Histoire.Portail", "=", "0"]
+                  "parameters": [
+                    "Histoire.Portail",
+                    "=",
+                    "0"
+                  ]
                 },
                 {
                   "type": {
                     "value": "DialogueTree::WasBranchVisited"
                   },
-                  "parameters": ["\"HommePortail.Toucher\""]
+                  "parameters": [
+                    "\"HommePortail.Toucher\""
+                  ]
                 },
                 {
                   "type": {
                     "value": "BooleanObjectVariable"
                   },
-                  "parameters": ["HommePortail", "talking", "False", ""]
+                  "parameters": [
+                    "HommePortail",
+                    "talking",
+                    "False",
+                    ""
+                  ]
                 },
                 {
                   "type": {
                     "value": "StringVariable"
                   },
-                  "parameters": ["EtatJeu", "=", "\"NA\""]
+                  "parameters": [
+                    "EtatJeu",
+                    "=",
+                    "\"NA\""
+                  ]
                 },
                 {
                   "type": {
@@ -2334,19 +2466,31 @@
                   "type": {
                     "value": "SetStringVariable"
                   },
-                  "parameters": ["JeuEnCours", "=", "\"Pairing_Game\""]
+                  "parameters": [
+                    "JeuEnCours",
+                    "=",
+                    "\"Pairing_Game\""
+                  ]
                 },
                 {
                   "type": {
                     "value": "SetStringVariable"
                   },
-                  "parameters": ["EtatJeu", "=", "\"LancerJeu\""]
+                  "parameters": [
+                    "EtatJeu",
+                    "=",
+                    "\"LancerJeu\""
+                  ]
                 },
                 {
                   "type": {
                     "value": "SetNumberVariable"
                   },
-                  "parameters": ["Histoire.Portail", "=", "1"]
+                  "parameters": [
+                    "Histoire.Portail",
+                    "=",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -2357,7 +2501,9 @@
                   "type": {
                     "value": "DialogueTree::WasBranchVisited"
                   },
-                  "parameters": ["\"HommePortail.ApresJeu2\""]
+                  "parameters": [
+                    "\"HommePortail.ApresJeu2\""
+                  ]
                 },
                 {
                   "type": {
@@ -2371,37 +2517,57 @@
                   "type": {
                     "value": "AddForceAL"
                   },
-                  "parameters": ["HommePortail", "250", "8", "1"]
+                  "parameters": [
+                    "HommePortail",
+                    "250",
+                    "8",
+                    "1"
+                  ]
                 },
                 {
                   "type": {
                     "value": "Wait"
                   },
-                  "parameters": ["2"]
+                  "parameters": [
+                    "2"
+                  ]
                 },
                 {
                   "type": {
                     "value": "AddForceAL"
                   },
-                  "parameters": ["HommePortail", "200", "8", "1"]
+                  "parameters": [
+                    "HommePortail",
+                    "200",
+                    "8",
+                    "1"
+                  ]
                 },
                 {
                   "type": {
                     "value": "Wait"
                   },
-                  "parameters": ["2"]
+                  "parameters": [
+                    "2"
+                  ]
                 },
                 {
                   "type": {
                     "value": "Arreter"
                   },
-                  "parameters": ["HommePortail"]
+                  "parameters": [
+                    "HommePortail"
+                  ]
                 },
                 {
                   "type": {
                     "value": "SetNumberVariable"
                   },
-                  "parameters": ["Histoire.Portail", "=", "2"]
+                  "parameters": [
+                    "Histoire.Portail",
+                    "=",
+                    "2"
+                  ]
                 }
               ]
             }
@@ -2426,7 +2592,9 @@
               "type": {
                 "value": "DialogueTree::WasBranchVisited"
               },
-              "parameters": ["\"VieilHomme.Stop\""]
+              "parameters": [
+                "\"VieilHomme.Stop\""
+              ]
             },
             {
               "type": {
@@ -2458,7 +2626,11 @@
               "type": {
                 "value": "SetBooleanVariable"
               },
-              "parameters": ["Histoire.Courir", "True", ""]
+              "parameters": [
+                "Histoire.Courir",
+                "True",
+                ""
+              ]
             }
           ]
         }
@@ -2473,7 +2645,12 @@
           "type": {
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
-          "parameters": ["DEBUG", "Text", "=", "Histoire.Courir"]
+          "parameters": [
+            "DEBUG",
+            "Text",
+            "=",
+            "Histoire.Courir"
+          ]
         }
       ]
     }
