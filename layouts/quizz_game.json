@@ -1473,22 +1473,6 @@
       "height": 0,
       "keepRatio": true,
       "layer": "Game over",
-      "name": "WonText",
-      "persistentUuid": "11475ccc-ec1b-4292-858b-c5aaf722bb9c",
-      "width": 0,
-      "x": 509,
-      "y": 219,
-      "zOrder": 23,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "Game over",
       "name": "YouLoose",
       "persistentUuid": "dd5b5c3b-172f-42c9-be9b-1dd35bc3e89e",
       "width": 0,
@@ -2076,49 +2060,6 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "WonText",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Vous obtenez",
-      "font": "fonts/LuckiestGuy.ttf",
-      "textAlignment": "left",
-      "characterSize": 40,
-      "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Vous obtenez",
-        "font": "fonts/LuckiestGuy.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 40,
-        "lineHeight": 0,
-        "color": "255;255;255"
-      }
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
       "name": "YouLoose",
       "smoothed": true,
       "type": "TextObject::Text",
@@ -2200,9 +2141,6 @@
       },
       {
         "objectName": "LeaveButton"
-      },
-      {
-        "objectName": "WonText"
       },
       {
         "objectName": "YouLoose"
@@ -2814,14 +2752,6 @@
                 },
                 {
                   "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "WonText"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "Montre"
                   },
                   "parameters": [
@@ -2852,15 +2782,6 @@
                   },
                   "parameters": [
                     "YouWon",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "WonText",
                     ""
                   ]
                 },

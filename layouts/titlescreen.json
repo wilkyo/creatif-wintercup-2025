@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3732267540578293,
+    "zoomFactor": 0.519999999999969,
     "windowMask": false,
     "selectedLayer": "BGLayer1"
   },
@@ -244,15 +244,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 284,
       "keepRatio": true,
       "layer": "BGLayer1",
       "name": "TitleScreen",
       "persistentUuid": "152b6bc1-e56f-434a-a018-66a7ab8b8c9f",
-      "width": 0,
-      "x": 367,
-      "y": 94,
+      "width": 412,
+      "x": 415,
+      "y": 168,
       "zOrder": 108,
       "numberProperties": [],
       "stringProperties": [],
@@ -294,8 +295,8 @@
         "scale": 1,
         "fontSize": 20,
         "tint": "#ffffff",
-        "bitmapFontResourceName": "DogicaTake4.fnt",
-        "textureAtlasResourceName": "DogicaTake4_0.png",
+        "bitmapFontResourceName": "assets\\DogicaTake4.fnt",
+        "textureAtlasResourceName": "assets\\DogicaTake4_0.png",
         "align": "left",
         "wordWrap": false,
         "verticalTextAlignment": "top"
@@ -335,8 +336,8 @@
         "scale": 1,
         "fontSize": 20,
         "tint": "#ffffff",
-        "bitmapFontResourceName": "DogicaTake4.fnt",
-        "textureAtlasResourceName": "DogicaTake4_0.png",
+        "bitmapFontResourceName": "assets\\DogicaTake4.fnt",
+        "textureAtlasResourceName": "assets\\DogicaTake4_0.png",
         "align": "left",
         "wordWrap": false,
         "verticalTextAlignment": "top"
@@ -376,8 +377,8 @@
         "scale": 1,
         "fontSize": 20,
         "tint": "#ffffff",
-        "bitmapFontResourceName": "DogicaTake4.fnt",
-        "textureAtlasResourceName": "DogicaTake4_0.png",
+        "bitmapFontResourceName": "assets\\DogicaTake4.fnt",
+        "textureAtlasResourceName": "assets\\DogicaTake4_0.png",
         "align": "left",
         "wordWrap": false,
         "verticalTextAlignment": "top"
@@ -390,7 +391,7 @@
       "leftMargin": 21,
       "name": "MenuBorder",
       "rightMargin": 21,
-      "texture": "NewFile-1.png",
+      "texture": "assets\\NewFile-1.png",
       "tiled": true,
       "topMargin": 21,
       "type": "PanelSpriteObject::PanelSprite",
@@ -406,7 +407,7 @@
       "leftMargin": 24,
       "name": "MenuSelector",
       "rightMargin": 24,
-      "texture": "Selector-1-1.png",
+      "texture": "assets\\Selector-1-1.png",
       "tiled": true,
       "topMargin": 24,
       "type": "PanelSpriteObject::PanelSprite",
@@ -440,7 +441,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "Fade-1.png",
+                  "image": "assets\\Fade-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -532,19 +533,19 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Winter is coming",
+      "string": "Winter \nis \ncoming",
       "font": "fonts/LuckiestGuy.ttf",
-      "textAlignment": "left",
-      "characterSize": 70,
+      "textAlignment": "center",
+      "characterSize": 80,
       "color": {
-        "b": 27,
-        "g": 2,
-        "r": 208
+        "b": 255,
+        "g": 255,
+        "r": 255
       },
       "content": {
         "bold": false,
         "isOutlineEnabled": false,
-        "isShadowEnabled": false,
+        "isShadowEnabled": true,
         "italic": false,
         "outlineColor": "255;255;255",
         "outlineThickness": 2,
@@ -555,13 +556,13 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Winter is coming",
+        "text": "Winter \nis \ncoming",
         "font": "fonts/LuckiestGuy.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 70,
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 80,
         "lineHeight": 0,
-        "color": "208;2;27"
+        "color": "255;255;255"
       }
     }
   ],
@@ -660,10 +661,10 @@
           },
           "parameters": [
             "",
-            "Jonathan_So-ForMe-truncade.ogg",
+            "assets\\Jonathan_So-ForMe-truncade.ogg",
             "100",
             "yes",
-            "100",
+            "Options.Volumes.Musiques",
             ""
           ]
         }
@@ -931,10 +932,10 @@
                       },
                       "parameters": [
                         "",
-                        "MenuMove.wav",
+                        "assets\\MenuMove.wav",
                         "1",
                         "",
-                        "60",
+                        "Options.Volumes.Sons",
                         "1"
                       ]
                     }
@@ -1005,10 +1006,10 @@
                       },
                       "parameters": [
                         "",
-                        "MenuMove.wav",
+                        "assets\\MenuMove.wav",
                         "1",
                         "",
-                        "60",
+                        "Options.Volumes.Sons",
                         "1"
                       ]
                     }
@@ -1185,10 +1186,10 @@
                   },
                   "parameters": [
                     "",
-                    "Select.wav",
+                    "assets\\Select.wav",
                     "1",
                     "",
-                    "50",
+                    "Options.Volumes.Sons",
                     "1"
                   ]
                 }

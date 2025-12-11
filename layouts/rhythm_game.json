@@ -463,23 +463,6 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 60,
-      "keepRatio": true,
-      "layer": "Gameover",
-      "name": "WonText",
-      "persistentUuid": "4e80ceb7-d828-45bc-9fd5-e55cce938d4c",
-      "width": 278,
-      "x": 518,
-      "y": 428,
-      "zOrder": 80,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
@@ -2609,49 +2592,6 @@
       "assetStoreId": "",
       "bold": true,
       "italic": false,
-      "name": "WonText",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Vous obtenez",
-      "font": "fonts/LuckiestGuy.ttf",
-      "textAlignment": "left",
-      "characterSize": 40,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": true,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Vous obtenez",
-        "font": "fonts/LuckiestGuy.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 40,
-        "lineHeight": 0,
-        "color": "0;0;0"
-      }
-    },
-    {
-      "assetStoreId": "",
-      "bold": true,
-      "italic": false,
       "name": "YouLoose",
       "smoothed": true,
       "type": "TextObject::Text",
@@ -3240,9 +3180,6 @@
         "objectName": "Crystal"
       },
       {
-        "objectName": "WonText"
-      },
-      {
         "objectName": "YouLoose"
       },
       {
@@ -3716,15 +3653,6 @@
             },
             {
               "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "WonText",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "Cache"
               },
               "parameters": [
@@ -3793,14 +3721,6 @@
               },
               "parameters": [
                 "YouWon"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "WonText"
               ]
             },
             {

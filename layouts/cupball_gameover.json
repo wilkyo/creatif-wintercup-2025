@@ -42,23 +42,6 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "WonText",
-      "persistentUuid": "1fdda66b-3518-42a7-91ce-a01cd7512e05",
-      "width": 304,
-      "x": 480,
-      "y": 224,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
@@ -107,49 +90,6 @@
     }
   ],
   "objects": [
-    {
-      "assetStoreId": "",
-      "bold": true,
-      "italic": false,
-      "name": "WonText",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Vous obtenez",
-      "font": "fonts/LuckiestGuy.ttf",
-      "textAlignment": "left",
-      "characterSize": 40,
-      "color": {
-        "b": 247,
-        "g": 247,
-        "r": 247
-      },
-      "content": {
-        "bold": true,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Vous obtenez",
-        "font": "fonts/LuckiestGuy.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 40,
-        "lineHeight": 0,
-        "color": "247;247;247"
-      }
-    },
     {
       "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
       "name": "NewGameButton",
@@ -233,9 +173,6 @@
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
-      {
-        "objectName": "WonText"
-      },
       {
         "objectName": "NewGameButton"
       },

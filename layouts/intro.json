@@ -92,7 +92,7 @@
       "assetStoreId": "",
       "height": 32,
       "name": "Background2",
-      "texture": "Flat Bar Red Fill Bar.png",
+      "texture": "assets\\Winter Background.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],

@@ -658,23 +658,6 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "UI",
-      "name": "ItemWon",
-      "persistentUuid": "e6829723-2288-4a87-8bcb-4b34f55002e4",
-      "width": 385,
-      "x": 207,
-      "y": 240,
-      "zOrder": 27,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
       "height": 776,
       "keepRatio": true,
       "layer": "",
@@ -2274,49 +2257,6 @@
       ]
     },
     {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "ItemWon",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Vous obtenez ",
-      "font": "fonts/LuckiestGuy.ttf",
-      "textAlignment": "center",
-      "characterSize": 40,
-      "color": {
-        "b": 247,
-        "g": 247,
-        "r": 247
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Vous obtenez ",
-        "font": "fonts/LuckiestGuy.ttf",
-        "textAlignment": "center",
-        "verticalTextAlignment": "center",
-        "characterSize": 40,
-        "lineHeight": 0,
-        "color": "247;247;247"
-      }
-    },
-    {
       "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
       "name": "NewGameButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
@@ -2381,9 +2321,6 @@
           },
           {
             "objectName": "YouWon"
-          },
-          {
-            "objectName": "ItemWon"
           },
           {
             "objectName": "BlackBackground"

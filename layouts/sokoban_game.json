@@ -544,22 +544,6 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "layer": "WinGame",
-      "name": "YouWin",
-      "persistentUuid": "000c79b6-0d5a-4bf2-986b-9313ddec900d",
-      "width": 320,
-      "x": 512,
-      "y": 320,
-      "zOrder": 23,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
@@ -1306,62 +1290,6 @@
     },
     {
       "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "YouWin",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [
-        {
-          "effectType": "Outline",
-          "name": "Effect",
-          "doubleParameters": {
-            "padding": 10,
-            "thickness": 10
-          },
-          "stringParameters": {
-            "color": "0;0;0"
-          },
-          "booleanParameters": {}
-        }
-      ],
-      "behaviors": [],
-      "string": "Vous obtenez",
-      "font": "fonts/LuckiestGuy.ttf",
-      "textAlignment": "left",
-      "characterSize": 40,
-      "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Vous obtenez",
-        "font": "fonts/LuckiestGuy.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 40,
-        "lineHeight": 0,
-        "color": "255;255;255"
-      }
-    },
-    {
-      "assetStoreId": "",
       "name": "Tilemap_Obstacles",
       "type": "TileMap::SimpleTileMap",
       "variables": [
@@ -1663,9 +1591,6 @@
         "objectName": "ResetGameButton"
       },
       {
-        "objectName": "YouWin"
-      },
-      {
         "objectName": "Tilemap_Obstacles"
       },
       {
@@ -1813,16 +1738,7 @@
                       },
                       "parameters": [
                         "",
-                        "\"q\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Left\""
+                        "Options.Touches.Gauche"
                       ]
                     }
                   ]
@@ -1876,16 +1792,7 @@
                       },
                       "parameters": [
                         "",
-                        "\"s\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Down\""
+                        "Options.Touches.Bas"
                       ]
                     }
                   ]
@@ -1939,16 +1846,7 @@
                       },
                       "parameters": [
                         "",
-                        "\"z\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Up\""
+                        "Options.Touches.Haut"
                       ]
                     }
                   ]
@@ -2002,16 +1900,7 @@
                       },
                       "parameters": [
                         "",
-                        "\"d\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Right\""
+                        "Options.Touches.Droite"
                       ]
                     }
                   ]

@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.0000000000000002,
+    "zoomFactor": 0.9052964706283679,
     "windowMask": false,
     "selectedLayer": ""
   },
@@ -410,55 +410,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "GameOver",
-      "name": "WonText",
-      "persistentUuid": "c4145da8-348f-4d39-8afc-1f15587382d4",
-      "width": 0,
-      "x": 18,
-      "y": 214,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 64,
-      "height": 48,
-      "keepRatio": true,
-      "layer": "GameOver",
-      "name": "NewGameButton",
-      "persistentUuid": "2c4f7518-eb9f-4023-984e-d82512aa6017",
-      "width": 128,
-      "x": 5,
-      "y": 440,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "GameOver",
-      "name": "LeaveButton",
-      "persistentUuid": "51538635-3b68-42ef-b732-59f077575fe5",
-      "width": 0,
-      "x": 164,
-      "y": 440,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "depth": 1,
       "height": 109,
@@ -486,6 +437,38 @@
       "x": 34,
       "y": 93,
       "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64.64646464646465,
+      "height": 70,
+      "layer": "GameOver",
+      "name": "NewGameButton",
+      "persistentUuid": "ab826270-fd9d-4017-85d5-f4a626dac33e",
+      "width": 200,
+      "x": 55,
+      "y": 353,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 70,
+      "layer": "GameOver",
+      "name": "LeaveButton",
+      "persistentUuid": "64bee59d-1668-4e9e-bd54-9212ab8ebc0f",
+      "width": 200,
+      "x": 55,
+      "y": 430,
+      "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1392,75 +1375,6 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "WonText",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Vous obtenez",
-      "font": "fonts/LuckiestGuy.ttf",
-      "textAlignment": "left",
-      "characterSize": 40,
-      "color": {
-        "b": 240,
-        "g": 240,
-        "r": 240
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Vous obtenez",
-        "font": "fonts/LuckiestGuy.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 40,
-        "lineHeight": 0,
-        "color": "240;240;240"
-      }
-    },
-    {
-      "assetStoreId": "80b9ddd78c8727888bb53c7524f443682746667b1ba493c223114c04e7661bbf",
-      "name": "NewGameButton",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Small Blue Button",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LabelText": "Rejouer (r)",
-        "PressedLabelOffsetY": 2
-      }
-    },
-    {
-      "assetStoreId": "80b9ddd78c8727888bb53c7524f443682746667b1ba493c223114c04e7661bbf",
-      "name": "LeaveButton",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Small Blue Button",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LabelText": "Partir",
-        "PressedLabelOffsetY": 2
-      }
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
       "name": "YouWon",
       "smoothed": true,
       "type": "TextObject::Text",
@@ -1542,6 +1456,42 @@
         "lineHeight": 0,
         "color": "208;2;27"
       }
+    },
+    {
+      "assetStoreId": "a48315b9a9c655af87118d7bb8f6be03b4dbb14e066387849b2d2d4c3600573c",
+      "name": "NewGameButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Purple Button With Shadow",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 3,
+        "BottomPadding": 32,
+        "TopPadding": 32,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Rejouer (R)"
+      }
+    },
+    {
+      "assetStoreId": "a48315b9a9c655af87118d7bb8f6be03b4dbb14e066387849b2d2d4c3600573c",
+      "name": "LeaveButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Purple Button With Shadow",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 3,
+        "BottomPadding": 32,
+        "TopPadding": 32,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Partir"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1593,19 +1543,16 @@
         "objectName": "JumpButton"
       },
       {
-        "objectName": "WonText"
+        "objectName": "YouWon"
+      },
+      {
+        "objectName": "YouLoose"
       },
       {
         "objectName": "NewGameButton"
       },
       {
         "objectName": "LeaveButton"
-      },
-      {
-        "objectName": "YouWon"
-      },
-      {
-        "objectName": "YouLoose"
       }
     ]
   },
@@ -2065,11 +2012,11 @@
                   "subInstructions": [
                     {
                       "type": {
-                        "value": "KeyPressed"
+                        "value": "KeyFromTextPressed"
                       },
                       "parameters": [
                         "",
-                        "Left"
+                        "Options.Touches.Gauche"
                       ]
                     },
                     {
@@ -2144,11 +2091,11 @@
                   "subInstructions": [
                     {
                       "type": {
-                        "value": "KeyPressed"
+                        "value": "KeyFromTextPressed"
                       },
                       "parameters": [
                         "",
-                        "Right"
+                        "Options.Touches.Droite"
                       ]
                     },
                     {
@@ -2223,11 +2170,11 @@
                   "subInstructions": [
                     {
                       "type": {
-                        "value": "KeyPressed"
+                        "value": "KeyFromTextPressed"
                       },
                       "parameters": [
                         "",
-                        "Up"
+                        "Options.Touches.Haut"
                       ]
                     },
                     {
@@ -4079,14 +4026,6 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "WonText"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
                     "ScoreText"
                   ]
                 },
@@ -4436,7 +4375,7 @@
               "parameters": [
                 "score",
                 "=",
-                "100"
+                "50"
               ]
             }
           ],
@@ -4476,15 +4415,6 @@
               "parameters": [
                 "",
                 "\"GameOver\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "WonText",
-                ""
               ]
             },
             {
