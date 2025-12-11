@@ -165,7 +165,7 @@
 		"body": "<< nom LaGrosseCarow >>\nMieux vaut la laisser comme ça.",
 		"position": {
 			"x": 2471,
-			"y": 58
+			"y": 53
 		},
 		"colorID": 0
 	},
@@ -286,6 +286,106 @@
 		"position": {
 			"x": 595,
 			"y": 1056
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Memory.Start",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nIl a l'air figé<<wait 200>>.<<wait 200>>.<<wait 200>>.µCertaines tombes semblent avoir un symbole en commun.µPeut-être faut-il retrouver les paires ?\n[[ Chercher les paires |Memory.Jouer]]\n[[ Laisser tomber |Memory.Ignorer]]",
+		"position": {
+			"x": 1639,
+			"y": 1667
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Memory.ApresJeu",
+		"tags": "",
+		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom ??? >>\nOh, tu m'as sauvé. Merci.",
+		"position": {
+			"x": 1415,
+			"y": 1956
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Memory.Sauf",
+		"tags": "",
+		"body": "<< nom ??? >>\nEncore merci !",
+		"position": {
+			"x": 1725,
+			"y": 1953
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Memory.Jouer",
+		"tags": "",
+		"body": "C'est parti !",
+		"position": {
+			"x": 1506,
+			"y": 1351
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Memory.Ignorer",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nMieux vaut la laisser comme ça.",
+		"position": {
+			"x": 1979,
+			"y": 1447
+		},
+		"colorID": 0
+	},
+	{
+		"title": "UpRunner.Start",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nIl a l'air figé<<wait 200>>.<<wait 200>>.<<wait 200>>.µIl a l'air de vouloir sauter par-dessus la barrière.µPeut-être faut-il sauter pour lui ?\n[[ Sauter la barrière |UpRunner.Jouer]]\n[[ Laisser tomber |UpRunner.Ignorer]]",
+		"position": {
+			"x": 2678,
+			"y": 1513
+		},
+		"colorID": 0
+	},
+	{
+		"title": "UpRunner.ApresJeu",
+		"tags": "",
+		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom ??? >>\nOh, tu m'as sauvé. Merci.",
+		"position": {
+			"x": 2454,
+			"y": 1802
+		},
+		"colorID": 0
+	},
+	{
+		"title": "UpRunner.Sauf",
+		"tags": "",
+		"body": "<< nom ??? >>\nEncore merci !",
+		"position": {
+			"x": 2764,
+			"y": 1799
+		},
+		"colorID": 0
+	},
+	{
+		"title": "UpRunner.Jouer",
+		"tags": "",
+		"body": "C'est parti !",
+		"position": {
+			"x": 2445,
+			"y": 1147
+		},
+		"colorID": 0
+	},
+	{
+		"title": "UpRunner.Ignorer",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nMieux vaut la laisser comme ça.",
+		"position": {
+			"x": 2982,
+			"y": 1143
 		},
 		"colorID": 0
 	}

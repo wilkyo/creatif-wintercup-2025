@@ -380,6 +380,16 @@
               "parameters": [
                 "\"text\""
               ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "EtatJeu",
+                "!=",
+                "\"JeuEnCours\""
+              ]
             }
           ],
           "actions": [
