@@ -169,7 +169,7 @@
                 "value": "DialogueTree::StartDialogueFromBranch"
               },
               "parameters": [
-                "\"Intro\""
+                "\"Intro.Start\""
               ]
             },
             {
@@ -281,7 +281,7 @@
               },
               "parameters": [
                 "",
-                "GlobalVariableString(Touches.Valider)"
+                "GlobalVariableString(Options.Touches.Valider)"
               ]
             },
             {

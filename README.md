@@ -1,5 +1,7 @@
 === Winter is coming ===
 
+[Lien du jeu](https://gd.games/instant-builds/62b03d28-10e3-4d0f-8fde-9639f1f6c226)
+
 # ÉQUIPE
 
 - Izigame (1100100 Pression) – Développeur/Game designer/Sound designer
@@ -12,6 +14,7 @@
 ## Contrôles
 
 - ZQSD - Directions
+- Shift gauche - Courir (nécessite un objet)
 - E - Valider
 - Clic gauche - Actions sur certains jeux
 
@@ -30,9 +33,9 @@ Il faudra sauver tout le monde pour pouvoir affronter le dernier tryharder.
 
 # DÉFIS CRÉATIFS INTÉGRÉS
 
-- Coupe de l’hiver : Flocon présent dans certains mini-jeux
 - Les oubliés : Le héros appartient aux 2Hoth4U
-- TODO
+- Il est dangereux d’y aller seul, prends ça : Un vieil homme donne des chaussures pour courir en dehors du village.
+- Coupe de l’hiver : Flocon présent dans certains mini-jeux
 - TODO
 - TODO
 
@@ -50,21 +53,22 @@ Merci aux tutoriels GDevelop et aux nombreux exemples de jeux que nous avons pu 
 
 ## Assets
 
-- RPG Maker VX Ace RTP - Enterbrain : https://www.rpgmakerweb.com/run-time-package
-- Classic Winter tiles - whtdragons : https://forums.rpgmakerweb.com/index.php?threads/whtdragons-tilesets-addons-fixes-and-more.60504/page-3
+- RPG Maker VX Ace RTP - Enterbrain : [RTP](https://www.rpgmakerweb.com/run-time-package)
 
 ## Mini-jeux
 
-- Pairs - GDevelop : https://gdevelop.io/game-example/free/pairs
-- Sokoban - GDevelop : https://gdevelop.io/game-example/free/sokoban
-- Ball Cup Boom - GDevelop : https://gdevelop.io/game-example/free/ball-cup-boom
-- Quiz Game - GDevelop : https://gdevelop.io/game-example/free/starting-quiz
-- Rhythm - GDevelop : https://gdevelop.io/game-example/free/rhythm
-- Endless up runner - GDevelop : https://gdevelop.io/fr-fr/game-example/free/endless-up-runner
-- Not a vania - GDevelop : https://gdevelop.io/fr-fr/game-example/free/not-a-vania
+- [Pairs - GDevelop](https://gdevelop.io/game-example/free/pairs)
+- [Sokoban - GDevelop](https://gdevelop.io/game-example/free/sokoban)
+- [Ball Cup Boom - GDevelop](https://gdevelop.io/game-example/free/ball-cup-boom)
+- [Quiz Game - GDevelop](https://gdevelop.io/game-example/free/starting-quiz)
+- [Rhythm - GDevelop](https://gdevelop.io/game-example/free/rhythm)
+- [Endless up runner - GDevelop](https://gdevelop.io/fr-fr/game-example/free/endless-up-runner)
+- [Not a vania - GDevelop](https://gdevelop.io/fr-fr/game-example/free/not-a-vania)
 
 # PROBLÈMES CONNUS
 
-- Problèmes de collisions/couches
 - Boutons cassés
-- Sortie de map
+- Décalage texte écran titre
+- Images absentes
+- Polices qui ne supportent pas les accents
+- Textes trop compacts dans les dialogues

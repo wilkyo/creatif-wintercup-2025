@@ -783,7 +783,7 @@
                     "DialogueNom",
                     "Text",
                     "=",
-                    "DialogueTree::CommandParameter(0)"
+                    "StrReplaceAll(DialogueTree::CommandParameter(0), \"_\", \" \")"
                   ]
                 },
                 {

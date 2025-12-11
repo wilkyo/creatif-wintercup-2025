@@ -24,7 +24,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "C:\\Users\\Willy\\Desktop",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -381,10 +381,10 @@
       },
       {
         "disablePreload": false,
-        "file": "assets/DialoguesMap1.json",
+        "file": "assets/DialoguesVillage.json",
         "kind": "json",
-        "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialoguesMap1.json\"}",
-        "name": "DialoguesMap1",
+        "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialoguesVillage.json\"}",
+        "name": "DialoguesVillage",
         "userAdded": false
       },
       {
@@ -786,14 +786,6 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Inside_C.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/ClassicWinterTiles.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ClassicWinterTiles.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -6445,6 +6437,9 @@
         },
         {
           "name": "CupBall"
+        },
+        {
+          "name": "VieilHomme"
         }
       ]
     },
@@ -6601,6 +6596,11 @@
               "value": "s"
             },
             {
+              "name": "Courir",
+              "type": "string",
+              "value": "LShift"
+            },
+            {
               "name": "Dash",
               "type": "string",
               "value": "o"
@@ -6659,6 +6659,11 @@
       "name": "Histoire",
       "type": "structure",
       "children": [
+        {
+          "name": "Courir",
+          "type": "boolean",
+          "value": false
+        },
         {
           "name": "Intro",
           "type": "number",

@@ -138,5 +138,25 @@
 			"y": 1422
 		},
 		"colorID": 0
+	},
+	{
+		"title": "VieilHomme.Start",
+		"tags": "",
+		"body": "<<nom Vieil_Homme>>\nOh, c'est toi !\nPrends ceci. Cela devrait t'être très utile dans ton aventure.\n<<nom>>\nL'homme vous tend une paire de chaussures.\n<<nom Aide>>\nMaintenez Shift gauche pour courir.\n[[ answer: |VieilHomme.Stop]]",
+		"position": {
+			"x": -655,
+			"y": 399
+		},
+		"colorID": 0
+	},
+	{
+		"title": "VieilHomme.Stop",
+		"tags": "",
+		"body": "<<nom Vieil_Homme>>\nBon courage dans ta quête.",
+		"position": {
+			"x": -536,
+			"y": 179
+		},
+		"colorID": 0
 	}
 ]
