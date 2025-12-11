@@ -1,9 +1,9 @@
 {
   "firstLayout": "TitleScreen",
   "gdVersion": {
-    "build": 249,
+    "build": 247,
     "major": 5,
-    "minor": 6,
+    "minor": 5,
     "revision": 0
   },
   "properties": {
@@ -61,7 +61,7 @@
     "loadingScreen": {
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
-      "backgroundImageResourceName": "",
+      "backgroundImageResourceName": "assets\\Winter Background.png",
       "gdevelopLogoStyle": "light",
       "logoAndProgressFadeInDuration": 0.2,
       "logoAndProgressLogoFadeInDelay": 0.2,
@@ -3851,6 +3851,67 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/9e01b09016c6a200b53a55cac3cf34f083785eb6b9f55de490a71ad352858b36_Small Blue Button_Pressed.png",
           "name": "Small Blue Button_Pressed.png"
         }
+      },
+      {
+        "file": "assets/Jonathan_So-ForMe-truncade.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Jonathan_So-ForMe-truncade.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/MenuMove.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\MenuMove.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Select.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Select.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Selector-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Selector-1-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewFile-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\NewFile-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/DogicaTake4.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "assets\\DogicaTake4.fnt",
+        "userAdded": false
+      },
+      {
+        "file": "assets/DogicaTake4_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\DogicaTake4_0.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -3915,12 +3976,12 @@
       "content": {
         "text": "[b]bold[/b] [i]italic[/i] [size=15]smaller[/size] [font=times]times[/font] font\n[spacing=12]spaced out[/spacing]\n[outline=yellow]outlined[/outline] [shadow=red]DropShadow[/shadow] ",
         "opacity": 255,
-        "fontSize": 20,
+        "fontSize": 28,
         "visible": true,
-        "color": "207;207;207",
-        "fontFamily": "Arial",
+        "color": "255;255;255",
+        "fontFamily": "Poppins-Medium.ttf",
         "align": "left",
-        "verticalTextAlignment": "top"
+        "verticalTextAlignment": "center"
       }
     },
     {
@@ -3935,9 +3996,9 @@
       "effects": [],
       "behaviors": [],
       "string": "Choix 1\nChoix 2",
-      "font": "",
+      "font": "Poppins-Medium.ttf",
       "textAlignment": "left",
-      "characterSize": 20,
+      "characterSize": 28,
       "color": {
         "b": 255,
         "g": 255,
@@ -3958,10 +4019,10 @@
         "smoothed": true,
         "underlined": false,
         "text": "Choix 1\nChoix 2",
-        "font": "",
+        "font": "Poppins-Medium.ttf",
         "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 20,
+        "verticalTextAlignment": "center",
+        "characterSize": 28,
         "lineHeight": 0,
         "color": "255;255;255"
       }
@@ -3978,13 +4039,13 @@
       "effects": [],
       "behaviors": [],
       "string": "Nom",
-      "font": "",
+      "font": "Poppins-Medium.ttf",
       "textAlignment": "left",
-      "characterSize": 26,
+      "characterSize": 30,
       "color": {
-        "b": 73,
-        "g": 206,
-        "r": 230
+        "b": 28,
+        "g": 231,
+        "r": 248
       },
       "content": {
         "bold": true,
@@ -4001,12 +4062,12 @@
         "smoothed": true,
         "underlined": false,
         "text": "Nom",
-        "font": "",
+        "font": "Poppins-Medium.ttf",
         "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 26,
+        "verticalTextAlignment": "center",
+        "characterSize": 30,
         "lineHeight": 0,
-        "color": "230;206;73"
+        "color": "248;231;28"
       }
     },
     {
