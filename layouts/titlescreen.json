@@ -72,22 +72,6 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 88,
-      "layer": "",
-      "name": "BitmapTitle",
-      "persistentUuid": "5e4cf3c7-ee72-4b06-9a7b-4968a7f524b7",
-      "width": 544,
-      "x": 394,
-      "y": 90,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "layer": "",
@@ -245,41 +229,37 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 960,
+      "height": 734,
       "keepRatio": true,
       "layer": "BGLayer1",
       "name": "Winter_Background",
       "persistentUuid": "cac1c931-7ec6-417a-82c6-3ba7d539f4fd",
-      "width": 1594,
-      "x": -161,
-      "y": -70,
+      "width": 1294,
+      "x": -9,
+      "y": -7,
       "zOrder": 107,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "BGLayer1",
+      "name": "TitleScreen",
+      "persistentUuid": "152b6bc1-e56f-434a-a018-66a7ab8b8c9f",
+      "width": 0,
+      "x": 367,
+      "y": 94,
+      "zOrder": 108,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
   ],
   "objects": [
-    {
-      "assetStoreId": "",
-      "name": "BitmapTitle",
-      "type": "BitmapText::BitmapTextObject",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "text": "Winter is coming",
-        "opacity": 255,
-        "scale": 1,
-        "fontSize": 20,
-        "tint": "#ff0000",
-        "bitmapFontResourceName": "sanguis80.fnt",
-        "textureAtlasResourceName": "sanguis80_0.png",
-        "align": "left",
-        "wordWrap": true,
-        "verticalTextAlignment": "top"
-      }
-    },
     {
       "assetStoreId": "",
       "name": "BitmapMenuExit",
@@ -540,14 +520,54 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "TitleScreen",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Winter is coming",
+      "font": "fonts/LuckiestGuy.ttf",
+      "textAlignment": "left",
+      "characterSize": 70,
+      "color": {
+        "b": 27,
+        "g": 2,
+        "r": 208
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Winter is coming",
+        "font": "fonts/LuckiestGuy.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 70,
+        "lineHeight": 0,
+        "color": "208;2;27"
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
-      {
-        "objectName": "BitmapTitle"
-      },
       {
         "objectName": "BitmapMenuExit"
       },
@@ -568,6 +588,9 @@
       },
       {
         "objectName": "Winter_Background"
+      },
+      {
+        "objectName": "TitleScreen"
       }
     ]
   },
@@ -603,16 +626,6 @@
           },
           "parameters": [
             "MenuTextItem",
-            "=",
-            "SceneWindowWidth()/2"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetCenterX"
-          },
-          "parameters": [
-            "BitmapTitle",
             "=",
             "SceneWindowWidth()/2"
           ]

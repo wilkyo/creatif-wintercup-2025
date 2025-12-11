@@ -235,8 +235,8 @@
       "layer": "Hud",
       "name": "PlayerScore",
       "persistentUuid": "e90bb05f-35ed-4c65-a9fc-26e829058463",
-      "width": 132,
-      "x": 596,
+      "width": 164,
+      "x": 572,
       "y": 316,
       "zOrder": 14,
       "numberProperties": [],
@@ -464,49 +464,16 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 64,
-      "height": 68,
-      "keepRatio": true,
-      "layer": "Gameover",
-      "name": "NewGameButton",
-      "persistentUuid": "fa0869da-a699-4931-a5e5-796ad0caaf64",
-      "width": 172,
-      "x": 44,
-      "y": 608,
-      "zOrder": 35,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 1,
-      "height": 80,
+      "height": 60,
       "keepRatio": true,
       "layer": "Gameover",
       "name": "WonText",
       "persistentUuid": "4e80ceb7-d828-45bc-9fd5-e55cce938d4c",
-      "width": 418,
-      "x": 442,
-      "y": 356,
+      "width": 278,
+      "x": 518,
+      "y": 428,
       "zOrder": 80,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 69,
-      "height": 68,
-      "layer": "Gameover",
-      "name": "LeaveButton",
-      "persistentUuid": "c819f6dc-c1dd-4b2f-9608-f4708a6f0e5c",
-      "width": 172,
-      "x": 1032,
-      "y": 608,
-      "zOrder": 81,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -517,11 +484,11 @@
       "height": 0,
       "keepRatio": true,
       "layer": "Gameover",
-      "name": "LooseText",
+      "name": "YouLoose",
       "persistentUuid": "116237d0-46b2-4a96-a8d3-fa2f4f9a7712",
       "width": 0,
-      "x": 559,
-      "y": 356,
+      "x": 513,
+      "y": 324,
       "zOrder": 82,
       "numberProperties": [],
       "stringProperties": [],
@@ -603,7 +570,7 @@
       "name": "Snowflake",
       "persistentUuid": "40df93ee-e8d8-4dca-8eb7-9ec5f6f5da52",
       "width": 100,
-      "x": 944,
+      "x": 936,
       "y": 548,
       "zOrder": 28,
       "numberProperties": [],
@@ -736,6 +703,55 @@
       "x": 320,
       "y": 76,
       "zOrder": 83,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 100,
+      "keepRatio": true,
+      "layer": "Gameover",
+      "name": "NewGameButton",
+      "persistentUuid": "2ab57749-1e6f-4bd9-8ddc-1a6ca55b7fc4",
+      "width": 240,
+      "x": 40,
+      "y": 600,
+      "zOrder": 86,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 60,
+      "height": 100,
+      "layer": "Gameover",
+      "name": "LeaveButton",
+      "persistentUuid": "dc105253-67b5-4654-8a1f-1c77d3462922",
+      "width": 240,
+      "x": 1024,
+      "y": 600,
+      "zOrder": 87,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Gameover",
+      "name": "YouWon",
+      "persistentUuid": "bc2ba71a-bac4-4e3a-9e33-50e49abdc4f4",
+      "width": 0,
+      "x": 480,
+      "y": 325,
+      "zOrder": 88,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1282,7 +1298,7 @@
       "string": "SCORE :",
       "font": "Assets\\Fonts\\monogram-extended.ttf",
       "textAlignment": "",
-      "characterSize": 30,
+      "characterSize": 40,
       "color": {
         "b": 0,
         "g": 0,
@@ -1306,7 +1322,7 @@
         "font": "Assets\\Fonts\\monogram-extended.ttf",
         "textAlignment": "",
         "verticalTextAlignment": "top",
-        "characterSize": 30,
+        "characterSize": 40,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -1350,49 +1366,6 @@
         "textAlignment": "",
         "verticalTextAlignment": "top",
         "characterSize": 30,
-        "lineHeight": 0,
-        "color": "0;0;0"
-      }
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "Player2Score",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Score: Null",
-      "font": "Assets\\Fonts\\monogram-extended.ttf",
-      "textAlignment": "",
-      "characterSize": 20,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Score: Null",
-        "font": "Assets\\Fonts\\monogram-extended.ttf",
-        "textAlignment": "",
-        "verticalTextAlignment": "top",
-        "characterSize": 20,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -2633,24 +2606,6 @@
       ]
     },
     {
-      "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
-      "name": "NewGameButton",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Small Red Button",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LeftPadding": 16,
-        "RightPadding": 16,
-        "PressedLabelOffsetY": 10,
-        "BottomPadding": 32,
-        "TopPadding": 16,
-        "HoveredFadeOutDuration": 0.25,
-        "LabelText": "Rejouer"
-      }
-    },
-    {
       "assetStoreId": "",
       "bold": true,
       "italic": false,
@@ -2662,9 +2617,9 @@
       "effects": [],
       "behaviors": [],
       "string": "Vous obtenez",
-      "font": "Assets\\Fonts\\monogram-extended.ttf",
+      "font": "fonts/LuckiestGuy.ttf",
       "textAlignment": "left",
-      "characterSize": 90,
+      "characterSize": 40,
       "color": {
         "b": 0,
         "g": 0,
@@ -2685,51 +2640,33 @@
         "smoothed": true,
         "underlined": false,
         "text": "Vous obtenez",
-        "font": "Assets\\Fonts\\monogram-extended.ttf",
+        "font": "fonts/LuckiestGuy.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 90,
+        "characterSize": 40,
         "lineHeight": 0,
         "color": "0;0;0"
-      }
-    },
-    {
-      "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
-      "name": "LeaveButton",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Small Red Button",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LeftPadding": 16,
-        "RightPadding": 16,
-        "PressedLabelOffsetY": 10,
-        "BottomPadding": 32,
-        "TopPadding": 16,
-        "HoveredFadeOutDuration": 0.25,
-        "LabelText": "Partir"
       }
     },
     {
       "assetStoreId": "",
       "bold": true,
       "italic": false,
-      "name": "LooseText",
+      "name": "YouLoose",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Perdu",
-      "font": "Assets\\Fonts\\monogram-extended.ttf",
+      "string": "ECHEC",
+      "font": "fonts/LuckiestGuy.ttf",
       "textAlignment": "left",
-      "characterSize": 90,
+      "characterSize": 100,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 27,
+        "g": 2,
+        "r": 208
       },
       "content": {
         "bold": true,
@@ -2745,13 +2682,13 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Perdu",
-        "font": "Assets\\Fonts\\monogram-extended.ttf",
+        "text": "ECHEC",
+        "font": "fonts/LuckiestGuy.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 90,
+        "characterSize": 100,
         "lineHeight": 0,
-        "color": "0;0;0"
+        "color": "208;2;27"
       }
     },
     {
@@ -3185,6 +3122,85 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
+      "name": "NewGameButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Blue Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Rejouer"
+      }
+    },
+    {
+      "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
+      "name": "LeaveButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Blue Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Partir"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "YouWon",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "SUCCES",
+      "font": "fonts/LuckiestGuy.ttf",
+      "textAlignment": "left",
+      "characterSize": 100,
+      "color": {
+        "b": 33,
+        "g": 211,
+        "r": 126
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "SUCCES",
+        "font": "fonts/LuckiestGuy.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 100,
+        "lineHeight": 0,
+        "color": "126;211;33"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -3212,9 +3228,6 @@
         "objectName": "Player2Controls"
       },
       {
-        "objectName": "Player2Score"
-      },
-      {
         "objectName": "Penguin"
       },
       {
@@ -3227,16 +3240,10 @@
         "objectName": "Crystal"
       },
       {
-        "objectName": "NewGameButton"
-      },
-      {
         "objectName": "WonText"
       },
       {
-        "objectName": "LeaveButton"
-      },
-      {
-        "objectName": "LooseText"
+        "objectName": "YouLoose"
       },
       {
         "objectName": "torch3"
@@ -3246,6 +3253,15 @@
       },
       {
         "objectName": "torch2"
+      },
+      {
+        "objectName": "NewGameButton"
+      },
+      {
+        "objectName": "LeaveButton"
+      },
+      {
+        "objectName": "YouWon"
       }
     ]
   },
@@ -3404,7 +3420,7 @@
                     "assets\\EnferGele.mp3",
                     "1",
                     "no",
-                    "100",
+                    "Options.Volumes.Musiques",
                     "1"
                   ]
                 }
@@ -3694,6 +3710,15 @@
                 "value": "Montre"
               },
               "parameters": [
+                "YouWon",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
                 "WonText",
                 ""
               ]
@@ -3703,7 +3728,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "LooseText"
+                "YouLoose"
               ]
             },
             {
@@ -3758,8 +3783,16 @@
                 "value": "Montre"
               },
               "parameters": [
-                "LooseText",
+                "YouLoose",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "YouWon"
               ]
             },
             {
@@ -5064,7 +5097,7 @@
                 "",
                 "1",
                 ">=",
-                "64"
+                "64.5"
               ]
             },
             {
@@ -5453,7 +5486,7 @@
       "isLocked": false,
       "name": "Gameover",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": []
     },

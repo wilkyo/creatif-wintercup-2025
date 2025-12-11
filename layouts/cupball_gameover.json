@@ -44,14 +44,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 177,
+      "height": 64,
       "keepRatio": true,
       "layer": "",
-      "name": "Won",
+      "name": "WonText",
       "persistentUuid": "1fdda66b-3518-42a7-91ce-a01cd7512e05",
-      "width": 594,
-      "x": 350,
-      "y": 32,
+      "width": 304,
+      "x": 480,
+      "y": 224,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -59,16 +59,15 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 128,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Chip_Pink",
-      "persistentUuid": "feaebcd8-994a-4031-b5b0-066e1bb596ee",
-      "width": 209,
-      "x": 527,
-      "y": 288,
+      "name": "NewGameButton",
+      "persistentUuid": "2ac6fa0a-d669-456a-9afb-0d4b78ef21b3",
+      "width": 0,
+      "x": 208,
+      "y": 502,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -80,11 +79,11 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "ChipPink",
-      "persistentUuid": "b8ab31b0-b602-45fa-a769-45c8ddba56f5",
+      "name": "LeaveButton",
+      "persistentUuid": "15aa1f9c-3c5d-414f-b3d3-8fc02742db99",
       "width": 0,
-      "x": 489,
-      "y": 416,
+      "x": 832,
+      "y": 502,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -92,34 +91,16 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 60,
-      "height": 64,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "NewGameButton",
-      "persistentUuid": "fcc0ea26-10f5-4feb-9b00-554bf2c3bcb9",
-      "width": 160,
-      "x": 112,
-      "y": 544,
+      "name": "YouWon",
+      "persistentUuid": "43065482-4290-409e-8b22-8fee32c16e06",
+      "width": 0,
+      "x": 465,
+      "y": 53,
       "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 64,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "LeaveButton",
-      "persistentUuid": "a3ca1cd1-8f5a-4c18-89ca-02ce04cb8d66",
-      "width": 160,
-      "x": 976,
-      "y": 544,
-      "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -130,7 +111,7 @@
       "assetStoreId": "",
       "bold": true,
       "italic": false,
-      "name": "Won",
+      "name": "WonText",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -138,9 +119,9 @@
       "effects": [],
       "behaviors": [],
       "string": "Vous obtenez",
-      "font": "LuckiestGuy.ttf",
+      "font": "fonts/LuckiestGuy.ttf",
       "textAlignment": "left",
-      "characterSize": 80,
+      "characterSize": 40,
       "color": {
         "b": 247,
         "g": 247,
@@ -161,141 +142,69 @@
         "smoothed": true,
         "underlined": false,
         "text": "Vous obtenez",
-        "font": "LuckiestGuy.ttf",
+        "font": "fonts/LuckiestGuy.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 80,
+        "characterSize": 40,
         "lineHeight": 0,
         "color": "247;247;247"
       }
     },
     {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "8634638690e06d352800f2323f2dbb01d492e26275265da6aef320bb21fdb1b2",
-      "name": "Chip_Pink",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
+      "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
+      "name": "NewGameButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Blue Button",
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "animations": [
-        {
-          "name": "Flat",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Chip Pink_Flat.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 129,
-                        "y": 0
-                      },
-                      {
-                        "x": 129,
-                        "y": 58
-                      },
-                      {
-                        "x": 0,
-                        "y": 58
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Top",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Chip Pink_Top.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 129,
-                        "y": 0
-                      },
-                      {
-                        "x": 129,
-                        "y": 58
-                      },
-                      {
-                        "x": 0,
-                        "y": 58
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Rejouer"
+      }
+    },
+    {
+      "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
+      "name": "LeaveButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Blue Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Partir"
+      }
     },
     {
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "ChipPink",
+      "name": "YouWon",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Jeton rose",
-      "font": "LuckiestGuy.ttf",
+      "string": "SUCCES",
+      "font": "fonts/LuckiestGuy.ttf",
       "textAlignment": "left",
-      "characterSize": 54,
+      "characterSize": 100,
       "color": {
-        "b": 247,
-        "g": 247,
-        "r": 247
+        "b": 33,
+        "g": 211,
+        "r": 126
       },
       "content": {
         "bold": false,
@@ -311,49 +220,13 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Jeton rose",
-        "font": "LuckiestGuy.ttf",
+        "text": "SUCCES",
+        "font": "fonts/LuckiestGuy.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 54,
+        "characterSize": 100,
         "lineHeight": 0,
-        "color": "247;247;247"
-      }
-    },
-    {
-      "assetStoreId": "b44dba91245ff1ac84a7b450e078194f19321d135fd8a67cd19bc9cb3403fba5",
-      "name": "NewGameButton",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Small Red Button",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LeftPadding": 16,
-        "RightPadding": 16,
-        "PressedLabelOffsetY": 10,
-        "BottomPadding": 32,
-        "TopPadding": 16,
-        "HoveredFadeOutDuration": 0.25,
-        "LabelText": "Rejouer"
-      }
-    },
-    {
-      "assetStoreId": "b44dba91245ff1ac84a7b450e078194f19321d135fd8a67cd19bc9cb3403fba5",
-      "name": "LeaveButton",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Small Red Button",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LeftPadding": 16,
-        "RightPadding": 16,
-        "PressedLabelOffsetY": 10,
-        "BottomPadding": 32,
-        "TopPadding": 16,
-        "HoveredFadeOutDuration": 0.25,
-        "LabelText": "Partir"
+        "color": "126;211;33"
       }
     }
   ],
@@ -361,19 +234,16 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "Won"
-      },
-      {
-        "objectName": "Chip_Pink"
-      },
-      {
-        "objectName": "ChipPink"
+        "objectName": "WonText"
       },
       {
         "objectName": "NewGameButton"
       },
       {
         "objectName": "LeaveButton"
+      },
+      {
+        "objectName": "YouWon"
       }
     ]
   },
@@ -431,13 +301,22 @@
                 },
                 {
                   "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PlaySound"
                   },
                   "parameters": [
                     "",
                     "audience_cheers_13.aac",
                     "",
-                    "50",
+                    "Options.Volumes.Sons",
                     "1"
                   ]
                 },

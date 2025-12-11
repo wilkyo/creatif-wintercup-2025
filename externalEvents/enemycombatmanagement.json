@@ -284,7 +284,7 @@
                     "skeletonsfx_exp_short_hard2.wav",
                     "11",
                     "",
-                    "80",
+                    "Options.Volumes.Sons",
                     "1"
                   ]
                 }
@@ -314,7 +314,7 @@
                     "bossdeathsfx_exp_cluster1.wav",
                     "11",
                     "",
-                    "80",
+                    "Options.Volumes.Sons",
                     "1"
                   ]
                 }

@@ -167,7 +167,7 @@
                 "",
                 "assets\\audio\\audio - Glass,Bottle,Break,Smash,Messy.aac",
                 "",
-                "20",
+                "Options.Volumes.Sons",
                 "1"
               ]
             }
@@ -208,7 +208,7 @@
                 "",
                 "assets\\audio\\audio - Hit Rock Debris RBD 02.aac",
                 "",
-                "50",
+                "Options.Volumes.Sons",
                 "1"
               ]
             }
@@ -237,7 +237,7 @@
                 "",
                 "assets\\audio\\audio - Glass,Shards,Smash,Medium Impact,Lots of Large Shards.aac",
                 "",
-                "20",
+                "Options.Volumes.Sons",
                 "1"
               ]
             }
