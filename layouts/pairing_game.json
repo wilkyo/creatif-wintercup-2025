@@ -3196,6 +3196,15 @@
         },
         {
           "type": {
+            "value": "StopSoundCanal"
+          },
+          "parameters": [
+            "",
+            "3"
+          ]
+        },
+        {
+          "type": {
             "value": "SetNumberVariable"
           },
           "parameters": [
