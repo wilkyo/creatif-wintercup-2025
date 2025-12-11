@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 1.1046105142837628,
+    "zoomFactor": 1.3932548895448098,
     "windowMask": false,
     "selectedLayer": ""
   },
@@ -66,6 +66,9 @@
         },
         {
           "name": "UpRunner"
+        },
+        {
+          "name": "OrgaVania"
         }
       ]
     }
@@ -1380,6 +1383,30 @@
           "value": "UpRunner.Start"
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 24,
+      "keepRatio": true,
+      "layer": "",
+      "name": "OrgaVania",
+      "persistentUuid": "f1b1215c-7ff5-45c4-abe7-675dcb74ff89",
+      "width": 24,
+      "x": 412,
+      "y": -44,
+      "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "dialogBranch",
+          "persistentUuid": "2826b62d-c86a-4935-b72a-a7124ea78786",
+          "type": "string",
+          "value": "Vania.Start"
+        }
+      ]
     }
   ],
   "objects": [
@@ -2065,6 +2092,80 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "OrgaVania",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "talking",
+          "persistentUuid": "a3ec4445-2ef7-4b15-b8c4-d39410321b5c",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "hasMixedValues": true,
+          "name": "dialogBranch",
+          "persistentUuid": "2826b62d-c86a-4935-b72a-a7124ea78786",
+          "type": "string",
+          "value": "HommePortail"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "default",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "ACharDown1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 2
+                      },
+                      {
+                        "x": 15,
+                        "y": 2
+                      },
+                      {
+                        "x": 15,
+                        "y": 16
+                      },
+                      {
+                        "x": 1,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2084,6 +2185,9 @@
           },
           {
             "objectName": "UpRunner"
+          },
+          {
+            "objectName": "OrgaVania"
           },
           {
             "objectName": "Pecheur"
@@ -2738,6 +2842,62 @@
                       },
                       "parameters": [
                         "\"UpRunner.ApresJeu\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "JeuEnCours",
+                        "=",
+                        "\"Vania_Game\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "MiniJeux.Vania",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "JeuEnCours",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "OrgaVania",
+                        "talking",
+                        "True",
+                        "\"HommePortail.ApresJeu\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::StartDialogueFromBranch"
+                      },
+                      "parameters": [
+                        "\"Vania.ApresJeu\""
                       ]
                     }
                   ]
@@ -3567,6 +3727,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "UpRunner",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3708,6 +3869,203 @@
                         "Histoire.UpRunner",
                         "=",
                         "2"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Vania",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Histoire.Vania",
+                    "<",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Vania",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::WasBranchVisited"
+                      },
+                      "parameters": [
+                        "\"Vania.Jouer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "DialogueTree::IsDialogueRunning"
+                      },
+                      "parameters": []
+                    },
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "EtatJeu",
+                        "=",
+                        "\"NA\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "JeuEnCours",
+                        "=",
+                        "\"Vania_Game\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "EtatJeu",
+                        "=",
+                        "\"LancerJeu\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Vania",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Vania",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::WasBranchVisited"
+                      },
+                      "parameters": [
+                        "\"Vania.ApresJeu\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "DialogueTree::IsDialogueRunning"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringObjectVariable"
+                      },
+                      "parameters": [
+                        "OrgaVania",
+                        "dialogBranch",
+                        "=",
+                        "\"Vania.Sauf\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Vania",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Vania",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "DialogueTree::IsDialogueRunning"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1.25"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Credits\"",
+                        ""
                       ]
                     }
                   ]

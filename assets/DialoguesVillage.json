@@ -388,5 +388,55 @@
 			"y": 1143
 		},
 		"colorID": 0
+	},
+	{
+		"title": "Vania.Start",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nIl a l'air figé<<wait 200>>.<<wait 200>>.<<wait 200>>.µC'est l'un des organisateurs. La source de tout le tryhard.\nMais, des monstres semblent avoir élu domicile dans l'auberge.\n[[ Aller se battre |Vania.Jouer]]\n[[ Laisser tomber |Vania.Ignorer]]",
+		"position": {
+			"x": 1608,
+			"y": -485
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Vania.ApresJeu",
+		"tags": "",
+		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom ??? >>\nOh, tu m'as sauvé. Merci.\nFin du jeu.",
+		"position": {
+			"x": 1578,
+			"y": -227
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Vania.Sauf",
+		"tags": "",
+		"body": "<< nom ??? >>\nEncore merci !",
+		"position": {
+			"x": 1888,
+			"y": -230
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Vania.Jouer",
+		"tags": "",
+		"body": "C'est parti !",
+		"position": {
+			"x": 1404,
+			"y": -818
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Vania.Ignorer",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nMieux vaut la laisser comme ça.",
+		"position": {
+			"x": 1870,
+			"y": -793
+		},
+		"colorID": 0
 	}
 ]
