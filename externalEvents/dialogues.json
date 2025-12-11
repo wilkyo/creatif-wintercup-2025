@@ -167,7 +167,7 @@
               "parameters": [
                 "Joueur",
                 "Dialoguables",
-                "20",
+                "30",
                 ""
               ]
             },
@@ -380,6 +380,16 @@
               "parameters": [
                 "\"text\""
               ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "EtatJeu",
+                "!=",
+                "\"JeuEnCours\""
+              ]
             }
           ],
           "actions": [
@@ -390,7 +400,7 @@
               "parameters": [
                 "DialogueBBText",
                 "=",
-                "DialogueTree::ClippedLineText()"
+                "StrReplaceAll(DialogueTree::ClippedLineText(), \"µ\", NewLine())"
               ]
             }
           ],

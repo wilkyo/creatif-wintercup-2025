@@ -6440,6 +6440,15 @@
         },
         {
           "name": "VieilHomme"
+        },
+        {
+          "name": "Memory"
+        },
+        {
+          "name": "UpRunner"
+        },
+        {
+          "name": "OrgaVania"
         }
       ]
     },
@@ -6583,6 +6592,7 @@
       "value": "NA"
     },
     {
+      "folded": true,
       "name": "Options",
       "type": "structure",
       "children": [
@@ -6649,7 +6659,7 @@
             {
               "name": "Sons",
               "type": "number",
-              "value": 50
+              "value": 17
             }
           ]
         }
@@ -6665,12 +6675,42 @@
           "value": false
         },
         {
+          "name": "CupBall",
+          "type": "number",
+          "value": 0
+        },
+        {
           "name": "Intro",
           "type": "number",
           "value": 0
         },
         {
+          "name": "Memory",
+          "type": "number",
+          "value": 0
+        },
+        {
           "name": "Portail",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Quizz",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Rhythm",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Sokoban",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Vania",
           "type": "number",
           "value": 0
         }
