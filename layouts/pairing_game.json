@@ -86,8 +86,8 @@
       "name": "YouWon",
       "persistentUuid": "f1a894e4-2277-47af-85fb-ed36e6e64f91",
       "width": 0,
-      "x": 80,
-      "y": 156,
+      "x": 240,
+      "y": 107,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -665,25 +665,8 @@
       "persistentUuid": "e6829723-2288-4a87-8bcb-4b34f55002e4",
       "width": 385,
       "x": 207,
-      "y": 432,
+      "y": 240,
       "zOrder": 27,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 128,
-      "keepRatio": true,
-      "layer": "UI",
-      "name": "Chip_Lightblue",
-      "persistentUuid": "a8d3fa17-6c04-4767-bd4e-2a8c86337824",
-      "width": 243,
-      "x": 269,
-      "y": 256,
-      "zOrder": 36,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -707,32 +690,33 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 90,
       "keepRatio": true,
       "layer": "UI",
       "name": "NewGameButton",
-      "persistentUuid": "673e99ec-be52-4657-82c9-84db02ec798f",
-      "width": 0,
-      "x": 32,
-      "y": 544,
-      "zOrder": 37,
+      "persistentUuid": "c386d074-fcb4-43ac-b8de-9823b77b29ff",
+      "width": 240,
+      "x": 16,
+      "y": 486,
+      "zOrder": 28,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
+      "customSize": true,
+      "depth": 64,
+      "height": 90,
       "layer": "UI",
       "name": "LeaveButton",
-      "persistentUuid": "d8c36649-e6c0-4527-b204-999c961e6871",
-      "width": 0,
-      "x": 640,
-      "y": 544,
-      "zOrder": 38,
+      "persistentUuid": "be2caec5-dfba-43a3-9065-a2a35ab6cf92",
+      "width": 240,
+      "x": 512,
+      "y": 486,
+      "zOrder": 29,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2010,7 +1994,7 @@
           "type": "Tween::TweenBehavior"
         }
       ],
-      "string": "Paires : ",
+      "string": "SCORE : ",
       "font": "fonts/LuckiestGuy.ttf",
       "textAlignment": "",
       "characterSize": 40,
@@ -2033,61 +2017,13 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Paires : ",
+        "text": "SCORE : ",
         "font": "fonts/LuckiestGuy.ttf",
         "textAlignment": "",
         "verticalTextAlignment": "top",
         "characterSize": 40,
         "lineHeight": 0,
         "color": "199;209;112"
-      }
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "NewGame",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "string": "New Game",
-      "font": "fonts/LuckiestGuy.ttf",
-      "textAlignment": "",
-      "characterSize": 30,
-      "color": {
-        "b": 163,
-        "g": 231,
-        "r": 228
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "New Game",
-        "font": "fonts/LuckiestGuy.ttf",
-        "textAlignment": "",
-        "verticalTextAlignment": "top",
-        "characterSize": 30,
-        "lineHeight": 0,
-        "color": "228;231;163"
       }
     },
     {
@@ -2101,14 +2037,14 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Vous obtenez",
+      "string": "SUCCES",
       "font": "fonts/LuckiestGuy.ttf",
       "textAlignment": "center",
       "characterSize": 100,
       "color": {
-        "b": 247,
-        "g": 247,
-        "r": 247
+        "b": 33,
+        "g": 211,
+        "r": 126
       },
       "content": {
         "bold": false,
@@ -2124,13 +2060,13 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Vous obtenez",
+        "text": "SUCCES",
         "font": "fonts/LuckiestGuy.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "center",
         "characterSize": 100,
         "lineHeight": 0,
-        "color": "247;247;247"
+        "color": "126;211;33"
       }
     },
     {
@@ -2348,7 +2284,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Jeton bleu ciel",
+      "string": "Vous obtenez ",
       "font": "fonts/LuckiestGuy.ttf",
       "textAlignment": "center",
       "characterSize": 40,
@@ -2371,7 +2307,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Jeton bleu ciel",
+        "text": "Vous obtenez ",
         "font": "fonts/LuckiestGuy.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "center",
@@ -2381,137 +2317,39 @@
       }
     },
     {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "8ec90a62cc3e7b5b3b36938501a12f3d168b76c7d8754463bd7ae87013cbbb2e",
-      "name": "Chip_Lightblue",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "Flat",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Chip Lightblue_Flat.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 0
-                      },
-                      {
-                        "x": 386,
-                        "y": 0
-                      },
-                      {
-                        "x": 386,
-                        "y": 174
-                      },
-                      {
-                        "x": 1,
-                        "y": 174
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Top",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Chip Lightblue_Top.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 0
-                      },
-                      {
-                        "x": 386,
-                        "y": 0
-                      },
-                      {
-                        "x": 386,
-                        "y": 174
-                      },
-                      {
-                        "x": 1,
-                        "y": 174
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "cf293151af6644417848a1a7a84a471edaac9486ec4311d816fd51f5be6400af",
+      "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
       "name": "NewGameButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Small Red Button",
+      "variant": "Blue Button",
       "variables": [],
       "effects": [],
       "behaviors": [],
       "content": {
-        "LabelText": "Rejouer",
-        "PressedLabelOffsetY": 2
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Rejouer"
       }
     },
     {
-      "assetStoreId": "cf293151af6644417848a1a7a84a471edaac9486ec4311d816fd51f5be6400af",
+      "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
       "name": "LeaveButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Small Red Button",
+      "variant": "Blue Button",
       "variables": [],
       "effects": [],
       "behaviors": [],
       "content": {
-        "LabelText": "Partir",
-        "PressedLabelOffsetY": 2
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Partir"
       }
     }
   ],
@@ -2539,13 +2377,7 @@
             "objectName": "NewGameButton"
           },
           {
-            "objectName": "Chip_Lightblue"
-          },
-          {
             "objectName": "Pairs"
-          },
-          {
-            "objectName": "NewGame"
           },
           {
             "objectName": "YouWon"
@@ -2655,6 +2487,19 @@
                 "\"linear\"",
                 "1",
                 "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "e21baacbe3776dfc82af6a22a72013f5de737cec65b1307d4e022506406ff828_Theme 2.aac",
+                "3",
+                "yes",
+                "Options.Volumes.Musiques",
+                ""
               ]
             }
           ],
@@ -2948,7 +2793,7 @@
                             "Pairs",
                             "Text",
                             "=",
-                            "\"Paires : \" + PairsEarned"
+                            "\"SCORE : \" + PairsEarned"
                           ]
                         }
                       ],
@@ -3128,6 +2973,15 @@
                 "no",
                 "Options.Volumes.Sons",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "StopSoundCanal"
+              },
+              "parameters": [
+                "",
+                "3"
               ]
             },
             {
@@ -3338,6 +3192,15 @@
           "parameters": [
             "",
             "\"UI\""
+          ]
+        },
+        {
+          "type": {
+            "value": "StopSoundCanal"
+          },
+          "parameters": [
+            "",
+            "3"
           ]
         },
         {

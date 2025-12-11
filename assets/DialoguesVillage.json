@@ -72,7 +72,7 @@
 	{
 		"title": "HommePortail",
 		"tags": "",
-		"body": "<< nom >>\n<< wait 200 >>.<< wait 200>>.<< wait 500>>.",
+		"body": "<< nom >>\n<< wait 200 >>.<< wait 200>>.<< wait 500>>.µIl ne bouge pas...",
 		"position": {
 			"x": 55,
 			"y": 1006

@@ -546,13 +546,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 128,
+      "height": 64,
       "layer": "WinGame",
       "name": "YouWin",
       "persistentUuid": "000c79b6-0d5a-4bf2-986b-9313ddec900d",
-      "width": 755,
-      "x": 269,
-      "y": 128,
+      "width": 320,
+      "x": 512,
+      "y": 320,
       "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
@@ -591,72 +591,6 @@
       "x": 1184,
       "y": 32,
       "zOrder": 30,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 128,
-      "keepRatio": true,
-      "layer": "WinGame",
-      "name": "Chip_Green",
-      "persistentUuid": "341b92b7-e298-4f64-a415-c8e4ffc446ff",
-      "width": 257,
-      "x": 511,
-      "y": 320,
-      "zOrder": 35,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "WinGame",
-      "name": "ChipGreenText",
-      "persistentUuid": "a5f60a12-5a01-4570-98bf-2b43f5135dca",
-      "width": 0,
-      "x": 471,
-      "y": 493,
-      "zOrder": 36,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 64,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "WinGame",
-      "name": "NewGameButton",
-      "persistentUuid": "597778c2-8e16-428b-a1e6-f75f30f2a6ed",
-      "width": 128,
-      "x": 256,
-      "y": 576,
-      "zOrder": 37,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 64,
-      "height": 64,
-      "layer": "WinGame",
-      "name": "LeaveButton",
-      "persistentUuid": "9a53a88e-b89f-4186-9cef-a82def0b0be9",
-      "width": 128,
-      "x": 896,
-      "y": 576,
-      "zOrder": 38,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1047,6 +981,54 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "WinGame",
+      "name": "NewGameButton",
+      "persistentUuid": "0f0ad530-2ce6-405e-8d5b-94eb9645f014",
+      "width": 0,
+      "x": 128,
+      "y": 534,
+      "zOrder": 63,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "WinGame",
+      "name": "LeaveButton",
+      "persistentUuid": "8b371ac6-6042-433e-9e9d-2eef99bd10dd",
+      "width": 0,
+      "x": 896,
+      "y": 534,
+      "zOrder": 64,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "WinGame",
+      "name": "WonText",
+      "persistentUuid": "c7e88a1a-cd7f-4489-8afa-23f18b38f39d",
+      "width": 0,
+      "x": 513,
+      "y": 128,
+      "zOrder": 65,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1347,9 +1329,9 @@
       ],
       "behaviors": [],
       "string": "Vous obtenez",
-      "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+      "font": "fonts/LuckiestGuy.ttf",
       "textAlignment": "left",
-      "characterSize": 100,
+      "characterSize": 40,
       "color": {
         "b": 255,
         "g": 255,
@@ -1370,10 +1352,10 @@
         "smoothed": true,
         "underlined": false,
         "text": "Vous obtenez",
-        "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+        "font": "fonts/LuckiestGuy.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 100,
+        "characterSize": 40,
         "lineHeight": 0,
         "color": "255;255;255"
       }
@@ -1470,215 +1452,6 @@
           ]
         }
       ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "bc893c28c17e697297b33a413f1e6cc27b69696a2c8478a11855381a51f15c38",
-      "name": "Chip_Green",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "Flat",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Chip Green_Flat.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 129,
-                        "y": 0
-                      },
-                      {
-                        "x": 129,
-                        "y": 58
-                      },
-                      {
-                        "x": 0,
-                        "y": 58
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Top",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Chip Green_Top.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 129,
-                        "y": 0
-                      },
-                      {
-                        "x": 129,
-                        "y": 58
-                      },
-                      {
-                        "x": 0,
-                        "y": 58
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "ChipGreenText",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Jeton vert",
-      "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
-      "textAlignment": "left",
-      "characterSize": 70,
-      "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Jeton vert",
-        "font": "58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 70,
-        "lineHeight": 0,
-        "color": "255;255;255"
-      }
-    },
-    {
-      "assetStoreId": "b44dba91245ff1ac84a7b450e078194f19321d135fd8a67cd19bc9cb3403fba5",
-      "name": "NewGameButton",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Small Red Button",
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "ButtonFSM",
-          "type": "ButtonStates::ButtonFSM",
-          "ShouldCheckHovering": true,
-          "State": "Idle",
-          "TouchId": 0,
-          "TouchIsInside": false,
-          "MouseIsInside": false,
-          "Index": 2.0247e-320
-        }
-      ],
-      "content": {
-        "LeftPadding": 16,
-        "RightPadding": 16,
-        "PressedLabelOffsetY": 10,
-        "BottomPadding": 32,
-        "TopPadding": 16,
-        "HoveredFadeOutDuration": 0.25,
-        "LabelText": "Rejouer"
-      }
-    },
-    {
-      "assetStoreId": "b44dba91245ff1ac84a7b450e078194f19321d135fd8a67cd19bc9cb3403fba5",
-      "name": "LeaveButton",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Small Red Button",
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "ButtonFSM",
-          "type": "ButtonStates::ButtonFSM",
-          "ShouldCheckHovering": true,
-          "State": "Idle",
-          "TouchId": 0,
-          "TouchIsInside": false,
-          "MouseIsInside": false,
-          "Index": 2.0247e-320
-        }
-      ],
-      "content": {
-        "LeftPadding": 16,
-        "RightPadding": 16,
-        "PressedLabelOffsetY": 10,
-        "BottomPadding": 32,
-        "TopPadding": 16,
-        "HoveredFadeOutDuration": 0.25,
-        "LabelText": "Partir"
-      }
     },
     {
       "adaptCollisionMaskAutomatically": true,
@@ -1787,6 +1560,85 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
+      "name": "NewGameButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Blue Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Rejouer"
+      }
+    },
+    {
+      "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
+      "name": "LeaveButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Blue Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Partir"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "WonText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "SUCCES",
+      "font": "fonts/LuckiestGuy.ttf",
+      "textAlignment": "left",
+      "characterSize": 100,
+      "color": {
+        "b": 33,
+        "g": 211,
+        "r": 126
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "SUCCES",
+        "font": "fonts/LuckiestGuy.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 100,
+        "lineHeight": 0,
+        "color": "126;211;33"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1817,10 +1669,7 @@
         "objectName": "Tilemap_Obstacles"
       },
       {
-        "objectName": "Chip_Green"
-      },
-      {
-        "objectName": "ChipGreenText"
+        "objectName": "Ground_Brown"
       },
       {
         "objectName": "NewGameButton"
@@ -1829,7 +1678,7 @@
         "objectName": "LeaveButton"
       },
       {
-        "objectName": "Ground_Brown"
+        "objectName": "WonText"
       }
     ]
   },
@@ -2767,19 +2616,28 @@
           ]
         }
       ],
-      "actions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "StopSoundCanal"
+          },
+          "parameters": [
+            "",
+            "4"
+          ]
+        }
+      ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "ButtonStates::ButtonFSM::IsClicked"
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
                 "NewGameButton",
-                "ButtonFSM",
-                ""
+                "ButtonFSM"
               ]
             }
           ],
@@ -2893,6 +2751,45 @@
           ]
         }
       ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Son",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "06f0b21d239e4aa9037a74781ca1a3ca408911ef57ee49dcbba802953693807c_30 - lost rune of the wind princess.aac",
+            "4",
+            "yes",
+            "Options.Volumes.Musiques",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -2939,7 +2836,7 @@
       "isLocked": false,
       "name": "UI",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": []
     },
