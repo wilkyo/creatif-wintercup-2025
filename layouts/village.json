@@ -22,7 +22,7 @@
     "snap": true,
     "zoomFactor": 1.0337203300803186,
     "windowMask": false,
-    "selectedLayer": ""
+    "selectedLayer": "Transition"
   },
   "objectsGroups": [
     {
@@ -2259,9 +2259,7 @@
               "type": {
                 "value": "DepartScene"
               },
-              "parameters": [
-                ""
-              ]
+              "parameters": [""]
             }
           ],
           "actions": [
@@ -2269,12 +2267,7 @@
               "type": {
                 "value": "ZoomCamera"
               },
-              "parameters": [
-                "",
-                "2",
-                "",
-                ""
-              ]
+              "parameters": ["", "2", "", ""]
             }
           ],
           "events": [
@@ -2285,11 +2278,7 @@
                   "type": {
                     "value": "StringVariable"
                   },
-                  "parameters": [
-                    "JeuEnCours",
-                    "=",
-                    "\"0\""
-                  ]
+                  "parameters": ["JeuEnCours", "=", "\"0\""]
                 }
               ],
               "actions": [
@@ -2297,11 +2286,7 @@
                   "type": {
                     "value": "SetStringVariable"
                   },
-                  "parameters": [
-                    "JeuEnCours",
-                    "=",
-                    "\"\""
-                  ]
+                  "parameters": ["JeuEnCours", "=", "\"\""]
                 }
               ]
             }
@@ -2315,23 +2300,13 @@
               "type": {
                 "value": "SeparateFromObjects"
               },
-              "parameters": [
-                "Joueur",
-                "Collisionables",
-                ""
-              ]
+              "parameters": ["Joueur", "Collisionables", ""]
             },
             {
               "type": {
                 "value": "CentreCamera"
               },
-              "parameters": [
-                "",
-                "Joueur",
-                "",
-                "",
-                ""
-              ]
+              "parameters": ["", "Joueur", "", "", ""]
             }
           ]
         }
@@ -2354,21 +2329,13 @@
               "type": {
                 "value": "StringVariable"
               },
-              "parameters": [
-                "JeuEnCours",
-                "!=",
-                "\"\""
-              ]
+              "parameters": ["JeuEnCours", "!=", "\"\""]
             },
             {
               "type": {
                 "value": "StringVariable"
               },
-              "parameters": [
-                "EtatJeu",
-                "=",
-                "\"LancerJeu\""
-              ]
+              "parameters": ["EtatJeu", "=", "\"LancerJeu\""]
             },
             {
               "type": {
@@ -2383,38 +2350,25 @@
               "type": {
                 "value": "ActivateBehavior"
               },
-              "parameters": [
-                "Joueur",
-                "TopDownMovement",
-                "no"
-              ]
+              "parameters": ["Joueur", "TopDownMovement", "no"]
             },
             {
               "type": {
                 "value": "SetStringVariable"
               },
-              "parameters": [
-                "EtatJeu",
-                "=",
-                "\"JeuEnCours\""
-              ]
+              "parameters": ["EtatJeu", "=", "\"JeuEnCours\""]
             },
             {
               "type": {
                 "value": "Wait"
               },
-              "parameters": [
-                "0.5"
-              ]
+              "parameters": ["0.5"]
             },
             {
               "type": {
                 "value": "Montre"
               },
-              "parameters": [
-                "Transition",
-                ""
-              ]
+              "parameters": ["Transition", ""]
             },
             {
               "type": {
@@ -2435,18 +2389,13 @@
               "type": {
                 "value": "Wait"
               },
-              "parameters": [
-                "1.25"
-              ]
+              "parameters": ["1.25"]
             },
             {
               "type": {
                 "value": "PushScene"
               },
-              "parameters": [
-                "",
-                "JeuEnCours"
-              ]
+              "parameters": ["", "JeuEnCours"]
             }
           ]
         },
@@ -2457,9 +2406,7 @@
               "type": {
                 "value": "SceneJustResumed"
               },
-              "parameters": [
-                ""
-              ]
+              "parameters": [""]
             }
           ],
           "actions": [
@@ -2467,19 +2414,13 @@
               "type": {
                 "value": "Cache"
               },
-              "parameters": [
-                "Transition"
-              ]
+              "parameters": ["Transition"]
             },
             {
               "type": {
                 "value": "ActivateBehavior"
               },
-              "parameters": [
-                "Joueur",
-                "TopDownMovement",
-                "yes"
-              ]
+              "parameters": ["Joueur", "TopDownMovement", "yes"]
             }
           ],
           "events": [
@@ -2490,11 +2431,7 @@
                   "type": {
                     "value": "StringVariable"
                   },
-                  "parameters": [
-                    "EtatJeu",
-                    "=",
-                    "\"JeuTermine\""
-                  ]
+                  "parameters": ["EtatJeu", "=", "\"JeuTermine\""]
                 }
               ],
               "actions": [
@@ -2502,11 +2439,7 @@
                   "type": {
                     "value": "SetStringVariable"
                   },
-                  "parameters": [
-                    "EtatJeu",
-                    "=",
-                    "\"NA\""
-                  ]
+                  "parameters": ["EtatJeu", "=", "\"NA\""]
                 }
               ],
               "events": [
@@ -2517,21 +2450,13 @@
                       "type": {
                         "value": "StringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"Sokoban_Game\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"Sokoban_Game\""]
                     },
                     {
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "MiniJeux.Sokoban",
-                        ">",
-                        "0"
-                      ]
+                      "parameters": ["MiniJeux.Sokoban", ">", "0"]
                     }
                   ],
                   "actions": [
@@ -2539,11 +2464,7 @@
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"\""]
                     },
                     {
                       "type": {
@@ -2560,9 +2481,7 @@
                       "type": {
                         "value": "DialogueTree::StartDialogueFromBranch"
                       },
-                      "parameters": [
-                        "\"Sokoban.ApresJeu\""
-                      ]
+                      "parameters": ["\"Sokoban.ApresJeu\""]
                     }
                   ]
                 },
@@ -2573,21 +2492,13 @@
                       "type": {
                         "value": "StringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"Rhythm_Game\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"Rhythm_Game\""]
                     },
                     {
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "MiniJeux.Rythm",
-                        ">",
-                        "0"
-                      ]
+                      "parameters": ["MiniJeux.Rythm", ">", "0"]
                     }
                   ],
                   "actions": [
@@ -2595,11 +2506,7 @@
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"\""]
                     },
                     {
                       "type": {
@@ -2616,9 +2523,7 @@
                       "type": {
                         "value": "DialogueTree::StartDialogueFromBranch"
                       },
-                      "parameters": [
-                        "\"Rhythm.ApresJeu\""
-                      ]
+                      "parameters": ["\"Rhythm.ApresJeu\""]
                     }
                   ]
                 },
@@ -2629,21 +2534,13 @@
                       "type": {
                         "value": "StringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"Quizz_Game\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"Quizz_Game\""]
                     },
                     {
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "MiniJeux.Quiz",
-                        ">",
-                        "0"
-                      ]
+                      "parameters": ["MiniJeux.Quiz", ">", "0"]
                     }
                   ],
                   "actions": [
@@ -2651,11 +2548,7 @@
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"\""]
                     },
                     {
                       "type": {
@@ -2672,9 +2565,7 @@
                       "type": {
                         "value": "DialogueTree::StartDialogueFromBranch"
                       },
-                      "parameters": [
-                        "\"Quizz.ApresJeu\""
-                      ]
+                      "parameters": ["\"Quizz.ApresJeu\""]
                     }
                   ]
                 },
@@ -2685,21 +2576,13 @@
                       "type": {
                         "value": "StringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"CupBall_GameStart\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"CupBall_GameStart\""]
                     },
                     {
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "MiniJeux.CupBall",
-                        ">",
-                        "0"
-                      ]
+                      "parameters": ["MiniJeux.CupBall", ">", "0"]
                     }
                   ],
                   "actions": [
@@ -2707,11 +2590,7 @@
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"\""]
                     },
                     {
                       "type": {
@@ -2728,9 +2607,7 @@
                       "type": {
                         "value": "DialogueTree::StartDialogueFromBranch"
                       },
-                      "parameters": [
-                        "\"CupBall.ApresJeu\""
-                      ]
+                      "parameters": ["\"CupBall.ApresJeu\""]
                     }
                   ]
                 },
@@ -2741,21 +2618,13 @@
                       "type": {
                         "value": "StringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"Pairing_Game\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"Pairing_Game\""]
                     },
                     {
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "MiniJeux.Memory",
-                        ">",
-                        "0"
-                      ]
+                      "parameters": ["MiniJeux.Memory", ">", "0"]
                     }
                   ],
                   "actions": [
@@ -2763,11 +2632,7 @@
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"\""]
                     },
                     {
                       "type": {
@@ -2784,9 +2649,7 @@
                       "type": {
                         "value": "DialogueTree::StartDialogueFromBranch"
                       },
-                      "parameters": [
-                        "\"Memory.ApresJeu\""
-                      ]
+                      "parameters": ["\"Memory.ApresJeu\""]
                     }
                   ]
                 },
@@ -2797,21 +2660,13 @@
                       "type": {
                         "value": "StringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"UpRunner_Game\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"UpRunner_Game\""]
                     },
                     {
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "MiniJeux.UpRunner",
-                        ">",
-                        "0"
-                      ]
+                      "parameters": ["MiniJeux.UpRunner", ">", "0"]
                     }
                   ],
                   "actions": [
@@ -2819,11 +2674,7 @@
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"\""]
                     },
                     {
                       "type": {
@@ -2840,9 +2691,7 @@
                       "type": {
                         "value": "DialogueTree::StartDialogueFromBranch"
                       },
-                      "parameters": [
-                        "\"UpRunner.ApresJeu\""
-                      ]
+                      "parameters": ["\"UpRunner.ApresJeu\""]
                     }
                   ]
                 },
@@ -2853,21 +2702,13 @@
                       "type": {
                         "value": "StringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"Vania_Game\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"Vania_Game\""]
                     },
                     {
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "MiniJeux.Vania",
-                        ">",
-                        "0"
-                      ]
+                      "parameters": ["MiniJeux.Vania", ">", "0"]
                     }
                   ],
                   "actions": [
@@ -2875,11 +2716,7 @@
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"\""]
                     },
                     {
                       "type": {
@@ -2896,9 +2733,7 @@
                       "type": {
                         "value": "DialogueTree::StartDialogueFromBranch"
                       },
-                      "parameters": [
-                        "\"Vania.ApresJeu\""
-                      ]
+                      "parameters": ["\"Vania.ApresJeu\""]
                     }
                   ]
                 }
@@ -2925,9 +2760,7 @@
               "type": {
                 "value": "DepartScene"
               },
-              "parameters": [
-                ""
-              ]
+              "parameters": [""]
             }
           ],
           "actions": [
@@ -2935,10 +2768,7 @@
               "type": {
                 "value": "DialogueTree::LoadDialogueFromJsonFile"
               },
-              "parameters": [
-                "",
-                "DialoguesVillage"
-              ]
+              "parameters": ["", "DialoguesVillage"]
             }
           ]
         },
@@ -2959,11 +2789,7 @@
                   "type": {
                     "value": "NumberVariable"
                   },
-                  "parameters": [
-                    "Histoire.Rhythm",
-                    "<",
-                    "2"
-                  ]
+                  "parameters": ["Histoire.Rhythm", "<", "2"]
                 }
               ],
               "actions": [],
@@ -2975,19 +2801,13 @@
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Rhythm",
-                        "=",
-                        "0"
-                      ]
+                      "parameters": ["Histoire.Rhythm", "=", "0"]
                     },
                     {
                       "type": {
                         "value": "DialogueTree::WasBranchVisited"
                       },
-                      "parameters": [
-                        "\"Rhythm.Jouer\""
-                      ]
+                      "parameters": ["\"Rhythm.Jouer\""]
                     },
                     {
                       "type": {
@@ -3000,11 +2820,7 @@
                       "type": {
                         "value": "StringVariable"
                       },
-                      "parameters": [
-                        "EtatJeu",
-                        "=",
-                        "\"NA\""
-                      ]
+                      "parameters": ["EtatJeu", "=", "\"NA\""]
                     }
                   ],
                   "actions": [
@@ -3012,31 +2828,19 @@
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"Rhythm_Game\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"Rhythm_Game\""]
                     },
                     {
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "EtatJeu",
-                        "=",
-                        "\"LancerJeu\""
-                      ]
+                      "parameters": ["EtatJeu", "=", "\"LancerJeu\""]
                     },
                     {
                       "type": {
                         "value": "SetNumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Rhythm",
-                        "=",
-                        "1"
-                      ]
+                      "parameters": ["Histoire.Rhythm", "=", "1"]
                     }
                   ]
                 },
@@ -3047,19 +2851,13 @@
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Rhythm",
-                        "=",
-                        "1"
-                      ]
+                      "parameters": ["Histoire.Rhythm", "=", "1"]
                     },
                     {
                       "type": {
                         "value": "DialogueTree::WasBranchVisited"
                       },
-                      "parameters": [
-                        "\"Rhythm.ApresJeu\""
-                      ]
+                      "parameters": ["\"Rhythm.ApresJeu\""]
                     },
                     {
                       "type": {
@@ -3085,11 +2883,7 @@
                       "type": {
                         "value": "SetNumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Rhythm",
-                        "=",
-                        "2"
-                      ]
+                      "parameters": ["Histoire.Rhythm", "=", "2"]
                     }
                   ]
                 }
@@ -3115,11 +2909,7 @@
                   "type": {
                     "value": "NumberVariable"
                   },
-                  "parameters": [
-                    "Histoire.Sokoban",
-                    "<",
-                    "2"
-                  ]
+                  "parameters": ["Histoire.Sokoban", "<", "2"]
                 }
               ],
               "actions": [],
@@ -3131,19 +2921,13 @@
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Sokoban",
-                        "=",
-                        "0"
-                      ]
+                      "parameters": ["Histoire.Sokoban", "=", "0"]
                     },
                     {
                       "type": {
                         "value": "DialogueTree::WasBranchVisited"
                       },
-                      "parameters": [
-                        "\"Sokoban.Jouer\""
-                      ]
+                      "parameters": ["\"Sokoban.Jouer\""]
                     },
                     {
                       "type": {
@@ -3156,11 +2940,7 @@
                       "type": {
                         "value": "StringVariable"
                       },
-                      "parameters": [
-                        "EtatJeu",
-                        "=",
-                        "\"NA\""
-                      ]
+                      "parameters": ["EtatJeu", "=", "\"NA\""]
                     }
                   ],
                   "actions": [
@@ -3168,31 +2948,19 @@
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"Sokoban_Game\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"Sokoban_Game\""]
                     },
                     {
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "EtatJeu",
-                        "=",
-                        "\"LancerJeu\""
-                      ]
+                      "parameters": ["EtatJeu", "=", "\"LancerJeu\""]
                     },
                     {
                       "type": {
                         "value": "SetNumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Sokoban",
-                        "=",
-                        "1"
-                      ]
+                      "parameters": ["Histoire.Sokoban", "=", "1"]
                     }
                   ]
                 },
@@ -3203,19 +2971,13 @@
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Sokoban",
-                        "=",
-                        "1"
-                      ]
+                      "parameters": ["Histoire.Sokoban", "=", "1"]
                     },
                     {
                       "type": {
                         "value": "DialogueTree::WasBranchVisited"
                       },
-                      "parameters": [
-                        "\"Sokoban.ApresJeu\""
-                      ]
+                      "parameters": ["\"Sokoban.ApresJeu\""]
                     },
                     {
                       "type": {
@@ -3241,11 +3003,7 @@
                       "type": {
                         "value": "SetNumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Sokoban",
-                        "=",
-                        "2"
-                      ]
+                      "parameters": ["Histoire.Sokoban", "=", "2"]
                     }
                   ]
                 }
@@ -3271,11 +3029,7 @@
                   "type": {
                     "value": "NumberVariable"
                   },
-                  "parameters": [
-                    "Histoire.Quizz",
-                    "<",
-                    "2"
-                  ]
+                  "parameters": ["Histoire.Quizz", "<", "2"]
                 }
               ],
               "actions": [],
@@ -3287,19 +3041,13 @@
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Quizz",
-                        "=",
-                        "0"
-                      ]
+                      "parameters": ["Histoire.Quizz", "=", "0"]
                     },
                     {
                       "type": {
                         "value": "DialogueTree::WasBranchVisited"
                       },
-                      "parameters": [
-                        "\"Quizz.Jouer\""
-                      ]
+                      "parameters": ["\"Quizz.Jouer\""]
                     },
                     {
                       "type": {
@@ -3312,11 +3060,7 @@
                       "type": {
                         "value": "StringVariable"
                       },
-                      "parameters": [
-                        "EtatJeu",
-                        "=",
-                        "\"NA\""
-                      ]
+                      "parameters": ["EtatJeu", "=", "\"NA\""]
                     }
                   ],
                   "actions": [
@@ -3324,31 +3068,19 @@
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"Quizz_Game\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"Quizz_Game\""]
                     },
                     {
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "EtatJeu",
-                        "=",
-                        "\"LancerJeu\""
-                      ]
+                      "parameters": ["EtatJeu", "=", "\"LancerJeu\""]
                     },
                     {
                       "type": {
                         "value": "SetNumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Quizz",
-                        "=",
-                        "1"
-                      ]
+                      "parameters": ["Histoire.Quizz", "=", "1"]
                     }
                   ]
                 },
@@ -3359,19 +3091,13 @@
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Quizz",
-                        "=",
-                        "1"
-                      ]
+                      "parameters": ["Histoire.Quizz", "=", "1"]
                     },
                     {
                       "type": {
                         "value": "DialogueTree::WasBranchVisited"
                       },
-                      "parameters": [
-                        "\"Quizz.ApresJeu\""
-                      ]
+                      "parameters": ["\"Quizz.ApresJeu\""]
                     },
                     {
                       "type": {
@@ -3397,11 +3123,7 @@
                       "type": {
                         "value": "SetNumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Quizz",
-                        "=",
-                        "2"
-                      ]
+                      "parameters": ["Histoire.Quizz", "=", "2"]
                     }
                   ]
                 }
@@ -3427,11 +3149,7 @@
                   "type": {
                     "value": "NumberVariable"
                   },
-                  "parameters": [
-                    "Histoire.CupBall",
-                    "<",
-                    "2"
-                  ]
+                  "parameters": ["Histoire.CupBall", "<", "2"]
                 }
               ],
               "actions": [],
@@ -3443,19 +3161,13 @@
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.CupBall",
-                        "=",
-                        "0"
-                      ]
+                      "parameters": ["Histoire.CupBall", "=", "0"]
                     },
                     {
                       "type": {
                         "value": "DialogueTree::WasBranchVisited"
                       },
-                      "parameters": [
-                        "\"CupBall.Jouer\""
-                      ]
+                      "parameters": ["\"CupBall.Jouer\""]
                     },
                     {
                       "type": {
@@ -3468,11 +3180,7 @@
                       "type": {
                         "value": "StringVariable"
                       },
-                      "parameters": [
-                        "EtatJeu",
-                        "=",
-                        "\"NA\""
-                      ]
+                      "parameters": ["EtatJeu", "=", "\"NA\""]
                     }
                   ],
                   "actions": [
@@ -3480,31 +3188,19 @@
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"CupBall_GameStart\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"CupBall_GameStart\""]
                     },
                     {
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "EtatJeu",
-                        "=",
-                        "\"LancerJeu\""
-                      ]
+                      "parameters": ["EtatJeu", "=", "\"LancerJeu\""]
                     },
                     {
                       "type": {
                         "value": "SetNumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.CupBall",
-                        "=",
-                        "1"
-                      ]
+                      "parameters": ["Histoire.CupBall", "=", "1"]
                     }
                   ]
                 },
@@ -3515,19 +3211,13 @@
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.CupBall",
-                        "=",
-                        "1"
-                      ]
+                      "parameters": ["Histoire.CupBall", "=", "1"]
                     },
                     {
                       "type": {
                         "value": "DialogueTree::WasBranchVisited"
                       },
-                      "parameters": [
-                        "\"CupBall.ApresJeu\""
-                      ]
+                      "parameters": ["\"CupBall.ApresJeu\""]
                     },
                     {
                       "type": {
@@ -3553,11 +3243,7 @@
                       "type": {
                         "value": "SetNumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.CupBall",
-                        "=",
-                        "2"
-                      ]
+                      "parameters": ["Histoire.CupBall", "=", "2"]
                     }
                   ]
                 }
@@ -3583,11 +3269,7 @@
                   "type": {
                     "value": "NumberVariable"
                   },
-                  "parameters": [
-                    "Histoire.Memory",
-                    "<",
-                    "2"
-                  ]
+                  "parameters": ["Histoire.Memory", "<", "2"]
                 }
               ],
               "actions": [],
@@ -3599,19 +3281,13 @@
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Memory",
-                        "=",
-                        "0"
-                      ]
+                      "parameters": ["Histoire.Memory", "=", "0"]
                     },
                     {
                       "type": {
                         "value": "DialogueTree::WasBranchVisited"
                       },
-                      "parameters": [
-                        "\"Memory.Jouer\""
-                      ]
+                      "parameters": ["\"Memory.Jouer\""]
                     },
                     {
                       "type": {
@@ -3624,11 +3300,7 @@
                       "type": {
                         "value": "StringVariable"
                       },
-                      "parameters": [
-                        "EtatJeu",
-                        "=",
-                        "\"NA\""
-                      ]
+                      "parameters": ["EtatJeu", "=", "\"NA\""]
                     }
                   ],
                   "actions": [
@@ -3636,31 +3308,19 @@
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"Pairing_Game\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"Pairing_Game\""]
                     },
                     {
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "EtatJeu",
-                        "=",
-                        "\"LancerJeu\""
-                      ]
+                      "parameters": ["EtatJeu", "=", "\"LancerJeu\""]
                     },
                     {
                       "type": {
                         "value": "SetNumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Memory",
-                        "=",
-                        "1"
-                      ]
+                      "parameters": ["Histoire.Memory", "=", "1"]
                     }
                   ]
                 },
@@ -3671,19 +3331,13 @@
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Memory",
-                        "=",
-                        "1"
-                      ]
+                      "parameters": ["Histoire.Memory", "=", "1"]
                     },
                     {
                       "type": {
                         "value": "DialogueTree::WasBranchVisited"
                       },
-                      "parameters": [
-                        "\"Memory.ApresJeu\""
-                      ]
+                      "parameters": ["\"Memory.ApresJeu\""]
                     },
                     {
                       "type": {
@@ -3709,11 +3363,7 @@
                       "type": {
                         "value": "SetNumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Memory",
-                        "=",
-                        "2"
-                      ]
+                      "parameters": ["Histoire.Memory", "=", "2"]
                     }
                   ]
                 }
@@ -3739,11 +3389,7 @@
                   "type": {
                     "value": "NumberVariable"
                   },
-                  "parameters": [
-                    "Histoire.UpRunner",
-                    "<",
-                    "2"
-                  ]
+                  "parameters": ["Histoire.UpRunner", "<", "2"]
                 }
               ],
               "actions": [],
@@ -3755,19 +3401,13 @@
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.UpRunner",
-                        "=",
-                        "0"
-                      ]
+                      "parameters": ["Histoire.UpRunner", "=", "0"]
                     },
                     {
                       "type": {
                         "value": "DialogueTree::WasBranchVisited"
                       },
-                      "parameters": [
-                        "\"UpRunner.Jouer\""
-                      ]
+                      "parameters": ["\"UpRunner.Jouer\""]
                     },
                     {
                       "type": {
@@ -3780,11 +3420,7 @@
                       "type": {
                         "value": "StringVariable"
                       },
-                      "parameters": [
-                        "EtatJeu",
-                        "=",
-                        "\"NA\""
-                      ]
+                      "parameters": ["EtatJeu", "=", "\"NA\""]
                     }
                   ],
                   "actions": [
@@ -3792,31 +3428,19 @@
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"UpRunner_Game\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"UpRunner_Game\""]
                     },
                     {
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "EtatJeu",
-                        "=",
-                        "\"LancerJeu\""
-                      ]
+                      "parameters": ["EtatJeu", "=", "\"LancerJeu\""]
                     },
                     {
                       "type": {
                         "value": "SetNumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.UpRunner",
-                        "=",
-                        "1"
-                      ]
+                      "parameters": ["Histoire.UpRunner", "=", "1"]
                     }
                   ]
                 },
@@ -3827,19 +3451,13 @@
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.UpRunner",
-                        "=",
-                        "1"
-                      ]
+                      "parameters": ["Histoire.UpRunner", "=", "1"]
                     },
                     {
                       "type": {
                         "value": "DialogueTree::WasBranchVisited"
                       },
-                      "parameters": [
-                        "\"UpRunner.ApresJeu\""
-                      ]
+                      "parameters": ["\"UpRunner.ApresJeu\""]
                     },
                     {
                       "type": {
@@ -3865,11 +3483,7 @@
                       "type": {
                         "value": "SetNumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.UpRunner",
-                        "=",
-                        "2"
-                      ]
+                      "parameters": ["Histoire.UpRunner", "=", "2"]
                     }
                   ]
                 }
@@ -3894,11 +3508,7 @@
                   "type": {
                     "value": "NumberVariable"
                   },
-                  "parameters": [
-                    "Histoire.Vania",
-                    "<",
-                    "2"
-                  ]
+                  "parameters": ["Histoire.Vania", "<", "2"]
                 }
               ],
               "actions": [],
@@ -3910,19 +3520,13 @@
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Vania",
-                        "=",
-                        "0"
-                      ]
+                      "parameters": ["Histoire.Vania", "=", "0"]
                     },
                     {
                       "type": {
                         "value": "DialogueTree::WasBranchVisited"
                       },
-                      "parameters": [
-                        "\"Vania.Jouer\""
-                      ]
+                      "parameters": ["\"Vania.Jouer\""]
                     },
                     {
                       "type": {
@@ -3935,11 +3539,7 @@
                       "type": {
                         "value": "StringVariable"
                       },
-                      "parameters": [
-                        "EtatJeu",
-                        "=",
-                        "\"NA\""
-                      ]
+                      "parameters": ["EtatJeu", "=", "\"NA\""]
                     }
                   ],
                   "actions": [
@@ -3947,31 +3547,19 @@
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"Vania_Game\""
-                      ]
+                      "parameters": ["JeuEnCours", "=", "\"Vania_Game\""]
                     },
                     {
                       "type": {
                         "value": "SetStringVariable"
                       },
-                      "parameters": [
-                        "EtatJeu",
-                        "=",
-                        "\"LancerJeu\""
-                      ]
+                      "parameters": ["EtatJeu", "=", "\"LancerJeu\""]
                     },
                     {
                       "type": {
                         "value": "SetNumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Vania",
-                        "=",
-                        "1"
-                      ]
+                      "parameters": ["Histoire.Vania", "=", "1"]
                     }
                   ]
                 },
@@ -3982,19 +3570,13 @@
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Vania",
-                        "=",
-                        "1"
-                      ]
+                      "parameters": ["Histoire.Vania", "=", "1"]
                     },
                     {
                       "type": {
                         "value": "DialogueTree::WasBranchVisited"
                       },
-                      "parameters": [
-                        "\"Vania.ApresJeu\""
-                      ]
+                      "parameters": ["\"Vania.ApresJeu\""]
                     },
                     {
                       "type": {
@@ -4020,11 +3602,7 @@
                       "type": {
                         "value": "SetNumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Vania",
-                        "=",
-                        "2"
-                      ]
+                      "parameters": ["Histoire.Vania", "=", "2"]
                     }
                   ]
                 },
@@ -4035,11 +3613,7 @@
                       "type": {
                         "value": "NumberVariable"
                       },
-                      "parameters": [
-                        "Histoire.Vania",
-                        "=",
-                        "2"
-                      ]
+                      "parameters": ["Histoire.Vania", "=", "2"]
                     },
                     {
                       "type": {
@@ -4054,19 +3628,13 @@
                       "type": {
                         "value": "Wait"
                       },
-                      "parameters": [
-                        "1.25"
-                      ]
+                      "parameters": ["1.25"]
                     },
                     {
                       "type": {
                         "value": "Scene"
                       },
-                      "parameters": [
-                        "",
-                        "\"Credits\"",
-                        ""
-                      ]
+                      "parameters": ["", "\"Credits\"", ""]
                     }
                   ]
                 }
@@ -4092,9 +3660,7 @@
                   "type": {
                     "value": "DialogueTree::WasBranchVisited"
                   },
-                  "parameters": [
-                    "\"VieilHomme.Stop\""
-                  ]
+                  "parameters": ["\"VieilHomme.Stop\""]
                 },
                 {
                   "type": {
@@ -4126,11 +3692,7 @@
                   "type": {
                     "value": "SetBooleanVariable"
                   },
-                  "parameters": [
-                    "Histoire.Courir",
-                    "True",
-                    ""
-                  ]
+                  "parameters": ["Histoire.Courir", "True", ""]
                 }
               ]
             }
@@ -4148,12 +3710,7 @@
           "type": {
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
-          "parameters": [
-            "DEBUG_Text",
-            "Text",
-            "=",
-            "Histoire.Courir"
-          ]
+          "parameters": ["DEBUG_Text", "Text", "=", "Histoire.Courir"]
         }
       ]
     }

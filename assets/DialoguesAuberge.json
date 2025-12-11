@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Vania.Start",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nIl a l'air figé<<wait 200>>.<<wait 200>>.<<wait 200>>.µC'est l'un des organisateurs. L'ambiance au sein de l'auberge est lugubre, les ombres semblent avoir pris vie.\n[[ Aller se battre |Vania.Jouer]]",
+		"position": {
+			"x": 322,
+			"y": 372
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Vania.Jouer",
+		"tags": "",
+		"body": "C'est maintenant ou jamais...",
+		"position": {
+			"x": 262,
+			"y": 29
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Vania.ApresJeu",
+		"tags": "",
+		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom ??? >>\nOh, tu m'as sauvé. Merci.\nFin du jeu.",
+		"position": {
+			"x": 638,
+			"y": 257
+		},
+		"colorID": 0
+	}
+]
