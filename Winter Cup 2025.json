@@ -3854,6 +3854,14 @@
         "name": "assets\\Char-NeoVcross-Right3.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Char-Cairne61-Down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-Cairne61-Down2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },

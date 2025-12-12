@@ -172,7 +172,7 @@
 	{
 		"title": "Rhythm.Sauf",
 		"tags": "",
-		"body": "<< nom ??? >>\nEncore merci !",
+		"body": "<< nom Bulle >>\nEncore merci !",
 		"position": {
 			"x": 2491,
 			"y": 761
@@ -182,7 +182,7 @@
 	{
 		"title": "Rhythm.ApresJeu",
 		"tags": "",
-		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom ??? >>\nOh, tu m'as sauvé. Merci.",
+		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom Bulle >>\nOh, tu m'as sauvé. Merci. Bulle des ArcticFox.",
 		"position": {
 			"x": 2183,
 			"y": 766
@@ -222,7 +222,7 @@
 	{
 		"title": "Quizz.ApresJeu",
 		"tags": "",
-		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom ??? >>\nOh, tu m'as sauvé. Merci.",
+		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom Cairne61 >>\nOh, tu m'as sauvé. Merci. C'est moi, Cairne61, des AixAsperant. Euh non, je suis un organisateur ! À moins que... Je ne sois avec les Biloutes & Binouzes ? Je t'avoue être un peu perdu.",
 		"position": {
 			"x": 2901,
 			"y": 707
@@ -232,10 +232,10 @@
 	{
 		"title": "Quizz.Sauf",
 		"tags": "",
-		"body": "<< nom ??? >>\nEncore merci !",
+		"body": "<< nom Cairne61 >>\nEncore merci !",
 		"position": {
-			"x": 3209,
-			"y": 702
+			"x": 3210,
+			"y": 701
 		},
 		"colorID": 0
 	},
@@ -352,17 +352,17 @@
 	{
 		"title": "UpRunner.ApresJeu",
 		"tags": "",
-		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom ??? >>\nOh, tu m'as sauvé. Merci.",
+		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom NeoVcross >>\nEnfin ! Merci de m'avoir sauvé !µJe suis NeoVcross, membre des 1100100 Pression.µCela fait plus de 3 ans que je rush plus de la moitié des jeux.µQuel erreur de se faire avoir ici !\n<< nom LaGrosseCarow >>\nCe fut un plaisir ! Dans ton tryhard, aurais-tu aperçu la clef de l'auberge ?\n<< nom NeoVcross >>\nNon.\nMais grâce à vous, je peux enfin continuer et finir ma dernière course rapidement !",
 		"position": {
-			"x": 2454,
-			"y": 1802
+			"x": 2452,
+			"y": 1801
 		},
 		"colorID": 0
 	},
 	{
 		"title": "UpRunner.Sauf",
 		"tags": "",
-		"body": "<< nom ??? >>\nEncore merci !",
+		"body": "<< nom NeoVcross >>\nGrâce à vous, je peux enfin continuer et finir ma dernière course rapidement !",
 		"position": {
 			"x": 2764,
 			"y": 1799

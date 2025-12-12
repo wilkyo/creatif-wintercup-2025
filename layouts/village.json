@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 1.1803621857484785,
+    "zoomFactor": 0.5504843331991219,
     "windowMask": false,
     "selectedLayer": ""
   },
@@ -1738,13 +1738,11 @@
       "variables": [
         {
           "name": "talking",
-          "persistentUuid": "72b06c9f-f2ca-4a54-ae3d-a61218d0fdf9",
           "type": "boolean",
           "value": false
         },
         {
           "name": "dialogBranch",
-          "persistentUuid": "8a2cff06-047c-485b-9a10-935322012071",
           "type": "string",
           "value": "HommePortail"
         }
@@ -1762,7 +1760,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACharDown3.png",
+                  "image": "assets\\Char-Cairne61-Down2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1778,20 +1776,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 2
+                        "x": 4,
+                        "y": 0
                       },
                       {
-                        "x": 15,
-                        "y": 2
+                        "x": 29,
+                        "y": 0
                       },
                       {
-                        "x": 15,
-                        "y": 16
+                        "x": 29,
+                        "y": 32
                       },
                       {
-                        "x": 1,
-                        "y": 16
+                        "x": 4,
+                        "y": 32
                       }
                     ]
                   ]
@@ -2358,6 +2356,14 @@
               },
               "parameters": [
                 "Clef"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "DEBUG_Text"
               ]
             }
           ],
@@ -3911,6 +3917,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "PorteAuberge",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4373,15 +4380,6 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyFromTextReleased"
-          },
-          "parameters": [
-            "",
-            "\"LControl\""
-          ]
-        },
-        {
-          "type": {
             "value": "BooleanVariable"
           },
           "parameters": [
@@ -4394,62 +4392,89 @@
       "actions": [
         {
           "type": {
-            "value": "SetNumberVariable"
+            "value": "Montre"
           },
           "parameters": [
-            "MiniJeux.CupBall",
-            "+",
-            "1"
+            "DEBUG_Text",
+            ""
           ]
-        },
+        }
+      ],
+      "events": [
         {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "MiniJeux.Memory",
-            "+",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "MiniJeux.Quiz",
-            "+",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "MiniJeux.Rythm",
-            "+",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "MiniJeux.Sokoban",
-            "+",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "MiniJeux.UpRunner",
-            "+",
-            "1"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"LControl\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "MiniJeux.CupBall",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "MiniJeux.Memory",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "MiniJeux.Quiz",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "MiniJeux.Rythm",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "MiniJeux.Sokoban",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "MiniJeux.UpRunner",
+                "+",
+                "1"
+              ]
+            }
           ]
         }
       ]
