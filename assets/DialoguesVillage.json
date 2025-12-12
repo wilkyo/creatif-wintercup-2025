@@ -518,5 +518,15 @@
 			"y": 1342
 		},
 		"colorID": 0
+	},
+	{
+		"title": "SceneIntro.Start",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >> \nEnfin arrivée ! Si j’attrape Craneur22 et Ravenstorm, je les tuerai moi-même ! Quelle idée de laisser un membre de l’équipe derrière ! Ils sont sûrement à l'auberge, avec les organisateurs<< wait 200>>.<< wait 200>>.<< wait 200>>.\nJ’espère qu’il n’est pas trop tard pour prévenir tout le monde de l'existence de cette malédiction, les signes qui semblent l’annoncer sont de plus en plus flagrants !\nD'ailleurs, je me demande où est passé Marcel Poutre, notre dernier membre.",
+		"position": {
+			"x": 472,
+			"y": 1354
+		},
+		"colorID": 0
 	}
 ]

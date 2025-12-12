@@ -6685,7 +6685,6 @@
       ]
     },
     {
-      "folded": true,
       "name": "Histoire",
       "type": "structure",
       "children": [
@@ -6706,8 +6705,8 @@
         },
         {
           "name": "Intro",
-          "type": "number",
-          "value": 0
+          "type": "boolean",
+          "value": false
         },
         {
           "name": "Memory",
