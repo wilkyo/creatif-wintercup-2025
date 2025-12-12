@@ -22,10 +22,20 @@
 	{
 		"title": "Vania.ApresJeu",
 		"tags": "",
-		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom ??? >>\nOh, tu m'as sauvé. Merci.\nFin du jeu.",
+		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom ??? >>\nOh, tu m'as sauvé. Merci.\n[[ Suite |Vania.FIN]]",
 		"position": {
 			"x": 638,
 			"y": 257
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Vania.FIN",
+		"tags": "",
+		"body": "[b]F I N[/b]",
+		"position": {
+			"x": 758,
+			"y": 37
 		},
 		"colorID": 0
 	}

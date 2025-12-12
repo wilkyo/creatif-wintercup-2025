@@ -207,17 +207,6 @@
                 "True",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Joueur",
-                "Animation",
-                "=",
-                "\"Talking\""
-              ]
             }
           ]
         },

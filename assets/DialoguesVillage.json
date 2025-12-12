@@ -34,8 +34,8 @@
 		"tags": "",
 		"body": "<< nom >>\n<<if $accepteMissionBobby == true>>\nAh, c'est donc cette statue !\nOn lance le jeu ?\n[[ Oui |Statue.Jeu]]\n[[ Non |Statut.PasJeu]]\n<<else>>\nHum, cette statue est étrange<<wait 1000>>.<<wait 200>>.<<wait 200>> .<<wait 200>>\n<<endif>>",
 		"position": {
-			"x": -19,
-			"y": 584
+			"x": 314,
+			"y": -206
 		},
 		"colorID": 0
 	},
@@ -44,8 +44,8 @@
 		"tags": "",
 		"body": "Ok, c'est parti !",
 		"position": {
-			"x": -70,
-			"y": 269
+			"x": -18,
+			"y": 51
 		},
 		"colorID": 0
 	},
@@ -54,8 +54,8 @@
 		"tags": "",
 		"body": "Tant pis pour toi",
 		"position": {
-			"x": 222,
-			"y": 298
+			"x": 274,
+			"y": 80
 		},
 		"colorID": 0
 	},
@@ -74,8 +74,8 @@
 		"tags": "",
 		"body": "<< nom >>\n<< wait 200 >>.<< wait 200>>.<< wait 500>>.µIl ne bouge pas...",
 		"position": {
-			"x": 55,
-			"y": 1006
+			"x": 317,
+			"y": 1044
 		},
 		"colorID": 0
 	},
@@ -436,6 +436,76 @@
 		"position": {
 			"x": 1870,
 			"y": -793
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Porte.Start",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nLa porte est fermée...µOh, il y a un mot sur la porte !\n<< nom >>\nNote à moi-même: Penser à ramener la clef.\n<< nom LaGrosseCarow >>\nMince, quelqu'un est parti avec la clef ! Je n'ai pas le choix, il faut que j'aille parler à tout le monde.",
+		"position": {
+			"x": -1095,
+			"y": 855
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Porte.AttenteJeux",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nToujours pas de clef. Il doit rester des gens à qui je n'ai pas parlé.",
+		"position": {
+			"x": -868,
+			"y": 855
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Porte.JeuxOK",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nJe ne comprends pas. J'ai sauvé tout le monde dans le village, mais toujours pas de clef...\nOh, il y a quelque chose derrière le mot.\n<< nom >>\nSi vous me cherchez, je traîne souvent près de l'arbre isolé devant le village.\n<< nom LaGrosseCarow >>\nJe connais cet endroit ! Mais je n'y ai vu personne... Peut-être y a-t-il fait tomber le clef ?",
+		"position": {
+			"x": -630,
+			"y": 854
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Porte.AttenteClef",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nJe dois aller chercher la clef près de l'arbre isolé à l'extérieur du village.",
+		"position": {
+			"x": -404,
+			"y": 853
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Porte.AvecClef",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nEssayons cette clef<<wait 200>>.<<wait 200>>.<<wait 200>>.\n<< nom >>\nClic !\n[[ Suite |Porte.Ouverte]]",
+		"position": {
+			"x": -175,
+			"y": 851
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Clef.Start",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nOh, une clef ! Allons l'essayer !",
+		"position": {
+			"x": -605,
+			"y": 1106
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Porte.Ouverte",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nEnfin ! Il est temps d'entrer !",
+		"position": {
+			"x": -23,
+			"y": 465
 		},
 		"colorID": 0
 	}

@@ -3914,7 +3914,7 @@
         "userAdded": false
       },
       {
-        "file": "Inside_A4.png",
+        "file": "assets/Inside_A4.png",
         "kind": "image",
         "metadata": "",
         "name": "Inside_A4.png",
@@ -3922,7 +3922,7 @@
         "userAdded": false
       },
       {
-        "file": "Splash.png",
+        "file": "assets/Splash.png",
         "kind": "image",
         "metadata": "",
         "name": "Splash.png",
@@ -3935,6 +3935,14 @@
         "kind": "json",
         "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialoguesAuberge.json\"}",
         "name": "DialoguesAuberge",
+        "userAdded": false
+      },
+      {
+        "file": "assets/Porte.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Porte.png",
+        "smoothed": true,
         "userAdded": false
       }
     ]
@@ -6533,10 +6541,13 @@
           "name": "UpRunner"
         },
         {
-          "name": "OrgaVania"
+          "name": "Orga"
         },
         {
-          "name": "Orga"
+          "name": "Porte"
+        },
+        {
+          "name": "Clef"
         }
       ]
     },
@@ -6680,6 +6691,7 @@
       "value": "NA"
     },
     {
+      "folded": true,
       "name": "Options",
       "type": "structure",
       "children": [
@@ -6753,10 +6765,14 @@
       ]
     },
     {
-      "folded": true,
       "name": "Histoire",
       "type": "structure",
       "children": [
+        {
+          "name": "Auberge",
+          "type": "number",
+          "value": 0
+        },
         {
           "name": "Courir",
           "type": "boolean",
@@ -6805,6 +6821,7 @@
       ]
     },
     {
+      "folded": true,
       "name": "MiniJeux",
       "type": "structure",
       "children": [
@@ -6846,6 +6863,7 @@
       ]
     },
     {
+      "folded": true,
       "name": "CupBall",
       "type": "structure",
       "children": [
@@ -6857,6 +6875,7 @@
       ]
     },
     {
+      "folded": true,
       "name": "Vania",
       "type": "structure",
       "children": [
