@@ -72,10 +72,10 @@
 	{
 		"title": "HommePortail",
 		"tags": "",
-		"body": "<< nom >>\nOh, mais c'est MarcelPoutre !\n<< wait 200 >>.<< wait 200>>.<< wait 500>>.µIl ne bouge pas... Mieux vaut trouver un autre chemin.",
+		"body": "<< nom >>\nOh, mais c'est Marcel Poutre !\n<< wait 200 >>.<< wait 200>>.<< wait 500>>.µIl ne bouge pas... Mieux vaut trouver un autre chemin.",
 		"position": {
-			"x": 316,
-			"y": 1043
+			"x": 314,
+			"y": 1040
 		},
 		"colorID": 0
 	},

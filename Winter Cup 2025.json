@@ -103,30 +103,6 @@
   "resources": {
     "resources": [
       {
-        "file": "assets/ACharDown1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACharDown1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ACharDown3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACharDown3.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ACharLeft1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACharLeft1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
         "file": "assets/Tree1.png",
         "kind": "image",
         "metadata": "",
@@ -281,38 +257,6 @@
         "kind": "json",
         "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialoguesVillage.json\"}",
         "name": "DialoguesVillage",
-        "userAdded": false
-      },
-      {
-        "file": "assets/ACharDown1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ACharDown1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/ACharDown2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ACharDown2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/ACharDown3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ACharDown3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/ACharDown4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ACharDown4.png",
-        "smoothed": true,
         "userAdded": false
       },
       {
@@ -1426,14 +1370,6 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/ecb33703984d3107196efce7335025d7ec104351fe8cdeb581c73fe0b8038c34_Green Button_Pressed.png",
           "name": "Green Button_Pressed.png"
         }
-      },
-      {
-        "file": "assets/ACharLeft1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ACharLeft1.png",
-        "smoothed": true,
-        "userAdded": false
       },
       {
         "file": "assets/monogram-extended.ttf",
