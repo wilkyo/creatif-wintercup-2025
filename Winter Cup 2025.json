@@ -3862,6 +3862,14 @@
         "name": "assets\\Char-Cairne61-Down2.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Char-Kintoe-Down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-Kintoe-Down2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },

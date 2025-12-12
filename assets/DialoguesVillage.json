@@ -222,10 +222,10 @@
 	{
 		"title": "Quizz.ApresJeu",
 		"tags": "",
-		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom Cairne61 >>\nOh, tu m'as sauvé. Merci. C'est moi, Cairne61, des AixAsperant. Euh non, je suis un organisateur ! À moins que... Je ne sois avec les Biloutes & Binouzes ? Je t'avoue être un peu perdu.",
+		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom Cairne61 >>\nOh, tu m'as sauvé. Merci. C'est moi, Cairne61, des Aix'Aspérants. Euh non, je suis un organisateur ! À moins que... Je ne sois avec les Biloutes & Binouzes ? Je t'avoue être un peu perdu.",
 		"position": {
-			"x": 2901,
-			"y": 707
+			"x": 2900,
+			"y": 705
 		},
 		"colorID": 0
 	},
@@ -272,7 +272,7 @@
 	{
 		"title": "CupBall.Sauf",
 		"tags": "",
-		"body": "<< nom ??? >>\nEncore merci !",
+		"body": "<< nom Kintoe >>\nEncore merci !",
 		"position": {
 			"x": 905,
 			"y": 1053
@@ -282,7 +282,7 @@
 	{
 		"title": "CupBall.ApresJeu",
 		"tags": "",
-		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom ??? >>\nOh, tu m'as sauvé. Merci.",
+		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom Kintoe >>\nOh, tu m'as sauvé. Merci. C'est moi, Kintoe de l'équipe des 12 Pandas.",
 		"position": {
 			"x": 595,
 			"y": 1056
