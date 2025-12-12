@@ -72,7 +72,7 @@
 	{
 		"title": "HommePortail",
 		"tags": "",
-		"body": "<< nom >>\nOh, mais c'est Marcel Poutre !\n<< wait 200 >>.<< wait 200>>.<< wait 500>>.µIl ne bouge pas... Mieux vaut trouver un autre chemin.",
+		"body": "<< nom LaGrosseCarow >>\nOh, mais c'est Marcel Poutre !\n<< wait 200 >>.<< wait 200>>.<< wait 500>>.µIl ne bouge pas<< wait 200 >>.<< wait 200>>.<< wait 200>> Mieux vaut trouver un autre chemin.",
 		"position": {
 			"x": 314,
 			"y": 1040
@@ -242,7 +242,7 @@
 	{
 		"title": "CupBall.Start",
 		"tags": "",
-		"body": "<< nom LaGrosseCarow >>\nElle a l'air figée<<wait 200>>.<<wait 200>>.<<wait 200>>.µDes gobelets sont remplis de billes de différentes couleurs devant elle.µPeut-être faut-il les trier ?\n[[ Trier les billes |CupBall.Jouer]]\n[[ Laisser tomber |CupBall.Ignorer]]",
+		"body": "<< nom LaGrosseCarow >>\nElle a l'air figée<<wait 200>>.<<wait 200>>.<<wait 200>>.µDes gobelets sont remplis de billes de différentes couleurs devant elle. Peut-être faut-il les trier ?\n[[ Trier les billes |CupBall.Jouer]]\n[[ Laisser tomber |CupBall.Ignorer]]",
 		"position": {
 			"x": 818,
 			"y": 765
@@ -462,7 +462,7 @@
 	{
 		"title": "Porte.JeuxOK",
 		"tags": "",
-		"body": "<< nom LaGrosseCarow >>\nJe ne comprends pas. J'ai sauvé tout le monde dans le village, mais toujours pas de clef...\nOh, il y a quelque chose derrière le mot.\n<< nom >>\nSi vous me cherchez, je traîne souvent près de l'arbre isolé devant le village.\n<< nom LaGrosseCarow >>\nJe connais cet endroit ! Mais je n'y ai vu personne... Peut-être y a-t-il fait tomber le clef ?",
+		"body": "<< nom LaGrosseCarow >>\nJe ne comprends pas. J'ai sauvé tout le monde dans le village, mais toujours pas de clef...\nOh, il y a quelque chose derrière le mot.\n<< nom >>\nSi vous me cherchez, je traîne souvent près de l'arbre isolé devant le village.\n<< nom LaGrosseCarow >>\nJe connais cet endroit ! Mais je n'y ai vu personne... Peut-être y a-t-il fait tomber la clef ?",
 		"position": {
 			"x": -630,
 			"y": 854
@@ -506,6 +506,16 @@
 		"position": {
 			"x": -23,
 			"y": 465
+		},
+		"colorID": 0
+	},
+	{
+		"title": "PanneauBombardement",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >>\nC'est un vrai champ de bataille. Comme s'il y avait eu un BOMBARDEMENT !",
+		"position": {
+			"x": 183,
+			"y": 1342
 		},
 		"colorID": 0
 	}

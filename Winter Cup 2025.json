@@ -3838,6 +3838,14 @@
         "name": "assets\\Char-Vieux-Left1.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Panneau.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Panneau.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -6442,6 +6450,9 @@
         },
         {
           "name": "Clef"
+        },
+        {
+          "name": "PanneauBombardement"
         }
       ]
     },
