@@ -3914,7 +3914,7 @@
         "userAdded": false
       },
       {
-        "file": "Inside_A4.png",
+        "file": "assets/Inside_A4.png",
         "kind": "image",
         "metadata": "",
         "name": "Inside_A4.png",
@@ -3922,7 +3922,7 @@
         "userAdded": false
       },
       {
-        "file": "Splash.png",
+        "file": "assets/Splash.png",
         "kind": "image",
         "metadata": "",
         "name": "Splash.png",
@@ -3938,7 +3938,7 @@
         "userAdded": false
       },
       {
-        "file": "Porte.png",
+        "file": "assets/Porte.png",
         "kind": "image",
         "metadata": "",
         "name": "Porte.png",
