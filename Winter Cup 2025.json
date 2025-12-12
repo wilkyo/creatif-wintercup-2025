@@ -78,10 +78,20 @@
       "placement": "bottom-left",
       "showWatermark": true
     },
-    "authorIds": ["21SMAaN2TeU7wdgeP5VgPUDNIQ72"],
-    "authorUsernames": ["Yourself (no username)"],
-    "categories": ["rpg"],
-    "playableDevices": ["keyboard", "mobile", "mobile"],
+    "authorIds": [
+      "21SMAaN2TeU7wdgeP5VgPUDNIQ72"
+    ],
+    "authorUsernames": [
+      "Yourself (no username)"
+    ],
+    "categories": [
+      "rpg"
+    ],
+    "playableDevices": [
+      "keyboard",
+      "mobile",
+      "mobile"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
@@ -3995,7 +4005,7 @@
         "color": "255;255;255",
         "fontFamily": "Poppins-Medium.ttf",
         "align": "left",
-        "verticalTextAlignment": "center"
+        "verticalTextAlignment": "top"
       }
     },
     {
