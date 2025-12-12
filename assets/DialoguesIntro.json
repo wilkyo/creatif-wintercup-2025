@@ -1,38 +1,38 @@
 [
 	{
-		"title": "Intro",
+		"title": "Intro.1",
 		"tags": "",
-		"body": "Au sein de la Gaule, les guerres de clans faisaient rage depuis des décennies. Le nombre de victimes se comptait par milliers, l’économie étant principalement tournée vers l’effort de guerre et combinée au manque de main d'œuvre, la pauvreté et la famine finirent par faire autant de victimes que les guerres perpétuelles.\r\n[[ Suivant |Intro.2]]",
+		"body": "Au sein de la Gaule, les guerres de clans faisaient rage depuis des décennies, le nombre de victimes se comptait par milliers. L’économie étant principalement tournée vers l’effort de guerre et combinée au manque de main d'œuvre, la pauvreté et la famine finirent par faire autant de victimes que les guerres perpétuelles.\r\n[[ Suivant |Intro.2]]",
 		"position": {
-			"x": 319,
-			"y": 259
+			"x": 122,
+			"y": 253
 		},
-		"colorID": 0
+		"colorID": 8
 	},
 	{
 		"title": "Intro.2",
 		"tags": "",
-		"body": "Un jour, deux jeunes guerriers nommés Firedream et Regnatar qui tentaient de noyer leurs malheurs dans la cervoise aussi acide que … de la dernière taverne de leur village, décidère sous l’effet de l’alcool d’abandonner les armes au profit d’une énième tentative de réinstauration de la paix.\r\nLeur idée semblaient complètement farfelue : une fois par an, chaque clan enverrait des équipes de 2 à 5 volontaires à Winterbriga (La colline de L’hiver), un village jusque là neutre dans le conflit et qui servirait de terrain neutre où les différentes équipes s’affronteraient sur différentes épreuves. \r\n[[ Suivant |Intro.3]]",
+		"body": "Un jour, deux jeunes guerriers nommés Firedreams et Regnatar, qui tentaient de noyer leurs malheurs dans l’insipide cervoise de la dernière taverne de leur village, décidèrent sous l’effet de l’alcool d’abandonner les armes au profit d’une énième tentative de réinstauration de la paix.\r\n[[ Suivant |Intro.3]]",
 		"position": {
-			"x": 317,
-			"y": -1
+			"x": 119,
+			"y": -31
 		},
 		"colorID": 0
 	},
 	{
 		"title": "Intro.3",
 		"tags": "",
-		"body": "Le bon déroulement de la compétition serait garanti par les Winterbrigates.\r\nAprès de nombreuses années pour tenter de faire valoir leur idée auprès des différents clans, la première compétition eut lieu et fut nommée “Winter Cwpan”, renommée plus tard par “Winter Cup”.\r\nSi les premières éditions furent tendues et ponctuées par plusieurs incidents, la paix installée permis peu à peu d'apaiser les esprits et au fil du temps la compétition devient l’occasion de se réunir, de s’affronter dans la bonne ambiance sur différents jeux mais surtout, l’occasion de partager de nombreux repas confectionnés avec les spécialités de chaque clan, le plus apprécié était la fameuse raclette. La charcuterie était apportée par les Arvennes, le fromage venait des Allobroges, les Eduens et les Bituriges Vivisques s’occupaient quant à eux des vins aux milles arômes.",
+		"body": "Leur idée semblait complètement farfelue : une fois par an, chaque clan enverrait des équipes de 2 à 5 volontaires à Winterbriga (la colline de l’hiver), un village jusque là neutre dans le conflit et qui servirait de terrain où les équipes s’affronteraient sur différentes épreuves. Le bon déroulement de la compétition serait garanti par les Winterbrigates.\n[[ Suivant |Intro.4]]",
 		"position": {
-			"x": 316,
-			"y": -285
+			"x": 118,
+			"y": -312
 		},
 		"colorID": 0
 	},
 	{
 		"title": "Intro.Start",
 		"tags": "",
-		"body": "<< nom >>\nBienvenue dans Winter is Coming. Voulez-vous voir l'introduction ?\n[[ Oui, je m'intéresse à l'histoire |Intro]]\n[[ Non merci, je veux jouer |Intro.Fin]]",
+		"body": "<< nom >>\nBienvenue dans Winter is Coming. Voulez-vous voir l'introduction ?\n[[ Oui, je m'intéresse à l'histoire |Intro.1]]\n[[ Non merci, je veux jouer |Intro.Fin]]",
 		"position": {
 			"x": -266,
 			"y": 233
@@ -44,8 +44,108 @@
 		"tags": "",
 		"body": "Qu'il en soit ainsi.",
 		"position": {
-			"x": -191,
-			"y": -223
+			"x": -261,
+			"y": -173
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro.4",
+		"tags": "",
+		"body": "Après de nombreuses années pour tenter de faire valoir leur idée auprès des différents clans, la première compétition eut lieu et fut nommée “Winter Cwpan”, renommée plus tard en “Winter Cup”.\n[[ Suivant |Intro.5]]",
+		"position": {
+			"x": 490,
+			"y": -313
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro.5",
+		"tags": "",
+		"body": "Si les premières éditions furent tendues et ponctuées par plusieurs incidents, la paix installée permit peu à peu d'apaiser les esprits et au fil du temps la compétition perdit son aspect compétitif.\n[[ Suivant |Intro.6]]",
+		"position": {
+			"x": 495,
+			"y": -33
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro.6",
+		"tags": "",
+		"body": "Elle devint l’occasion de se réunir, de s’affronter dans la bonne ambiance sur différents jeux mais surtout, l’occasion de partager de nombreux repas confectionnés avec les spécialités de chaque clan, le plus apprécié étant la fameuse raclette.\n[[ Suivant |Intro.6bis]]",
+		"position": {
+			"x": 841,
+			"y": 251
+		},
+		"colorID": 8
+	},
+	{
+		"title": "Intro.7",
+		"tags": "",
+		"body": "Cependant, après plusieurs décennies, une nouvelle génération prit la relève et on vit arriver de plus en plus de profils compétitifs.\n[[ Suivant |Intro.7bis]]",
+		"position": {
+			"x": 849,
+			"y": -304
+		},
+		"colorID": 6
+	},
+	{
+		"title": "Intro.8",
+		"tags": "",
+		"body": "Voyant la situation se détériorer, la jeune carnute La Grosse Carow, la dernière joueuse inscrite à la Winter Cup, tenta de trouver une solution dans les mémoires rédigées par Regnatar et Firedreams et fit une étrange découverte.\n[[ Suivant |Intro.9]]",
+		"position": {
+			"x": 1178,
+			"y": -23
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro.9",
+		"tags": "",
+		"body": "Lorsque les deux fondateurs de la Winter Cup réussirent à instaurer une paix durable, un petit groupe d’opposants composé principalement de druides et de mages qui avaient réussi à faire fortune grâce à la guerre, s’exilèrent en promettant que cette trêve ne serait que de courte durée.\n[[ Suivant |Intro.9bis]]",
+		"position": {
+			"x": 1179,
+			"y": 275
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro.10",
+		"tags": "",
+		"body": "Choquée par cette découverte, La Grosse Carow se prépara à rejoindre Winterbriga où son équipe l’attendait déjà, afin de partager ses découvertes. Elle espérait qu’en prenant conscience de la situation, tous les esprits finiraient par s'apaiser au profil d’une ambiance plus chill.",
+		"position": {
+			"x": 1509,
+			"y": -35
+		},
+		"colorID": 8
+	},
+	{
+		"title": "Intro.6bis",
+		"tags": "",
+		"body": "La charcuterie était apportée par les Arvernes, le fromage venait des Allobroges, les Eduens et les Bituriges Vivisques s’occupaient quant à eux des vins aux milles arômes.\n[[ Suivant |Intro.7]]",
+		"position": {
+			"x": 849,
+			"y": -31
+		},
+		"colorID": 8
+	},
+	{
+		"title": "Intro.7bis",
+		"tags": "",
+		"body": "Pour eux, tout était une excuse pour se battre et ridiculiser les clans adverses. Même si de nombreux irréductibles tentaient de conserver l’ambiance chaleureuse transmise par leurs aînés, cette invasion ne tarda pas à entacher les réjouissances.\n[[ Suivant |Intro.8]]",
+		"position": {
+			"x": 1172,
+			"y": -312
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro.9bis",
+		"tags": "",
+		"body": "Ils annoncèrent qu’un jour, l’esprit compétitif, le tryhard, reprendrait le dessus et que cette malédiction anéantirait tous les clans.\n[[ Suivant |Intro.10]]",
+		"position": {
+			"x": 1505,
+			"y": 271
 		},
 		"colorID": 0
 	}
