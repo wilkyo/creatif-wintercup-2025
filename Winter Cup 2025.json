@@ -3870,6 +3870,22 @@
         "name": "assets\\Char-Kintoe-Down2.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Char-PratoZz-Down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-PratoZz-Down2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-Tirvix-Down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-Tirvix-Down2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },

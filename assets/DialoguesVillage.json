@@ -122,19 +122,19 @@
 	{
 		"title": "Sokoban.ApresJeu",
 		"tags": "",
-		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom ??? >>\nOh, tu m'as sauvé. Merci.",
+		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom Tirvix >>\nOh, tu m'as sauvé. Merci. C'est moi Tirvix des Super Strong Elephant",
 		"position": {
-			"x": 1364,
-			"y": 821
+			"x": 1363,
+			"y": 820
 		},
 		"colorID": 0
 	},
 	{
 		"title": "Sokoban.Sauf",
 		"tags": "",
-		"body": "<< nom ??? >>\nEncore merci !",
+		"body": "<< nom Tirvix >>\nEncore merci !",
 		"position": {
-			"x": 1674,
+			"x": 1673,
 			"y": 818
 		},
 		"colorID": 0
@@ -302,7 +302,7 @@
 	{
 		"title": "Memory.ApresJeu",
 		"tags": "",
-		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom ??? >>\nOh, tu m'as sauvé. Merci.",
+		"body": "<< nom >>\nElle semble revenu à elle-même.\n<< nom PratoZz >>\nOh, tu m'as sauvé. Merci. Je suis PratoZz de l'équipe UwU.",
 		"position": {
 			"x": 1415,
 			"y": 1956
@@ -312,10 +312,10 @@
 	{
 		"title": "Memory.Sauf",
 		"tags": "",
-		"body": "<< nom ??? >>\nEncore merci !",
+		"body": "<< nom PratoZz >>\nEncore merci !",
 		"position": {
-			"x": 1725,
-			"y": 1953
+			"x": 1722,
+			"y": 1950
 		},
 		"colorID": 0
 	},

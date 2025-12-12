@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.48209511748955614,
+    "zoomFactor": 0.9673796392516133,
     "windowMask": false,
     "selectedLayer": ""
   },
@@ -1665,13 +1665,11 @@
       "variables": [
         {
           "name": "talking",
-          "persistentUuid": "72b06c9f-f2ca-4a54-ae3d-a61218d0fdf9",
           "type": "boolean",
           "value": false
         },
         {
           "name": "dialogBranch",
-          "persistentUuid": "8a2cff06-047c-485b-9a10-935322012071",
           "type": "string",
           "value": "Sokoban.Start"
         }
@@ -1689,7 +1687,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACharDown3.png",
+                  "image": "assets\\Char-Tirvix-Down2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1705,20 +1703,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 2
+                        "x": 3,
+                        "y": 0
                       },
                       {
-                        "x": 15,
-                        "y": 2
+                        "x": 30,
+                        "y": 0
                       },
                       {
-                        "x": 15,
-                        "y": 16
+                        "x": 30,
+                        "y": 32
                       },
                       {
-                        "x": 1,
-                        "y": 16
+                        "x": 3,
+                        "y": 32
                       }
                     ]
                   ]
@@ -1951,14 +1949,12 @@
       "variables": [
         {
           "name": "talking",
-          "persistentUuid": "b9e4ff0a-44a9-45fb-8f03-fab9a67c9caf",
           "type": "boolean",
           "value": false
         },
         {
           "hasMixedValues": true,
           "name": "dialogBranch",
-          "persistentUuid": "4e83e08b-540d-4834-863d-00d2017d621c",
           "type": "string",
           "value": "HommePortail"
         }
@@ -1976,7 +1972,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACharDown1.png",
+                  "image": "assets\\Char-PratoZz-Down2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1992,20 +1988,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 2
+                        "x": 4,
+                        "y": 0
                       },
                       {
-                        "x": 15,
-                        "y": 2
+                        "x": 29,
+                        "y": 0
                       },
                       {
-                        "x": 15,
-                        "y": 16
+                        "x": 29,
+                        "y": 32
                       },
                       {
-                        "x": 1,
-                        "y": 16
+                        "x": 4,
+                        "y": 32
                       }
                     ]
                   ]
