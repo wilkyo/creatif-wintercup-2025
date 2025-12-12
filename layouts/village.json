@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 1.104610514283773,
+    "zoomFactor": 0.532527335663792,
     "windowMask": false,
     "selectedLayer": ""
   },
@@ -76,7 +76,13 @@
       ]
     }
   ],
-  "variables": [],
+  "variables": [
+    {
+      "name": "animation",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -104,7 +110,7 @@
       "persistentUuid": "eb3eb9c8-9e76-4d2e-89c0-600889f54713",
       "width": 24,
       "x": 622,
-      "y": 706,
+      "y": 685,
       "zOrder": 511,
       "numberProperties": [
         {
@@ -126,7 +132,7 @@
       "persistentUuid": "382e8837-81e8-444f-926c-dc8ac7354a2c",
       "width": 608,
       "x": 352,
-      "y": 384,
+      "y": 284,
       "zOrder": 2010,
       "numberProperties": [],
       "stringProperties": [],
@@ -2543,6 +2549,50 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneJustResumed"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "ff0136aa7b959495ff144170c177dd3b85132d79f7331a9775311aa1f62d41d8_Cold Journey.aac",
+                "13",
+                "yes",
+                "Options.Volumes.Musiques * 0.05",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
@@ -3067,6 +3117,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Dialogues scène",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3094,6 +3145,70 @@
               ]
             }
           ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Scène arrivée",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Histoire.Intro",
+                    "=",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Joueur",
+                    "\"frames\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "DialogueTree::StartDialogueFromBranch"
+                  },
+                  "parameters": [
+                    "\"SceneIntro.Start\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Histoire.Intro",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         },
         {
           "colorB": 228,

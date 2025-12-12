@@ -3856,6 +3856,36 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Cold Journey.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "ff0136aa7b959495ff144170c177dd3b85132d79f7331a9775311aa1f62d41d8_Cold Journey.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Music/Fantasy/ff0136aa7b959495ff144170c177dd3b85132d79f7331a9775311aa1f62d41d8_Cold Journey.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Char-Firedreams-Down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-Firedreams-Down2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-Regnatar-Down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-Regnatar-Down2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -6453,9 +6483,6 @@
           "name": "UpRunner"
         },
         {
-          "name": "Orga"
-        },
-        {
           "name": "Porte"
         },
         {
@@ -6463,6 +6490,12 @@
         },
         {
           "name": "PanneauBombardement"
+        },
+        {
+          "name": "Firedreams"
+        },
+        {
+          "name": "Regnatar"
         }
       ]
     },
@@ -6685,7 +6718,6 @@
       ]
     },
     {
-      "folded": true,
       "name": "Histoire",
       "type": "structure",
       "children": [
@@ -6706,8 +6738,8 @@
         },
         {
           "name": "Intro",
-          "type": "number",
-          "value": 0
+          "type": "boolean",
+          "value": false
         },
         {
           "name": "Memory",

@@ -122,7 +122,7 @@
 	{
 		"title": "Sokoban.ApresJeu",
 		"tags": "",
-		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom Tirvix >>\nOh, tu m'as sauvé. Merci. C'est moi Tirvix des Super Strong Elephant",
+		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom Tirvix >>\nHey, c'est moi Tirvix des Super Strong Elephant ! Merci pour le coup de main ! Cette année on va encore la remporter cette coupe ! Jamais 2 sans 3 !",
 		"position": {
 			"x": 1363,
 			"y": 820
@@ -132,7 +132,7 @@
 	{
 		"title": "Sokoban.Sauf",
 		"tags": "",
-		"body": "<< nom Tirvix >>\nEncore merci !",
+		"body": "<< nom Tirvix >>\nJe n'ai rien pour toi, désolé.µCette année on va encore la remporter cette coupe ! Jamais 2 sans 3 !",
 		"position": {
 			"x": 1673,
 			"y": 818
@@ -172,7 +172,7 @@
 	{
 		"title": "Rhythm.Sauf",
 		"tags": "",
-		"body": "<< nom Bulle >>\nEncore merci !",
+		"body": "<< nom Bulle >>\nJe veux bien te donner des indices, mais je n'ai rien d'autre à t'offrir.\nLes jeux de rythme, c'est vraiment pas mon truc.",
 		"position": {
 			"x": 2491,
 			"y": 761
@@ -182,7 +182,7 @@
 	{
 		"title": "Rhythm.ApresJeu",
 		"tags": "",
-		"body": "<< nom >>\nElle semble revenue à elle-même.\n<< nom Bulle >>\nOh, tu m'as sauvée. Merci. Bulle des ArcticFox.",
+		"body": "<< nom >>\nElle semble revenue à elle-même.\n<< nom Bulle >>\nOh, tu m'as sauvée. Je suis Bulle des ArcticFox.\nLes jeux de rythme, c'est vraiment pas mon truc.",
 		"position": {
 			"x": 2183,
 			"y": 766
@@ -222,7 +222,7 @@
 	{
 		"title": "Quizz.ApresJeu",
 		"tags": "",
-		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom Cairne61 >>\nOh, tu m'as sauvé. Merci. C'est moi, Cairne61, des Aix'Aspérants. Euh non, je suis un organisateur ! À moins que... Je ne sois avec les Biloutes & Binouzes ? Je t'avoue être un peu perdu.",
+		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom Cairne61 >>\nOh, tu m'as sauvé. Merci. C'est moi, Cairne61, des Aix'Aspérants. Euh non, je suis un organisateur ! À moins que... je ne sois avec les Biloutes & Binouzes ? Je t'avoue être un peu perdu.",
 		"position": {
 			"x": 2900,
 			"y": 705
@@ -232,7 +232,7 @@
 	{
 		"title": "Quizz.Sauf",
 		"tags": "",
-		"body": "<< nom Cairne61 >>\nEncore merci !",
+		"body": "<< nom Cairne61 >>\nJ'ai beau être mâtinal, je n'ai rien pour t'aider dans ta quête.\nEt je suis avec les Biloutes & Binouzes, cette année.",
 		"position": {
 			"x": 3210,
 			"y": 701
@@ -272,7 +272,7 @@
 	{
 		"title": "CupBall.Sauf",
 		"tags": "",
-		"body": "<< nom Kintoe >>\nEncore merci !",
+		"body": "<< nom Kintoe >>\nNon, vraiment, j'aimerais pouvoir t'aider...\nCette année on joue pour la victoire ! Plus de 12ème place. On a des rivales à vaincre",
 		"position": {
 			"x": 905,
 			"y": 1053
@@ -282,7 +282,7 @@
 	{
 		"title": "CupBall.ApresJeu",
 		"tags": "",
-		"body": "<< nom >>\nElle semble revenue à elle-même.\n<< nom Kintoe >>\nOh, tu m'as sauvée. Merci. C'est moi, Kintoe de l'équipe des 12 Pandas.",
+		"body": "<< nom >>\nElle semble revenue à elle-même.\n<< nom Kintoe >>\nHeureusement que tu étais là ! Tu me reconnais ? Je suis Kintoe de l'équipe des 12 Pandas.\nCette année on joue pour la victoire ! Plus de 12ème place. On a des rivales à vaincre",
 		"position": {
 			"x": 595,
 			"y": 1056
@@ -302,7 +302,7 @@
 	{
 		"title": "Memory.ApresJeu",
 		"tags": "",
-		"body": "<< nom >>\nElle semble revenu à elle-même.\n<< nom PratoZz >>\nOh, tu m'as sauvé. Merci. Je suis PratoZz de l'équipe UwU.",
+		"body": "<< nom >>\nElle semble revenu à elle-même.\n<< nom PratoZz >>\nOh, je suis un gars !\nJe suis PratoZz de l'équipe UwUs. Je te remercie de m'avoir aidé.µCette année c'est la bonne, les astres sont alignés pour notre victoire ! On battra le record du monde !",
 		"position": {
 			"x": 1415,
 			"y": 1956
@@ -312,10 +312,10 @@
 	{
 		"title": "Memory.Sauf",
 		"tags": "",
-		"body": "<< nom PratoZz >>\nEncore merci !",
+		"body": "<< nom PratoZz >>\nJe ne peux pas t'aider, désolé.\nCette année c'est la bonne, les astres sont alignés pour notre victoire ! On battra le record du monde !",
 		"position": {
-			"x": 1722,
-			"y": 1950
+			"x": 1721,
+			"y": 1949
 		},
 		"colorID": 0
 	},
@@ -516,6 +516,16 @@
 		"position": {
 			"x": 183,
 			"y": 1342
+		},
+		"colorID": 0
+	},
+	{
+		"title": "SceneIntro.Start",
+		"tags": "",
+		"body": "<< nom LaGrosseCarow >> \nEnfin arrivée ! Si j’attrape Craneur22 et Ravenstorm, je les tuerai moi-même ! Quelle idée de laisser un membre de l’équipe derrière ! Ils sont sûrement à l'auberge, avec les organisateurs<< wait 200>>.<< wait 200>>.<< wait 200>>.\nJ’espère qu’il n’est pas trop tard pour prévenir tout le monde de l'existence de cette malédiction, les signes qui semblent l’annoncer sont de plus en plus flagrants !\nD'ailleurs, je me demande où est passé Marcel Poutre, notre dernier membre.",
+		"position": {
+			"x": 472,
+			"y": 1354
 		},
 		"colorID": 0
 	}
