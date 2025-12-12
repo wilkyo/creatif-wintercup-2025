@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.7177437578036219,
+    "zoomFactor": 1.104610514283773,
     "windowMask": false,
     "selectedLayer": ""
   },
@@ -1457,6 +1457,28 @@
           "value": "PanneauBombardement"
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 24,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Inside_B",
+      "persistentUuid": "42f52771-8a84-44e8-9d76-e11f9ef05c53",
+      "width": 24,
+      "x": 300,
+      "y": 197,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [
+        {
+          "name": "tilemap",
+          "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":1,\"dimY\":1,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[74]]}]}"
+        }
+      ],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -4502,7 +4524,7 @@
                   "parameters": [
                     "StrLength(DialogueTree::ClippedLineText())",
                     ">=",
-                    "60"
+                    "75"
                   ]
                 },
                 {
@@ -4519,7 +4541,7 @@
                   },
                   "parameters": [
                     "",
-                    "HoverSound.wav",
+                    "assets\\LEBOMBARDEMENT.mp3",
                     "",
                     "Options.Volumes.Sons",
                     ""

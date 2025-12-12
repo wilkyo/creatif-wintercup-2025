@@ -1,9 +1,9 @@
 {
   "firstLayout": "TitleScreen",
   "gdVersion": {
-    "build": 247,
+    "build": 250,
     "major": 5,
-    "minor": 5,
+    "minor": 6,
     "revision": 0
   },
   "properties": {
@@ -3845,6 +3845,16 @@
         "metadata": "",
         "name": "assets\\Panneau.png",
         "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/LEBOMBARDEMENT.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\LEBOMBARDEMENT.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
         "userAdded": false
       }
     ]

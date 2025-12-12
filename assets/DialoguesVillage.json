@@ -512,7 +512,7 @@
 	{
 		"title": "PanneauBombardement",
 		"tags": "",
-		"body": "<< nom LaGrosseCarow >>\nC'est un vrai champ de bataille. Comme s'il y avait eu un BOMBARDEMENT !",
+		"body": "<< nom LaGrosseCarow >>\nVous vous trouvez sur les ruines d'un champ de bataille. Tout cela a été causé par LE BOMBARDEMENT !<< wait 2000>>",
 		"position": {
 			"x": 183,
 			"y": 1342
