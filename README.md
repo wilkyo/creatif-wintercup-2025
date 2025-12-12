@@ -1,6 +1,6 @@
 === Winter is coming ===
 
-[Lien du jeu](https://gd.games/instant-builds/cfa649c9-7bf3-4024-890b-e05fc678dd7a)
+[Lien du jeu](https://gd.games/games/935706e1-a41a-4878-a67f-58a7db910640)
 
 # ÉQUIPE
 
