@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.9673796392516133,
+    "zoomFactor": 0.8471975907683376,
     "windowMask": false,
     "selectedLayer": ""
   },
@@ -139,8 +139,8 @@
       "name": "HommePortail",
       "persistentUuid": "d2646c2e-594b-4d51-927e-b425f60c361d",
       "width": 24,
-      "x": 617,
-      "y": 503,
+      "x": 604,
+      "y": 486,
       "zOrder": 44,
       "numberProperties": [],
       "stringProperties": [],
@@ -1508,12 +1508,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "ACharDown1.png",
+                  "image": "assets\\Char-MarcelPoutre-Down2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 7.927276611328125,
-                    "y": 15.236364364624023
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1900,7 +1900,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ACharLeft1.png",
+                  "image": "assets\\Char-Vieux-Left1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1916,20 +1916,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 2
+                        "x": 6,
+                        "y": 1
                       },
                       {
-                        "x": 15,
-                        "y": 2
+                        "x": 28,
+                        "y": 1
                       },
                       {
-                        "x": 15,
-                        "y": 16
+                        "x": 28,
+                        "y": 32
                       },
                       {
-                        "x": 1,
-                        "y": 16
+                        "x": 6,
+                        "y": 32
                       }
                     ]
                   ]

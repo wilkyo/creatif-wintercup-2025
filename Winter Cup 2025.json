@@ -3886,6 +3886,22 @@
         "name": "assets\\Char-Tirvix-Down2.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Char-MarcelPoutre-Down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-MarcelPoutre-Down2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-Vieux-Left1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-Vieux-Left1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
