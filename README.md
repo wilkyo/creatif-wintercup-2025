@@ -84,8 +84,7 @@ Merci aux tutoriels GDevelop et aux nombreux exemples de jeux que nous avons pu 
 # PROBLÈMES CONNUS
 
 - Écarts de volumes sur certains sons et musiques
-- Le jeu ne fonctionne pas bien sous Opéra
-- Problème animation déplacement automatique
+- Le jeu ne fonctionne pas bien sous Opéra et Firefox. Privilégier Edge et Chrome
 
 # IDÉES D'ÉVOLUTION
 
