@@ -1,9 +1,9 @@
 {
   "firstLayout": "TitleScreen",
   "gdVersion": {
-    "build": 250,
+    "build": 247,
     "major": 5,
-    "minor": 6,
+    "minor": 5,
     "revision": 0
   },
   "properties": {
@@ -3944,6 +3944,116 @@
         "name": "Porte.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "intro1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "intro1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/intro1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\intro1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/intro2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\intro2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/intro3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\intro3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/intro4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\intro4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/intro5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\intro5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/intro6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\intro6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/intro7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\intro7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/intro8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\intro8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/intro9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\intro9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/intro10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\intro10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/intro5bis.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\intro5bis.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Coy Koi.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "a6f5a7de75e03190d6cf8306a2b004e7ac8170f1e594114be64b1d1e20f0edfa_Coy Koi.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Music/World/a6f5a7de75e03190d6cf8306a2b004e7ac8170f1e594114be64b1d1e20f0edfa_Coy Koi.aac",
+          "name": "gdevelop-asset-store"
+        }
       }
     ]
   },

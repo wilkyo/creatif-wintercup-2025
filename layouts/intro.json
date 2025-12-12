@@ -20,9 +20,9 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.43357743047023745,
+    "zoomFactor": 0.5117784035210177,
     "windowMask": false,
-    "selectedLayer": "Dialogue"
+    "selectedLayer": ""
   },
   "objectsGroups": [],
   "variables": [],
@@ -33,11 +33,11 @@
       "depth": 1.0093457943925233,
       "height": 724,
       "layer": "",
-      "name": "Background1",
+      "name": "intro1",
       "persistentUuid": "23e3a437-ff7f-44bc-9d77-3bae00c7584e",
       "width": 1296,
-      "x": 0,
-      "y": 0,
+      "x": -7,
+      "y": -2,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -47,14 +47,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 724,
-      "layer": "Dialogue",
-      "name": "Background2",
-      "persistentUuid": "8d9e316c-b080-4aca-aabb-805dc38c0cc9",
-      "width": 1296,
-      "x": 0,
-      "y": 0,
-      "zOrder": 0,
+      "height": 735,
+      "keepRatio": true,
+      "layer": "",
+      "name": "intro0",
+      "persistentUuid": "fa3e3697-e541-469a-ba30-0485c3e38ee4",
+      "width": 1297,
+      "x": -8,
+      "y": -5,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -63,14 +64,151 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 724,
-      "layer": "Dialogue",
-      "name": "Background3",
-      "persistentUuid": "5f20eadd-e9c4-4fee-9236-faa96277b16f",
-      "width": 1296,
-      "x": 0,
-      "y": 0,
-      "zOrder": 0,
+      "height": 734,
+      "keepRatio": true,
+      "layer": "",
+      "name": "intro2",
+      "persistentUuid": "c879d7a4-448d-406c-a628-db8d04c90fd4",
+      "width": 1306,
+      "x": -10,
+      "y": -4,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 917,
+      "keepRatio": true,
+      "layer": "",
+      "name": "intro3",
+      "persistentUuid": "2f9f1fbc-1ba2-4a03-a1ec-5c8a933c10b7",
+      "width": 1548,
+      "x": -126,
+      "y": -113,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 975,
+      "keepRatio": true,
+      "layer": "",
+      "name": "intro5",
+      "persistentUuid": "d168dbb2-824f-4dce-9eab-88ba2e759bba",
+      "width": 1640,
+      "x": -142,
+      "y": -152,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 857,
+      "keepRatio": true,
+      "layer": "",
+      "name": "intro6",
+      "persistentUuid": "11031334-2e28-483b-a761-0232b6f77bf6",
+      "width": 1468,
+      "x": -135,
+      "y": -76,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 881,
+      "keepRatio": true,
+      "layer": "",
+      "name": "intro7",
+      "persistentUuid": "8e012e5b-5089-4bdd-a984-47b8acf45435",
+      "width": 1829,
+      "x": -147,
+      "y": -70,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 905,
+      "keepRatio": true,
+      "layer": "",
+      "name": "intro8",
+      "persistentUuid": "0a83afa5-9c8c-4303-a08a-581e5872178c",
+      "width": 1697,
+      "x": -189,
+      "y": -124,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 837,
+      "keepRatio": true,
+      "layer": "",
+      "name": "intro9",
+      "persistentUuid": "705bdff4-77ce-4cf1-a891-1d091d19180e",
+      "width": 1449,
+      "x": -117,
+      "y": -91,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 898,
+      "keepRatio": true,
+      "layer": "",
+      "name": "intro10",
+      "persistentUuid": "93ff06e5-a1dd-42a7-94f9-063b179212c7",
+      "width": 1569,
+      "x": -63,
+      "y": -123,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 841,
+      "keepRatio": true,
+      "layer": "",
+      "name": "intro5bis",
+      "persistentUuid": "6d2a3ff2-46f4-41e1-9d73-dc200fbe4a7a",
+      "width": 1405,
+      "x": -77,
+      "y": -85,
+      "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -80,8 +218,8 @@
     {
       "assetStoreId": "",
       "height": 32,
-      "name": "Background1",
-      "texture": "Border2.png",
+      "name": "intro1",
+      "texture": "assets\\intro1.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
@@ -91,7 +229,106 @@
     {
       "assetStoreId": "",
       "height": 32,
-      "name": "Background2",
+      "name": "intro2",
+      "texture": "assets\\intro2.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "intro3",
+      "texture": "assets\\intro3.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "intro4",
+      "texture": "assets\\intro4.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "intro5",
+      "texture": "assets\\intro5.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "intro6",
+      "texture": "assets\\intro6.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "intro7",
+      "texture": "assets\\intro7.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "intro8",
+      "texture": "assets\\intro8.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "intro9",
+      "texture": "assets\\intro9.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "intro10",
+      "texture": "assets\\intro10.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "intro0",
       "texture": "assets\\Winter Background.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
@@ -102,8 +339,8 @@
     {
       "assetStoreId": "",
       "height": 32,
-      "name": "Background3",
-      "texture": "Border.png",
+      "name": "intro5bis",
+      "texture": "assets\\intro5bis.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
@@ -115,13 +352,40 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "Background1"
+        "objectName": "intro1"
       },
       {
-        "objectName": "Background2"
+        "objectName": "intro0"
       },
       {
-        "objectName": "Background3"
+        "objectName": "intro2"
+      },
+      {
+        "objectName": "intro4"
+      },
+      {
+        "objectName": "intro3"
+      },
+      {
+        "objectName": "intro5"
+      },
+      {
+        "objectName": "intro6"
+      },
+      {
+        "objectName": "intro7"
+      },
+      {
+        "objectName": "intro8"
+      },
+      {
+        "objectName": "intro9"
+      },
+      {
+        "objectName": "intro10"
+      },
+      {
+        "objectName": "intro5bis"
       }
     ]
   },
@@ -174,10 +438,11 @@
             },
             {
               "type": {
-                "value": "Cache"
+                "value": "Montre"
               },
               "parameters": [
-                "Background2"
+                "intro0",
+                ""
               ]
             },
             {
@@ -185,7 +450,132 @@
                 "value": "Cache"
               },
               "parameters": [
-                "Background3"
+                "intro1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "intro2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "intro3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "intro4"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "intro5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "intro5bis"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "intro6"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "intro7"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "intro8"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "intro9"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "intro10"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "a6f5a7de75e03190d6cf8306a2b004e7ac8170f1e594114be64b1d1e20f0edfa_Coy Koi.aac",
+                "10",
+                "yes",
+                "Options.Volumes.Musiques",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"Intro.1\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "intro1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "intro0"
               ]
             }
           ]
@@ -208,7 +598,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "Background2",
+                "intro2",
                 ""
               ]
             },
@@ -217,7 +607,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "Background1"
+                "intro1"
               ]
             }
           ]
@@ -240,7 +630,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "Background3",
+                "intro3",
                 ""
               ]
             },
@@ -249,7 +639,245 @@
                 "value": "Cache"
               },
               "parameters": [
-                "Background2"
+                "intro2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"Intro.4\""
+              ]
+            }
+          ],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"Intro.5\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "intro5",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "intro4"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"Intro.5bis\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "intro5bis",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "intro5"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"Intro.6\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "intro6",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "intro5bis"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"Intro.7\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "intro7",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "intro6"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"Intro.8\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "intro8",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "intro7"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"Intro.9\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "intro9",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "intro8"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"Intro.10\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "intro10",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "intro9"
               ]
             }
           ]
@@ -292,6 +920,15 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "StopSoundCanal"
+              },
+              "parameters": [
+                "",
+                "10"
+              ]
+            },
             {
               "type": {
                 "value": "Scene"
