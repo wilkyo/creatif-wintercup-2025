@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.519999999999969,
+    "zoomFactor": 0.7489226702391052,
     "windowMask": false,
     "selectedLayer": "BGLayer1"
   },
@@ -248,13 +248,47 @@
       "depth": 1,
       "height": 284,
       "keepRatio": true,
-      "layer": "BGLayer1",
+      "layer": "",
       "name": "TitleScreen",
       "persistentUuid": "152b6bc1-e56f-434a-a018-66a7ab8b8c9f",
       "width": 412,
       "x": 415,
       "y": 168,
       "zOrder": 108,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 134,
+      "keepRatio": true,
+      "layer": "",
+      "name": "HowToPlayMenu",
+      "persistentUuid": "9ffa24d6-410f-4a54-a27d-1b65c9f06c2d",
+      "width": 289,
+      "x": 928,
+      "y": 60,
+      "zOrder": 109,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 124,
+      "keepRatio": true,
+      "layer": "",
+      "name": "HowToPlay",
+      "persistentUuid": "c80741b9-e652-440f-af99-6e56c16784bd",
+      "width": 255,
+      "x": 950,
+      "y": 127,
+      "zOrder": 110,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -564,6 +598,65 @@
         "lineHeight": 0,
         "color": "255;255;255"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 21,
+      "height": 50,
+      "leftMargin": 21,
+      "name": "HowToPlayMenu",
+      "rightMargin": 21,
+      "texture": "assets\\NewFile-1.png",
+      "tiled": true,
+      "topMargin": 21,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 50,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "HowToPlay",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Comment jouer ?\n\nSe deplacer : Z Q S D\n\nValider / Interagir : E",
+      "font": "dogicapixel.ttf",
+      "textAlignment": "left",
+      "characterSize": 15,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Comment jouer ?\n\nSe deplacer : Z Q S D\n\nValider / Interagir : E",
+        "font": "dogicapixel.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "center",
+        "characterSize": 15,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -592,6 +685,12 @@
       },
       {
         "objectName": "TitleScreen"
+      },
+      {
+        "objectName": "HowToPlayMenu"
+      },
+      {
+        "objectName": "HowToPlay"
       }
     ]
   },

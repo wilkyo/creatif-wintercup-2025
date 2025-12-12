@@ -1,9 +1,9 @@
 {
   "firstLayout": "TitleScreen",
   "gdVersion": {
-    "build": 250,
+    "build": 247,
     "major": 5,
-    "minor": 6,
+    "minor": 5,
     "revision": 0
   },
   "properties": {
@@ -6605,6 +6605,11 @@
           "type": "structure",
           "children": [
             {
+              "name": "Attaquer",
+              "type": "string",
+              "value": "k"
+            },
+            {
               "name": "Bas",
               "type": "string",
               "value": "s"
@@ -6617,7 +6622,7 @@
             {
               "name": "Dash",
               "type": "string",
-              "value": "o"
+              "value": "l"
             },
             {
               "name": "Droite",
@@ -6637,7 +6642,7 @@
             {
               "name": "Jump",
               "type": "string",
-              "value": "i"
+              "value": "j"
             },
             {
               "name": "Valider",
@@ -6658,18 +6663,19 @@
             {
               "name": "Musiques",
               "type": "number",
-              "value": 100
+              "value": 80
             },
             {
               "name": "Sons",
               "type": "number",
-              "value": 17
+              "value": 20
             }
           ]
         }
       ]
     },
     {
+      "folded": true,
       "name": "Histoire",
       "type": "structure",
       "children": [
@@ -6780,24 +6786,23 @@
       ]
     },
     {
-      "folded": true,
       "name": "Vania",
       "type": "structure",
       "children": [
         {
           "name": "CoyoteTime",
-          "type": "string",
-          "value": "0.0833"
+          "type": "number",
+          "value": 0.0833
         },
         {
           "name": "Cutscene",
-          "type": "string",
-          "value": "0"
+          "type": "number",
+          "value": 0
         },
         {
           "name": "DashCost",
-          "type": "string",
-          "value": "25"
+          "type": "number",
+          "value": 25
         },
         {
           "name": "GameState",
@@ -6805,18 +6810,18 @@
           "children": [
             {
               "name": "Checkpoint",
-              "type": "string",
-              "value": "0"
+              "type": "number",
+              "value": 0
             },
             {
               "name": "GameOver",
-              "type": "string",
-              "value": "0"
+              "type": "number",
+              "value": 0
             },
             {
               "name": "Lives",
-              "type": "string",
-              "value": "3"
+              "type": "number",
+              "value": 3
             }
           ]
         }
