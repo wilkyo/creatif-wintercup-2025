@@ -73,10 +73,17 @@ Merci aux tutoriels GDevelop et aux nombreux exemples de jeux que nous avons pu 
 
 # PROBLÈMES CONNUS
 
-- ???
+- Écarts de volumes sur certains sons et musiques
+- Le jeu ne fonctionne pas bien sous Opéra
 
 # IDÉES D'ÉVOLUTION
+
+Voici une liste non exhaustive des idées que nous aurions voulu implémenter si nous avions eu plus de temps ou de gens :
 
 - Menu d'options (les touches et le volume sont déjà variabilisés)
 - Rendre le boss plus difficile si on ne sauve pas tout le monde
 - Aller trop vite sur les mini-jeux ferait game over (trop de tryhard)
+- Pouvoir rejouer les jeux en plus difficile depuis l'auberge des joueurs
+- Une auberge des organisateurs, sur la montagne à l'Est du village, sous forme de mini-donjon
+- Le village sous forme de hub central et des zones tout autour (montagne, forêt, désert...) où aller sauver toujours plus d'équipes en faisant d'autres jeux
+- Des mini-boss pour symboliser les soirées raclette avec un mini-jeu compétitif
