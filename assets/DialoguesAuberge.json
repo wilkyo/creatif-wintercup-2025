@@ -2,7 +2,7 @@
 	{
 		"title": "Vania.Start",
 		"tags": "",
-		"body": "<< nom LaGrosseCarow >>\nIl a l'air figé<<wait 200>>.<<wait 200>>.<<wait 200>>.µC'est l'un des organisateurs. L'ambiance au sein de l'auberge est lugubre, les ombres semblent avoir pris vie.\n[[ Aller se battre |Vania.Jouer]]",
+		"body": "<< nom LaGrosseCarow >>\nVoilà enfin Firedreams et Regnatar. Mais ils ont l'air figé eux aussi<<wait 200>>.<<wait 200>>.<<wait 200>>.µL'ambiance au sein de l'auberge est lugubre, les ombres semblent avoir pris vie.\n[[ Aller se battre |Vania.Jouer]]",
 		"position": {
 			"x": 322,
 			"y": 372
@@ -22,17 +22,17 @@
 	{
 		"title": "Vania.ApresJeu",
 		"tags": "",
-		"body": "<< nom >>\nIl semble revenu à lui-même.\n<< nom ??? >>\nOh, tu m'as sauvé. Merci.\n[[ Suite |Vania.FIN]]",
+		"body": "<< nom LaGrosseCarow >>\nCette fois,<<wait 500>>c'est vraiment fini...\n<< nom Firedreams >>\nSalut à toi, aventurière ! Qui es-tu ? Je ne t'ai pas vue arriver.\n<< nom LaGrosseCarow >>\nJe suis LaGrosseCarow, des 2Hoth4U. Je suis la dernière à avoir rejoint la Winter Cup. Je comprends que vous ne vous souveniez pas de moi.\n<< nom Firedreams >>\nMerci à toi, LaGrosseCarow. Sans toi, le tryhard aurait eu raison de nous. Pas vrai, Regnatar ?\n<< nom Regnatar >>\nIl est vrai. Depuis tout ce temps, le tryhard n'a eu de cesse de monter en puissance... encore et encore... Année après année... J'en avais presque oublié ce qu'était l'esprit de la Winter Cup.\n[[ Suite |Vania.FIN]]",
 		"position": {
-			"x": 638,
-			"y": 257
+			"x": 635,
+			"y": 312
 		},
 		"colorID": 0
 	},
 	{
 		"title": "Vania.FIN",
 		"tags": "",
-		"body": "[b]F I N[/b]",
+		"body": "<< nom LaGrosseCarow >>\nMais il n'est pas trop tard. Pourquoi ne pas recommencer comme avant ? Reprendre la bonne ambiance, les soirées, la joie, la liesse...\n<< nom Firedreams >>\nJ'avoue que cette époque me manque également...\nQue dirais-tu, LaGrosseCarow, de nous rejoindre pour repartir sur de bonnes bases ?\n<< nom LaGrosseCarow >>\nAvec plaisir ! Mais, si jamais vous vous laissez encore aller au tryhard, vous aurez affaire à moi 😉\n<< nom >> \n[b]F I N[/b]",
 		"position": {
 			"x": 758,
 			"y": 37

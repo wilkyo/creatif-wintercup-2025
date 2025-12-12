@@ -20,18 +20,14 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.2952916551235925,
+    "zoomFactor": 1.5804687500000016,
     "windowMask": false,
     "selectedLayer": ""
   },
   "objectsGroups": [
     {
       "name": "Collisionables",
-      "objects": [
-        {
-          "name": "Orga"
-        }
-      ]
+      "objects": []
     }
   ],
   "variables": [
@@ -51,14 +47,14 @@
       "name": "Inside_B",
       "persistentUuid": "bc2dc11e-a16b-43b0-8b26-92a0c37ab722",
       "width": 0,
-      "x": 67,
-      "y": 71,
+      "x": 588,
+      "y": 227,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [
         {
           "name": "tilemap",
-          "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":3,\"dimY\":2,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[106,107,108],[122,123,124]]}]}"
+          "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":3,\"dimY\":2,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[105,-1,105],[121,-1,121]]}]}"
         }
       ],
       "initialVariables": []
@@ -72,8 +68,8 @@
       "name": "Inside_A3",
       "persistentUuid": "35e60029-959b-4059-a077-f42176830a72",
       "width": 0,
-      "x": -288,
-      "y": -254,
+      "x": 232,
+      "y": -110,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [
@@ -88,28 +84,12 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Orga",
-      "persistentUuid": "47b32223-cfaa-4ac8-a1ea-3d9e1604a003",
-      "width": 0,
-      "x": 88,
-      "y": 100,
-      "zOrder": 12,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
       "layer": "Transition",
       "name": "Transition",
       "persistentUuid": "60858921-b2f2-458f-988c-28f14155a9a8",
       "width": 0,
-      "x": 255,
-      "y": 164,
+      "x": 389,
+      "y": 345,
       "zOrder": 503,
       "numberProperties": [],
       "stringProperties": [],
@@ -125,9 +105,43 @@
       "name": "Joueur",
       "persistentUuid": "a3cf6dde-c339-409a-b556-c1e16834b30c",
       "width": 24,
-      "x": 115,
-      "y": 225,
+      "x": 630,
+      "y": 400,
       "zOrder": 776,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 24,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Firedreams",
+      "persistentUuid": "38b69be2-b3ad-4679-9a48-be9688686c3a",
+      "width": 24,
+      "x": 591,
+      "y": 261,
+      "zOrder": 779,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 24,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Regnatar",
+      "persistentUuid": "7553298f-b281-49b8-9789-64519a6d33e9",
+      "width": 24,
+      "x": 657,
+      "y": 261,
+      "zOrder": 780,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -182,14 +196,14 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Orga",
+      "name": "Firedreams",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
         {
           "name": "dialogBranch",
           "type": "string",
-          "value": "0"
+          "value": ""
         },
         {
           "name": "talking",
@@ -201,7 +215,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "default",
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -210,7 +224,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Creature_Player.png",
+                  "image": "assets\\Char-Firedreams-Down2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -226,20 +240,91 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
+                        "x": 2,
                         "y": 0
                       },
                       {
-                        "x": 55,
+                        "x": 31,
                         "y": 0
                       },
                       {
-                        "x": 55,
-                        "y": 49
+                        "x": 31,
+                        "y": 32
                       },
                       {
-                        "x": 0,
-                        "y": 49
+                        "x": 2,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Regnatar",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "dialogBranch",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "talking",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Char-Regnatar-Down2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 0
+                      },
+                      {
+                        "x": 30,
+                        "y": 0
+                      },
+                      {
+                        "x": 30,
+                        "y": 32
+                      },
+                      {
+                        "x": 1,
+                        "y": 32
                       }
                     ]
                   ]
@@ -261,10 +346,13 @@
         "objectName": "Inside_A3"
       },
       {
-        "objectName": "Orga"
+        "objectName": "Inside_C"
       },
       {
-        "objectName": "Inside_C"
+        "objectName": "Firedreams"
+      },
+      {
+        "objectName": "Regnatar"
       }
     ]
   },
@@ -428,6 +516,16 @@
               "parameters": [
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "MiniJeux.Vania",
+                "=",
+                "0"
+              ]
             }
           ],
           "actions": [
@@ -446,8 +544,8 @@
               },
               "parameters": [
                 "Joueur",
-                "120",
-                "170",
+                "630",
+                "320",
                 "16",
                 "1"
               ]
@@ -472,6 +570,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -493,7 +592,7 @@
                 "Joueur",
                 "\"frames\"",
                 ">=",
-                "0.25"
+                "0.5"
               ]
             }
           ],
@@ -539,7 +638,7 @@
               "parameters": [
                 "Joueur",
                 "<=",
-                "175"
+                "320"
               ]
             },
             {
@@ -775,7 +874,7 @@
                         "value": "SetBooleanObjectVariable"
                       },
                       "parameters": [
-                        "Orga",
+                        "Firedreams",
                         "talking",
                         "True",
                         "\"HommePortail.ApresJeu\""
