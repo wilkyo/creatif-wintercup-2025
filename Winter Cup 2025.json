@@ -3856,6 +3856,20 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Cold Journey.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "ff0136aa7b959495ff144170c177dd3b85132d79f7331a9775311aa1f62d41d8_Cold Journey.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Music/Fantasy/ff0136aa7b959495ff144170c177dd3b85132d79f7331a9775311aa1f62d41d8_Cold Journey.aac",
+          "name": "gdevelop-asset-store"
+        }
       }
     ]
   },

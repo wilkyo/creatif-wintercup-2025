@@ -2447,7 +2447,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Global / Fourre-tout",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2550,6 +2549,50 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneJustResumed"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "ff0136aa7b959495ff144170c177dd3b85132d79f7331a9775311aa1f62d41d8_Cold Journey.aac",
+                "13",
+                "yes",
+                "Options.Volumes.Musiques * 0.05",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
@@ -2559,7 +2602,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Gestion minijeux",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3075,6 +3117,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Dialogues scène",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
