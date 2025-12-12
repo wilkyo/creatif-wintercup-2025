@@ -62,7 +62,7 @@
 	{
 		"title": "Intro.5",
 		"tags": "",
-		"body": "Si les premières éditions furent tendues et ponctuées par plusieurs incidents,\n[[ Suivant |Intro.5bis]]",
+		"body": "Si les premières éditions furent tendues et ponctuées par plusieurs incidents, la paix installée permit peu à peu d'apaiser les esprits et au fil du temps la compétition perdit son aspect compétitif.\n[[ Suivant |Intro.6]]",
 		"position": {
 			"x": 495,
 			"y": -33
@@ -118,16 +118,6 @@
 			"y": -35
 		},
 		"colorID": 8
-	},
-	{
-		"title": "Intro.5bis",
-		"tags": "",
-		"body": "la paix installée permit peu à peu d'apaiser les esprits et au fil du temps la compétition perdit son aspect compétitif.\n[[ Suivant |Intro.6]]",
-		"position": {
-			"x": 488,
-			"y": 244
-		},
-		"colorID": 0
 	},
 	{
 		"title": "Intro.6bis",
