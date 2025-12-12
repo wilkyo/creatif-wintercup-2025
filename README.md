@@ -1,13 +1,18 @@
 === Winter is coming ===
 
-[Lien du jeu](https://gd.games/instant-builds/62b03d28-10e3-4d0f-8fde-9639f1f6c226)
+[Lien du jeu](https://gd.games/instant-builds/cfa649c9-7bf3-4024-890b-e05fc678dd7a)
 
 # ÉQUIPE
 
-- Izigame (1100100 Pression) – Développeur/Game designer/Sound designer
-- Opalarya (1100100 Pression) - Scénariste
-- LaGrosseCarrow (2Hoth4U) – Graphiste
 - wilkyo (1100100 Pression) – Coordinateur/Développeur/Graphiste
+- Izigame (1100100 Pression) – Développeur/Game designer/Sound designer
+- Opalarya (1100100 Pression) - Scénariste/Testeur
+- Ravenstorm (2Hoth4U) - Scénariste/Testeur
+- Craneur22 (2Hoth4U) – Graphiste/Testeur
+- NeoVcross (1100100 Pression) - Testeur
+- LaGrosseCarow (2Hoth4U) – Graphiste
+- bilout (1100100 Pression)
+- Marcel Poutre (2Hoth4U)
 
 # COMMENT JOUER
 
@@ -33,17 +38,18 @@ Il faudra sauver tout le monde pour pouvoir affronter le dernier tryharder.
 
 # DÉFIS CRÉATIFS INTÉGRÉS
 
-- Les oubliés : Le héros appartient aux 2Hoth4U
-- Il est dangereux d’y aller seul, prends ça : Un vieil homme donne des chaussures pour courir en dehors du village.
-- Coupe de l’hiver : Flocon présent dans certains mini-jeux
-- TODO
-- TODO
+- Les oubliés : Le héros appartient aux 2Hoth4U.
+- Il est dangereux d’y aller seul, prends ça : Un vieil homme donne des chaussures pour aller plus vite.
+- Coupe de l’hiver : Flocon présent dans certains mini-jeux.
+- Rollback obligatoire : Revenir au début pour récupérer la clef.
+- Erreur 418 : L'homme à l'entrée du village.
+- C’est pas faux : Sauver les joueurs ne sert à rien.
 
 # OUTILS UTILISÉS
 
 - Moteur : GDevelop
 - Graphismes : GIMP, Figma, Paint
-- Sons : Nario Versus Zonik, AlexBouncyMaster, Enfer Gelé, bruitages divers...
+- Sons : Nario Versus Zonik, AlexBouncyMaster, Enfer Gelé, Theme 2, lost rune of the wind princess, hungry ghost fever, bruitages divers...
 
 # CRÉDITS
 
@@ -67,8 +73,17 @@ Merci aux tutoriels GDevelop et aux nombreux exemples de jeux que nous avons pu 
 
 # PROBLÈMES CONNUS
 
-- Boutons cassés
-- Décalage texte écran titre
-- Images absentes
-- Polices qui ne supportent pas les accents
-- Textes trop compacts dans les dialogues
+- Écarts de volumes sur certains sons et musiques
+- Le jeu ne fonctionne pas bien sous Opéra
+
+# IDÉES D'ÉVOLUTION
+
+Voici une liste non exhaustive des idées que nous aurions voulu implémenter si nous avions eu plus de temps ou de gens :
+
+- Menu d'options (les touches et le volume sont déjà variabilisés)
+- Rendre le boss plus difficile si on ne sauve pas tout le monde
+- Aller trop vite sur les mini-jeux ferait game over (trop de tryhard)
+- Pouvoir rejouer les jeux en plus difficile depuis l'auberge des joueurs
+- Une auberge des organisateurs, sur la montagne à l'Est du village, sous forme de mini-donjon
+- Le village sous forme de hub central et des zones tout autour (montagne, forêt, désert...) où aller sauver toujours plus d'équipes en faisant d'autres jeux
+- Des mini-boss pour symboliser les soirées raclette avec un mini-jeu compétitif
