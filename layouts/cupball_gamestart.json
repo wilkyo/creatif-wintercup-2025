@@ -123,6 +123,19 @@
         },
         {
           "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "802aca4290983d1ca6157205d25a381ef0ccf88d15ff0d2d50e602943ed14bc2_24 - hungry ghost fever.aac",
+            "5",
+            "yes",
+            "Options.Volumes.Musiques - 50",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "Scene"
           },
           "parameters": [

@@ -167,7 +167,7 @@
                       },
                       "parameters": [
                         "",
-                        "Options.Touches.Valider"
+                        "Options.Touches.Attaquer"
                       ]
                     }
                   ],
@@ -865,7 +865,7 @@
                       },
                       "parameters": [
                         "",
-                        "Options.Touches.Valider"
+                        "Options.Touches.Attaquer"
                       ]
                     }
                   ]

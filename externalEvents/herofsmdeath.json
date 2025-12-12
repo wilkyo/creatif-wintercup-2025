@@ -639,6 +639,36 @@
                     "\"Vania_Game\"",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Vania.GameState.Lives",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Vania.GameState.Checkpoint",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Vania.GameState.GameOver",
+                    "=",
+                    "0"
+                  ]
                 }
               ]
             }
