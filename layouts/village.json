@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 1.3932548895448147,
+    "zoomFactor": 1.1803621857484785,
     "windowMask": false,
     "selectedLayer": ""
   },
@@ -93,14 +93,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
+      "depth": 1.5,
       "height": 24,
+      "keepRatio": true,
       "layer": "",
       "name": "Joueur",
       "persistentUuid": "eb3eb9c8-9e76-4d2e-89c0-600889f54713",
       "width": 24,
-      "x": 644,
-      "y": 720,
+      "x": 622,
+      "y": 706,
       "zOrder": 511,
       "numberProperties": [
         {
@@ -1904,15 +1905,13 @@
       "variables": [
         {
           "name": "talking",
-          "persistentUuid": "0daacaed-6d22-4f22-aa13-8f263f50d1e1",
           "type": "boolean",
           "value": false
         },
         {
           "name": "dialogBranch",
-          "persistentUuid": "7c04afec-f62b-468f-945f-3d6934487e7f",
           "type": "string",
-          "value": "HommePortail"
+          "value": ""
         }
       ],
       "effects": [],
