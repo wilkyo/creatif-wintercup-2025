@@ -48,7 +48,7 @@ Il faudra sauver tout le monde pour pouvoir affronter le dernier tryharder.
 # OUTILS UTILISÉS
 
 - Moteur : GDevelop
-- Graphismes : GIMP, Figma, Paint
+- Graphismes : GIMP, Canva Pro, Figma, Paint
 - Sons : Nario Versus Zonik, AlexBouncyMaster, Enfer Gelé, Theme 2, lost rune of the wind princess, hungry ghost fever, bruitages divers...
 
 # CRÉDITS
@@ -75,6 +75,7 @@ Merci aux tutoriels GDevelop et aux nombreux exemples de jeux que nous avons pu 
 
 - Écarts de volumes sur certains sons et musiques
 - Le jeu ne fonctionne pas bien sous Opéra
+- Problème animation déplacement automatique
 
 # IDÉES D'ÉVOLUTION
 

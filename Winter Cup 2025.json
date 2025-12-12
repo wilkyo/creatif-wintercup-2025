@@ -1,9 +1,9 @@
 {
   "firstLayout": "TitleScreen",
   "gdVersion": {
-    "build": 247,
+    "build": 250,
     "major": 5,
-    "minor": 5,
+    "minor": 6,
     "revision": 0
   },
   "properties": {
@@ -102,134 +102,6 @@
   },
   "resources": {
     "resources": [
-      {
-        "file": "assets/ACharDown1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACharDown1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ACharDown2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACharDown2.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ACharDown3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACharDown3.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ACharDown4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACharDown4.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ACgarRight1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACgarRight1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ACgarRight2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACgarRight2.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ACgarRight3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACgarRight3.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ACgarRight4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACgarRight4.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ACharLeft1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACharLeft1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ACharLeft2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACharLeft2.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ACharLeft3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACharLeft3.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ACharLeft4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACharLeft4.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ACharUp1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACharUp1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ACharUp2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACharUp2.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ACharUp3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACharUp3.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ACharUp4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ACharUp4.png",
-        "smoothed": false,
-        "userAdded": true
-      },
       {
         "file": "assets/Tree1.png",
         "kind": "image",
@@ -385,38 +257,6 @@
         "kind": "json",
         "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialoguesVillage.json\"}",
         "name": "DialoguesVillage",
-        "userAdded": false
-      },
-      {
-        "file": "assets/ACharDown1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ACharDown1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/ACharDown2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ACharDown2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/ACharDown3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ACharDown3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/ACharDown4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ACharDown4.png",
-        "smoothed": true,
         "userAdded": false
       },
       {
@@ -866,214 +706,6 @@
         "kind": "image",
         "metadata": "",
         "name": "desktop-icon-512.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/android-icon-192.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-icon-192.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/android-icon-144.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-icon-144.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/android-icon-96.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-icon-96.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/android-icon-72.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-icon-72.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/android-icon-48.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-icon-48.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/android-icon-36.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-icon-36.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/android-windowSplashScreenAnimatedIcon.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-windowSplashScreenAnimatedIcon.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-1024.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-1024.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-180.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-180.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-167.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-167.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-152.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-152.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-144.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-144.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-120.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-120.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-114.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-114.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-100.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-100.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-87.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-87.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-80.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-80.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-76.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-76.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-72.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-72.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-60.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-60.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-58.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-58.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-57.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-57.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-50.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-50.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-40.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-40.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-29.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-29.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ios-icon-20.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-20.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1738,14 +1370,6 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/ecb33703984d3107196efce7335025d7ec104351fe8cdeb581c73fe0b8038c34_Green Button_Pressed.png",
           "name": "Green Button_Pressed.png"
         }
-      },
-      {
-        "file": "assets/ACharLeft1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ACharLeft1.png",
-        "smoothed": true,
-        "userAdded": false
       },
       {
         "file": "assets/monogram-extended.ttf",
@@ -4054,6 +3678,184 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Music/World/a6f5a7de75e03190d6cf8306a2b004e7ac8170f1e594114be64b1d1e20f0edfa_Coy Koi.aac",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "file": "assets/Char-LaGrosseCaro-Down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-LaGrosseCaro-Down2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-LaGrosseCaro-Down3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-LaGrosseCaro-Down3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-LaGrosseCaro-Down1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-LaGrosseCaro-Down1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-LaGrosseCaro-Right2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-LaGrosseCaro-Right2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-LaGrosseCaro-Right3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-LaGrosseCaro-Right3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-LaGrosseCaro-Right1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-LaGrosseCaro-Right1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-LaGrosseCaro-Left1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-LaGrosseCaro-Left1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-LaGrosseCaro-Left2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-LaGrosseCaro-Left2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-LaGrosseCaro-Left3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-LaGrosseCaro-Left3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-LaGrosseCaro-Up1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-LaGrosseCaro-Up1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-LaGrosseCaro-Up2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-LaGrosseCaro-Up2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-LaGrosseCaro-Up3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-LaGrosseCaro-Up3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-Bulle-Left2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-Bulle-Left2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-NeoVcross-Right3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-NeoVcross-Right3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-Cairne61-Down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-Cairne61-Down2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-Kintoe-Down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-Kintoe-Down2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-PratoZz-Down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-PratoZz-Down2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-Tirvix-Down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-Tirvix-Down2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-MarcelPoutre-Down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-MarcelPoutre-Down2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Char-Vieux-Left1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Char-Vieux-Left1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Panneau.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Panneau.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/LEBOMBARDEMENT.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\LEBOMBARDEMENT.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },
@@ -4261,7 +4063,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACharDown1.png",
+                  "image": "assets\\Char-LaGrosseCaro-Down2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4277,27 +4079,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
-                        "y": 13
+                        "x": 4,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 13
+                        "x": 28,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 16
+                        "x": 28,
+                        "y": 32
                       },
                       {
-                        "x": 2,
-                        "y": 16
+                        "x": 4,
+                        "y": 32
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACharDown2.png",
+                  "image": "assets\\Char-LaGrosseCaro-Down3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4313,27 +4115,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
-                        "y": 13
+                        "x": 4,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 13
+                        "x": 28,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 16
+                        "x": 28,
+                        "y": 32
                       },
                       {
-                        "x": 2,
-                        "y": 16
+                        "x": 4,
+                        "y": 32
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACharDown3.png",
+                  "image": "assets\\Char-LaGrosseCaro-Down2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4349,27 +4151,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
-                        "y": 13
+                        "x": 4,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 13
+                        "x": 28,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 16
+                        "x": 28,
+                        "y": 32
                       },
                       {
-                        "x": 2,
-                        "y": 16
+                        "x": 4,
+                        "y": 32
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACharDown4.png",
+                  "image": "assets\\Char-LaGrosseCaro-Down1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4385,20 +4187,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
-                        "y": 13
+                        "x": 4,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 13
+                        "x": 28,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 16
+                        "x": 28,
+                        "y": 32
                       },
                       {
-                        "x": 2,
-                        "y": 16
+                        "x": 4,
+                        "y": 32
                       }
                     ]
                   ]
@@ -4417,7 +4219,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACgarRight1.png",
+                  "image": "assets\\Char-LaGrosseCaro-Right2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4433,27 +4235,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
-                        "y": 13
+                        "x": 4,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 13
+                        "x": 28,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 16
+                        "x": 28,
+                        "y": 32
                       },
                       {
-                        "x": 2,
-                        "y": 16
+                        "x": 4,
+                        "y": 32
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACgarRight2.png",
+                  "image": "assets\\Char-LaGrosseCaro-Right3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4469,27 +4271,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
-                        "y": 13
+                        "x": 4,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 13
+                        "x": 28,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 16
+                        "x": 28,
+                        "y": 32
                       },
                       {
-                        "x": 2,
-                        "y": 16
+                        "x": 4,
+                        "y": 32
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACgarRight3.png",
+                  "image": "assets\\Char-LaGrosseCaro-Right2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4505,27 +4307,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
-                        "y": 13
+                        "x": 4,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 13
+                        "x": 28,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 16
+                        "x": 28,
+                        "y": 32
                       },
                       {
-                        "x": 2,
-                        "y": 16
+                        "x": 4,
+                        "y": 32
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACgarRight4.png",
+                  "image": "assets\\Char-LaGrosseCaro-Right1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4541,20 +4343,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
-                        "y": 13
+                        "x": 4,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 13
+                        "x": 28,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 16
+                        "x": 28,
+                        "y": 32
                       },
                       {
-                        "x": 2,
-                        "y": 16
+                        "x": 4,
+                        "y": 32
                       }
                     ]
                   ]
@@ -4573,7 +4375,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACharLeft1.png",
+                  "image": "assets\\Char-LaGrosseCaro-Left2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4589,27 +4391,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
-                        "y": 13
+                        "x": 4,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 13
+                        "x": 28,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 16
+                        "x": 28,
+                        "y": 32
                       },
                       {
-                        "x": 2,
-                        "y": 16
+                        "x": 4,
+                        "y": 32
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACharLeft2.png",
+                  "image": "assets\\Char-LaGrosseCaro-Left1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4625,27 +4427,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
-                        "y": 13
+                        "x": 4,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 13
+                        "x": 28,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 16
+                        "x": 28,
+                        "y": 32
                       },
                       {
-                        "x": 2,
-                        "y": 16
+                        "x": 4,
+                        "y": 32
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACharLeft3.png",
+                  "image": "assets\\Char-LaGrosseCaro-Left2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4661,27 +4463,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
-                        "y": 13
+                        "x": 4,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 13
+                        "x": 28,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 16
+                        "x": 28,
+                        "y": 32
                       },
                       {
-                        "x": 2,
-                        "y": 16
+                        "x": 4,
+                        "y": 32
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACharLeft4.png",
+                  "image": "assets\\Char-LaGrosseCaro-Left3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4697,20 +4499,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
-                        "y": 13
+                        "x": 4,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 13
+                        "x": 28,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 16
+                        "x": 28,
+                        "y": 32
                       },
                       {
-                        "x": 2,
-                        "y": 16
+                        "x": 4,
+                        "y": 32
                       }
                     ]
                   ]
@@ -4729,7 +4531,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACharUp1.png",
+                  "image": "assets\\Char-LaGrosseCaro-Up2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4745,27 +4547,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
-                        "y": 13
+                        "x": 4,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 13
+                        "x": 28,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 16
+                        "x": 28,
+                        "y": 32
                       },
                       {
-                        "x": 2,
-                        "y": 16
+                        "x": 4,
+                        "y": 32
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACharUp2.png",
+                  "image": "assets\\Char-LaGrosseCaro-Up1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4781,27 +4583,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
-                        "y": 13
+                        "x": 4,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 13
+                        "x": 28,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 16
+                        "x": 28,
+                        "y": 32
                       },
                       {
-                        "x": 2,
-                        "y": 16
+                        "x": 4,
+                        "y": 32
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACharUp3.png",
+                  "image": "assets\\Char-LaGrosseCaro-Up2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4817,27 +4619,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
-                        "y": 13
+                        "x": 4,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 13
+                        "x": 28,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 16
+                        "x": 28,
+                        "y": 32
                       },
                       {
-                        "x": 2,
-                        "y": 16
+                        "x": 4,
+                        "y": 32
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACharUp4.png",
+                  "image": "assets\\Char-LaGrosseCaro-Up3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4853,20 +4655,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
-                        "y": 13
+                        "x": 4,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 13
+                        "x": 28,
+                        "y": 26
                       },
                       {
-                        "x": 14,
-                        "y": 16
+                        "x": 28,
+                        "y": 32
                       },
                       {
-                        "x": 2,
-                        "y": 16
+                        "x": 4,
+                        "y": 32
                       }
                     ]
                   ]
@@ -6658,6 +6460,9 @@
         },
         {
           "name": "Clef"
+        },
+        {
+          "name": "PanneauBombardement"
         }
       ]
     },
