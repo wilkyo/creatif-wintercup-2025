@@ -20,9 +20,9 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.7370816317994086,
+    "zoomFactor": 0.5468750000000047,
     "windowMask": false,
-    "selectedLayer": ""
+    "selectedLayer": "Game over"
   },
   "objectsGroups": [
     {
@@ -1445,7 +1445,7 @@
       "persistentUuid": "688a3662-df6a-4c86-94e8-18bc4dc1a754",
       "width": 0,
       "x": 222,
-      "y": 410,
+      "y": 270,
       "zOrder": 21,
       "numberProperties": [],
       "stringProperties": [],
@@ -1461,7 +1461,7 @@
       "persistentUuid": "4d96b630-a1a9-4fd8-aae4-349e250564e4",
       "width": 0,
       "x": 807,
-      "y": 406,
+      "y": 270,
       "zOrder": 22,
       "numberProperties": [],
       "stringProperties": [],
@@ -2736,8 +2736,8 @@
                   },
                   "parameters": [
                     "Score",
-                    "<=",
-                    "3"
+                    "<",
+                    "5"
                   ]
                 }
               ],
@@ -2770,8 +2770,8 @@
                   },
                   "parameters": [
                     "Score",
-                    ">",
-                    "3"
+                    ">=",
+                    "5"
                   ]
                 }
               ],

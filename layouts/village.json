@@ -1605,7 +1605,7 @@
       }
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Pecheur",
       "type": "Sprite",
@@ -1613,13 +1613,11 @@
       "variables": [
         {
           "name": "talking",
-          "persistentUuid": "72b06c9f-f2ca-4a54-ae3d-a61218d0fdf9",
           "type": "boolean",
           "value": false
         },
         {
           "name": "dialogBranch",
-          "persistentUuid": "8a2cff06-047c-485b-9a10-935322012071",
           "type": "string",
           "value": "HommePortail"
         }
@@ -1636,8 +1634,8 @@
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\ACharLeft1.png",
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\Char-Bulle-Left2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1650,26 +1648,7 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 2
-                      },
-                      {
-                        "x": 15,
-                        "y": 2
-                      },
-                      {
-                        "x": 15,
-                        "y": 16
-                      },
-                      {
-                        "x": 1,
-                        "y": 16
-                      }
-                    ]
-                  ]
+                  "customCollisionMask": []
                 }
               ]
             }
@@ -2050,14 +2029,12 @@
       "variables": [
         {
           "name": "talking",
-          "persistentUuid": "6e6c9462-9583-4e60-a047-1c409669ecbb",
           "type": "boolean",
           "value": false
         },
         {
           "hasMixedValues": true,
           "name": "dialogBranch",
-          "persistentUuid": "35de1dd4-f249-4c00-ac3d-cd85d5f62ea5",
           "type": "string",
           "value": "HommePortail"
         }
@@ -2075,7 +2052,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACharLeft1.png",
+                  "image": "assets\\Char-NeoVcross-Right3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2091,20 +2068,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 2
+                        "x": 0,
+                        "y": 1
                       },
                       {
-                        "x": 15,
-                        "y": 2
+                        "x": 28,
+                        "y": 1
                       },
                       {
-                        "x": 15,
-                        "y": 16
+                        "x": 28,
+                        "y": 32
                       },
                       {
-                        "x": 1,
-                        "y": 16
+                        "x": 0,
+                        "y": 32
                       }
                     ]
                   ]
