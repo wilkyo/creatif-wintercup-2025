@@ -61,7 +61,7 @@
     "loadingScreen": {
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
-      "backgroundImageResourceName": "assets\\Winter Background.png",
+      "backgroundImageResourceName": "Splash.png",
       "gdevelopLogoStyle": "light",
       "logoAndProgressFadeInDuration": 0.2,
       "logoAndProgressLogoFadeInDelay": 0.2,
@@ -3912,6 +3912,30 @@
         "name": "assets\\DogicaTake4_0.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "Inside_A4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Inside_A4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Splash.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Splash.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/DialoguesAuberge.json",
+        "kind": "json",
+        "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialoguesAuberge.json\"}",
+        "name": "DialoguesAuberge",
+        "userAdded": false
       }
     ]
   },
@@ -3981,7 +4005,7 @@
         "color": "255;255;255",
         "fontFamily": "Poppins-Medium.ttf",
         "align": "left",
-        "verticalTextAlignment": "center"
+        "verticalTextAlignment": "top"
       }
     },
     {
@@ -6510,6 +6534,9 @@
         },
         {
           "name": "OrgaVania"
+        },
+        {
+          "name": "Orga"
         }
       ]
     },
@@ -6653,7 +6680,6 @@
       "value": "NA"
     },
     {
-      "folded": true,
       "name": "Options",
       "type": "structure",
       "children": [
@@ -6727,6 +6753,7 @@
       ]
     },
     {
+      "folded": true,
       "name": "Histoire",
       "type": "structure",
       "children": [
@@ -6928,6 +6955,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/vania_gamewinscreen"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/auberge"
     }
   ],
   "externalEvents": [
