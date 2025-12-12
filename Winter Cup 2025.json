@@ -6621,7 +6621,7 @@
     {
       "name": "DEBUG",
       "type": "boolean",
-      "value": true
+      "value": false
     },
     {
       "name": "MultiplicateurVitesseDialogues",

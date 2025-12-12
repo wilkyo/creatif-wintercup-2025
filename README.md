@@ -25,7 +25,7 @@
 - E - Interagir / Valider
 - Clic gauche - Actions sur certains jeux
 
-== Epreuve Vania (boss) ==
+== Épreuve Vania (boss) ==
 
 - ZQSD - Directions
 - K - Attaquer
