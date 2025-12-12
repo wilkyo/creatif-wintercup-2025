@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.8757653731722268,
+    "zoomFactor": 1.488801134392786,
     "windowMask": false,
     "selectedLayer": ""
   },
@@ -68,7 +68,7 @@
           "name": "UpRunner"
         },
         {
-          "name": "OrgaVania"
+          "name": "Porte"
         }
       ]
     }
@@ -1386,25 +1386,48 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 24,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "OrgaVania",
-      "persistentUuid": "f1b1215c-7ff5-45c4-abe7-675dcb74ff89",
-      "width": 24,
-      "x": 412,
-      "y": -44,
-      "zOrder": 20,
+      "name": "Porte",
+      "persistentUuid": "5ccaad95-6b65-4ee9-8b31-c5f2b847394d",
+      "width": 0,
+      "x": 408,
+      "y": -56,
+      "zOrder": 18,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": [
         {
           "name": "dialogBranch",
-          "persistentUuid": "2826b62d-c86a-4935-b72a-a7124ea78786",
+          "persistentUuid": "99ae1a6b-7b4a-4940-8ea5-b314788ca4e3",
           "type": "string",
-          "value": "Vania.Start"
+          "value": "Porte.Start"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 16,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Clef",
+      "persistentUuid": "7ef8fcda-78fd-4377-afd9-25bebb9423f8",
+      "width": 16,
+      "x": 723,
+      "y": 787,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "dialogBranch",
+          "persistentUuid": "8ae98f93-6ce2-4440-b5fb-53b450ba598d",
+          "type": "string",
+          "value": "Clef.Start"
         }
       ]
     }
@@ -2096,20 +2119,94 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "OrgaVania",
+      "name": "Porte",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
         {
           "name": "talking",
-          "persistentUuid": "a3ec4445-2ef7-4b15-b8c4-d39410321b5c",
+          "persistentUuid": "8c457b58-4f4e-4c81-9aea-d9ac40aa03eb",
           "type": "boolean",
           "value": false
         },
         {
           "hasMixedValues": true,
           "name": "dialogBranch",
-          "persistentUuid": "2826b62d-c86a-4935-b72a-a7124ea78786",
+          "persistentUuid": "99ae1a6b-7b4a-4940-8ea5-b314788ca4e3",
+          "type": "string",
+          "value": "HommePortail"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Porte.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 32,
+                        "y": 1
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Clef",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "talking",
+          "persistentUuid": "76247220-cc03-420c-bf4e-571f9194a067",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "hasMixedValues": true,
+          "name": "dialogBranch",
+          "persistentUuid": "8ae98f93-6ce2-4440-b5fb-53b450ba598d",
           "type": "string",
           "value": "HommePortail"
         }
@@ -2127,7 +2224,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ACharDown1.png",
+                  "image": "images/star.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2143,20 +2240,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 2
+                        "x": 4,
+                        "y": 4
                       },
                       {
-                        "x": 15,
-                        "y": 2
+                        "x": 60,
+                        "y": 4
                       },
                       {
-                        "x": 15,
-                        "y": 16
+                        "x": 60,
+                        "y": 60
                       },
                       {
-                        "x": 1,
-                        "y": 16
+                        "x": 4,
+                        "y": 60
                       }
                     ]
                   ]
@@ -2187,9 +2284,6 @@
             "objectName": "UpRunner"
           },
           {
-            "objectName": "OrgaVania"
-          },
-          {
             "objectName": "Pecheur"
           },
           {
@@ -2214,6 +2308,12 @@
           },
           {
             "objectName": "Outside_BX"
+          },
+          {
+            "objectName": "Clef"
+          },
+          {
+            "objectName": "Porte"
           },
           {
             "objectName": "Inside_B"
@@ -2274,6 +2374,14 @@
                 "2",
                 "",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Clef"
               ]
             }
           ],
@@ -2842,62 +2950,6 @@
                       },
                       "parameters": [
                         "\"UpRunner.ApresJeu\""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "StringVariable"
-                      },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"Vania_Game\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "NumberVariable"
-                      },
-                      "parameters": [
-                        "MiniJeux.Vania",
-                        ">",
-                        "0"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetStringVariable"
-                      },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "OrgaVania",
-                        "talking",
-                        "True",
-                        "\"HommePortail.ApresJeu\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "DialogueTree::StartDialogueFromBranch"
-                      },
-                      "parameters": [
-                        "\"Vania.ApresJeu\""
                       ]
                     }
                   ]
@@ -3883,7 +3935,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "Vania",
+          "name": "PorteAuberge",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -3895,9 +3947,9 @@
                     "value": "NumberVariable"
                   },
                   "parameters": [
-                    "Histoire.Vania",
+                    "Histoire.Auberge",
                     "<",
-                    "2"
+                    "5"
                   ]
                 }
               ],
@@ -3911,7 +3963,7 @@
                         "value": "NumberVariable"
                       },
                       "parameters": [
-                        "Histoire.Vania",
+                        "Histoire.Auberge",
                         "=",
                         "0"
                       ]
@@ -3921,7 +3973,7 @@
                         "value": "DialogueTree::WasBranchVisited"
                       },
                       "parameters": [
-                        "\"Vania.Jouer\""
+                        "\"Porte.Start\""
                       ]
                     },
                     {
@@ -3930,47 +3982,28 @@
                         "value": "DialogueTree::IsDialogueRunning"
                       },
                       "parameters": []
-                    },
-                    {
-                      "type": {
-                        "value": "StringVariable"
-                      },
-                      "parameters": [
-                        "EtatJeu",
-                        "=",
-                        "\"NA\""
-                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "SetStringVariable"
-                      },
-                      "parameters": [
-                        "JeuEnCours",
-                        "=",
-                        "\"Vania_Game\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetStringVariable"
-                      },
-                      "parameters": [
-                        "EtatJeu",
-                        "=",
-                        "\"LancerJeu\""
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "Histoire.Vania",
+                        "Histoire.Auberge",
                         "=",
                         "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringObjectVariable"
+                      },
+                      "parameters": [
+                        "Porte",
+                        "dialogBranch",
+                        "=",
+                        "\"Porte.AttenteJeux\""
                       ]
                     }
                   ]
@@ -3983,9 +4016,107 @@
                         "value": "NumberVariable"
                       },
                       "parameters": [
-                        "Histoire.Vania",
+                        "Histoire.Auberge",
                         "=",
                         "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "MiniJeux.CupBall",
+                        ">",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "MiniJeux.Memory",
+                        ">",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "MiniJeux.Quiz",
+                        ">",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "MiniJeux.Rythm",
+                        ">",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "MiniJeux.Sokoban",
+                        ">",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "MiniJeux.UpRunner",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Auberge",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringObjectVariable"
+                      },
+                      "parameters": [
+                        "Porte",
+                        "dialogBranch",
+                        "=",
+                        "\"Porte.JeuxOK\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Auberge",
+                        "=",
+                        "2"
                       ]
                     },
                     {
@@ -3993,7 +4124,7 @@
                         "value": "DialogueTree::WasBranchVisited"
                       },
                       "parameters": [
-                        "\"Vania.ApresJeu\""
+                        "\"Porte.JeuxOK\""
                       ]
                     },
                     {
@@ -4010,10 +4141,10 @@
                         "value": "SetStringObjectVariable"
                       },
                       "parameters": [
-                        "OrgaVania",
+                        "Porte",
                         "dialogBranch",
                         "=",
-                        "\"Vania.Sauf\""
+                        "\"Porte.AttenteClef\""
                       ]
                     },
                     {
@@ -4021,9 +4152,18 @@
                         "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "Histoire.Vania",
+                        "Histoire.Auberge",
                         "=",
-                        "2"
+                        "3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "Clef",
+                        ""
                       ]
                     }
                   ]
@@ -4036,9 +4176,17 @@
                         "value": "NumberVariable"
                       },
                       "parameters": [
-                        "Histoire.Vania",
-                        "=",
-                        "2"
+                        "Histoire.Auberge",
+                        "<=",
+                        "3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::WasBranchVisited"
+                      },
+                      "parameters": [
+                        "\"Clef.Start\""
                       ]
                     },
                     {
@@ -4050,6 +4198,110 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringObjectVariable"
+                      },
+                      "parameters": [
+                        "Porte",
+                        "dialogBranch",
+                        "=",
+                        "\"Porte.AvecClef\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Auberge",
+                        "=",
+                        "4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Clef",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Auberge",
+                        "=",
+                        "4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::WasBranchVisited"
+                      },
+                      "parameters": [
+                        "\"Porte.Ouverte\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "DialogueTree::IsDialogueRunning"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Histoire.Auberge",
+                        "=",
+                        "5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "Transition",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                      },
+                      "parameters": [
+                        "Transition",
+                        "FlashTransitionPainter",
+                        "\"0;0;0\"",
+                        "1",
+                        "\"Circular\"",
+                        "\"Forward\"",
+                        "255",
+                        ""
+                      ]
+                    },
                     {
                       "type": {
                         "value": "Wait"
@@ -4064,7 +4316,7 @@
                       },
                       "parameters": [
                         "",
-                        "\"Credits\"",
+                        "\"Auberge\"",
                         ""
                       ]
                     }
@@ -4139,23 +4391,6 @@
         }
       ],
       "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "DEBUG_Text",
-            "Text",
-            "=",
-            "Histoire.Courir"
-          ]
-        }
-      ]
     }
   ],
   "layers": [

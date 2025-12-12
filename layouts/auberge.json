@@ -778,56 +778,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "DialogueTree::IsDialogueRunning"
-              },
-              "parameters": []
-            },
-            {
-              "type": {
-                "value": "CompareTimer"
-              },
-              "parameters": [
-                "",
-                "\"textScroll\"",
-                ">",
-                "0.5"
-              ]
-            },
-            {
-              "type": {
-                "value": "KeyFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "GlobalVariableString(Options.Touches.Valider)"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Credits\"",
-                ""
-              ]
-            }
-          ]
         }
       ],
       "parameters": []
@@ -1182,7 +1132,7 @@
                     "value": "DialogueTree::WasBranchVisited"
                   },
                   "parameters": [
-                    "\"Vania.ApresJeu\""
+                    "\"Vania.FIN\""
                   ]
                 },
                 {
@@ -1194,17 +1144,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "SetStringObjectVariable"
-                  },
-                  "parameters": [
-                    "Orga",
-                    "dialogBranch",
-                    "=",
-                    "\"Vania.Sauf\""
-                  ]
-                },
                 {
                   "type": {
                     "value": "SetNumberVariable"
@@ -1214,31 +1153,39 @@
                     "=",
                     "2"
                   ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
                   "type": {
-                    "value": "NumberVariable"
+                    "value": "Wait"
                   },
                   "parameters": [
-                    "Histoire.Vania",
-                    "=",
-                    "2"
+                    "0.5"
                   ]
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "DialogueTree::IsDialogueRunning"
+                    "value": "Montre"
                   },
-                  "parameters": []
-                }
-              ],
-              "actions": [
+                  "parameters": [
+                    "Transition",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                  },
+                  "parameters": [
+                    "Transition",
+                    "FlashTransitionPainter",
+                    "\"0;0;0\"",
+                    "1",
+                    "\"Circular\"",
+                    "\"Forward\"",
+                    "255",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Wait"
