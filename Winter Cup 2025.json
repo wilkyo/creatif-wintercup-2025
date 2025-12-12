@@ -11,17 +11,17 @@
     "antialiasingMode": "MSAA",
     "antialisingEnabledOnMobile": false,
     "folderProject": true,
-    "orientation": "landscape",
+    "orientation": "default",
     "packageName": "com.wintercup.creatif",
     "pixelsRounding": false,
     "projectUuid": "935706e1-a41a-4878-a67f-58a7db910640",
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "templateSlug": "top-down-rpg",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "name": "Winter Cup 2025",
-    "description": "Le jeu fil rouge de la Winter Cup 2025.",
-    "author": "",
+    "description": "Le jeu fil rouge de la Winter Cup 2025.\nLes joueurs ont été figés par le tryhard. Il faut les réveiller en gagnant différentes épreuves, afin de pouvoir enrayer le tryhard de la compétition. Mais il ne faudra pas oublier les organisateurs...\nLes joueurs de la Winter Cup ayant été ensorcelés par le tryhard, nous devons ramener la paix et le chill en les sauvant de ce supplice. En recréant un groupe uni dans la joie et non dans la haine.\\nIl faudra sauver tout le monde pour pouvoir affronter le dernier tryharder.",
+    "author": "1100100 Pression",
     "windowWidth": 1280,
     "windowHeight": 720,
     "latestCompilationDirectory": "C:\\Users\\Willy\\Desktop",
@@ -81,15 +81,9 @@
     "authorIds": [
       "21SMAaN2TeU7wdgeP5VgPUDNIQ72"
     ],
-    "authorUsernames": [
-      "Yourself (no username)"
-    ],
-    "categories": [
-      "rpg"
-    ],
+    "authorUsernames": [],
+    "categories": [],
     "playableDevices": [
-      "keyboard",
-      "mobile",
       "mobile"
     ],
     "extensionProperties": [],
@@ -6621,7 +6615,7 @@
     {
       "name": "DEBUG",
       "type": "boolean",
-      "value": true
+      "value": false
     },
     {
       "name": "MultiplicateurVitesseDialogues",
