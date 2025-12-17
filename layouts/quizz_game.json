@@ -2330,6 +2330,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Option picked",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2468,6 +2469,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Next question",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2714,16 +2716,6 @@
                 "",
                 "2"
               ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "MiniJeux.Quiz",
-                "+",
-                "1"
-              ]
             }
           ],
           "events": [
@@ -2776,6 +2768,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "MiniJeux.Quiz",
+                    "+",
+                    "1"
+                  ]
+                },
                 {
                   "type": {
                     "value": "Montre"
@@ -2915,9 +2917,9 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "MiniJeux.Quiz",
-            "+",
-            "1"
+            "Score",
+            "=",
+            "100"
           ]
         }
       ]
